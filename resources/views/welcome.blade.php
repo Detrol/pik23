@@ -198,7 +198,7 @@
 
 
     <section class="bg-cover bg-repeat bg-center relative jarallax"
-             style="background-image: url('{{ Vite::asset('resources/images/hus.jpg') }}')">
+             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}')">
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
