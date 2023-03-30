@@ -30,9 +30,9 @@
 
 </head>
 
-<body class="dark:bg-slate-900 min-h-[75rem]">
+<body class="">
 
-<header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+<header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full -mt-24">
     <nav
         class="relative max-w-[85rem] w-full bg-white border border-gray-100 rounded-[36px] drop-shadow mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
         aria-label="Global">
