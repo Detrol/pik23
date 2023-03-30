@@ -2,12 +2,14 @@
 
 @section('content')
     <section>
-        <div class="flex flex-col items-center justify-center text-center px-6 h-screen overflow-hidden">
-            <div class="video-docker absolute top-0 left-0 w-full h-screen overflow-hidden">
-                <video class="min-w-full min-h-full absolute object-cover opacity-70"
+        <div class="flex flex-col items-center justify-center text-center h-screen overflow-hidden">
+            <div class="video-docker absolute top-0 w-full h-screen">
+                <!--<video class="min-w-full min-h-full absolute object-cover opacity-70"
                        src="{{ Vite::asset('resources/images/rain.mp4') }}" type="video/mp4" autoplay muted
-                       loop></video>
-                <div class="bg-gray-300 w-full h-full"></div>
+                       loop></video>-->
+                <div class="jarallax min-w-full h-screen absolute object-cover opacity-70"
+                     data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}"></div>
+                <div class="bg-gray-400 w-full h-screen"></div>
             </div>
             <div class="container mx-auto video-content items-center justify-center">
                 <p class="text-4xl lg:text-6xl font-medium text-white">
@@ -172,7 +174,8 @@
             <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
                 <div class="max-w-xl py-4 mx-auto lg:max-w-7xl">
                     <div>
-                        <div class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
+                        <div
+                            class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
                             <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                                 <div>
                                     <div
