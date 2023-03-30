@@ -55,7 +55,7 @@
                 </p>
                 <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
-                <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-32">
+                <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-48">
                     <a href="#"
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex lg:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
