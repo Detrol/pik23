@@ -19,6 +19,7 @@
     @livewireStyles
 
     <link rel="preload" href="{{ asset('assets/css/thin.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{ asset('assets/css/duotone.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
