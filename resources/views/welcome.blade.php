@@ -48,8 +48,8 @@
     </section>-->
     <section class="relative h-screen">
         <div class="jarallax relative h-screen" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
-            <div class="absolute bg-black w-full h-screen opacity-40" style="z-index: 2;"></div>
-            <div class="absolute container mx-auto items-center justify-center text-center py-52" style="z-index: 3">
+            <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
+            <div class="absolute px-3 items-center justify-center text-center py-52" style="z-index: 3">
                 <p class="text-4xl lg:text-6xl font-medium text-white">
                     Välkommen till
                 </p>
@@ -198,7 +198,7 @@
 
 
     <section class="bg-cover bg-repeat bg-center relative jarallax"
-             style="background-image: url('{{ Vite::asset('resources/images/bubbles.jpg') }}')">
+             style="background-image: url('{{ Vite::asset('resources/images/hus.jpg') }}')">
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
