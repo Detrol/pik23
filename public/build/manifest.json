@@ -1,0 +1,77 @@
+{
+  "_preline-c26c1377.js": {
+    "file": "assets/preline-c26c1377.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true
+  },
+  "resources/images/bubbles.jpg": {
+    "file": "assets/bubbles-8419edf3.jpg",
+    "src": "resources/images/bubbles.jpg"
+  },
+  "resources/images/bubbles2.jpg": {
+    "file": "assets/bubbles2-7e961197.jpg",
+    "src": "resources/images/bubbles2.jpg"
+  },
+  "resources/images/calendar2.png": {
+    "file": "assets/calendar2-52f206dd.png",
+    "src": "resources/images/calendar2.png"
+  },
+  "resources/images/fonsterguide-min.jpg": {
+    "file": "assets/fonsterguide-min-316ba08c.jpg",
+    "src": "resources/images/fonsterguide-min.jpg"
+  },
+  "resources/images/full-logo-noslogan-trimmed.png": {
+    "file": "assets/full-logo-noslogan-trimmed-84752b31.png",
+    "src": "resources/images/full-logo-noslogan-trimmed.png"
+  },
+  "resources/images/header-min.jpg": {
+    "file": "assets/header-min-b4e42350.jpg",
+    "src": "resources/images/header-min.jpg"
+  },
+  "resources/images/hus.jpg": {
+    "file": "assets/hus-08c1d32c.jpg",
+    "src": "resources/images/hus.jpg"
+  },
+  "resources/images/jag1.jpg": {
+    "file": "assets/jag1-978caf69.jpg",
+    "src": "resources/images/jag1.jpg"
+  },
+  "resources/images/layered-waves-haikei.svg": {
+    "file": "assets/layered-waves-haikei-7f7e461f.svg",
+    "src": "resources/images/layered-waves-haikei.svg"
+  },
+  "resources/images/logo-blank_smaller.png": {
+    "file": "assets/logo-blank_smaller-28d3d47e.png",
+    "src": "resources/images/logo-blank_smaller.png"
+  },
+  "resources/images/rain.mp4": {
+    "file": "assets/rain-7b01de32.mp4",
+    "src": "resources/images/rain.mp4"
+  },
+  "resources/images/text-nologo-trimmed.png": {
+    "file": "assets/text-nologo-trimmed-53545301.png",
+    "src": "resources/images/text-nologo-trimmed.png"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-f85da3e0.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-f85da3e0.css"
+    ],
+    "dynamicImports": [
+      "_preline-c26c1377.js"
+    ],
+    "file": "assets/app-9fd12eb6.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-71b0f148.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}

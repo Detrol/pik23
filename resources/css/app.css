@@ -1,0 +1,8 @@
+/*@import "/node_modules/@material-tailwind/html/styles/material-tailwind.css";
+@import '../assets/css/fontawesome.css';
+@import '../assets/css/all.css';*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
