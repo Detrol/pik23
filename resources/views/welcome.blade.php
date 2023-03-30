@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section class="bg-gray-100 -mt-24 relative" id="about">
+    <section class="bg-gray-100 -mt-16 lg:-mt-24 relative" id="about">
         <div class="container pb-32 pt-20 md:pb-48 md:pt-28 max-w-7xl">
             <div class="flex-col items-start m-auto align-middle">
                 <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
