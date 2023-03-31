@@ -25,5 +25,3 @@ jarallaxVideo();
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.5,
 });
-
-GLightbox();
