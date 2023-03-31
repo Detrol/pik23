@@ -124,7 +124,7 @@
                          data-aos="fade-in" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="200">
                         <img
                             class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-xl"
-                            alt="hero" loading="lazy"
+                            alt="hero" loading="lazy" width="600" height="600"
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
                 </div>
