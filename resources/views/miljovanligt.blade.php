@@ -76,8 +76,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="order-first block w-full mt-12 lg:mt-0 lg:pt-[5rem]">
-                            <img class="object-cover object-center w-full mx-auto lg:ml-auto "
+                        <div class="order-first block w-full mt-12 lg:mt-0 lg:pt-[5rem]"
+                             data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
+                             data-aos-easing="ease-in-out">
+                            <img class="object-cover object-center w-full mx-auto lg:ml-auto"
                                  alt="hero" src="{{ Vite::asset('resources/images/svana.png') }}">
                         </div>
                     </div>

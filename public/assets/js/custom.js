@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray(".animCounter").forEach(box => {
     var tler =  gsap.from(box, {
         textContent: "0",
-        duration: 1,
+        duration: 2,
         ease: "power1.inOut",
         modifiers: {
             textContent: value => formatNumber(value, 0)
