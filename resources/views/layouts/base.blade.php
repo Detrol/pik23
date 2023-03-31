@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.">
     <title>@yield('title')</title>
 
     <!-- Favicon -->
