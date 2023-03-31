@@ -87,6 +87,9 @@
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('services') }}">
                     Tjänster
                 </a>
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('prices') }}">
+                    Priser
+                </a>
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('faq') }}">
                     Vanliga frågor
                 </a>
@@ -101,10 +104,6 @@
                 </a>
                 <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500"
                    href="#">
-                    <button
-                        class="block px-4 py-2 mt-2 text-gray-500 md:mt-0 hover:text-primary focus:outline-none focus:shadow-outline">
-                        Priser
-                    </button>
                     <button
                         class="inline-flex items-center justify-center px-4 py-2 font-semibold text-white bg-primary rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-cyan-500 active:bg-cyan-400 active:text-white focus-visible:outline-black">
                         Boka tid

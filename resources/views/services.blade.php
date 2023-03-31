@@ -31,7 +31,7 @@
             </div>
 
             <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4">
-                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-72"
+                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/fonster.jpg') }}')"
                      data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                     <div
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-72"
+                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/sprojs.jpg') }}')"
                      data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                     <div
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-72"
+                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/balkonger.jpg') }}')"
                      data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                     <div
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-72"
+                <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/altaner.jpg') }}')"
                      data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
                     <div

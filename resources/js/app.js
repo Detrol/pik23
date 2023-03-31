@@ -7,6 +7,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 import('preline')
+import("fslightbox")
 
 window.Alpine = Alpine
 
@@ -25,3 +26,4 @@ jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.5,
 });
 
+GLightbox();
