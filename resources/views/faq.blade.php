@@ -47,7 +47,7 @@
                                     då räknar jag det som 2 fönster och inte som 1 fönster.
                                 </div>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                            <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
                                 data-aos-easing="ease-in-out">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
@@ -79,7 +79,7 @@
                                     arbeta på högre stegar eftersom jag jobbar ensam.
                                 </div>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                            <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
                                 data-aos-easing="ease-in-out">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
@@ -166,7 +166,7 @@
                                     Jag står för allt material, och det tillkommer heller ingen extra kostnad för detta.
                                 </div>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                            <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
                                 data-aos-easing="ease-in-out">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
