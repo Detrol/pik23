@@ -54,7 +54,7 @@
                         <div class="max-w-xl">
                             <div>
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed text-inherit antialiased lg:text-left"
-                                   data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
+                                   data-aos="fade-right" data-aos-duration="500" data-aos-offset="100"
                                    data-aos-easing="ease-in-out">
                                     Hej!
                                 </p>
@@ -66,7 +66,7 @@
                                     i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
                                 </h1>
                                 <h2 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600"
-                                    data-aos="fade-left" data-aos-duration="500" data-aos-offset="100"
+                                    data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
                                     data-aos-delay="200"
                                     data-aos-easing="ease-in-out">
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
@@ -120,8 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0"
-                         data-aos="fade-in" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="200">
+                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
                         <img
                             class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-xl"
                             alt="hero" loading="lazy" width="600" height="600"
@@ -182,7 +181,7 @@
                     <div>
                         <div
                             class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -199,7 +198,7 @@
                                     miljövänligt alternativ, till skillnad från många konkurrenter
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -216,7 +215,7 @@
                                     ingen annan på marknaden erbjuder
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -233,7 +232,7 @@
                                     utan att slarva med resultatet
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
