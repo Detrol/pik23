@@ -51,7 +51,7 @@
         aria-label="Global">
         <div class="flex items-center justify-between">
             <a href="/">
-                <img class="w-48 lg:w-72"
+                <img class="w-48 lg:w-72" width="400" height="61"
                      src="{{ Vite::asset('resources/images/full-logo-noslogan-trimmed.png') }}" alt="">
             </a>
             <div class="md:hidden">

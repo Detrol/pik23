@@ -11,7 +11,7 @@
                 <p class="text-4xl lg:text-6xl font-medium text-white">
                     Välkommen till
                 </p>
-                <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16"
+                <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
                 <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-32 md:pb-48">
                     <a href="#"
