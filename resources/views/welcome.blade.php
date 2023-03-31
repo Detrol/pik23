@@ -108,17 +108,17 @@
                                     hjälp med kunskap, teknik, och rätt utrustning.
                                 </h2>
                             </div>
-                            <div
+                            <!--<div
                                 class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                                 <a href="#"
                                    class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600 antialiased">
                                     Mer om mig
                                     <span aria-hidden="true"> → </span>
                                 </a>
-                            </div>
+                            </div>-->
                             <div class="pt-12 mx-auto lg:max-w-7xl">
                                 <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-sm">
-                                    <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left lg:divide-x">
+                                    <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left divide-y sm:divide-y-0 sm:divide-x">
                                         <div class="text-center py-6 lg:py-4 antialiased">
                                             <div>
                                                 <p class="text-3xl font-medium leading-6 text-gray-700">
@@ -225,8 +225,8 @@
                                         Grönare
                                     </p>
                                 </div>
-                                <div class="mt-4 text-base text-gray-200">
-                                    Min nisch är att erbjuda ett fullständigt
+                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    Jag erbjuder ett fullständigt
                                     miljövänligt alternativ, till skillnad från många konkurrenter
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                                         Modernare
                                     </p>
                                 </div>
-                                <div class="mt-4 text-base text-gray-200">
+                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Hos mig hittar du ett unikt och modernt bokningssystem som
                                     ingen annan på marknaden erbjuder
                                 </div>
@@ -255,7 +255,7 @@
                                         Effektivare
                                     </p>
                                 </div>
-                                <div class="mt-4 text-base text-gray-200">
+                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
                                     utan att slarva med resultatet
                                 </div>
@@ -270,8 +270,8 @@
                                         Prisvärdare
                                     </p>
                                 </div>
-                                <div class="mt-4 text-base text-gray-200">
-                                    Jag erbjuder riktigt bra priser,
+                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    Jag erbjuder schyssta priser,
                                     och personliga rabatter för mina återkommande kunder
                                 </div>
                             </div>
@@ -287,6 +287,19 @@
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                         class="shape-fill"></path>
                 </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container items-center py-12 max-w-7xl lg:py-16">
+            <div class="justify-center w-full text-center lg:p-10 max-auto">
+                <div class="justify-center w-full mx-auto">
+                    <h2 class="block font-sans text-4xl font-semibold leading-[1.3] tracking-normal text-inherit antialiased mb-10">
+                        Nyhetsflöde
+                    </h2>
+                    <!--<div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>-->
+                </div>
             </div>
         </div>
     </section>

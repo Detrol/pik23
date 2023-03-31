@@ -22,6 +22,6 @@ AOS.init();
 jarallaxVideo();
 
 jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.2,
+    speed: 0.5,
 });
 

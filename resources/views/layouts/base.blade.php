@@ -14,6 +14,9 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link
+        href="{{ url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap') }}"
+        link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @livewireStyles
@@ -66,6 +69,9 @@
                    href="#">
                     Hem
                 </a>
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('services') }}">
+                    Tjänster
+                </a>
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
                     Vanliga frågor
                 </a>
@@ -76,12 +82,8 @@
                     Garanti
                 </a>
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
-                    Om mig
-                </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
                     Kontakta mig
                 </a>
-
                 <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500"
                    href="#">
                     <button
@@ -99,6 +101,26 @@
 </header>
 
 @yield('body')
+
+<div class="d-none d-lg-block overflow-hidden">
+    <img class="" src="{{ Vite::asset('resources/images/layered-waves-haikei.svg') }}" alt="footer image"
+         loading="lazy"/>
+</div>
+
+<footer class="bg-footer dark:bg-gray-900">
+    <div class="container px-6 py-8 mx-auto">
+
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="text-gray-100">&copy; Puts i Karlstad - {{ \Carbon\Carbon::now()->format('Y') }}</p>
+
+            <div class="flex mt-3 -mx-2 sm:mt-0">
+                <a href="#"
+                   class="mx-2 text-gray-100 transition-colors duration-300 hover:text-gray-300 dark:hover:text-gray-300"
+                   aria-label="Cookies"> Cookies </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 @livewireScripts
 

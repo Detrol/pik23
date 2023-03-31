@@ -4,7 +4,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                //sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                sans: ['Nunito'],
             },
             spacing: {
                 '8xl': '96rem',
@@ -15,6 +16,7 @@ module.exports = {
             },
             colors: {
                 'primary': '#4fc3e0',
+                'footer': '#388987',
             },
             container: {
                 center: true,
