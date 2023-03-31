@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Professionell & Prisvärd fönsterputs i och runt Karlstad')
+
 @section('content')
     <section class="relative h-screen" x-data x-init="$scrollTo({ targetId: 'about' })">
         <div class="jarallax relative h-screen" data-jarallax
