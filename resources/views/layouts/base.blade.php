@@ -7,6 +7,10 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+    <link rel="preconnect" href="{{ url('https://fonts.googleapis.com/') }}">
+
+    <!-- speed up external res -->
+    <link rel="dns-prefetch" href="{{ url('https://fonts.googleapis.com/') }}">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
