@@ -1,10 +1,34 @@
 {
-  "_preline-c26c1377.js": {
-    "file": "assets/preline-c26c1377.js",
+  "_preline-5065eb10.js": {
+    "file": "assets/preline-5065eb10.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true
+  },
+  "resources/assets/webfonts/fa-duotone-900.ttf": {
+    "file": "assets/fa-duotone-900-4f87b939.ttf",
+    "src": "resources/assets/webfonts/fa-duotone-900.ttf"
+  },
+  "resources/assets/webfonts/fa-duotone-900.woff2": {
+    "file": "assets/fa-duotone-900-1a4eda57.woff2",
+    "src": "resources/assets/webfonts/fa-duotone-900.woff2"
+  },
+  "resources/assets/webfonts/fa-thin-100.ttf": {
+    "file": "assets/fa-thin-100-e3ee7773.ttf",
+    "src": "resources/assets/webfonts/fa-thin-100.ttf"
+  },
+  "resources/assets/webfonts/fa-thin-100.woff2": {
+    "file": "assets/fa-thin-100-1709f5e9.woff2",
+    "src": "resources/assets/webfonts/fa-thin-100.woff2"
+  },
+  "resources/images/altaner.jpg": {
+    "file": "assets/altaner-d259f32e.jpg",
+    "src": "resources/images/altaner.jpg"
+  },
+  "resources/images/balkonger.jpg": {
+    "file": "assets/balkonger-7bd9d5fe.jpg",
+    "src": "resources/images/balkonger.jpg"
   },
   "resources/images/bubbles.jpg": {
     "file": "assets/bubbles-8419edf3.jpg",
@@ -18,24 +42,28 @@
     "file": "assets/calendar2-52f206dd.png",
     "src": "resources/images/calendar2.png"
   },
+  "resources/images/fonster.jpg": {
+    "file": "assets/fonster-2ccef554.jpg",
+    "src": "resources/images/fonster.jpg"
+  },
   "resources/images/fonsterguide-min.jpg": {
     "file": "assets/fonsterguide-min-316ba08c.jpg",
     "src": "resources/images/fonsterguide-min.jpg"
   },
   "resources/images/full-logo-noslogan-trimmed.png": {
-    "file": "assets/full-logo-noslogan-trimmed-84752b31.png",
+    "file": "assets/full-logo-noslogan-trimmed-6fa94ed0.png",
     "src": "resources/images/full-logo-noslogan-trimmed.png"
   },
   "resources/images/header-min.jpg": {
     "file": "assets/header-min-b4e42350.jpg",
     "src": "resources/images/header-min.jpg"
   },
-  "resources/images/hus.jpg": {
-    "file": "assets/hus-08c1d32c.jpg",
-    "src": "resources/images/hus.jpg"
+  "resources/images/house.jpg": {
+    "file": "assets/house-f6c6578a.jpg",
+    "src": "resources/images/house.jpg"
   },
   "resources/images/jag1.jpg": {
-    "file": "assets/jag1-978caf69.jpg",
+    "file": "assets/jag1-1322db97.jpg",
     "src": "resources/images/jag1.jpg"
   },
   "resources/images/layered-waves-haikei.svg": {
@@ -47,11 +75,19 @@
     "src": "resources/images/logo-blank_smaller.png"
   },
   "resources/images/rain.mp4": {
-    "file": "assets/rain-7b01de32.mp4",
+    "file": "assets/rain-2fc47f6d.mp4",
     "src": "resources/images/rain.mp4"
   },
+  "resources/images/rain3.mp4": {
+    "file": "assets/rain3-db1c48b8.mp4",
+    "src": "resources/images/rain3.mp4"
+  },
+  "resources/images/sprojs.jpg": {
+    "file": "assets/sprojs-1c0c0dc4.jpg",
+    "src": "resources/images/sprojs.jpg"
+  },
   "resources/images/text-nologo-trimmed.png": {
-    "file": "assets/text-nologo-trimmed-53545301.png",
+    "file": "assets/text-nologo-trimmed-3e36e6ac.png",
     "src": "resources/images/text-nologo-trimmed.png"
   },
   "resources/js/app.css": {
@@ -63,14 +99,14 @@
       "assets/app-f85da3e0.css"
     ],
     "dynamicImports": [
-      "_preline-c26c1377.js"
+      "_preline-5065eb10.js"
     ],
-    "file": "assets/app-9fd12eb6.js",
+    "file": "assets/app-21928444.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-71b0f148.css",
+    "file": "assets/app-de0f8d82.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }
