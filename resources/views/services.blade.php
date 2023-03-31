@@ -2,14 +2,9 @@
 
 @section('content')
 
-    <section class="relative h-[18rem] md:h-[28rem]">
-        <div class="jarallax relative h-[18rem] md:h-[28rem]" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
-            <div class="absolute bg-gray-900 w-full opacity-60 h-[18rem] md:h-[28rem]" style="z-index: 2;"></div>
-            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-40 md:py-52" style="z-index: 3">
-                <p class="text-4xl lg:text-6xl font-medium text-white block font-sans text-inherit antialiased">
-                    Mina tjänster
-                </p>
-            </div>
+    <section class="relative h-[12rem] md:h-[14rem]">
+        <div class="jarallax relative h-[12rem] md:h-[14rem]" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
+            <div class="absolute bg-gray-900 w-full opacity-60 h-[12rem] md:h-[14rem]" style="z-index: 2;"></div>
         </div>
 
         <div class="custom-shape-divider-bottom-1679525888 z-10 -mb-1">
@@ -29,11 +24,18 @@
     </section>
 
     <section class="bg-gray-100 relative">
-        <div class="container flex flex-col justify-center flex-1 px-8 py-8 mx-auto lg:py-24 md:px-12 lg:flex-none lg:px-24 pb-20">
+        <div class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
 
-            <p class="text-center text-gray-700 block font-sans text-xl font-normal leading-relaxed text-inherit antialiased">
-                Här kan du se olika varianter av fönster som jag putsar, både hos privatpersoner och företag.
-            </p>
+            <div>
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl text-black">
+                        Mina tjänster
+                    </h1>
+                    <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
+                        Här kan du se olika varianter av fönster som jag putsar
+                    </p>
+                </div>
+            </div>
 
             <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4">
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-72"
@@ -82,16 +84,16 @@
 
 
     <section>
-        <div class="container flex flex-col justify-center flex-1 px-8 py-8 mx-auto md:px-12 lg:flex-none lg:px-24 pt-12">
-            <div class="max-w-2xl">
+        <div class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+            <div class="max-w-xl">
                 <div>
-                    <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                    <h1 class="text-2xl font-medium tracking-tight text-black sm:text-4xl antialiased">
                         Tilläggstjänster
-                    </p>
-                    <p class="max-w-xl mt-4 text-lg tracking-tight text-gray-600">
+                    </h1>
+                    <h2 class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 antialiased">
                         Ibland kan det vara skönt att få hjälp med lite annat som hör
-                        fönstren till, och nedan kan du läsa om vad jag erbjuder mer.
-                    </p>
+                        fönstren till när jag är hos dig
+                    </h2>
                 </div>
             </div>
             <div class="mx-auto mt-12 text-left">

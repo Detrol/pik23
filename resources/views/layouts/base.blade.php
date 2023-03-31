@@ -14,9 +14,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link
-        href="{{ url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap') }}"
-        link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @livewireStyles
@@ -66,19 +64,19 @@
              class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
             <div class="flex flex-col mt-5 md:flex-row md:items-center md:mt-0">
                 <a class="px-2 md:py-6 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary lg:ml-auto"
-                   href="#">
+                   href="/">
                     Hem
                 </a>
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('services') }}">
                     Tjänster
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('faq') }}">
                     Vanliga frågor
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('miljovanligt') }}">
                     Miljövänligt
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('guarantee') }}">
                     Garanti
                 </a>
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">

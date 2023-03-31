@@ -140,7 +140,7 @@
     z-index: 10;
 }
 
-/**/
+/* GRÅ BAKGRUND */
 .custom-shape-divider-bottom-1679525888 {
     position: absolute;
     bottom: 0;
@@ -161,4 +161,27 @@
 
 .custom-shape-divider-bottom-1679525888 .shape-fill {
     fill: rgb(245 245 245);
+}
+
+/* VIT BAKGRUND */
+.custom-shape-divider-bottom-16795258882 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-16795258882 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 52px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-16795258882 .shape-fill {
+    fill: #FFFFFF;
 }
