@@ -110,7 +110,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
@@ -140,7 +140,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
@@ -170,7 +170,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
@@ -198,7 +198,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">

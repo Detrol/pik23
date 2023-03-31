@@ -195,7 +195,7 @@
                                     via Frilans Finans.
                                 </div>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                            <li data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"
                                 data-aos-easing="ease-in-out">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
