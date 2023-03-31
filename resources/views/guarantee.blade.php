@@ -23,7 +23,7 @@
                     <h1 class="text-4xl text-black antialiased">
                         Garanti
                     </h1>
-                    <h2 class="max-w-7xl mt-4 text-lg tracking-tight text-gray-600">
+                    <h2 class="max-w-7xl mt-4 mb-10 text-lg tracking-tight text-gray-600">
                         Hos mig så har du garanti vid det oväntade
                     </h2>
 
