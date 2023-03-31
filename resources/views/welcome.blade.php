@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="custom-shape-divider-bottom-1679499722 -mb-1">
+            <div class="custom-shape-divider-bottom-1679499722">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">
                     <path
