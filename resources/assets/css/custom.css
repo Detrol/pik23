@@ -185,3 +185,48 @@
 .custom-shape-divider-bottom-16795258882 .shape-fill {
     fill: #FFFFFF;
 }
+
+/* PAGE HEADER */
+/* VIT */
+.custom-shape-divider-bottom-1680265275 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680265275 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 17px;
+}
+
+.custom-shape-divider-bottom-1680265275 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* GRÅ */
+.custom-shape-divider-bottom-16802652752 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-16802652752 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 17px;
+}
+
+.custom-shape-divider-bottom-16802652752 .shape-fill {
+    fill: rgb(245 245 245);
+}

@@ -47,14 +47,15 @@
         </div>
     </section>-->
     <section class="relative h-screen">
-        <div class="jarallax relative h-screen" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
+        <div class="jarallax relative h-screen" data-jarallax
+             data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
             <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52" style="z-index: 3">
                 <p class="text-4xl lg:text-6xl font-medium text-white">
                     Välkommen till
                 </p>
                 <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16"
-                     src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
+                     src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="" loading="lazy">
                 <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-32 md:pb-48">
                     <a href="#"
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex lg:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
@@ -95,18 +96,24 @@
                     <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                         <div class="max-w-xl">
                             <div>
-                                <p class="block font-sans text-3xl font-semibold leading-relaxed text-inherit antialiased lg:text-left">
+                                <p class="block font-sans text-3xl font-semibold leading-relaxed text-inherit antialiased lg:text-left"
+                                   data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
+                                   data-aos-easing="linear">
                                     Hej!
                                 </p>
-                                <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Andreas heter jag, och jag erbjuder prisvärt fönsterputs
-                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
-                                </h1>
-                                <h2 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
-                                    professionell
-                                    hjälp med kunskap, teknik, och rätt utrustning.
-                                </h2>
+                                    <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600"
+                                        data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                                        data-aos-easing="linear">
+                                        Andreas heter jag, och jag erbjuder prisvärt fönsterputs
+                                        i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
+                                    </h1>
+                                    <h2 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600"
+                                        data-aos="fade-left" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
+                                        data-aos-easing="linear">
+                                        Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
+                                        professionell
+                                        hjälp med kunskap, teknik, och rätt utrustning.
+                                    </h2>
                             </div>
                             <!--<div
                                 class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
@@ -154,10 +161,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
+                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0"
+                         data-aos="fade-in" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="200">
                         <img
                             class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-xl"
-                            alt="hero"
+                            alt="hero" loading="lazy"
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
                 </div>
@@ -198,7 +206,7 @@
 
 
     <section class="bg-cover bg-repeat bg-center relative jarallax"
-             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}')">
+             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}')" loading="lazy">
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -215,7 +223,8 @@
                     <div>
                         <div
                             class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
-                            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200"
+                                 data-aos-easing="linear">
                                 <div>
                                     <div
                                         class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
@@ -225,12 +234,14 @@
                                         Grönare
                                     </p>
                                 </div>
-                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                <div
+                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Jag erbjuder ett fullständigt
                                     miljövänligt alternativ, till skillnad från många konkurrenter
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200"
+                                 data-aos-easing="linear">
                                 <div>
                                     <div
                                         class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
@@ -240,12 +251,14 @@
                                         Modernare
                                     </p>
                                 </div>
-                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                <div
+                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Hos mig hittar du ett unikt och modernt bokningssystem som
                                     ingen annan på marknaden erbjuder
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200"
+                                 data-aos-easing="linear">
                                 <div>
                                     <div
                                         class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
@@ -255,12 +268,14 @@
                                         Effektivare
                                     </p>
                                 </div>
-                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                <div
+                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
                                     utan att slarva med resultatet
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-offset="200"
+                                 data-aos-easing="linear">
                                 <div>
                                     <div
                                         class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
@@ -270,7 +285,8 @@
                                         Prisvärdare
                                     </p>
                                 </div>
-                                <div class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                <div
+                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Jag erbjuder schyssta priser,
                                     och personliga rabatter för mina återkommande kunder
                                 </div>
