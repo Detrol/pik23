@@ -37,7 +37,8 @@
                             Vad kostar fönsterputs hos mig?
                         </p>
                         <div class="mb-10">
-                            <p>Priser som visas gäller puts av två sidor, för fyra sidor är priset det dubbla.</p>
+                            <p>Priser som visas gäller puts av två sidor, för fyra sidor är priset det dubbla.
+                            Ensidig puts finns också som tillval och då till halva priset som står.</p>
                             <p>Företagspriser visas inom parentes.</p>
                             <p>Alla priser räknas inkl. RUT-avdrag för privatpersoner.</p>
                         </div>
@@ -81,7 +82,7 @@
                                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Pris
                                     </th>
                                     <th scope="col"
-                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Bild
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Exempel
                                     </th>
                                 </tr>
                                 </thead>
@@ -160,7 +161,7 @@
                                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Pris
                                     </th>
                                     <th scope="col"
-                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Bild
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Exempel
                                     </th>
                                 </tr>
                                 </thead>
@@ -207,7 +208,7 @@
                                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Pris
                                     </th>
                                     <th scope="col"
-                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Bild
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Exempel
                                     </th>
                                 </tr>
                                 </thead>
@@ -267,7 +268,7 @@
                                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Pris
                                     </th>
                                     <th scope="col"
-                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Bild
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Exempel
                                     </th>
                                 </tr>
                                 </thead>
@@ -332,7 +333,7 @@
                                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Pris
                                     </th>
                                     <th scope="col"
-                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Bild
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">Exempel
                                     </th>
                                 </tr>
                                 </thead>
