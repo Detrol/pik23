@@ -130,7 +130,7 @@
             </div>
         </div>
 
-        <div class="custom-shape-divider-bottom-1679499722 drop-shadow-2xl">
+        <div class="custom-shape-divider-bottom-1679499722">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
@@ -144,10 +144,7 @@
         <div class="container items-center py-12 max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
-                    <h2 class="block font-sans text-4xl font-semibold leading-[1.3] tracking-normal text-inherit antialiased mb-10">
-                        Vad säger mina kunder?
-                    </h2>
-                    <!--<div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>-->
+                    <div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>
                 </div>
             </div>
         </div>
@@ -181,7 +178,7 @@
                     <div>
                         <div
                             class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -198,7 +195,7 @@
                                     miljövänligt alternativ, till skillnad från många konkurrenter
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -215,7 +212,7 @@
                                     ingen annan på marknaden erbjuder
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -232,7 +229,7 @@
                                     utan att slarva med resultatet
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
@@ -254,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="custom-shape-divider-bottom-1679499722">
+            <div class="custom-shape-divider-bottom-1679499722 -mb-1">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">
                     <path
@@ -269,10 +266,7 @@
         <div class="container items-center py-12 max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
-                    <h2 class="block font-sans text-4xl font-semibold leading-[1.3] tracking-normal text-inherit antialiased mb-10">
-                        Nyhetsflöde
-                    </h2>
-                    <!--<div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>-->
+                    <div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>
                 </div>
             </div>
         </div>

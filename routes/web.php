@@ -18,4 +18,4 @@ Route::view('/tjanster', 'services')->name('services');
 Route::view('/vanliga-fragor', 'faq')->name('faq');
 Route::view('/miljovanligt', 'miljovanligt')->name('miljovanligt');
 Route::view('/garanti', 'guarantee')->name('guarantee');
-Route::view('/prices', 'prices')->name('prices');
+Route::view('/priser', 'prices')->name('prices');
