@@ -209,8 +209,8 @@
         </div>
 
         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50">
-            <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
-                <div class="max-w-7xl py-4 mx-auto">
+            <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 container lg:py-24">
+                <div class="py-4 mx-auto">
                     <div>
                         <div
                             class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
@@ -308,7 +308,7 @@
         </div>
     </section>
 
-    <section class="relative min-h-screen bg-cover"
+    <section class="relative min-h-screen bg-cover jarallax"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
 
         <div class="custom-shape-divider-top-1679499812 -mt-1">

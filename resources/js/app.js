@@ -23,8 +23,8 @@ AOS.init();
 jarallaxVideo();
 
 jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.5,
-    disableParallax: /iPad|iPhone|iPod|Android/,
+    speed: 0.2,
+    //disableParallax: /iPad|iPhone|iPod|Android/,
 });
 
 document.addEventListener("alpine:init", () => {
