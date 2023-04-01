@@ -340,10 +340,10 @@
                     </div>
 
                     <div class="mt-8 lg:w-1/2 lg:mx-6"
-                         data-aos="fade-in" data-aos-duration="500" data-aos-delay="100">
+                         data-aos="fade-in" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
-                            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                                 <h1 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h1>
 
                                 <p class="mt-2 text-gray-500 dark:text-gray-400">
@@ -356,19 +356,19 @@
                                 <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
                                 <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
 
-                                <div class="flex-1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                                <div class="flex-1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
                                     <input type="text" placeholder="Svea Svensson" name="name" required
                                            class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
                                 </div>
 
-                                <div class="flex-1 mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                                <div class="flex-1 mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
                                     <input type="email" placeholder="svensson@exempel.se" name="email" required
                                            class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
                                 </div>
 
-                                <div class="w-full mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                                <div class="w-full mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                                     <label
                                         class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
                                     <textarea name="message" required
@@ -376,14 +376,14 @@
                                               placeholder="Meddelande"></textarea>
                                 </div>
 
-                                <div class="flex-1 mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                                <div class="flex-1 mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                                     <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                     <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
                                 </div>
 
                                 <button
                                     class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
-                                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                                     Skicka meddelande
                                 </button>
                             </form>
