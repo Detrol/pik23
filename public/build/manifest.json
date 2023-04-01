@@ -1,6 +1,13 @@
 {
-  "_preline-5065eb10.js": {
-    "file": "assets/preline-5065eb10.js",
+  "_index-1c5a987f.js": {
+    "file": "assets/index-1c5a987f.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true
+  },
+  "_preline-b6c32303.js": {
+    "file": "assets/preline-b6c32303.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -22,9 +29,37 @@
     "file": "assets/fa-thin-100-1709f5e9.woff2",
     "src": "resources/assets/webfonts/fa-thin-100.woff2"
   },
+  "resources/images/altan_delade.jpg": {
+    "file": "assets/altan_delade-89e02342.jpg",
+    "src": "resources/images/altan_delade.jpg"
+  },
+  "resources/images/altan_sma.jpg": {
+    "file": "assets/altan_sma-89929993.jpg",
+    "src": "resources/images/altan_sma.jpg"
+  },
+  "resources/images/altan_stora.jpg": {
+    "file": "assets/altan_stora-d3b6057b.jpg",
+    "src": "resources/images/altan_stora.jpg"
+  },
+  "resources/images/altan_valdigt_stora.jpg": {
+    "file": "assets/altan_valdigt_stora-bb713ac2.jpg",
+    "src": "resources/images/altan_valdigt_stora.jpg"
+  },
   "resources/images/altaner.jpg": {
     "file": "assets/altaner-d259f32e.jpg",
     "src": "resources/images/altaner.jpg"
+  },
+  "resources/images/balkong_ovre.jpg": {
+    "file": "assets/balkong_ovre-bd9298a8.jpg",
+    "src": "resources/images/balkong_ovre.jpg"
+  },
+  "resources/images/balkong_sma.jpg": {
+    "file": "assets/balkong_sma-8a75fa76.jpg",
+    "src": "resources/images/balkong_sma.jpg"
+  },
+  "resources/images/balkong_stora.jpg": {
+    "file": "assets/balkong_stora-5e9deaf8.jpg",
+    "src": "resources/images/balkong_stora.jpg"
   },
   "resources/images/balkonger.jpg": {
     "file": "assets/balkonger-7bd9d5fe.jpg",
@@ -41,6 +76,14 @@
   "resources/images/calendar2.png": {
     "file": "assets/calendar2-52f206dd.png",
     "src": "resources/images/calendar2.png"
+  },
+  "resources/images/contact.jpg": {
+    "file": "assets/contact-0dbf974d.jpg",
+    "src": "resources/images/contact.jpg"
+  },
+  "resources/images/email.jpg": {
+    "file": "assets/email-e24a1876.jpg",
+    "src": "resources/images/email.jpg"
   },
   "resources/images/fonster.jpg": {
     "file": "assets/fonster-2ccef554.jpg",
@@ -70,9 +113,21 @@
     "file": "assets/layered-waves-haikei-7f7e461f.svg",
     "src": "resources/images/layered-waves-haikei.svg"
   },
+  "resources/images/litet.jpg": {
+    "file": "assets/litet-854b0fb0.jpg",
+    "src": "resources/images/litet.jpg"
+  },
   "resources/images/logo-blank_smaller.png": {
     "file": "assets/logo-blank_smaller-28d3d47e.png",
     "src": "resources/images/logo-blank_smaller.png"
+  },
+  "resources/images/panel1.jpg": {
+    "file": "assets/panel1-6f2bc087.jpg",
+    "src": "resources/images/panel1.jpg"
+  },
+  "resources/images/panel2.jpg": {
+    "file": "assets/panel2-e58bfc7c.jpg",
+    "src": "resources/images/panel2.jpg"
   },
   "resources/images/rain.mp4": {
     "file": "assets/rain-2fc47f6d.mp4",
@@ -86,9 +141,25 @@
     "file": "assets/sprojs-1c0c0dc4.jpg",
     "src": "resources/images/sprojs.jpg"
   },
+  "resources/images/stort.jpg": {
+    "file": "assets/stort-91b7e32f.jpg",
+    "src": "resources/images/stort.jpg"
+  },
+  "resources/images/svana.png": {
+    "file": "assets/svana-b6d15715.png",
+    "src": "resources/images/svana.png"
+  },
   "resources/images/text-nologo-trimmed.png": {
-    "file": "assets/text-nologo-trimmed-3e36e6ac.png",
+    "file": "assets/text-nologo-trimmed-53545301.png",
     "src": "resources/images/text-nologo-trimmed.png"
+  },
+  "resources/images/valdigt_stort.jpg": {
+    "file": "assets/valdigt_stort-2b2fd466.jpg",
+    "src": "resources/images/valdigt_stort.jpg"
+  },
+  "resources/images/vanligt.jpg": {
+    "file": "assets/vanligt-a07ddd41.jpg",
+    "src": "resources/images/vanligt.jpg"
   },
   "resources/js/app.css": {
     "file": "assets/app-f85da3e0.css",
@@ -99,14 +170,15 @@
       "assets/app-f85da3e0.css"
     ],
     "dynamicImports": [
-      "_preline-5065eb10.js"
+      "_preline-b6c32303.js",
+      "_index-1c5a987f.js"
     ],
-    "file": "assets/app-21928444.js",
+    "file": "assets/app-68909a7e.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-de0f8d82.css",
+    "file": "assets/app-3dd994df.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }

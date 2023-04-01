@@ -24,7 +24,7 @@
                         <span aria-hidden="true"> → </span>
                     </a>
                 </div>
-                <a href="#about" x-data x-on:click.prevent="$scrollTo">
+                <a href="#about">
                     <i class="fa-thin fa-arrow-circle-down text-white text-4xl animate-bounce"></i>
                 </a>
             </div>
