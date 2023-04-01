@@ -213,7 +213,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
         integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" async defer></script>
-<script src="{{ asset('assets/js/custom.js') }}" async defer></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
 
 @yield('script')
 
