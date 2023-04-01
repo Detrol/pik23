@@ -299,7 +299,10 @@
                                  data-elfsight-app-lazy></div>
                         </div>
 
-                        <div class="md:flex -mx-2 mb-4">
+                        <div class="md:flex -mx-2 mb-4"
+                             data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
+                             data-aos-delay="200"
+                             data-aos-easing="ease-in-out">
                             <i class="fa fa-clock text-xl mr-3 hidden md:block"></i>
 
                             <div>
@@ -309,7 +312,10 @@
                         </div>
 
                         <div class="md:grid gap-y-8 gap-x-8 grid-cols-1 md:grid-cols-2">
-                            <div class="md:flex -mx-2 mb-4 md:mb-0">
+                            <div class="md:flex -mx-2 mb-4 md:mb-0"
+                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
+                                 data-aos-delay="200"
+                                 data-aos-easing="ease-in-out">
                                 <i class="fa fa-envelope text-xl mr-3 hidden md:block"></i>
 
                                 <div>
@@ -319,7 +325,10 @@
                                 </div>
                             </div>
 
-                            <div class="md:flex -mx-2 pb-8 md:mb-0">
+                            <div class="md:flex -mx-2 pb-8 md:mb-0"
+                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
+                                 data-aos-delay="200"
+                                 data-aos-easing="ease-in-out">
                                 <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
 
                                 <div>
@@ -330,7 +339,8 @@
                         </div>
                     </div>
 
-                    <div class="mt-8 lg:w-1/2 lg:mx-6">
+                    <div class="mt-8 lg:w-1/2 lg:mx-6"
+                         data-aos="fade-in" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
                             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
