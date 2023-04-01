@@ -285,7 +285,7 @@
         </div>
 
         <div class="flex flex-col min-h-screen bg-black/60 overflow-hidden">
-            <div class="max-w-7xl flex flex-col flex-1 px-6 py-12 mx-auto">
+            <div class="max-w-7xl flex flex-col flex-1 py-12 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
                         <div class="text-2xl font-semibold lg:text-3xl">Chatta med mig</div>
