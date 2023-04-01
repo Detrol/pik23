@@ -275,7 +275,7 @@
     <section class="relative min-h-screen bg-cover overflow-hidden"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
 
-        <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
+        <div class="custom-shape-divider-top-1679499812 z-10 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
