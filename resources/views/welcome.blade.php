@@ -272,10 +272,8 @@
         </div>
     </section>
 
-    <section id="contact" class="relative flex min-h-screen bg-cover align-middle items-center justify-center px-4 py-24"
-             style="background-image: url('{{ Vite::asset('resources/images/contact.jpg') }}')">
-
-        <div class="custom-shape-divider-top-1679499812 -mt-1">
+    <section class="relative min-h-screen bg-cover" style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
+        <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
@@ -283,90 +281,93 @@
                     class="shape-fill"></path>
             </svg>
         </div>
+        <div class="flex flex-col min-h-screen bg-black/60">
+            <div class="container flex flex-col flex-1 px-6 py-12 mx-auto">
+                <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
+                    <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
+                        <div class="text-2xl font-semibold lg:text-3xl">Chatta med mig</div>
 
-        <div
-            class="max-w-7xl px-8 grid gap-16 md:gap-24 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 py-8 md:py-16 mx-auto bg-white text-gray-900 rounded-lg drop-shadow-2xl">
-            <div class="flex flex-col justify-between">
-                <div>
-                    <div class="text-2xl font-semibold lg:text-3xl">Vill du hellre chatta?</div>
+                        <div class="mb-10 mt-2">
+                            <p class="mb-3">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
+                            <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25" data-elfsight-app-lazy></div>
+                        </div>
 
-                    <div class="mb-10">
-                        <p class="mb-3 mt-2 text-gray-500 dark:text-gray-400">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
-                        <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25" data-elfsight-app-lazy></div>
+                        <div class="md:grid gap-y-8 gap-x-0 grid-cols-1 md:grid-cols-2">
+                            <div class="md:flex -mx-2 mb-4 md:mb-0">
+                                <i class="fa fa-clock text-xl mr-3 hidden md:block"></i>
+
+                                <div>
+                                    <p class="text-2xl font-semibold">Öppettider</p>
+                                    <p class="text-xl">Måndag - Fredag: 9 - 17</p>
+                                </div>
+                            </div>
+
+                            <div class="md:flex -mx-2 mb-4 md:mb-0">
+                                <i class="fa fa-envelope text-xl mr-3 hidden md:block"></i>
+
+                                <div>
+                                    <p class="text-2xl font-semibold">E-Post</p>
+                                    <a class="text-xl mb-4 duration-200 hover:text-primary focus:outline-none focus-visible:outline-gray-600"
+                                       href="mailto:info@putsikarlstad.se">info@putsikarlstad.se</a>
+                                </div>
+                            </div>
+
+                            <div class="md:flex -mx-2 mb-4 md:mb-0">
+                                <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
+
+                                <div>
+                                    <p class="text-2xl font-semibold">Telefon</p>
+                                    <p class="text-xl">Ej tillgängligt</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="mt-6 space-y-8 md:mt-8">
-                        <div class="flex items-start -mx-2">
-                            <i class="fa fa-clock text-xl mr-3 text-gray-600"></i>
+                    <div class="mt-8 lg:w-1/2 lg:mx-6">
+                        <div class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
+                            <h1 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h1>
 
-                            <div>
-                                <p class="text-2xl font-semibold">Öppettider</p>
-                                <p class="text-xl">Måndag - Fredag: 9 - 17</p>
-                            </div>
-                        </div>
+                            <p class="mt-2 text-gray-500 dark:text-gray-400">
+                                Ställ mig gärna frågor, men kom ihåg att bokningar sker via bokningsformuläret.
+                            </p>
 
-                        <div class="flex items-start -mx-2">
-                            <i class="fa fa-envelope text-xl mr-3 text-gray-600"></i>
+                            <form class="mt-6" method="post" action="{{ route('form_mail') }}">
+                                @csrf
+                                <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
+                                <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
 
-                            <div>
-                                <p class="text-2xl font-semibold">E-Post</p>
-                                <a class="text-xl mb-4 duration-200 hover:text-primary focus:outline-none focus-visible:outline-gray-600"
-                                   href="mailto:info@putsikarlstad.se">info@putsikarlstad.se</a>
-                            </div>
-                        </div>
+                                <div class="flex-1">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
+                                    <input type="text" placeholder="Svea Svensson" name="name"
+                                           class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
+                                </div>
 
-                        <div class="flex items-start -mx-2">
-                            <i class="fa fa-phone text-xl mr-3 text-gray-600"></i>
+                                <div class="flex-1 mt-6">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
+                                    <input type="email" placeholder="svensson@exempel.se" name="email"
+                                           class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
+                                </div>
 
-                            <div>
-                                <p class="text-2xl font-semibold">Telefon</p>
-                                <p class="text-xl">Ej tillgängligt</p>
-                            </div>
+                                <div class="w-full mt-6">
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
+                                    <textarea name="message"
+                                              class="block w-full h-24 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                              placeholder="Meddelande"></textarea>
+                                </div>
+
+                                <div class="flex-1 mt-6">
+                                    <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
+                                    <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
+                                </div>
+
+                                <button
+                                    class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                                    Skicka meddelande
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="order-first">
-                <h2 class="text-2xl font-semibold lg:text-3xl">Kontaktformulär</h2>
-
-                <p class="mt-2 text-gray-500 dark:text-gray-400">
-                    Ställ mig gärna frågor, men kom ihåg att bokningar sker via bokningsformuläret.
-                </p>
-
-                <form class="mt-6" method="post" action="{{ route('form_mail') }}">
-                    @csrf
-                    <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
-                    <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
-
-                    <div class="flex-1">
-                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
-                        <input type="text" placeholder="Svea Svensson" name="name"
-                               class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
-                    </div>
-
-                    <div class="flex-1 mt-6">
-                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
-                        <input type="email" placeholder="svensson@exempel.se" name="email"
-                               class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
-                    </div>
-
-                    <div class="w-full mt-6">
-                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
-                        <textarea name="message"
-                            class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                            placeholder="Meddelande"></textarea>
-                    </div>
-
-                    <div class="flex-1 mt-6">
-                        <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
-                        <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
-                    </div>
-
-                    <button
-                        class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-                        Skicka meddelande
-                    </button>
-                </form>
             </div>
         </div>
     </section>
