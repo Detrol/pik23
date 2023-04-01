@@ -141,7 +141,7 @@
     </section>
 
     <section class="relative">
-        <div class="container items-center py-12 max-w-7xl lg:py-16">
+        <div class="container items-center py-24 max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
                     <div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>
@@ -263,7 +263,7 @@
     </section>
 
     <section class="container relative">
-        <div class="container items-center py-12 max-w-7xl lg:py-16">
+        <div class="container items-center py-24 max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
                     <div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>
@@ -285,7 +285,7 @@
         </div>
 
         <div class="flex flex-col min-h-screen bg-black/60 overflow-hidden">
-            <div class="max-w-7xl flex flex-col flex-1 px-3 py-12 mx-auto">
+            <div class="max-w-7xl flex flex-col flex-1 px-3 py-28 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
                         <div class="text-2xl font-semibold lg:text-3xl">Chatta med mig</div>
@@ -316,7 +316,7 @@
                                 </div>
                             </div>
 
-                            <div class="md:flex -mx-2 mb-4 md:mb-0">
+                            <div class="md:flex -mx-2 pb-8 md:mb-0">
                                 <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
 
                                 <div>
