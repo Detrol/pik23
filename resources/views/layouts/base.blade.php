@@ -99,7 +99,7 @@
 
 <header class="sticky top-4 flex flex-wrap md:justify-center md:flex-nowrap z-50 w-full -mt-24 w-12/12 lg:w-8/10">
     <nav
-        class="absolute left-0 right-0 -ml-0 ml-4 w-12/12 xl:w-10/12 2xl:w-8/12 bg-white border border-gray-100 rounded-[36px] drop-shadow mx-5 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
+        class="absolute left-0 right-0 -ml-0 ml-4 w-12/12 xl:w-10/12 2xl:w-8/12 bg-white border border-gray-100 rounded-[36px] shadow-md mx-5 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
         aria-label="Global">
         <div class="flex items-center justify-between">
             <a href="/">
