@@ -4,7 +4,7 @@
     @if ((request()->getHost() != 'localhost'))
         <!-- Start cookieyes banner-->
         <script id="cookieyes" type="text/javascript"
-                src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js" async defer></script>
+                src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js" async></script>
         <!-- End cookieyes banner -->
 
         <!-- Google Tag Manager
@@ -206,13 +206,13 @@
 
 @livewireScripts
 
-<script src="https://apps.elfsight.com/p/platform.js" async defer></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
         integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
         integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" async defer></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 @yield('script')
