@@ -24,6 +24,7 @@ jarallaxVideo();
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.5,
+    disableParallax: /iPad|iPhone|iPod|Android/,
 });
 
 document.addEventListener("alpine:init", () => {
