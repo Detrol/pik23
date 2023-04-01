@@ -7,13 +7,13 @@
         <div class="jarallax relative h-screen" data-jarallax
              data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
-            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-20" style="z-index: 3">
+            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-20" style="z-index: 3">
                 <p class="text-4xl lg:text-6xl font-medium text-white">
                     Välkommen till
                 </p>
                 <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
-                <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-32 md:pb-48">
+                <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-24 md:pb-48">
                     <a href="https://karlstad.putsamer.se" target="_blank"
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex lg:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
