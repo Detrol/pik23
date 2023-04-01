@@ -7,7 +7,7 @@
                 src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js" async defer></script>
         <!-- End cookieyes banner -->
 
-        <!-- Google Tag Manager -->
+        <!-- Google Tag Manager
         <script>(function (w, d, s, l, i) {
                 w[l] = w[l] || [];
                 w[l].push({
@@ -20,8 +20,18 @@
                 j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
                 f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TRRFHRQ');</script>
+            })(window, document, 'script', 'dataLayer', 'GTM-TRRFHRQ');</script>-->
         <!-- End Google Tag Manager -->
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EBSJD78RB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-1EBSJD78RB');
+        </script>
     @endif
 
     <script type="application/ld+json">
