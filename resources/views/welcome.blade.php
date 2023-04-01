@@ -275,7 +275,7 @@
     <section class="relative min-h-screen bg-cover overflow-hidden"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
 
-        <div class="custom-shape-divider-top-1679499812 z-10 -mt-1">
+        <div class="custom-shape-divider-top-1679499812 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
@@ -294,7 +294,7 @@
                              data-aos-delay="200"
                              data-aos-easing="ease-in-out">Chatta med mig
                         </div>
-                        
+
                         <div class="mb-10 mt-2">
                             <p class="mb-3">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
                             <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25"
