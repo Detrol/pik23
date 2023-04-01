@@ -87,9 +87,9 @@
 
 <body class="">
 
-<header class="sticky top-4 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full -mt-24 max-w-7xl mx-auto">
+<header class="sticky top-4 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full -mt-24 w-12/12 md:w-8/10">
     <nav
-        class="absolute w-11/12 md:w-full bg-white border border-gray-100 rounded-[36px] drop-shadow mx-5 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
+        class="absolute left-0 right-0 w-11/12 md:w-8/12 bg-white border border-gray-100 rounded-[36px] drop-shadow mx-5 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
         aria-label="Global">
         <div class="flex items-center justify-between">
             <a href="/">
