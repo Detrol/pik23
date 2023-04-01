@@ -272,7 +272,7 @@
         </div>
     </section>
 
-    <section class="relative min-h-screen bg-cover overflow-hidden"
+    <section class="relative min-h-screen bg-cover"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
 
         <div class="custom-shape-divider-top-1679499812 -mt-1">
@@ -284,7 +284,7 @@
             </svg>
         </div>
 
-        <div class="flex flex-col min-h-screen bg-black/60 overflow-hidden">
+        <div class="flex flex-col min-h-screen bg-black/60">
             <div class="max-w-7xl flex flex-col flex-1 px-3 py-28 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
