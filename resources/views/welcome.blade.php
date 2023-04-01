@@ -290,7 +290,7 @@
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
 
                         <div data-aos="fade-left" data-aos-duration="500"
-                             data-aos-offset="200"
+                             data-aos-offset="100"
                              data-aos-delay="200"
                              data-aos-easing="ease-in-out">
                             <p class="text-2xl font-semibold lg:text-3xl mb-2">Chatta med mig</p>
@@ -303,7 +303,7 @@
                         </div>
 
                         <div class="md:flex -mx-2 mb-4"
-                             data-aos="fade-up" data-aos-duration="500" data-aos-offset="200"
+                             data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
                              data-aos-delay="200"
                              data-aos-easing="ease-in-out">
                             <i class="fa fa-clock text-xl mr-3 hidden md:block"></i>
@@ -316,7 +316,7 @@
 
                         <div class="md:grid gap-y-8 gap-x-8 grid-cols-1 md:grid-cols-2">
                             <div class="md:flex -mx-2 mb-4 md:mb-0"
-                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="200"
+                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
                                  data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                                 <i class="fa fa-envelope text-xl mr-3 hidden md:block"></i>
@@ -329,7 +329,7 @@
                             </div>
 
                             <div class="md:flex -mx-2 pb-8 md:mb-0"
-                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="200"
+                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
                                  data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                                 <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
