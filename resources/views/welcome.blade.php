@@ -83,7 +83,7 @@
                                 </a>
                             </div>-->
                             <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block">
-                                <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-sm">
+                                <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-md">
                                     <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left divide-y sm:divide-y-0 sm:divide-x">
                                         <div class="text-center py-6 lg:py-4 antialiased">
                                             <div>
@@ -122,13 +122,13 @@
                     </div>
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
                         <img
-                            class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-xl"
+                            class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-2xl jarallax"
                             alt="hero" loading="lazy" width="600" height="600"
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
                 </div>
                 <div class="pt-12 mx-auto md:max-w-7xl hidden md:block lg:hidden">
-                    <div class="bg-white rounded-[24px] px-4 py-4 shadow-sm">
+                    <div class="bg-white rounded-[24px] px-4 py-4 shadow-md">
                         <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y">
                             <div class="text-center py-6 lg:py-4 antialiased">
                                 <div>
