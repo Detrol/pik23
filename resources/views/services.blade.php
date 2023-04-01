@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4">
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/fonster.jpg') }}')"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
@@ -87,7 +87,7 @@
             </div>
             <div class="mx-auto mt-12 text-left">
                 <div>
-                    <div class="grid grid-cols-1 text-sm gap-x-2 gap-y-14 lg:grid-cols-2 lg:gap-20">
+                    <div class="grid grid-cols-1 md:grid-cols-2 text-sm gap-x-2 gap-y-14 lg:grid-cols-2 md:gap-14 lg:gap-20">
                         <article data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
                                  data-aos-easing="ease-in-out">
                             <div class="space-y-3">

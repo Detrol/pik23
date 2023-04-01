@@ -13,9 +13,9 @@
                 </p>
                 <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
-                <div class="flex flex-col items-center justify-center gap-3 lg:flex-row pb-24 md:pb-48">
+                <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-48">
                     <a href="https://karlstad.putsamer.se" target="_blank"
-                       class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex lg:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
+                       class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
                     </a>
                     <a href="{{ route('prices') }}"
@@ -47,10 +47,10 @@
     </section>
 
     <section class="bg-gray-100 relative" id="about">
-        <div class="container pb-32 pt-20 md:pb-48 md:pt-28 max-w-7xl">
+        <div class="container pb-32 pt-20 md:pb-48 md:pt-28 max-w-3xl lg:max-w-7xl">
             <div class="flex-col items-start m-auto align-middle">
-                <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
-                    <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
+                    <div class="relative items-center gap-12 m-auto md:inline-flex md:order-first">
                         <div class="max-w-xl">
                             <div>
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed text-inherit antialiased lg:text-left"
@@ -82,7 +82,7 @@
                                     <span aria-hidden="true"> → </span>
                                 </a>
                             </div>-->
-                            <div class="pt-12 mx-auto lg:max-w-7xl">
+                            <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block">
                                 <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-sm">
                                     <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left divide-y sm:divide-y-0 sm:divide-x">
                                         <div class="text-center py-6 lg:py-4 antialiased">
@@ -127,6 +127,42 @@
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
                 </div>
+                <div class="pt-12 mx-auto md:max-w-7xl hidden md:block lg:hidden">
+                    <div class="bg-white rounded-[24px] px-4 py-4 shadow-sm">
+                        <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y">
+                            <div class="text-center py-6 lg:py-4 antialiased">
+                                <div>
+                                    <p class="text-3xl font-medium leading-6 text-gray-700">
+                                        <span class="animCounter">60000</span>+
+                                    </p>
+                                </div>
+                                <div class="mt-3 text-base text-gray-500">
+                                    putsade fönster
+                                </div>
+                            </div>
+                            <div class="text-center py-6 lg:py-4 antialiased">
+                                <div>
+                                    <p class="text-3xl font-medium leading-6 text-gray-700">
+                                        <span class="animCounter">4000</span>+
+                                    </p>
+                                </div>
+                                <div class="mt-3 text-base text-gray-500">
+                                    nöjda kunder
+                                </div>
+                            </div>
+                            <div class="text-center py-6 lg:py-4 antialiased">
+                                <div>
+                                    <p class="text-3xl font-medium leading-6 text-gray-700">
+                                        <span class="animCounter">10</span> år+
+                                    </p>
+                                </div>
+                                <div class="mt-3 text-base text-gray-500">
+                                    i branschen
+                                </div>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -141,7 +177,7 @@
     </section>
 
     <section class="relative overflow-hidden">
-        <div class="container items-center py-24 max-w-7xl lg:py-16">
+        <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
                     <div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>
@@ -174,7 +210,7 @@
 
         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50">
             <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
-                <div class="max-w-xl py-4 mx-auto lg:max-w-7xl">
+                <div class="max-w-7xl py-4 mx-auto">
                     <div>
                         <div
                             class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
@@ -182,16 +218,16 @@
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
-                                        class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-seedling text-4xl text-lime-500"></i>
+                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
+                                        <i class="fa-duotone fa-seedling text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-xl font-medium leading-6 uppercase">
+                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Grönare
                                     </p>
                                 </div>
                                 <div
-                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Jag erbjuder ett fullständigt
+                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    Jag erbjuder ett helt
                                     miljövänligt alternativ, till skillnad från många konkurrenter
                                 </div>
                             </div>
@@ -199,15 +235,15 @@
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
-                                        class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-code text-4xl text-lime-500"></i>
+                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
+                                        <i class="fa-duotone fa-code text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-xl font-medium leading-6 uppercase">
+                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Modernare
                                     </p>
                                 </div>
                                 <div
-                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Hos mig hittar du ett unikt och modernt bokningssystem som
                                     ingen annan på marknaden erbjuder
                                 </div>
@@ -216,15 +252,15 @@
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
-                                        class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-gauge-max text-4xl text-lime-500"></i>
+                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
+                                        <i class="fa-duotone fa-gauge-max text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-xl font-medium leading-6 uppercase">
+                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Effektivare
                                     </p>
                                 </div>
                                 <div
-                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
                                     utan att slarva med resultatet
                                 </div>
@@ -233,15 +269,15 @@
                                  data-aos-easing="ease-in-out">
                                 <div>
                                     <div
-                                        class="flex items-center justify-center w-24 h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-tags text-4xl text-lime-500"></i>
+                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
+                                        <i class="fa-duotone fa-tags text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-xl font-medium leading-6 uppercase">
+                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Prisvärdare
                                     </p>
                                 </div>
                                 <div
-                                    class="mt-4 block font-sans font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Jag erbjuder schyssta priser,
                                     och personliga rabatter för mina återkommande kunder
                                 </div>
@@ -263,7 +299,7 @@
     </section>
 
     <section class="container relative overflow-hidden">
-        <div class="container items-center py-24 max-w-7xl lg:py-16">
+        <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
                     <div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>

@@ -20,8 +20,8 @@
         <div class="relative w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
             <div class="w-full mx-auto text-left">
                 <div class="relative">
-                    <div class="items-center gap-12 text-left lg:gap-24 lg:inline-flex justify-center min-h-[60vh]">
-                        <div class="flex flex-col md:order-first">
+                    <div class="items-center gap-12 md:gap-0 text-left lg:gap-24 md:grid lg:inline-flex justify-center min-h-[60vh]">
+                        <div>
                             <div class="max-w-xl">
                                 <div>
                                     <h1 class="text-4xl text-black antialiased">
@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-4 list-none lg:gap-6">
+                                <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 list-none lg:gap-8">
                                     <li>
                                         <div>
                                             <p class="mt-5 text-lg font-medium leading-6 text-black">
@@ -76,10 +76,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="order-first block w-full mt-12 lg:mt-0 lg:pt-[5rem]"
+                        <div class="block mt-12 md:mt-0 lg:pt-[0rem] max-w-md mx-auto"
                              data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
                              data-aos-easing="ease-in-out">
-                            <img class="object-cover object-center w-full mx-auto lg:ml-auto"
+                            <img class="object-cover object-center w-full mx-auto md:ml-auto"
                                  alt="hero" src="{{ Vite::asset('resources/images/svana.png') }}">
                         </div>
                     </div>

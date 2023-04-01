@@ -31,7 +31,7 @@
             <div class="w-full mx-auto mt-12 text-left min-h-[45vh]">
                 <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                     <div class="mx-auto lg:max-w-7xl lg:p-0">
-                        <ul role="list" class="grid grid-cols-1 gap-4 list-none lg:grid-cols-2 lg:gap-12">
+                        <ul role="list" class="grid grid-cols-1 gap-4 list-none md:grid-cols-2 md:gap-10 lg:gap-12">
                             <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
                                 data-aos-easing="ease-in-out">
                                 <div>
