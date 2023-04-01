@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    @if ((request()->getHost() != 'localhost'))
+        <!-- Start cookieyes banner-->
+        <script id="cookieyes" type="text/javascript"
+                src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js"></script>
+        <!-- End cookieyes banner -->
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TRRFHRQ');</script>
+        <!-- End Google Tag Manager -->
+    @endif
+
+        <script type="application/ld+json">
+{"@context" : "http://schema.org",
+ "@type" : "Organization",
+  "name" : "Puts i Karlstad",
+  "url" : "https://putsikarlstad.se",
+  "logo": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
+  "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
+   "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd."}
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.">

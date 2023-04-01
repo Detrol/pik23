@@ -33,7 +33,7 @@
             <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4">
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/fonster.jpg') }}')"
-                     data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Vanliga fönster</h2>
@@ -42,7 +42,7 @@
 
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/sprojs.jpg') }}')"
-                     data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Spröjsade fönster</h2>
@@ -51,7 +51,7 @@
 
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/balkonger.jpg') }}')"
-                     data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Balkongfönster</h2>
@@ -60,7 +60,7 @@
 
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
                      style="background-image:url('{{ Vite::asset('resources/images/altaner.jpg') }}')"
-                     data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Altanfönster</h2>

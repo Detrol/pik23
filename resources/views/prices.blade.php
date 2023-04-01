@@ -62,7 +62,7 @@
             </div>
 
 
-            <div class="flex flex-col mb-10">
+            <div class="flex flex-col mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <h2 class="text-xl text-black mb-2">
                     Standardfönster
                 </h2>
@@ -141,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col mb-10">
+            <div class="flex flex-col mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <h2 class="text-xl text-black mb-2">
                     Spröjsade fönster
                 </h2>
@@ -191,7 +191,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col mb-10">
+            <div class="flex flex-col mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <h2 class="text-xl text-black mb-2">
                     Inglasad balkong
                 </h2>
@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col mb-10">
+            <div class="flex flex-col mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <h2 class="text-xl text-black mb-2">
                     Inglasad altan
                 </h2>
@@ -313,7 +313,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col mb-10">
+            <div class="flex flex-col mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <h2 class="text-xl text-black mb-2">
                     Skyltfönster
                 </h2>
