@@ -289,14 +289,15 @@
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
 
-                        <div class="text-2xl font-semibold lg:text-3xl" data-aos="fade-left" data-aos-duration="500"
+                        <div data-aos="fade-left" data-aos-duration="500"
                              data-aos-offset="200"
                              data-aos-delay="200"
-                             data-aos-easing="ease-in-out">Chatta med mig
+                             data-aos-easing="ease-in-out">
+                            <p class="text-2xl font-semibold lg:text-3xl mb-2">Chatta med mig</p>
+                            <p class="mb-4">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
                         </div>
 
                         <div class="mb-10 mt-2">
-                            <p class="mb-3">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
                             <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25"
                                  data-elfsight-app-lazy></div>
                         </div>
