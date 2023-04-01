@@ -8,7 +8,7 @@
             <div class="absolute bg-gray-900 w-full opacity-60 h-[10rem]" style="z-index: 2;"></div>
         </div>
 
-        <div class="custom-shape-divider-bottom-1680265275 z-10">
+        <div class="custom-shape-divider-bottom-1680265275 z-10 -mb-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
@@ -340,7 +340,7 @@
                                 <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Små</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1.5m x 6m</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">1.5m x 5m</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">160 kr</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                         -
@@ -348,7 +348,7 @@
                                 </tr>
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Medelstora</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">2m x 6m</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">2m x 5m</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">224 kr</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                         -
@@ -356,7 +356,7 @@
                                 </tr>
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Stora</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">3m x 6m</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">3m x 5m</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">224 kr</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                         -
@@ -364,7 +364,7 @@
                                 </tr>
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Stora</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">5m x 6m</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">5m x 5m</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">400 kr</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                         -

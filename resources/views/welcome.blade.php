@@ -272,6 +272,105 @@
         </div>
     </section>
 
+    <section id="contact" class="relative flex min-h-screen bg-cover align-middle items-center justify-center px-4 py-24"
+             style="background-image: url('{{ Vite::asset('resources/images/contact.jpg') }}')">
+
+        <div class="custom-shape-divider-top-1679499812 -mt-1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                 preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div
+            class="max-w-7xl px-8 grid gap-16 md:gap-24 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 py-8 md:py-16 mx-auto bg-white text-gray-900 rounded-lg drop-shadow-2xl">
+            <div class="flex flex-col justify-between">
+                <div>
+                    <div class="text-2xl font-semibold lg:text-3xl">Vill du hellre chatta?</div>
+
+                    <div class="mb-10">
+                        <p class="mb-3 mt-2 text-gray-500 dark:text-gray-400">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
+                        <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25" data-elfsight-app-lazy></div>
+                    </div>
+
+                    <div class="mt-6 space-y-8 md:mt-8">
+                        <div class="flex items-start -mx-2">
+                            <i class="fa fa-clock text-xl mr-3 text-gray-600"></i>
+
+                            <div>
+                                <p class="text-2xl font-semibold">Öppettider</p>
+                                <p class="text-xl">Måndag - Fredag: 9 - 17</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start -mx-2">
+                            <i class="fa fa-envelope text-xl mr-3 text-gray-600"></i>
+
+                            <div>
+                                <p class="text-2xl font-semibold">E-Post</p>
+                                <a class="text-xl mb-4 duration-200 hover:text-primary focus:outline-none focus-visible:outline-gray-600"
+                                   href="mailto:info@putsikarlstad.se">info@putsikarlstad.se</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start -mx-2">
+                            <i class="fa fa-phone text-xl mr-3 text-gray-600"></i>
+
+                            <div>
+                                <p class="text-2xl font-semibold">Telefon</p>
+                                <p class="text-xl">Ej tillgängligt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-first">
+                <h2 class="text-2xl font-semibold lg:text-3xl">Kontaktformulär</h2>
+
+                <p class="mt-2 text-gray-500 dark:text-gray-400">
+                    Ställ mig gärna frågor, men kom ihåg att bokningar sker via bokningsformuläret.
+                </p>
+
+                <form class="mt-6" method="post" action="{{ route('form_mail') }}">
+                    @csrf
+                    <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
+                    <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
+
+                    <div class="flex-1">
+                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
+                        <input type="text" placeholder="Svea Svensson" name="name"
+                               class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
+                    </div>
+
+                    <div class="flex-1 mt-6">
+                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
+                        <input type="email" placeholder="svensson@exempel.se" name="email"
+                               class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
+                    </div>
+
+                    <div class="w-full mt-6">
+                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
+                        <textarea name="message"
+                            class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            placeholder="Meddelande"></textarea>
+                    </div>
+
+                    <div class="flex-1 mt-6">
+                        <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
+                        <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
+                    </div>
+
+                    <button
+                        class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                        Skicka meddelande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 @endsection
 
 @section('script')

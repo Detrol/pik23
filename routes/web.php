@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::view('/vanliga-fragor', 'faq')->name('faq');
 Route::view('/miljovanligt', 'miljovanligt')->name('miljovanligt');
 Route::view('/garanti', 'guarantee')->name('guarantee');
 Route::view('/priser', 'prices')->name('prices');
+
+Route::post('/form_mail', [HomeController::class, 'form_mail'])->name('form_mail');

@@ -24,7 +24,7 @@
         <!-- End Google Tag Manager -->
     @endif
 
-        <script type="application/ld+json">
+    <script type="application/ld+json">
 {"@context" : "http://schema.org",
  "@type" : "Organization",
   "name" : "Puts i Karlstad",
@@ -32,22 +32,26 @@
   "logo": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
   "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
    "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd."}
+
+
     </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.">
+    <meta name="description"
+          content="Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.">
     <title>@yield('title')</title>
 
-    <!-- Favicon -->
+        <!-- Favicon -->
     <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
     <link rel="preconnect" href="{{ url('https://fonts.googleapis.com/') }}">
 
-    <!-- speed up external res -->
+        <!-- speed up external res -->
     <link rel="dns-prefetch" href="{{ url('https://fonts.googleapis.com/') }}">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+        <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
+          rel="stylesheet">
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @livewireStyles
@@ -117,23 +121,25 @@
                    href="/">
                     Hem
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('services') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
+                   href="{{ route('services') }}">
                     Tjänster
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('prices') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
+                   href="{{ route('prices') }}">
                     Priser
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('faq') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
+                   href="{{ route('faq') }}">
                     Vanliga frågor
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('miljovanligt') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
+                   href="{{ route('miljovanligt') }}">
                     Miljövänligt
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="{{ route('guarantee') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
+                   href="{{ route('guarantee') }}">
                     Garanti
-                </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary" href="#">
-                    Kontakta mig
                 </a>
                 <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500"
                    href="https://karlstad.putsamer.se" target="_blank">
@@ -147,27 +153,46 @@
     </nav>
 </header>
 
-@yield('body')
+    @yield('body')
 
-<div class="d-none d-lg-block overflow-hidden">
-    <img class="" src="{{ Vite::asset('resources/images/layered-waves-haikei.svg') }}" alt="footer image"
-         loading="lazy"/>
-</div>
-
-<footer class="bg-footer dark:bg-gray-900">
-    <div class="container px-6 py-8 mx-auto">
+<footer class="bg-gradient-to-b from-white to-gray-200 border-t border-gray-200">
+    <div class="max-w-7xl px-6 py-8 mx-auto">
 
         <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-            <p class="text-gray-100">&copy; Puts i Karlstad - {{ \Carbon\Carbon::now()->format('Y') }}</p>
+            <p class="text-gray-800">&copy; Puts i Karlstad - {{ \Carbon\Carbon::now()->format('Y') }}</p>
 
             <div class="flex mt-3 -mx-2 sm:mt-0">
                 <a href="#"
-                   class="mx-2 text-gray-100 transition-colors duration-300 hover:text-gray-300 dark:hover:text-gray-300"
+                   class="mx-2 text-gray-800 transition-colors duration-300 hover:text-gray-300 dark:hover:text-gray-300"
                    aria-label="Cookies"> Cookies </a>
             </div>
         </div>
     </div>
 </footer>
+
+@if (session()->has('status'))
+    <div x-data="{ nofifiction: true }" class="fixed top-0 right-0 mt-5 mr-5 z-50">
+        <div x-show="nofifiction" x-transition
+             class="flex items-center justify-between max-w-xs p-4 bg-white border rounded-md shadow-sm">
+            <div class="flex items-center">
+                <svg aria-hidden="true" class="w-8 h-8 text-primary dark:text-blue-500" focusable="false"
+                     data-prefix="fas"
+                     data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                          d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"></path>
+                </svg>
+                <div class="ml-3 text-sm font-normal">{{ session('status') }}</div>
+            </div>
+            <span @click="nofifiction=false;" class="inline-flex items-center cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+@endif
+
 
 @livewireScripts
 
