@@ -3,7 +3,7 @@
 @section('title', 'Professionell & Prisvärd fönsterputs i och runt Karlstad')
 
 @section('content')
-    <section class="relative h-screen" x-data x-init="$scrollTo({ targetId: 'about' })">
+    <section class="relative h-screen">
         <div class="jarallax relative h-screen" data-jarallax
              data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
@@ -24,7 +24,7 @@
                         <span aria-hidden="true"> → </span>
                     </a>
                 </div>
-                <a href="#about" x-on:click.prevent="$scrollTo">
+                <a href="#about" x-data x-on:click.prevent="$scrollTo">
                     <i class="fa-thin fa-arrow-circle-down text-white text-4xl animate-bounce"></i>
                 </a>
             </div>
