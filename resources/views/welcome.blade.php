@@ -140,7 +140,7 @@
         </div>
     </section>
 
-    <section class="relative">
+    <section class="relative overflow-hidden">
         <div class="container items-center py-24 max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
@@ -262,7 +262,7 @@
         </div>
     </section>
 
-    <section class="container relative">
+    <section class="container relative overflow-hidden">
         <div class="container items-center py-24 max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto">
@@ -284,7 +284,7 @@
             </svg>
         </div>
 
-        <div class="flex flex-col min-h-screen bg-black/60">
+        <div class="md:flex flex-col min-h-screen bg-black/60">
             <div class="max-w-7xl flex flex-col flex-1 px-3 py-28 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
