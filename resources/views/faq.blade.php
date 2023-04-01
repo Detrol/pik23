@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <section class="relative h-[10rem]">
-        <div class="jarallax relative h-[10rem]" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
-            <div class="absolute bg-gray-900 w-full opacity-60 h-[10rem]" style="z-index: 2;"></div>
+    <section class="relative h-[13rem] md:h-[15rem]">
+        <div class="jarallax relative h-[13rem] md:h-[15rem]" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
+            <div class="absolute bg-gray-900 w-full opacity-60 h-[13rem] md:h-[15rem]" style="z-index: 2;"></div>
         </div>
 
         <div class="custom-shape-divider-bottom-1680265275 z-10 -mb-1">

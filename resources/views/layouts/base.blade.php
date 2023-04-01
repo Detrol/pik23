@@ -87,9 +87,9 @@
 
 <body class="">
 
-<header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full -mt-24">
+<header class="sticky top-4 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full -mt-24 max-w-7xl mx-auto">
     <nav
-        class="relative max-w-[85rem] w-full bg-white border border-gray-100 rounded-[36px] drop-shadow mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
+        class="absolute w-11/12 md:w-full bg-white border border-gray-100 rounded-[36px] drop-shadow mx-5 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
         aria-label="Global">
         <div class="flex items-center justify-between">
             <a href="/">
@@ -155,7 +155,7 @@
 
     @yield('body')
 
-<footer class="bg-gradient-to-b from-white to-gray-200 border-t border-gray-200">
+<footer class="bg-gradient-to-b bg-gray-100 border-t border-gray-200">
     <div class="max-w-7xl px-6 py-8 mx-auto">
 
         <div class="flex flex-col items-center sm:flex-row sm:justify-between">
