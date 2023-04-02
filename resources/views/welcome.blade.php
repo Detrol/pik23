@@ -3,9 +3,20 @@
 @section('title', 'Professionell & Prisvärd fönsterputs i och runt Karlstad')
 
 @section('content')
-    <section class="relative h-screen">
-        <div class="jarallax relative h-screen" data-jarallax
-             data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
+    <section class="relative h-screen overflow-hidden">
+        <div class="relative h-screen">
+            <video
+                autoplay
+                loop
+                muted
+                class="absolute w-auto min-w-full min-h-full max-w-none ukiyo" style="z-index: 0"
+            >
+                <source
+                    src="{{ Vite::asset('resources/images/rain.mp4') }}"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
             <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-20"
                  style="z-index: 3">
@@ -193,8 +204,9 @@
     </section>
 
 
-    <section class="bg-cover bg-repeat bg-center relative"
-             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}')" loading="lazy">
+    <section class="relative overflow-hidden">
+        <div class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
+             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -205,7 +217,7 @@
             </svg>
         </div>
 
-        <div class="w-full h-full flex justify-center items-center backdrop-brightness-50">
+        <div class="w-full h-full flex justify-center items-center backdrop-brightness-50" style="z-index: 3;">
             <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 container lg:py-24">
                 <div class="py-4 mx-auto">
                     <div>
@@ -284,7 +296,7 @@
                 </div>
             </div>
 
-            <div class="custom-shape-divider-bottom-1679499722 -mb-[1px]">
+            <div class="custom-shape-divider-bottom-1679499722 -mb-[1px] z-10">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">
                     <path
@@ -305,10 +317,11 @@
         </div>
     </section>
 
-    <section class="relative min-h-screen bg-cover"
-             style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
+    <section class="relative">
+        <div class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
+             style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}'); z-index: 0;"></div>
 
-        <div class="custom-shape-divider-top-1679499812 -mt-1">
+        <div class="custom-shape-divider-top-1679499812 -mt-1 z-50">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
@@ -317,7 +330,7 @@
             </svg>
         </div>
 
-        <div class="md:flex flex-col min-h-screen bg-black/60">
+        <div class="md:flex flex-col min-h-screen bg-black/60 backdrop-brightness-75">
             <div class="max-w-7xl flex flex-col flex-1 px-3 py-28 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">

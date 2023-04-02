@@ -11,6 +11,8 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import {TextPlugin} from "gsap/TextPlugin";
+import Scrollbar from 'smooth-scrollbar';
+import Ukiyo from "ukiyojs";
 
 import 'aos/dist/aos.css';
 
@@ -27,6 +29,9 @@ Alpine.start()
 AOS.init();
 jarallaxVideo();
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
+
+const images = document.querySelectorAll(".ukiyo")
+new Ukiyo(images)
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.2,
@@ -176,8 +181,8 @@ gsap.set(".revealUp", {
 ScrollTrigger.batch(".revealRight", {
     markers: false,
     trigger: '.revealRight',
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 90%",
+    end: "bottom 10%",
     once: false,
     toggleActions: "play none none reverse",
     onEnter: batch => {
@@ -237,8 +242,8 @@ ScrollTrigger.batch(".revealRight", {
 ScrollTrigger.batch(".revealLeft", {
     markers: false,
     trigger: '.revealLeft',
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 90%",
+    end: "bottom 10%",
     once: false,
     toggleActions: "play none none reverse",
     onEnter: batch => {
@@ -295,12 +300,11 @@ ScrollTrigger.batch(".revealLeft", {
     },
 });
 
-
 ScrollTrigger.batch(".revealUp", {
     markers: false,
     trigger: '.revealUp',
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 90%",
+    end: "bottom 10%",
     once: false,
     toggleActions: "play none none reverse",
     onEnter: batch => {
@@ -355,4 +359,30 @@ ScrollTrigger.batch(".revealUp", {
             opacity: 0,
         });
     },
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Setup
+const scroller = document.querySelector('.scrollbar-container');
+
+const bodyScrollBar = Scrollbar.init(scroller, {
+    damping: 0.05,
+    delegateTo: document,
+    thumbMinSize: 15
+});
+
+ScrollTrigger.scrollerProxy(".scrollbar-container", {
+    scrollTop(value) {
+        if (arguments.length) {
+            bodyScrollBar.scrollTop = value;
+        }
+        return bodyScrollBar.scrollTop;
+    }
+});
+
+bodyScrollBar.addListener(ScrollTrigger.update);
+
+ScrollTrigger.defaults({
+    scroller: scroller
 });
