@@ -117,7 +117,7 @@ gsap.to(".hej", {
     scrollTrigger: {
         trigger: ".jag",
         toggleActions: "play",
-        start: "top 90%",
+        start: "top 100%",
         end: "bottom 50%+=100px",
     },
     text: {
@@ -125,14 +125,14 @@ gsap.to(".hej", {
     },
     duration: hejDecoy[0].innerText.length * timePerCharacter2,
     //delay: 0.5,
-    ease: "power1.inOut",
+    //ease: "power1.inOut",
 })
 
 gsap.to(".jag", {
     scrollTrigger: {
         trigger: ".jag",
         toggleActions: "play",
-        start: "top 90%",
+        start: "top 100%",
         end: "bottom 50%+=100px",
     },
     text: {
@@ -140,7 +140,7 @@ gsap.to(".jag", {
     },
     duration: jagDecoy[0].innerText.length * timePerCharacter,
     delay: 1,
-    ease: "power1.inOut",
+    //ease: "power1.inOut",
 })
 
 gsap.set(".numberbox", {
@@ -151,7 +151,7 @@ gsap.to(".numberbox", {
     scrollTrigger: {
         trigger: ".numberbox",
         toggleActions: "play",
-        start: "top 90%",
+        start: "top 100%",
         end: "bottom 50%+=100px",
         opacity: 1,
     },
