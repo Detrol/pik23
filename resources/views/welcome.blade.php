@@ -120,9 +120,7 @@
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
                 </div>
-                <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden"
-                     data-aos="fade-in" data-aos-duration="500" data-aos-offset="300" data-aos-delay="8000"
-                     data-aos-easing="ease-in-out">
+                <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden">
                     <div class="bg-white rounded-[24px] px-4 py-4 shadow-md">
                         <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y">
                             <div class="text-center py-6 lg:py-4 antialiased">

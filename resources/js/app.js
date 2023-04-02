@@ -11,7 +11,6 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import { TextPlugin } from "gsap/TextPlugin";
-import LocomotiveScroll from 'locomotive-scroll';
 
 import 'aos/dist/aos.css';
 
@@ -28,7 +27,6 @@ Alpine.start()
 AOS.init();
 jarallaxVideo();
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
-const scroll = new LocomotiveScroll();
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.2,
