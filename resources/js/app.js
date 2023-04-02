@@ -236,12 +236,12 @@ ScrollTrigger.batch(".revealRight", {
 
 ScrollTrigger.batch(".revealLeft", {
     markers: false,
-    start: "top 70%",
-    end: "bottom 30%",
-    //once: false,
-    toggleActions: "play pause pause reverse",
+    trigger: '.revealRight',
+    start: "top 80%",
+    end: "bottom 20%",
+    once: false,
+    toggleActions: "play none none reverse",
     onEnter: batch => {
-
         gsap.fromTo(batch, {
             x: -200,
             duration: 1,
@@ -249,20 +249,61 @@ ScrollTrigger.batch(".revealLeft", {
             opacity: 0,
         }, {
             x: 0,
+            duration: 1,
+            ease: "sine",
             opacity: 1,
-            display: 'block'
         });
-    }
+    },
+    onLeave: batch => {
+        gsap.fromTo(batch, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        }, {
+            x: -200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        });
+    },
+    onEnterBack: batch => {
+        gsap.fromTo(batch, {
+            x: -200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        }, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        });
+    },
+    onLeaveBack: batch => {
+        gsap.fromTo(batch, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        }, {
+            x: -200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        });
+    },
 });
+
 
 ScrollTrigger.batch(".revealUp", {
     markers: false,
+    trigger: '.revealRight',
     start: "top 80%",
     end: "bottom 20%",
-    //once: false,
-    toggleActions: "play pause pause reverse",
+    once: false,
+    toggleActions: "play none none reverse",
     onEnter: batch => {
-
         gsap.fromTo(batch, {
             y: 50,
             duration: 1,
@@ -270,8 +311,48 @@ ScrollTrigger.batch(".revealUp", {
             opacity: 0,
         }, {
             y: 0,
+            duration: 1,
+            ease: "sine",
             opacity: 1,
-            display: 'block'
         });
-    }
+    },
+    onLeave: batch => {
+        gsap.fromTo(batch, {
+            y: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        }, {
+            y: 50,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        });
+    },
+    onEnterBack: batch => {
+        gsap.fromTo(batch, {
+            y: 50,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        }, {
+            y: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        });
+    },
+    onLeaveBack: batch => {
+        gsap.fromTo(batch, {
+            y: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        }, {
+            y: 50,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        });
+    },
 });
