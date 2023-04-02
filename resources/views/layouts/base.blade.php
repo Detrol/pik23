@@ -163,6 +163,15 @@
     </nav>
 </header>
 
+<div class="loading-screen">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
     @yield('body')
 
 <footer class="bg-gradient-to-b bg-gray-100 border-t border-gray-200">
