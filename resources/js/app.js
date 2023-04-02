@@ -176,8 +176,8 @@ gsap.set(".revealUp", {
 ScrollTrigger.batch(".revealRight", {
     markers: false,
     trigger: '.revealRight',
-    start: "top 90%",
-    end: "bottom 10%",
+    start: "top 80%",
+    end: "bottom 20%",
     once: false,
     toggleActions: "play none none reverse",
     onEnter: batch => {
