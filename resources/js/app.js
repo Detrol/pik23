@@ -100,7 +100,7 @@ gsap.utils.toArray(".animCounter").forEach(box => {
     let tler = gsap.from(box, {
         textContent: "0",
         duration: 2,
-        delay: 7.5,
+        delay: 6.5,
         ease: "power1.inOut",
         modifiers: {
             textContent: value => formatNumber(value, 0)
@@ -125,8 +125,7 @@ gsap.to(".hej", {
     },
     duration: hejDecoy[0].innerText.length * timePerCharacter2,
     //delay: 0.5,
-    ease: "none",
-    delimiter: " "
+    ease: "power1.inOut",
 })
 
 gsap.to(".jag", {
@@ -141,7 +140,7 @@ gsap.to(".jag", {
     },
     duration: jagDecoy[0].innerText.length * timePerCharacter,
     delay: 1,
-    ease: "none",
+    ease: "power1.inOut",
 })
 
 gsap.set(".numberbox", {
@@ -156,9 +155,10 @@ gsap.to(".numberbox", {
         end: "bottom 50%+=100px",
         opacity: 1,
     },
-    delay: 7,
+    delay: 6,
     duration: 1,
-    opacity: 1
+    opacity: 1,
+    ease: "power1.inOut",
 }, 1)
 
 /*let words = gsap.utils.toArray(".jag"),
