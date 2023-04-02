@@ -193,7 +193,7 @@
     </section>
 
 
-    <section class="bg-cover bg-repeat bg-center relative jarallax"
+    <section class="bg-cover bg-repeat bg-center relative"
              style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}')" loading="lazy">
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
