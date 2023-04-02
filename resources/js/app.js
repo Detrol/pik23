@@ -11,8 +11,11 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import { TextPlugin } from "gsap/TextPlugin";
+import LocomotiveScroll from 'locomotive-scroll';
 
 import 'aos/dist/aos.css';
+
+//import "../assets/js/pagescroll.js"
 
 import('preline')
 import("fslightbox")
@@ -25,6 +28,7 @@ Alpine.start()
 AOS.init();
 jarallaxVideo();
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
+const scroll = new LocomotiveScroll();
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.2,
@@ -160,13 +164,3 @@ gsap.to(".numberbox", {
     opacity: 1,
     ease: "power1.inOut",
 }, 1)
-
-/*let words = gsap.utils.toArray(".jag"),
-    tl = gsap.timeline({delay: 0.5}),
-    timePerCharacter = 0.03;
-
-words.forEach(el => {
-    tl.from(el, {text: "", duration: el.innerHTML.length * timePerCharacter, ease: "none"});
-});*/
-
-

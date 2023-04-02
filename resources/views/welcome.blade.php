@@ -115,7 +115,7 @@
                     </div>
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
                         <img
-                            class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-2xl jarallax"
+                            class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-2xl"
                             alt="hero" loading="lazy" width="600" height="600"
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
