@@ -163,28 +163,20 @@ gsap.to(".numberbox", {
     ease: "power1.inOut",
 }, 1)
 
-gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.batch(".reveal", {
+    markers: false,
+    start: "top 50%",
+    end: "bottom 10%",
+    once: true,
+    onEnter: batch => {
 
-let revealContainers = document.querySelectorAll(".reveal");
-
-revealContainers.forEach((container) => {
-    let image = container.querySelector("img");
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            toggleActions: "restart none none reset"
-        }
-    });
-
-    tl.set(container, { autoAlpha: 1 });
-    tl.from(container, 1.5, {
-        xPercent: -100,
-        ease: "power2.out"
-    });
-    tl.from(image, 1.5, {
-        xPercent: 100,
-        scale: 1.3,
-        delay: -1.5,
-        ease: "power2.out"
-    });
+        gsap.from(batch, {
+            x: 200,
+            duration: 1,
+            opacity: 1,
+            stagger: 0.1,
+            ease: "sine",
+            autoAlpha: true
+        });
+    }
 });

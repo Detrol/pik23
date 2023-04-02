@@ -116,7 +116,7 @@
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
                         <div class='reveal'>
                             <img
-                                class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-2xl"
+                                class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px]"
                                 alt="hero" loading="lazy" width="600" height="600"
                                 src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                         </div>
@@ -175,7 +175,8 @@
     <section class="relative overflow-hidden">
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
-                <div class="justify-center w-full mx-auto">
+                <div class="justify-center w-full mx-auto" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100"
+                     data-aos-offset="100">
                     <div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>
                 </div>
             </div>
@@ -297,7 +298,8 @@
     <section class="container relative overflow-hidden">
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
-                <div class="justify-center w-full mx-auto">
+                <div class="justify-center w-full mx-auto" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"
+                     data-aos-offset="100">
                     <div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>
                 </div>
             </div>
