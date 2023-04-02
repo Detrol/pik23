@@ -236,7 +236,7 @@ ScrollTrigger.batch(".revealRight", {
 
 ScrollTrigger.batch(".revealLeft", {
     markers: false,
-    trigger: '.revealRight',
+    trigger: '.revealLeft',
     start: "top 80%",
     end: "bottom 20%",
     once: false,
@@ -298,7 +298,7 @@ ScrollTrigger.batch(".revealLeft", {
 
 ScrollTrigger.batch(".revealUp", {
     markers: false,
-    trigger: '.revealRight',
+    trigger: '.revealUp',
     start: "top 80%",
     end: "bottom 20%",
     once: false,
