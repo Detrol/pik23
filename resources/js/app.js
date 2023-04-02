@@ -30,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.2,
-    //disableParallax: /iPad|iPhone|iPod|Android/,
+    disableParallax: /iPad|iPhone|iPod|Android/,
 });
 
 document.addEventListener("alpine:init", () => {
