@@ -10,7 +10,7 @@ import AOS from 'aos'
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
-import { TextPlugin } from "gsap/TextPlugin";
+import {TextPlugin} from "gsap/TextPlugin";
 
 import 'aos/dist/aos.css';
 
@@ -60,7 +60,7 @@ document.addEventListener("alpine:init", () => {
 })
 
 // Detect if a link's href goes to the current page
-function getSamePageAnchor (link) {
+function getSamePageAnchor(link) {
     if (
         link.protocol !== window.location.protocol ||
         link.host !== window.location.host ||
@@ -76,8 +76,8 @@ function getSamePageAnchor (link) {
 // Scroll to a given hash, preventing the event given if there is one
 function scrollToHash(hash, e) {
     const elem = hash ? document.querySelector(hash) : false;
-    if(elem) {
-        if(e) e.preventDefault();
+    if (elem) {
+        if (e) e.preventDefault();
         gsap.to(window, {scrollTo: elem});
     }
 }
@@ -163,20 +163,115 @@ gsap.to(".numberbox", {
     ease: "power1.inOut",
 }, 1)
 
-ScrollTrigger.batch(".reveal", {
-    markers: false,
-    start: "top 50%",
-    end: "bottom 10%",
-    once: true,
-    onEnter: batch => {
+gsap.set(".revealRight", {
+    opacity: 0
+});
+gsap.set(".revealLeft", {
+    opacity: 0
+});
+gsap.set(".revealUp", {
+    opacity: 0
+});
 
-        gsap.from(batch, {
+ScrollTrigger.batch(".revealRight", {
+    markers: true,
+    trigger: '.revealRight',
+    start: "top 70%",
+    end: "bottom 30%",
+    once: false,
+    toggleActions: "play none none reverse",
+    onEnter: batch => {
+        gsap.fromTo(batch, {
             x: 200,
             duration: 1,
-            opacity: 1,
-            stagger: 0.1,
             ease: "sine",
-            autoAlpha: true
+            opacity: 0,
+        }, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        });
+    },
+    onLeave: batch => {
+        gsap.fromTo(batch, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        }, {
+            x: 200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        });
+    },
+    onEnterBack: batch => {
+        gsap.fromTo(batch, {
+            x: 200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        }, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        });
+    },
+    onLeaveBack: batch => {
+        gsap.fromTo(batch, {
+            x: 200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        }, {
+            x: 0,
+            duration: 1,
+            ease: "sine",
+            opacity: 1,
+        });
+    },
+});
+
+ScrollTrigger.batch(".revealLeft", {
+    markers: false,
+    start: "top 70%",
+    end: "bottom 30%",
+    //once: false,
+    toggleActions: "play pause pause reverse",
+    onEnter: batch => {
+
+        gsap.fromTo(batch, {
+            x: -200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        }, {
+            x: 0,
+            opacity: 1,
+            display: 'block'
+        });
+    }
+});
+
+ScrollTrigger.batch(".revealUp", {
+    markers: false,
+    start: "top 80%",
+    end: "bottom 20%",
+    //once: false,
+    toggleActions: "play pause pause reverse",
+    onEnter: batch => {
+
+        gsap.fromTo(batch, {
+            y: 50,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
+            display: 'block'
         });
     }
 });

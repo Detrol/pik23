@@ -7,7 +7,8 @@
         <div class="jarallax relative h-screen" data-jarallax
              data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
-            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-20" style="z-index: 3">
+            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-20"
+                 style="z-index: 3">
                 <p class="text-4xl lg:text-6xl font-medium text-white">
                     Välkommen till
                 </p>
@@ -52,7 +53,7 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
                     <div class="relative items-center md:inline-flex md:order-first">
                         <div class="max-w-xl min-w-full">
-                            <div class="textbox w-full text-left justify-start items-start">
+                            <div class="textbox w-full text-left justify-start items-start min-h-[270px]">
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</h1>
                                 <div class="hej-decoy hidden">
@@ -60,7 +61,7 @@
                                 </div>
                                 <div class="jag-decoy hidden">
                                     Andreas heter jag, och jag erbjuder prisvärt fönsterputs
-                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.<br /><br />
+                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.<br/><br/>
 
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
                                     professionell
@@ -114,7 +115,7 @@
                         </div>
                     </div>
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
-                        <div class='reveal'>
+                        <div class='revealRight'>
                             <img
                                 class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px]"
                                 alt="hero" loading="lazy" width="600" height="600"
@@ -174,9 +175,8 @@
 
     <section class="relative overflow-hidden">
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
-            <div class="justify-center w-full text-center lg:p-10 max-auto">
-                <div class="justify-center w-full mx-auto" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100"
-                     data-aos-offset="100">
+            <div class="justify-center w-full text-center lg:p-10 max-auto min-h-[500px]">
+                <div class="justify-center w-full mx-auto revealRight">
                     <div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>
                 </div>
             </div>
@@ -298,8 +298,7 @@
     <section class="container relative overflow-hidden">
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
-                <div class="justify-center w-full mx-auto" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"
-                     data-aos-offset="100">
+                <div class="justify-center w-full mx-auto revealLeft min-h-[400px]">
                     <div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>
                 </div>
             </div>
@@ -333,10 +332,7 @@
                                  data-elfsight-app-lazy></div>
                         </div>
 
-                        <div class="md:flex -mx-2 mb-4"
-                             data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
-                             data-aos-delay="200"
-                             data-aos-easing="ease-in-out">
+                        <div class="md:flex -mx-2 mb-4 revealUp">
                             <i class="fa fa-clock text-xl mr-3 hidden md:block"></i>
 
                             <div>
@@ -346,10 +342,7 @@
                         </div>
 
                         <div class="md:grid gap-y-8 gap-x-8 grid-cols-1 md:grid-cols-2">
-                            <div class="md:flex -mx-2 mb-4 md:mb-0"
-                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
-                                 data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                            <div class="md:flex -mx-2 mb-4 md:mb-0 revealUp">
                                 <i class="fa fa-envelope text-xl mr-3 hidden md:block"></i>
 
                                 <div>
@@ -359,10 +352,7 @@
                                 </div>
                             </div>
 
-                            <div class="md:flex -mx-2 pb-8 md:mb-0"
-                                 data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
-                                 data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                            <div class="md:flex -mx-2 pb-8 md:mb-0 revealUp">
                                 <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
 
                                 <div>
@@ -390,22 +380,19 @@
                                 <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
                                 <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
 
-                                <div class="flex-1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
-                                     data-aos-offset="100">
+                                <div class="flex-1 revealUp">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
                                     <input type="text" placeholder="Svea Svensson" name="name" required
                                            class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
                                 </div>
 
-                                <div class="flex-1 mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
-                                     data-aos-offset="100">
+                                <div class="flex-1 mt-6 revealUp">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
                                     <input type="email" placeholder="svensson@exempel.se" name="email" required
                                            class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
                                 </div>
 
-                                <div class="w-full mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
-                                     data-aos-offset="100">
+                                <div class="w-full mt-6 revealUp">
                                     <label
                                         class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
                                     <textarea name="message" required
@@ -413,13 +400,13 @@
                                               placeholder="Meddelande"></textarea>
                                 </div>
 
-                                <div class="flex-1 mt-6">
+                                <div class="flex-1 mt-6 revealUp">
                                     <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                     <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
                                 </div>
 
                                 <button
-                                    class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                                    class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50 revealUp">
                                     Skicka meddelande
                                 </button>
                             </form>
