@@ -163,9 +163,7 @@
     </nav>
 </header>
 
-<div>
     @yield('body')
-</div>
 
 <footer class="bg-gradient-to-b bg-gray-100 border-t border-gray-200">
     <div class="max-w-7xl px-6 py-8 mx-auto">
