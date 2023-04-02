@@ -114,10 +114,13 @@
                         </div>
                     </div>
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
-                        <img
-                            class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-2xl"
-                            alt="hero" loading="lazy" width="600" height="600"
-                            src="{{ Vite::asset('resources/images/jag1.jpg') }}">
+                        <div class='reveal'>
+                            <img
+                                class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px] drop-shadow-2xl"
+                                alt="hero" loading="lazy" width="600" height="600"
+                                src="{{ Vite::asset('resources/images/jag1.jpg') }}">
+                        </div>
+
                     </div>
                 </div>
                 <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden">
@@ -408,16 +411,13 @@
                                               placeholder="Meddelande"></textarea>
                                 </div>
 
-                                <div class="flex-1 mt-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
-                                     data-aos-offset="100">
+                                <div class="flex-1 mt-6">
                                     <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                     <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
                                 </div>
 
                                 <button
-                                    class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
-                                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
-                                    data-aos-offset="100">
+                                    class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
                                     Skicka meddelande
                                 </button>
                             </form>
