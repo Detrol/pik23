@@ -140,7 +140,7 @@ gsap.to(".jag", {
         value: jagDecoy[0].innerHTML
     },
     duration: jagDecoy[0].innerText.length * timePerCharacter,
-    delay: 2,
+    delay: 1,
     ease: "none",
 })
 
@@ -157,9 +157,9 @@ gsap.to(".numberbox", {
         opacity: 1,
     },
     delay: 7,
-    duration: 0.5,
+    duration: 1,
     opacity: 1
-}, 0.5)
+}, 1)
 
 /*let words = gsap.utils.toArray(".jag"),
     tl = gsap.timeline({delay: 0.5}),
