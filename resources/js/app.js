@@ -221,15 +221,15 @@ ScrollTrigger.batch(".revealRight", {
     },
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
-            x: 200,
-            duration: 1,
-            ease: "sine",
-            opacity: 0,
-        }, {
             x: 0,
             duration: 1,
             ease: "sine",
             opacity: 1,
+        }, {
+            x: 200,
+            duration: 1,
+            ease: "sine",
+            opacity: 0,
         });
     },
 });
