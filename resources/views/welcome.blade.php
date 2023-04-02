@@ -50,8 +50,8 @@
         <div class="container pb-32 pt-20 md:pb-48 md:pt-28 max-w-3xl lg:max-w-7xl">
             <div class="flex-col items-start m-auto align-middle">
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
-                    <div class="relative items-center gap-12 m-auto md:inline-flex md:order-first">
-                        <div class="relative max-w-xl min-w-full">
+                    <div class="relative items-center md:inline-flex md:order-first">
+                        <div class="max-w-xl min-w-full">
                             <div class="textbox w-full text-left justify-start items-start">
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</h1>
