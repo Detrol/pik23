@@ -174,7 +174,7 @@ gsap.set(".revealUp", {
 });
 
 ScrollTrigger.batch(".revealRight", {
-    markers: true,
+    markers: false,
     trigger: '.revealRight',
     start: "top 70%",
     end: "bottom 30%",
