@@ -100,7 +100,7 @@ gsap.utils.toArray(".animCounter").forEach(box => {
     let tler = gsap.from(box, {
         textContent: "0",
         duration: 2,
-        delay: 9.5,
+        delay: 8.5,
         ease: "power1.inOut",
         modifiers: {
             textContent: value => formatNumber(value, 0)
@@ -157,7 +157,7 @@ gsap.to(".numberbox", {
         end: "bottom 50%+=100px",
         opacity: 1,
     },
-    delay: 9,
+    delay: 8,
     duration: 0.5,
     opacity: 1
 }, 0.5)
