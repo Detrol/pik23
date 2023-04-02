@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
+                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0 overflow-hidden">
                         <div class='revealRight'>
                             <img
                                 class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px]"
@@ -305,7 +305,7 @@
         </div>
     </section>
 
-    <section class="relative min-h-screen bg-cover jarallax"
+    <section class="relative min-h-screen bg-cover"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}')">
 
         <div class="custom-shape-divider-top-1679499812 -mt-1">
