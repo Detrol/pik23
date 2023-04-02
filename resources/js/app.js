@@ -10,6 +10,7 @@ import AOS from 'aos'
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
+import { TextPlugin } from "gsap/TextPlugin";
 
 import 'aos/dist/aos.css';
 
@@ -23,7 +24,7 @@ Alpine.start()
 
 AOS.init();
 jarallaxVideo();
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.2,
@@ -54,22 +55,6 @@ document.addEventListener("alpine:init", () => {
             this.list[index].visible = false
         },
     })
-})
-
-gsap.utils.toArray(".animCounter").forEach(box => {
-    var tler = gsap.from(box, {
-        textContent: "0",
-        duration: 2,
-        ease: "power1.inOut",
-        modifiers: {
-            textContent: value => formatNumber(value, 0)
-        },
-        scrollTrigger: {
-            trigger: box,
-            start: "top 90%",
-            end: "bottom 50%+=100px",
-        }
-    });
 })
 
 // Detect if a link's href goes to the current page
@@ -104,3 +89,85 @@ document.querySelectorAll('a[href]').forEach(a => {
 
 // Scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);
+
+const jagDecoy = document.getElementsByClassName("jag-decoy");
+const hejDecoy = document.getElementsByClassName("hej-decoy");
+const textbox = document.getElementsByClassName("textbox");
+const timePerCharacter = 0.02;
+const timePerCharacter2 = 0.05;
+
+gsap.utils.toArray(".animCounter").forEach(box => {
+    let tler = gsap.from(box, {
+        textContent: "0",
+        duration: 2,
+        delay: 9.5,
+        ease: "power1.inOut",
+        modifiers: {
+            textContent: value => formatNumber(value, 0)
+        },
+        scrollTrigger: {
+            trigger: textbox[0],
+            start: "top 90%",
+            end: "bottom 50%+=100px",
+        }
+    });
+})
+
+gsap.to(".hej", {
+    scrollTrigger: {
+        trigger: ".jag",
+        toggleActions: "play",
+        start: "top 90%",
+        end: "bottom 50%+=100px",
+    },
+    text: {
+        value: hejDecoy[0].innerHTML
+    },
+    duration: hejDecoy[0].innerText.length * timePerCharacter2,
+    delay: 0.5,
+    ease: "none",
+    delimiter: " "
+})
+
+gsap.to(".jag", {
+    scrollTrigger: {
+        trigger: ".jag",
+        toggleActions: "play",
+        start: "top 90%",
+        end: "bottom 50%+=100px",
+    },
+    text: {
+        value: jagDecoy[0].innerHTML
+    },
+    duration: jagDecoy[0].innerText.length * timePerCharacter,
+    delay: 2,
+    ease: "none",
+})
+
+gsap.set(".numberbox", {
+    opacity: 0
+});
+
+
+gsap.to(".numberbox", {
+    scrollTrigger: {
+        trigger: ".numberbox",
+        toggleActions: "play",
+        start: "top 90%",
+        end: "bottom 50%+=100px",
+        opacity: 1,
+    },
+    delay: 9,
+    duration: 0.5,
+    opacity: 1
+}, 0.5)
+
+/*let words = gsap.utils.toArray(".jag"),
+    tl = gsap.timeline({delay: 0.5}),
+    timePerCharacter = 0.03;
+
+words.forEach(el => {
+    tl.from(el, {text: "", duration: el.innerHTML.length * timePerCharacter, ease: "none"});
+});*/
+
+

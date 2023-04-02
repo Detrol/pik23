@@ -51,28 +51,21 @@
             <div class="flex-col items-start m-auto align-middle">
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
                     <div class="relative items-center gap-12 m-auto md:inline-flex md:order-first">
-                        <div class="max-w-xl">
-                            <div>
-                                <p class="block font-sans text-3xl font-semibold leading-relaxed text-inherit antialiased lg:text-left"
-                                   data-aos="fade-right" data-aos-duration="500" data-aos-offset="100"
-                                   data-aos-easing="ease-in-out">
+                        <div class="relative max-w-xl min-w-full">
+                            <div class="textbox w-full text-left justify-start items-start">
+                                <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
+                                <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</h1>
+                                <div class="hej-decoy hidden">
                                     Hej!
-                                </p>
-                                <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600"
-                                    data-aos="fade-right" data-aos-duration="500" data-aos-offset="100"
-                                    data-aos-delay="200"
-                                    data-aos-easing="ease-in-out">
+                                </div>
+                                <div class="jag-decoy hidden">
                                     Andreas heter jag, och jag erbjuder prisvärt fönsterputs
-                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
-                                </h1>
-                                <h2 class="mt-4 block font-sans text-lg font-normal leading-relaxed text-inherit antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="500" data-aos-offset="100"
-                                    data-aos-delay="200"
-                                    data-aos-easing="ease-in-out">
+                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.<br /><br />
+
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
                                     professionell
                                     hjälp med kunskap, teknik, och rätt utrustning.
-                                </h2>
+                                </div>
                             </div>
                             <!--<div
                                 class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
@@ -82,7 +75,7 @@
                                     <span aria-hidden="true"> → </span>
                                 </a>
                             </div>-->
-                            <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block">
+                            <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block numberbox">
                                 <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-md">
                                     <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left divide-y sm:divide-y-0 sm:divide-x">
                                         <div class="text-center py-6 lg:py-4 antialiased">
@@ -127,7 +120,9 @@
                             src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                     </div>
                 </div>
-                <div class="pt-12 mx-auto md:max-w-7xl hidden md:block lg:hidden">
+                <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden"
+                     data-aos="fade-in" data-aos-duration="500" data-aos-offset="300" data-aos-delay="8000"
+                     data-aos-easing="ease-in-out">
                     <div class="bg-white rounded-[24px] px-4 py-4 shadow-md">
                         <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y">
                             <div class="text-center py-6 lg:py-4 antialiased">
