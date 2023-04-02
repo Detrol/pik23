@@ -125,7 +125,7 @@ gsap.to(".hej", {
     },
     duration: hejDecoy[0].innerText.length * timePerCharacter2,
     //delay: 0.5,
-    //ease: "power1.inOut",
+    ease: "none",
 })
 
 gsap.to(".jag", {
@@ -140,7 +140,7 @@ gsap.to(".jag", {
     },
     duration: jagDecoy[0].innerText.length * timePerCharacter,
     delay: 1,
-    //ease: "power1.inOut",
+    ease: "none",
 })
 
 gsap.set(".numberbox", {
