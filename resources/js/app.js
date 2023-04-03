@@ -364,7 +364,7 @@ ScrollTrigger.batch(".revealUp", {
 gsap.registerPlugin(ScrollTrigger);
 
 // Setup
-const scroller = document.querySelector('.scrollbar-container');
+/*const scroller = document.querySelector('.scrollbar-container');
 
 const bodyScrollBar = Scrollbar.init(scroller, {
     damping: 0.05,
@@ -385,4 +385,4 @@ bodyScrollBar.addListener(ScrollTrigger.update);
 
 ScrollTrigger.defaults({
     scroller: scroller
-});
+});*/
