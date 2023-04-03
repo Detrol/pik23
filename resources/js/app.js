@@ -101,14 +101,13 @@ const hejDecoy = document.getElementsByClassName("hej-decoy");
 const jagDecoy = document.getElementsByClassName("jag-decoy");
 const erfarenhetDecoy = document.getElementsByClassName("erfarenhet-decoy");
 const textbox = document.getElementsByClassName("textbox");
-const timePerCharacter = 0.02;
-const timePerCharacter2 = 0.05;
+const timePerCharacter = 0.015;
 
 gsap.utils.toArray(".animCounter").forEach(box => {
     let tler = gsap.from(box, {
         textContent: "0",
         duration: 2,
-        delay: 6.5,
+        delay: 7,
         ease: "power1.inOut",
         modifiers: {
             textContent: value => formatNumber(value, 0)
@@ -166,7 +165,7 @@ if (erfarenhetDecoy[0]) {
             value: erfarenhetDecoy[0].innerText
         },
         duration: erfarenhetDecoy[0].innerText.length * timePerCharacter,
-        delay: 6,
+        delay: 5,
         ease: "none",
     })
 }
@@ -184,7 +183,7 @@ gsap.to(".numberbox", {
         end: "bottom 50%+=100px",
         opacity: 1,
     },
-    delay: 6,
+    delay: 6.5,
     duration: 1,
     opacity: 1,
     ease: "power1.inOut",
