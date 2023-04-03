@@ -12,9 +12,9 @@
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
             <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20" style="z-index: 3">
 
-                <p class="text-4xl md:text-6xl lg:text-6xl font-medium text-white">
+                <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white">
                     Välkommen till
-                </p>
+                </h1>
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
@@ -63,13 +63,13 @@
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
-                                <p class="hej-decoy hidden">
+                                <h2 class="hej-decoy hidden">
                                     Hej!
-                                </p>
-                                <h1 class="jag-decoy hidden">
+                                </h2>
+                                <p class="jag-decoy hidden">
                                     Andreas heter jag, och jag erbjuder professionell och prisvärd fönsterputs
                                     i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
-                                </h1>
+                                </p>
                                 <p class="erfarenhet-decoy hidden">
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
                                     professionell
