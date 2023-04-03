@@ -61,7 +61,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
           rel="stylesheet">
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite('resources/sass/app.scss')
     @livewireStyles
 
     @if ((request()->getHost() == 'localhost'))
@@ -222,7 +222,7 @@
     </div>
 @endif
 
-
+@vite('resources/js/app.js')
 @livewireScripts
 
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
