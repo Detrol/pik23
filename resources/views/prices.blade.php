@@ -36,7 +36,7 @@
                             Vad kostar fönsterputs hos mig?
                         </p>
                         <div class="mb-10">
-                            <p>Priser som visas gäller puts av två sidor, för fyra sidor är priset det dubbla.
+                            <p>Priser som visas gäller puts av två sidor, för fyra sidor(delningsbara fönster) så är priset det dubbla.
                             Ensidig puts finns också som tillval och då till halva priset som står.</p>
                             <p>Företagspriser visas inom parentes.</p>
                             <p>Alla priser räknas inkl. RUT-avdrag för privatpersoner.</p>
@@ -50,7 +50,7 @@
                             Hur räknas fönster?
                         </div>
                         <div class="mb-10">
-                            Vad många oftast tror är ett fönster är glaset som man ser ut och in genom.
+                            Vad många oftast tror är att fönster är glaset som man ser ut och in genom.
                             <br/><br/>
                             Fönsterputsföretag däremot, liksom jag, räknar antal fönster per handtag.
                             Om du till exempel har 1 fönster i sovrummet i 2 delar med 2 handtag,

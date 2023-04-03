@@ -177,7 +177,7 @@ gsap.set(".numberbox", {
 
 gsap.to(".numberbox", {
     scrollTrigger: {
-        trigger: ".numberbox",
+        trigger: ".hej",
         toggleActions: "play",
         start: "top 100%",
         end: "bottom 50%+=100px",
