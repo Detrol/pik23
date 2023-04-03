@@ -27,7 +27,11 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EBSJD78RB"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
 
             gtag('config', 'G-1EBSJD78RB');
@@ -42,6 +46,7 @@
   "logo": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
   "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
    "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd."}
+
 
 
     </script>
@@ -93,6 +98,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#4fc3e0">
 
+    @yield('script_head')
 </head>
 
 <body class="">

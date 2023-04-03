@@ -22,3 +22,5 @@ Route::view('/garanti', 'guarantee')->name('guarantee');
 Route::view('/priser', 'prices')->name('prices');
 
 Route::post('/form_mail', [HomeController::class, 'form_mail'])->name('form_mail');
+
+Route::get('/generate_xml', [HomeController::class, 'xml'])->name('xml');

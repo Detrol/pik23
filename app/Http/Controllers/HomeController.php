@@ -6,9 +6,43 @@ use App\Mail\FormMail;
 use App\Rules\ValidHCaptcha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Vite;
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 class HomeController extends Controller
 {
+    private function getView($viewName)
+    {
+        if (request()->segment(1) == 'amp') {
+            if (view()->exists($viewName . '-amp')) {
+                $viewName .= '-amp';
+            } else {
+                abort(404);
+            }
+        }
+        return $viewName;
+    }
+
+    function home(Request $request)
+    {
+        return $this->getView('welcome');
+    }
+
+    function xml(Request $request)
+    {
+        SitemapGenerator::create(config('app.url'))
+            ->getSitemap()
+            ->add(Url::create('/')->addImage(Vite::asset('resources/images/jag1.jpg')))
+            ->add(Url::create('/priser'))
+            ->add(Url::create('/vanliga-fragor'))
+            ->add(Url::create('/miljovanligt'))
+            ->add(Url::create('/tjanster'))
+            ->add(Url::create('/garanti'))
+
+            ->writeToFile(public_path('sitemap.xml'));
+    }
+
     public function form_mail(Request $request)
     {
         $title = 'Kontaktformulär';
