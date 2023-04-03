@@ -8,18 +8,18 @@
                 <source src="{{ Vite::asset('resources/images/rain.mp4') }}" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
-            
-            <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
-            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-20" style="z-index: 3">
 
-                <p class="text-4xl lg:text-6xl font-medium text-white">
+            <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
+            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20" style="z-index: 3">
+
+                <p class="text-4xl md:text-6xl lg:text-6xl font-medium text-white">
                     Välkommen till
                 </p>
 
-                <img class="w-12/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
+                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
 
-                <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-48">
+                <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
@@ -132,7 +132,7 @@
 
                     </div>
                 </div>
-                <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden">
+                <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden numberbox">
                     <div class="bg-white rounded-[24px] px-4 py-4 shadow-md">
                         <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y">
                             <div class="text-center py-6 lg:py-4 antialiased">
@@ -215,7 +215,7 @@
         </div>
 
         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50" style="z-index: 3;">
-            <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 container lg:py-24">
+            <div class="relative items-center w-full px-5 py-24 mx-auto md:px-0 lg:px-16 container lg:py-24">
                 <div class="py-4 mx-auto">
                     <div>
                         <div

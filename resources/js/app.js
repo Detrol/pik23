@@ -183,7 +183,7 @@ gsap.to(".numberbox", {
         end: "bottom 50%+=100px",
         opacity: 1,
     },
-    delay: 7,
+    delay: 8,
     duration: 1,
     opacity: 1,
     ease: "power1.inOut",
