@@ -13,7 +13,7 @@
             <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20" style="z-index: 3">
 
                 <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white">
-                    Välkommen till
+                    Välkommen till <span class="hidden">Puts i Karlstad!</span>
                 </h1>
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
@@ -227,9 +227,9 @@
                                         class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
                                         <i class="fa-duotone fa-seedling text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Grönare
-                                    </p>
+                                    </h3>
                                 </div>
                                 <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
@@ -244,9 +244,9 @@
                                         class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
                                         <i class="fa-duotone fa-code text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Modernare
-                                    </p>
+                                    </h3>
                                 </div>
                                 <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
@@ -261,9 +261,9 @@
                                         class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
                                         <i class="fa-duotone fa-gauge-max text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Effektivare
-                                    </p>
+                                    </h3>
                                 </div>
                                 <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
@@ -278,9 +278,9 @@
                                         class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
                                         <i class="fa-duotone fa-tags text-2xl lg:text-4xl text-lime-500"></i>
                                     </div>
-                                    <p class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
                                         Prisvärdare
-                                    </p>
+                                    </h3>
                                 </div>
                                 <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
@@ -333,7 +333,7 @@
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
 
                         <div>
-                            <p class="text-2xl font-semibold lg:text-3xl mb-2">Chatta med mig</p>
+                            <h2 class="text-2xl font-semibold lg:text-3xl mb-2">Chatta med mig</h2>
                             <p class="mb-4">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
                         </div>
 
@@ -346,7 +346,7 @@
                             <i class="fa fa-clock text-xl mr-3 hidden md:block"></i>
 
                             <div>
-                                <p class="text-2xl font-semibold">Öppettider</p>
+                                <h3 class="text-2xl font-semibold">Öppettider</h3>
                                 <p class="text-xl">Måndag - Fredag: 9 - 17</p>
                             </div>
                         </div>
@@ -356,7 +356,7 @@
                                 <i class="fa fa-envelope text-xl mr-3 hidden md:block"></i>
 
                                 <div>
-                                    <p class="text-2xl font-semibold">E-Post</p>
+                                    <h3 class="text-2xl font-semibold">E-Post</h3>
                                     <a class="text-xl mb-4 duration-200 hover:text-primary focus:outline-none focus-visible:outline-gray-600"
                                        href="mailto:info@putsikarlstad.se">info@putsikarlstad.se</a>
                                 </div>
@@ -366,7 +366,7 @@
                                 <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
 
                                 <div>
-                                    <p class="text-2xl font-semibold">Telefon</p>
+                                    <h3 class="text-2xl font-semibold">Telefon</h3>
                                     <p class="text-xl">Ej tillgängligt</p>
                                 </div>
                             </div>
