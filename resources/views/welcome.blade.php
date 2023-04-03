@@ -63,18 +63,18 @@
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
-                                <div class="hej-decoy hidden">
+                                <p class="hej-decoy hidden">
                                     Hej!
-                                </div>
+                                </p>
                                 <h1 class="jag-decoy hidden">
                                     Andreas heter jag, och jag erbjuder professionell och prisvärd fönsterputs
                                     i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
                                 </h1>
-                                <h2 class="erfarenhet-decoy hidden">
+                                <p class="erfarenhet-decoy hidden">
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
                                     professionell
                                     hjälp med kunskap, teknik, och rätt utrustning.
-                                </h2>
+                                </p>
                             </div>
                             <!--<div
                                 class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
@@ -231,11 +231,11 @@
                                         Grönare
                                     </p>
                                 </div>
-                                <div
+                                <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Jag erbjuder ett helt
                                     miljövänligt alternativ, till skillnad från många konkurrenter
-                                </div>
+                                </p>
                             </div>
                             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
@@ -248,11 +248,11 @@
                                         Modernare
                                     </p>
                                 </div>
-                                <div
+                                <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Hos mig hittar du ett unikt och modernt bokningssystem som
                                     ingen annan på marknaden erbjuder
-                                </div>
+                                </p>
                             </div>
                             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
@@ -265,11 +265,11 @@
                                         Effektivare
                                     </p>
                                 </div>
-                                <div
+                                <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
                                     utan att slarva med resultatet
-                                </div>
+                                </p>
                             </div>
                             <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
@@ -282,11 +282,11 @@
                                         Prisvärdare
                                     </p>
                                 </div>
-                                <div
+                                <p
                                     class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
                                     Jag erbjuder schyssta priser,
                                     och personliga rabatter för mina återkommande kunder
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -426,6 +426,114 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade hidden" id="anlita" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLg"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelLg">Varför anlita mig?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>När du anlitar mig så anlitar du någon som har ett unikt engagemang.</p>
+
+                    <p class="font-weight-medium m-0">Men varför skulle mitt engagemang vara mer unikt?</p>
+                    <p>När jag var runt 13 år så fick jag en diagnos inom det autistiska spektrat, och något som är
+                       vanligt
+                       hos
+                       folk inom det är att de har väldigt få, men starka intressen. Något som kan
+                       yttra sig i form av en naturbegåvning.</p>
+
+                    <p class="font-weight-medium m-0">Detta är väldigt sant när det gäller mig.</p>
+                    <p>Fönsterputs är inget jobb eller arbete för mig. Det är en konst, en passion och terapi. Något som
+                       gör mig jordad och får mig att må bra, och leder mig in i ett meditativt tillstånd.</p>
+
+                    <p>Därför kan du räkna med att jag lägger ner hela mitt hjärta när jag utför fönsterputs hos dig,
+                       och
+                       jag blir inte nöjd innan det är perfekt. Nästan perfekt.</p>
+
+                    <p>Inga fönster går att få perfekta, något som jag behövt lära mig och acceptera med tid. Även om
+                       det
+                       är svårt än idag, efter många år av fönsterputsande.<br/>
+                       Det finns alltid små fläckar, repor och annat som sitter gjutet i glaset som inte går att göra
+                       något
+                       åt om man inte har starka kemikalier som är skadligt för naturen, något som jag vägrar att
+                       nyttja.</p>
+
+                    <p>Men det är oftast saker bara jag ser, som mina kunder aldrig ens kommer lägga märke till.</p>
+
+                    <p>Sedan så kommer ni kanske få ta del av den sociala skyggheten jag bär på vissa dagar,
+                       men detta bjuder jag på &#128522;. Detta är också varför ni ej ser ett telefonnummer på
+                       hemsidan.</p>
+
+                    Mvh Andreas
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fi fi-close"></i>
+                        Stäng
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade hidden" id="exampleModalMd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelMd"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelMd">Information till dig som tidigare kund</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Hej och välkommen tillbaka!</h6>
+
+                    <p>Som du ser så är det ständig förnyelse här, då verksamheten
+                       växer så det knakar, och jag är väldigt engagerad i att göra det så smidigt
+                       som möjligt för alla mina kunder att kunna boka, och återkomma.</p>
+
+                    <p>Från och med i år så går det inte längre att boka direkt via Puts i Karlstad,
+                       utan jag har flyttat bokningssystemet till en ny tjänst jag driver, som heter Putsa Mer.
+                       Där jag kommer hyra ut mitt bokningssystem till andra egenanställda fönsterputsare runtom i
+                       Sverige.</p>
+
+                    <p>Bokningssystemet för dig som kund, är exakt detsamma(förutom en del förbättringar), som det du
+                       använde om du bokade i höstas.</p>
+
+                    <p>Var det däremot längre sedan ändå sedan du bokade, ja då har du en helt del nytt att se.
+                       Då bokningssystemet fick sig ett ordentligt lyft under hösten 2022.</p>
+
+                    <p>Bokade du innan det nya systemet lanserades i höstas så behöver du tyvärr också
+                       skaffa dig ett nytt kundkonto. Men tro mig, det kommer vara värt det!</p>
+
+                    <p>Som en bonus för dig som återkommande kund från det gammla systemet, så kan du under
+                       medlemssidan importera dina gamla bokningar, som du sedan kan konvertera till en rabattkod
+                       där du får avdrag på <strong>5% per bokning</strong> som du tidigare gjort.</p>
+
+                    <h6>Hoppas vi ses igen!</h6>
+                    Med vänlig hälsning<br/>
+                    Andreas
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fi fi-close"></i>
+                        Stäng
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 @endsection
 
