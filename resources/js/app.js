@@ -100,7 +100,7 @@ scrollToHash(window.location.hash);
 const hejDecoy = document.getElementsByClassName("hej-decoy");
 const jagDecoy = document.getElementsByClassName("jag-decoy");
 const erfarenhetDecoy = document.getElementsByClassName("erfarenhet-decoy");
-const textbox = document.getElementsByClassName("textbox");
+const customersDecoy = document.getElementsByClassName("customers-decoy");
 const timePerCharacter = 0.015;
 
 gsap.utils.toArray(".animCounter").forEach(box => {
@@ -167,6 +167,23 @@ if (erfarenhetDecoy[0]) {
         },
         duration: erfarenhetDecoy[0].innerText.length * timePerCharacter,
         delay: 5,
+        ease: "none",
+    })
+}
+
+if (customersDecoy[0]) {
+    gsap.to(".customers", {
+        scrollTrigger: {
+            trigger: ".hej",
+            toggleActions: "play",
+            start: "top 100%",
+            end: "bottom 50%+=100px",
+        },
+        text: {
+            value: customersDecoy[0].innerText
+        },
+        duration: customersDecoy[0].innerText.length * timePerCharacter,
+        delay: 10,
         ease: "none",
     })
 }

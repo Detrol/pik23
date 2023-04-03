@@ -22,34 +22,6 @@
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
 
-                <div class="mx-auto md:max-w-7xl w-12/12">
-                    <div class="px-4 py-4">
-                        <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y sm:divide-y-0 sm:divide-x">
-                            <div class="text-center py-6 lg:py-4 antialiased">
-                                <div>
-                                    <p class="text-3xl font-medium leading-6 text-white uppercase">
-                                        Fönster
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="text-center py-6 lg:py-4 antialiased">
-                                <div>
-                                    <p class="text-3xl font-medium leading-6 text-white uppercase">
-                                        Balkonger
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="text-center py-6 lg:py-4 antialiased">
-                                <div>
-                                    <p class="text-3xl font-medium leading-6 text-white uppercase">
-                                        Altaner
-                                    </p>
-                                </div>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
@@ -94,17 +66,21 @@
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
+                                <p class="mt-4 block font-sans text-lg font-semibold leading-relaxed antialiased text-gray-600 customers">&nbsp;</p>
                                 <h2 class="hej-decoy hidden">
                                     Hej!
                                 </h2>
                                 <p class="jag-decoy hidden">
-                                    Andreas heter jag, och jag erbjuder professionell och prisvärd fönsterputs
+                                    Andreas heter jag, och jag erbjuder prisvärd fönsterputs
                                     i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
                                 </p>
                                 <p class="erfarenhet-decoy hidden">
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
                                     professionell
                                     hjälp med kunskap, teknik, och rätt utrustning.
+                                </p>
+                                <p class="customers-decoy hidden">
+                                    För både privatpersoner och företag.
                                 </p>
                             </div>
                             <!--<div
@@ -231,7 +207,7 @@
         </div>
     </section>
 
-    <section class="bg-gray-100 relative py-24">
+    <section class="bg-cyan-900 relative py-24">
         <div class="custom-shape-divider-top-1680541244">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
@@ -245,10 +221,10 @@
             class="container flex flex-col px-6 py-24 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
             <div class="w-full lg:w-1/2">
                 <div class="lg:max-w-4xl">
-                    <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Varför välja Puts i Karlstad?</h1>
-                    <p class="mt-4 text-gray-600 dark:text-gray-300">Här har du några orsaker att välja mig som fönsterputsare.</p>
+                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl drop-shadow-2xl">Varför välja Puts i Karlstad?</h2>
+                    <p class="mt-4 text-gray-100 dark:text-gray-300">Här har du några orsaker att välja mig som fönsterputsare.</p>
                     <div class="grid gap-6 mt-8 sm:grid-cols-2">
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -258,7 +234,7 @@
                             <span class="mx-3">Lägre priser än flera konkurrenter</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -268,7 +244,7 @@
                             <span class="mx-3">Miljövänligt</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -278,7 +254,7 @@
                             <span class="mx-3">RUT-avdrag</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -288,7 +264,7 @@
                             <span class="mx-3">Upp till 14 dagars garanti</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -298,7 +274,7 @@
                             <span class="mx-3">Material ingår</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -308,7 +284,7 @@
                             <span class="mx-3">Mer än 10 år i branschen</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -318,7 +294,7 @@
                             <span class="mx-3">Revolutionerande bokningssystem</span>
                         </div>
 
-                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                        <div class="flex items-center text-gray-100 -px-3 dark:text-gray-200">
                             <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
                                  viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -337,13 +313,153 @@
                      alt="bubbles">
             </div>
         </div>
+    </section>
 
+    <section class="relative overflow-hidden">
+        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
+             style="background-image: url('{{ Vite::asset('resources/images/bubbles_full.jpg') }}'); z-index: 0;"></div>
 
+        <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                 preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div
+            class="w-full h-full px-5 py-24 mx-auto items-center justify-center md:px-0 lg:px-16 lg:py-24 backdrop-brightness-50"
+            style="z-index: 3;">
+            <div class="max-w-7xl mx-auto pb-12">
+                <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl drop-shadow-2xl">Varför välja Puts i Karlstad?</h2>
+                <p class="mt-4 text-gray-100 dark:text-gray-300">Här har du några orsaker att välja mig som fönsterputsare.</p>
+            </div>
+            <div class="relative items-center justify-center w-full h-full max-w-7xl mx-auto">
+                <div class="py-4 mx-auto">
+                    <div>
+                        <div
+                            class="items-center justify-center grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-2 lg:space-y-0 text-center text-white antialiased">
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                                 data-aos-easing="ease-in-out">
+                                <div class="items-center justify-center flex">
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="flex w-full p-6 text-black bg-white rounded-xl mx-auto divide-x gap-x-6 items-center">
+                                            <div>
+                                                <i class="fa-duotone fa-seedling text-2xl lg:text-4xl text-lime-500"></i>
+                                                <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                                    Grönare
+                                                </h3>
+                                            </div>
+
+                                            <div
+                                                class="flex flex-col items-start justify-center text-gray-900 pl-4 dark:text-gray-200 text-lg">
+                                                <div>
+                                                    <i class="fa fa-check text-green-500"></i>
+                                                    <span class="mx-3">Miljövänligt</span>
+                                                </div>
+
+                                                <div>
+                                                    <div class="items-start justify-start">
+                                                        <i class="fa fa-check text-green-500"></i>
+                                                        <span class="mx-3">E-Fakturering</span>
+                                                    </div>
+                                                </div>
+                                                <div class="text-left mt-2 text-gray-600 text-sm">
+                                                    <p>Jag erbjuder ett helt
+                                                       miljövänligt alternativ, till skillnad från många konkurrenter.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                                 data-aos-easing="ease-in-out">
+                                <div class="items-center justify-center flex">
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="flex w-full p-8 text-black bg-white rounded-xl mx-auto divide-x gap-6">
+                                            <div>
+                                                <i class="fa-duotone fa-seedling text-2xl lg:text-4xl text-lime-500"></i>
+                                                <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                                    Grönare
+                                                </h3>
+                                            </div>
+
+                                            <div
+                                                class="flex flex-col items-start justify-center text-gray-900 pl-4 dark:text-gray-200 text-lg">
+                                                <div>
+                                                    <i class="fa fa-check text-green-500"></i>
+                                                    <span class="mx-3">Miljövänligt</span>
+                                                </div>
+
+                                                <div>
+                                                    <div class="items-start justify-start">
+                                                        <i class="fa fa-check text-green-500"></i>
+                                                        <span class="mx-3">E-Fakturering</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                                 data-aos-easing="ease-in-out">
+                                <div>
+                                    <div
+                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
+                                        <i class="fa-duotone fa-gauge-max text-2xl lg:text-4xl text-lime-500"></i>
+                                    </div>
+                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                        Effektivare
+                                    </h3>
+                                </div>
+                                <p
+                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
+                                    utan att slarva med resultatet
+                                </p>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                                 data-aos-easing="ease-in-out">
+                                <div>
+                                    <div
+                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
+                                        <i class="fa-duotone fa-tags text-2xl lg:text-4xl text-lime-500"></i>
+                                    </div>
+                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
+                                        Prisvärdare
+                                    </h3>
+                                </div>
+                                <p
+                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
+                                    Jag erbjuder schyssta priser,
+                                    och personliga rabatter för mina återkommande kunder
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-shape-divider-bottom-1679499722 -mb-[1px] z-10">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                     preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
     </section>
 
 
     <section class="relative overflow-hidden">
-        <div class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
+        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
              style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
@@ -456,14 +572,14 @@
     </section>
 
     <section class="relative">
-        <div class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
+        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}'); z-index: 0;"></div>
 
-        <div class="custom-shape-divider-top-1679499812 -mt-1 z-50">
+        <div class="custom-shape-divider-top-1680553802 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill"></path>
             </svg>
         </div>

@@ -63,7 +63,7 @@
 }
 
 .custom-shape-divider-top-1679499812 .shape-fill {
-    fill: #FFFFFF;
+    fill: #164e63;
 }
 
 /* News bottom */
@@ -263,5 +263,26 @@
 }
 
 .custom-shape-divider-top-1680541244 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Contact top */
+.custom-shape-divider-top-1680553802 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1680553802 svg {
+    position: relative;
+    display: block;
+    width: calc(275% + 1.3px);
+    height: 39px;
+}
+
+.custom-shape-divider-top-1680553802 .shape-fill {
     fill: #FFFFFF;
 }
