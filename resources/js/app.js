@@ -107,7 +107,7 @@ gsap.utils.toArray(".animCounter").forEach(box => {
     let tler = gsap.from(box, {
         textContent: "0",
         duration: 2,
-        delay: 8,
+        delay: 9,
         ease: "power1.inOut",
         modifiers: {
             textContent: value => formatNumber(value, 0)
@@ -130,7 +130,7 @@ if (hejDecoy[0]) {
         text: {
             value: hejDecoy[0].innerText
         },
-        duration: 1,
+        duration: 0.5,
         //delay: 0.5,
         ease: "none",
     })
