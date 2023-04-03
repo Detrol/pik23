@@ -17,7 +17,7 @@
                 </p>
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
-                     src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="">
+                     src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
@@ -126,7 +126,7 @@
                         <div class='revealRight'>
                             <img
                                 class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px]"
-                                alt="hero" loading="lazy" width="600" height="600"
+                                alt="jag" loading="lazy" width="600" height="600"
                                 src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                         </div>
 
@@ -378,7 +378,7 @@
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
                             <div class="revealUp">
-                                <h1 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h1>
+                                <h2 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h2>
 
                                 <p class="mt-2 text-gray-500 dark:text-gray-400">
                                     Ställ mig gärna frågor, men kom ihåg att bokningar sker via bokningsformuläret.
