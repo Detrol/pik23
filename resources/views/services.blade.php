@@ -32,8 +32,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-4">
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
-                     style="background-image:url('{{ Vite::asset('resources/images/fonster.jpg') }}')"
-                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                     style="background-image:url('{{ Vite::asset('resources/images/fonster.jpg') }}')" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Vanliga fönster</h2>
@@ -41,8 +40,7 @@
                 </div>
 
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
-                     style="background-image:url('{{ Vite::asset('resources/images/sprojs.jpg') }}')"
-                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                     style="background-image:url('{{ Vite::asset('resources/images/sprojs.jpg') }}')" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Spröjsade fönster</h2>
@@ -50,8 +48,7 @@
                 </div>
 
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
-                     style="background-image:url('{{ Vite::asset('resources/images/balkonger.jpg') }}')"
-                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                     style="background-image:url('{{ Vite::asset('resources/images/balkonger.jpg') }}')" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Balkongfönster</h2>
@@ -59,8 +56,7 @@
                 </div>
 
                 <div class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-56"
-                     style="background-image:url('{{ Vite::asset('resources/images/altaner.jpg') }}')"
-                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                     style="background-image:url('{{ Vite::asset('resources/images/altaner.jpg') }}')" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Altanfönster</h2>
@@ -88,8 +84,7 @@
             <div class="mx-auto mt-12 text-left">
                 <div>
                     <div class="grid grid-cols-1 md:grid-cols-2 text-sm gap-x-2 gap-y-14 lg:grid-cols-2 md:gap-14 lg:gap-20">
-                        <article data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealLeft">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -102,8 +97,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealRight">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -117,8 +111,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealLeft">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -132,8 +125,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealRight">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -147,8 +139,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealLeft">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -162,8 +153,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealRight">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -176,8 +166,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealLeft">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">
@@ -190,8 +179,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                        <article class="revealRight">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
                                     <p class="mt-2 text-lg font-medium leading-6 text-black">

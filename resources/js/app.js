@@ -119,36 +119,39 @@ gsap.utils.toArray(".animCounter").forEach(box => {
         }
     });
 })
+if (hejDecoy[0]) {
+    gsap.to(".hej", {
+        scrollTrigger: {
+            trigger: ".jag",
+            toggleActions: "play",
+            start: "top 100%",
+            end: "bottom 50%+=100px",
+        },
+        text: {
+            value: hejDecoy[0].innerHTML
+        },
+        duration: hejDecoy[0].innerText.length * timePerCharacter2,
+        //delay: 0.5,
+        ease: "none",
+    })
+}
 
-gsap.to(".hej", {
-    scrollTrigger: {
-        trigger: ".jag",
-        toggleActions: "play",
-        start: "top 100%",
-        end: "bottom 50%+=100px",
-    },
-    text: {
-        value: hejDecoy[0].innerHTML
-    },
-    duration: hejDecoy[0].innerText.length * timePerCharacter2,
-    //delay: 0.5,
-    ease: "none",
-})
-
-gsap.to(".jag", {
-    scrollTrigger: {
-        trigger: ".jag",
-        toggleActions: "play",
-        start: "top 100%",
-        end: "bottom 50%+=100px",
-    },
-    text: {
-        value: jagDecoy[0].innerHTML
-    },
-    duration: jagDecoy[0].innerText.length * timePerCharacter,
-    delay: 1,
-    ease: "none",
-})
+if (jagDecoy[0]) {
+    gsap.to(".jag", {
+        scrollTrigger: {
+            trigger: ".jag",
+            toggleActions: "play",
+            start: "top 100%",
+            end: "bottom 50%+=100px",
+        },
+        text: {
+            value: jagDecoy[0].innerHTML
+        },
+        duration: jagDecoy[0].innerText.length * timePerCharacter,
+        delay: 1,
+        ease: "none",
+    })
+}
 
 gsap.set(".numberbox", {
     opacity: 0
@@ -188,12 +191,12 @@ ScrollTrigger.batch(".revealRight", {
     onEnter: batch => {
         gsap.fromTo(batch, {
             x: 200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         }, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         });
@@ -201,12 +204,12 @@ ScrollTrigger.batch(".revealRight", {
     onLeave: batch => {
         gsap.fromTo(batch, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         }, {
             x: 200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         });
@@ -214,12 +217,12 @@ ScrollTrigger.batch(".revealRight", {
     onEnterBack: batch => {
         gsap.fromTo(batch, {
             x: 200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         }, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         });
@@ -227,12 +230,12 @@ ScrollTrigger.batch(".revealRight", {
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         }, {
             x: 200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         });
@@ -249,12 +252,12 @@ ScrollTrigger.batch(".revealLeft", {
     onEnter: batch => {
         gsap.fromTo(batch, {
             x: -200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         }, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         });
@@ -262,12 +265,12 @@ ScrollTrigger.batch(".revealLeft", {
     onLeave: batch => {
         gsap.fromTo(batch, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         }, {
             x: -200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         });
@@ -275,12 +278,12 @@ ScrollTrigger.batch(".revealLeft", {
     onEnterBack: batch => {
         gsap.fromTo(batch, {
             x: -200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         }, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         });
@@ -288,12 +291,12 @@ ScrollTrigger.batch(".revealLeft", {
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             x: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         }, {
             x: -200,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         });
@@ -310,12 +313,12 @@ ScrollTrigger.batch(".revealUp", {
     onEnter: batch => {
         gsap.fromTo(batch, {
             y: 50,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         }, {
             y: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         });
@@ -323,12 +326,12 @@ ScrollTrigger.batch(".revealUp", {
     onLeave: batch => {
         gsap.fromTo(batch, {
             y: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         }, {
             y: 50,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         });
@@ -336,12 +339,12 @@ ScrollTrigger.batch(".revealUp", {
     onEnterBack: batch => {
         gsap.fromTo(batch, {
             y: 50,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         }, {
             y: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         });
@@ -349,19 +352,17 @@ ScrollTrigger.batch(".revealUp", {
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             y: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 1,
         }, {
             y: 50,
-            duration: 1,
+            duration: 0.5,
             ease: "sine",
             opacity: 0,
         });
     },
 });
-
-gsap.registerPlugin(ScrollTrigger);
 
 // Setup
 /*const scroller = document.querySelector('.scrollbar-container');

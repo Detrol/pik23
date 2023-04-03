@@ -32,8 +32,7 @@
                 <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                     <div class="mx-auto lg:max-w-7xl lg:p-0">
                         <ul role="list" class="grid grid-cols-1 gap-4 list-none md:grid-cols-2 md:gap-10 lg:gap-12">
-                            <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealLeft">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Hur räknas egentligen fönster?
@@ -47,8 +46,7 @@
                                     då räknar jag det som 2 fönster och inte som 1 fönster.
                                 </div>
                             </li>
-                            <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealRight">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Gäller RUT-avdrag hos dig?
@@ -62,8 +60,7 @@
                                     RUT/ROT-avdrag á 50,000 kr/år. Det gäller heller inte vid dödsbo.
                                 </div>
                             </li>
-                            <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealLeft">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         På vilka höjder arbetar du?
@@ -79,8 +76,7 @@
                                     arbeta på högre stegar eftersom jag jobbar ensam.
                                 </div>
                             </li>
-                            <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealRight">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Vad gäller vid dåligt väder?
@@ -159,8 +155,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealLeft">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Vem står för materialet?
@@ -170,8 +165,7 @@
                                     Jag står för allt material, och det tillkommer heller ingen extra kostnad för detta.
                                 </div>
                             </li>
-                            <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealRight">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Måste jag vara hemma?
@@ -182,8 +176,7 @@
                                     så kan jag ringa eller skicka ett SMS till dig.
                                 </div>
                             </li>
-                            <li data-aos="fade-right" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealLeft">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Vad händer om någonting går sönder?
@@ -199,8 +192,7 @@
                                     via Frilans Finans.
                                 </div>
                             </li>
-                            <li data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" data-aos-delay="200"
-                                data-aos-easing="ease-in-out">
+                            <li class="revealRight">
                                 <div>
                                     <p class="mt-5 text-lg font-medium leading-6 text-black">
                                         Det är repor i glaset efter ditt besök!

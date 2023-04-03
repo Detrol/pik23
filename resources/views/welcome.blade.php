@@ -380,7 +380,7 @@
                          data-aos="fade-in" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
-                            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
+                            <div class="revealUp">
                                 <h1 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h1>
 
                                 <p class="mt-2 text-gray-500 dark:text-gray-400">
