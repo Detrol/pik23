@@ -219,7 +219,7 @@ ScrollTrigger.batch(".revealRight", {
             opacity: 1,
         });
     },
-    onLeave: batch => {
+    /*onLeave: batch => {
         gsap.fromTo(batch, {
             x: 0,
             duration: 0.5,
@@ -244,7 +244,7 @@ ScrollTrigger.batch(".revealRight", {
             ease: "sine",
             opacity: 1,
         });
-    },
+    },*/
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             x: 0,
@@ -280,7 +280,7 @@ ScrollTrigger.batch(".revealLeft", {
             opacity: 1,
         });
     },
-    onLeave: batch => {
+    /*onLeave: batch => {
         gsap.fromTo(batch, {
             x: 0,
             duration: 0.5,
@@ -305,7 +305,7 @@ ScrollTrigger.batch(".revealLeft", {
             ease: "sine",
             opacity: 1,
         });
-    },
+    },*/
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             x: 0,
@@ -341,7 +341,7 @@ ScrollTrigger.batch(".revealUp", {
             opacity: 1,
         });
     },
-    onLeave: batch => {
+    /*onLeave: batch => {
         gsap.fromTo(batch, {
             y: 0,
             duration: 0.5,
@@ -366,7 +366,7 @@ ScrollTrigger.batch(".revealUp", {
             ease: "sine",
             opacity: 1,
         });
-    },
+    },*/
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             y: 0,
