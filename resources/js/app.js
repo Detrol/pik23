@@ -113,7 +113,8 @@ gsap.utils.toArray(".animCounter").forEach(box => {
             textContent: value => formatNumber(value, 0)
         },
         scrollTrigger: {
-            trigger: textbox[0],
+            /*trigger: textbox[0],*/
+            trigger: ".hej",
             start: "top 90%",
             end: "bottom 50%+=100px",
         }
