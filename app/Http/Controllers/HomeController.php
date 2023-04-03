@@ -7,6 +7,7 @@ use App\Rules\ValidHCaptcha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Vite;
+use RalphJSmit\Laravel\SEO\Support\SEOData;
 use Spatie\Sitemap\SitemapGenerator;
 use Spatie\Sitemap\Tags\Url;
 
@@ -24,9 +25,64 @@ class HomeController extends Controller
         return $viewName;
     }
 
-    function home(Request $request)
+    function index(Request $request)
     {
-        return $this->getView('welcome');
+        return view('welcome', [
+            'SEOData' => new SEOData(
+                title: '',
+                description: 'Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.',
+            ),
+        ]);
+    }
+
+    function prices(Request $request)
+    {
+        return view('prices', [
+            'SEOData' => new SEOData(
+                title: 'Priser',
+                description: 'Priser på fönsterputs och tilläggstjänster?',
+            ),
+        ]);
+    }
+
+    function services(Request $request)
+    {
+        return view('services', [
+            'SEOData' => new SEOData(
+                title: 'Tjänster',
+                description: 'En lista på de tjänster jag erbjuder.',
+            ),
+        ]);
+    }
+
+    function miljovanligt(Request $request)
+    {
+        return view('miljovanligt', [
+            'SEOData' => new SEOData(
+                title: 'Miljövänligt',
+                description: 'Puts i Karlstad är ett helt miljövänligt alternativ för fönsterputs.',
+            ),
+        ]);
+    }
+
+    function faq(Request $request)
+    {
+        return view('faq', [
+            'SEOData' => new SEOData(
+                title: 'Vanliga frågor',
+                description: 'Allmänviktig information och frågor kunder ställer.',
+            ),
+        ]);
+    }
+
+    function guarantee(Request $request)
+    {
+        return view('guarantee', [
+            'SEOData' => new SEOData(
+                title: 'Garanti',
+                description: 'Hos mig så har du garanti vid det oväntade.',
+            ),
+        ]);
     }
 
     function xml(Request $request)

@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Professionell & Prisvärd fönsterputs i och runt Karlstad')
-
 @section('content')
+
     <section class="relative h-screen overflow-hidden">
         <div class="relative h-screen">
             <video

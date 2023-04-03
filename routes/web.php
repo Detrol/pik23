@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
-Route::view('/tjanster', 'services')->name('services');
-Route::view('/vanliga-fragor', 'faq')->name('faq');
-Route::view('/miljovanligt', 'miljovanligt')->name('miljovanligt');
-Route::view('/garanti', 'guarantee')->name('guarantee');
-Route::view('/priser', 'prices')->name('prices');
+Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/tjanster', [HomeController::class, 'services'])->name('services');
+Route::get('/vanliga-fragor', [HomeController::class, 'faq'])->name('faq');
+Route::get('/miljovanligt', [HomeController::class, 'miljovanligt'])->name('miljovanligt');
+Route::get('/garanti', [HomeController::class, 'guarantee'])->name('guarantee');
+Route::get('/priser', [HomeController::class, 'prices'])->name('prices');
 
 Route::post('/form_mail', [HomeController::class, 'form_mail'])->name('form_mail');
 

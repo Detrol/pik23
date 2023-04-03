@@ -1,6 +1,7 @@
 <?php
 
 use RalphJSmit\Laravel\SEO\Models\SEO;
+use Illuminate\Support\Facades\Vite;
 
 return [
     /**
@@ -23,7 +24,7 @@ return [
      * to the root domain and not relative to the current URL. The `spatie/laravel-sitemap` package
      * is a great package to generate sitemaps for your application.
      */
-    'sitemap' => '/public/sitemap.xml',
+    'sitemap' => '/sitemap.xml',
 
     /**
      * Use this setting to specify whether you want self-referencing `<link rel="canonical" href="$url">` tags to
@@ -59,7 +60,7 @@ return [
      *
      * You can use the following filetypes: ico, png, gif, jpeg, svg.
      */
-    'favicon' => null,
+    'favicon' => '/favicon.ico',
 
     'title' => [
         /**
@@ -82,7 +83,7 @@ return [
          * so you'll need to add the suffix manually if you want that. If set to null, we'll determine the title
          * just like the other pages.
          */
-        'homepage_title' => null,
+        'homepage_title' => 'Professionell & Prisvärd fönsterputs i och runt Karlstad',
     ],
 
     'description' => [
@@ -91,7 +92,7 @@ return [
          * where we don't have a description set via an associated ->seo model or via
          * the ->getDynamicSEOData() method.
          */
-        'fallback' => null,
+        'fallback' => 'Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.',
     ],
 
     'image' => [
@@ -100,7 +101,7 @@ return [
          * don't have an image set via an associated ->seo model or via the ->getDynamicSEOData() method.
          * This should be a path to an image. The url to the path is generated using the `secure_url()` function (`secure_url($yourProvidedPath)`).
          */
-        'fallback' => null,
+        'fallback' => '/assets/images/jag1.jpg',
     ],
 
     'author' => [
@@ -108,7 +109,7 @@ return [
          * Use this setting to specify a fallback author, which will be used on places where you
          * don't have an author set via an associated ->seo model or via the ->getDynamicSEOData() method.
          */
-        'fallback' => null,
+        'fallback' => 'Andreas Thun',
     ],
 
     'twitter' => [

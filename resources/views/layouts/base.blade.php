@@ -46,19 +46,12 @@
   "logo": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
   "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
    "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd."}
-
-
-
     </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="Fönsterputs i Karlstad, Hammarö, Grums, Molkom & Kil. Med över 10 års erfarenhet så kan jag erbjuda dig hjälp med kunskap, teknik, och rätt utrustning.">
-    <title>@yield('title')</title>
+        {!! seo($SEOData) !!}
 
-        <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
     <link rel="preconnect" href="{{ url('https://fonts.googleapis.com/') }}">
 
         <!-- speed up external res -->

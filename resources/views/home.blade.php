@@ -3,6 +3,7 @@
 @section('title', 'Professionell & Prisvärt fönsterputs i och runt Karlstad')
 
 @section('content')
+
     <h1 class="text-3xl font-bold underline">
         Hello world!
         <button
