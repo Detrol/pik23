@@ -46,9 +46,9 @@
 
                 <div>
                     <div class="max-w-2xl">
-                        <div class="text-4xl text-black mb-4">
+                        <h2 class="text-4xl text-black mb-4">
                             Hur räknas fönster?
-                        </div>
+                        </h2>
                         <div class="mb-10">
                             Vad många oftast tror är att fönster är glaset som man ser ut och in genom.
                             <br/><br/>

@@ -244,3 +244,24 @@
     max-width: 500px;
     overflow: hidden;
 }
+
+/* WHY ME */
+.custom-shape-divider-top-1680541244 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1680541244 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 24px;
+}
+
+.custom-shape-divider-top-1680541244 .shape-fill {
+    fill: #FFFFFF;
+}

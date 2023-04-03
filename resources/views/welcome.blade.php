@@ -4,13 +4,16 @@
 
     <section class="relative h-screen overflow-hidden">
         <div class="relative h-screen">
-            <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none ukiyo" style="z-index: 0">
+            <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
+                   style="z-index: 0">
                 <source src="{{ Vite::asset('resources/images/rain.mp4') }}" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
 
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
-            <div class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20" style="z-index: 3">
+            <div
+                class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20"
+                style="z-index: 3">
 
                 <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white">
                     Välkommen till <span class="hidden">Puts i Karlstad!</span>
@@ -18,6 +21,34 @@
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
+
+                <div class="mx-auto md:max-w-7xl w-12/12">
+                    <div class="px-4 py-4">
+                        <dl class="grid grid-cols-1 space-y-0 text-center grid-cols-3 divide-y sm:divide-y-0 sm:divide-x">
+                            <div class="text-center py-6 lg:py-4 antialiased">
+                                <div>
+                                    <p class="text-3xl font-medium leading-6 text-white uppercase">
+                                        Fönster
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-center py-6 lg:py-4 antialiased">
+                                <div>
+                                    <p class="text-3xl font-medium leading-6 text-white uppercase">
+                                        Balkonger
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-center py-6 lg:py-4 antialiased">
+                                <div>
+                                    <p class="text-3xl font-medium leading-6 text-white uppercase">
+                                        Altaner
+                                    </p>
+                                </div>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
@@ -198,6 +229,116 @@
                     class="shape-fill"></path>
             </svg>
         </div>
+    </section>
+
+    <section class="bg-gray-100 relative py-24">
+        <div class="custom-shape-divider-top-1680541244">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                 preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div
+            class="container flex flex-col px-6 py-24 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+            <div class="w-full lg:w-1/2">
+                <div class="lg:max-w-4xl">
+                    <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Varför välja Puts i Karlstad?</h1>
+                    <p class="mt-4 text-gray-600 dark:text-gray-300">Här har du några orsaker att välja mig som fönsterputsare.</p>
+                    <div class="grid gap-6 mt-8 sm:grid-cols-2">
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Lägre priser än flera konkurrenter</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Miljövänligt</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">RUT-avdrag</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Upp till 14 dagars garanti</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Material ingår</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Mer än 10 år i branschen</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Revolutionerande bokningssystem</span>
+                        </div>
+
+                        <div class="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+                            <svg class="w-5 h-5 mx-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M5 13l4 4L19 7"/>
+                            </svg>
+
+                            <span class="mx-3">Erbjuder en lång rad extratjänster</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full h-96 lg:w-1/2 hidden lg:block">
+                <img class="object-cover w-full h-full max-w-2xl rounded-md"
+                     src="{{ Vite::asset('resources/images/bubbles.jpg') }}"
+                     alt="bubbles">
+            </div>
+        </div>
+
+
     </section>
 
 
