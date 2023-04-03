@@ -97,8 +97,9 @@ document.querySelectorAll('a[href]').forEach(a => {
 // Scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);
 
-const jagDecoy = document.getElementsByClassName("jag-decoy");
 const hejDecoy = document.getElementsByClassName("hej-decoy");
+const jagDecoy = document.getElementsByClassName("jag-decoy");
+const erfarenhetDecoy = document.getElementsByClassName("erfarenhet-decoy");
 const textbox = document.getElementsByClassName("textbox");
 const timePerCharacter = 0.02;
 const timePerCharacter2 = 0.05;
@@ -122,15 +123,15 @@ gsap.utils.toArray(".animCounter").forEach(box => {
 if (hejDecoy[0]) {
     gsap.to(".hej", {
         scrollTrigger: {
-            trigger: ".jag",
+            trigger: ".hej",
             toggleActions: "play",
             start: "top 100%",
             end: "bottom 50%+=100px",
         },
         text: {
-            value: hejDecoy[0].innerHTML
+            value: hejDecoy[0].innerText
         },
-        duration: hejDecoy[0].innerText.length * timePerCharacter2,
+        duration: 1,
         //delay: 0.5,
         ease: "none",
     })
@@ -139,19 +140,37 @@ if (hejDecoy[0]) {
 if (jagDecoy[0]) {
     gsap.to(".jag", {
         scrollTrigger: {
-            trigger: ".jag",
+            trigger: ".hej",
             toggleActions: "play",
             start: "top 100%",
             end: "bottom 50%+=100px",
         },
         text: {
-            value: jagDecoy[0].innerHTML
+            value: jagDecoy[0].innerText
         },
         duration: jagDecoy[0].innerText.length * timePerCharacter,
         delay: 1,
         ease: "none",
     })
 }
+
+if (erfarenhetDecoy[0]) {
+    gsap.to(".erfarenhet", {
+        scrollTrigger: {
+            trigger: ".hej",
+            toggleActions: "play",
+            start: "top 100%",
+            end: "bottom 50%+=100px",
+        },
+        text: {
+            value: erfarenhetDecoy[0].innerText
+        },
+        duration: erfarenhetDecoy[0].innerText.length * timePerCharacter,
+        delay: 6,
+        ease: "none",
+    })
+}
+
 
 gsap.set(".numberbox", {
     opacity: 0

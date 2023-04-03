@@ -65,18 +65,20 @@
                         <div class="max-w-xl min-w-full">
                             <div class="textbox w-full text-left justify-start items-start min-h-[270px]">
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
-                                <h1 class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</h1>
+                                <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
+                                <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
                                 <div class="hej-decoy hidden">
                                     Hej!
                                 </div>
-                                <div class="jag-decoy hidden">
-                                    Andreas heter jag, och jag erbjuder prisvärt fönsterputs
-                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.<br/><br/>
-
+                                <h1 class="jag-decoy hidden">
+                                    Andreas heter jag, och jag erbjuder professionell och prisvärd fönsterputs
+                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
+                                </h1>
+                                <h2 class="erfarenhet-decoy hidden">
                                     Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
                                     professionell
                                     hjälp med kunskap, teknik, och rätt utrustning.
-                                </div>
+                                </h2>
                             </div>
                             <!--<div
                                 class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
