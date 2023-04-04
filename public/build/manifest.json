@@ -1,13 +1,13 @@
 {
-  "_index-1c5a987f.js": {
-    "file": "assets/index-1c5a987f.js",
+  "_index-54e9afb7.js": {
+    "file": "assets/index-54e9afb7.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true
   },
-  "_preline-b6c32303.js": {
-    "file": "assets/preline-b6c32303.js",
+  "_preline-08c04859.js": {
+    "file": "assets/preline-08c04859.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -66,20 +66,16 @@
     "src": "resources/images/balkonger.jpg"
   },
   "resources/images/bubbles.jpg": {
-    "file": "assets/bubbles-8419edf3.jpg",
+    "file": "assets/bubbles-fd33ca0c.jpg",
     "src": "resources/images/bubbles.jpg"
   },
   "resources/images/bubbles2.jpg": {
-    "file": "assets/bubbles2-7e961197.jpg",
+    "file": "assets/bubbles2-b3c29ebe.jpg",
     "src": "resources/images/bubbles2.jpg"
   },
-  "resources/images/calendar2.png": {
-    "file": "assets/calendar2-52f206dd.png",
-    "src": "resources/images/calendar2.png"
-  },
-  "resources/images/contact.jpg": {
-    "file": "assets/contact-0dbf974d.jpg",
-    "src": "resources/images/contact.jpg"
+  "resources/images/bubbles_full.jpg": {
+    "file": "assets/bubbles_full-5e936eb5.jpg",
+    "src": "resources/images/bubbles_full.jpg"
   },
   "resources/images/email.jpg": {
     "file": "assets/email-e24a1876.jpg",
@@ -97,10 +93,6 @@
     "file": "assets/full-logo-noslogan-trimmed-6fa94ed0.png",
     "src": "resources/images/full-logo-noslogan-trimmed.png"
   },
-  "resources/images/header-min.jpg": {
-    "file": "assets/header-min-b4e42350.jpg",
-    "src": "resources/images/header-min.jpg"
-  },
   "resources/images/house.jpg": {
     "file": "assets/house-f6c6578a.jpg",
     "src": "resources/images/house.jpg"
@@ -108,10 +100,6 @@
   "resources/images/jag1.jpg": {
     "file": "assets/jag1-1322db97.jpg",
     "src": "resources/images/jag1.jpg"
-  },
-  "resources/images/layered-waves-haikei.svg": {
-    "file": "assets/layered-waves-haikei-7f7e461f.svg",
-    "src": "resources/images/layered-waves-haikei.svg"
   },
   "resources/images/litet.jpg": {
     "file": "assets/litet-854b0fb0.jpg",
@@ -132,10 +120,6 @@
   "resources/images/rain.mp4": {
     "file": "assets/rain-2fc47f6d.mp4",
     "src": "resources/images/rain.mp4"
-  },
-  "resources/images/rain3.mp4": {
-    "file": "assets/rain3-db1c48b8.mp4",
-    "src": "resources/images/rain3.mp4"
   },
   "resources/images/sprojs.jpg": {
     "file": "assets/sprojs-1c0c0dc4.jpg",
@@ -170,15 +154,15 @@
       "assets/app-f85da3e0.css"
     ],
     "dynamicImports": [
-      "_preline-b6c32303.js",
-      "_index-1c5a987f.js"
+      "_preline-08c04859.js",
+      "_index-54e9afb7.js"
     ],
-    "file": "assets/app-68909a7e.js",
+    "file": "assets/app-74762e07.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-3dd994df.css",
+    "file": "assets/app-181522cd.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }

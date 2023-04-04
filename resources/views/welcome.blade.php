@@ -180,9 +180,7 @@
 
     </section>
 
-    <section class="relative overflow-hidden">
-        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
-             style="background-image: url('{{ Vite::asset('resources/images/bubbles2.jpg') }}'); z-index: 0;"></div>
+        <section class="bg-cyan-500 relative overflow-hidden">
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -381,7 +379,7 @@
             </svg>
         </div>
     </section>
-    
+
     <section class="relative overflow-hidden">
         <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
              style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>
