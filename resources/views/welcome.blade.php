@@ -207,7 +207,7 @@
                                 <div class="items-center justify-center flex">
                                     <div class="flex flex-col">
                                         <div
-                                            class="grid grid-cols-1 lg:flex w-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
                                             <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
                                                 <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-lime-500"></i>
                                                 <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
@@ -242,7 +242,7 @@
                                 <div class="items-center justify-center flex">
                                     <div class="flex flex-col">
                                         <div
-                                            class="grid grid-cols-1 lg:flex w-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
                                             <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
                                                 <i class="fa-duotone fa-code text-4xl lg:text-4xl text-lime-500"></i>
                                                 <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
@@ -278,7 +278,7 @@
                                 <div class="items-center justify-center flex">
                                     <div class="flex flex-col">
                                         <div
-                                            class="grid grid-cols-1 lg:flex w-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
                                             <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
                                                 <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-lime-500"></i>
                                                 <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
@@ -314,7 +314,7 @@
                                 <div class="items-center justify-center flex">
                                     <div class="flex flex-col">
                                         <div
-                                            class="grid grid-cols-1 lg:flex w-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
                                             <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
                                                 <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-lime-500"></i>
                                                 <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">

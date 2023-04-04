@@ -18,6 +18,21 @@
     z-index: 2;
 }
 
+.natural-shadow {
+    /* inline the SVG filter */
+    filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="naturalShadow" x="0" y="0" width="2" height="2">\
+        <feOffset in="SourceGraphic" dx="3" dy="3" />\
+        <feGaussianBlur stdDeviation="5" result="blur" />\
+        <feMerge>\
+          <feMergeNode in="blur"/>\
+          <feMergeNode in="SourceGraphic"/>\
+        </feMerge>\
+      </filter>\
+    </svg>#naturalShadow');
+}
+
 .custom-shape-divider-bottom-1679524419 {
     position: absolute;
     bottom: 0;
