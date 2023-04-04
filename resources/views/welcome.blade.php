@@ -399,7 +399,7 @@
             </svg>
         </div>
 
-        <div class="w-full h-full flex justify-center items-center backdrop-brightness-50" style="z-index: 3;">
+        <div class="w-full h-full flex justify-center items-center backdrop-opacity-50 bg-black/60" style="z-index: 3;">
             <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
                 <div class="max-w-7xl mx-auto pb-4">
                     <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center">Vad önskar du få putsat?</h2>
