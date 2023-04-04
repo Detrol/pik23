@@ -423,3 +423,30 @@ bodyScrollBar.addListener(ScrollTrigger.update);
 ScrollTrigger.defaults({
     scroller: scroller
 });*/
+
+gsap.set('.motiv img',{xPercent:-50, yPercent:-50})
+
+const imgs = gsap.utils.toArray(".motiv");
+const next = 5; // time to change
+const fade = 1.5; // fade time
+
+
+
+//only for the first
+gsap.set(imgs[0], {autoAlpha:1})
+
+// ====================
+function crossfade(){
+
+    const action = gsap.timeline()
+        .to(imgs[0], {autoAlpha:0, duration:fade})
+        .to(imgs[1], {autoAlpha:1, duration:fade},0)
+
+
+    imgs.push( imgs.shift() );
+    // start endless run
+    gsap.delayedCall(next, crossfade);
+}
+
+// start the crossfade after next = 3 sec
+gsap.delayedCall(next, crossfade);

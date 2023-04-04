@@ -33,6 +33,21 @@
     </svg>#naturalShadow');
 }
 
+
+.motiv{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.motiv img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+}
+
 .custom-shape-divider-bottom-1679524419 {
     position: absolute;
     bottom: 0;
@@ -78,7 +93,7 @@
 }
 
 .custom-shape-divider-top-1679499812 .shape-fill {
-    fill: #f3f4f6;
+    fill: #FFFFFF;
 }
 
 /* News bottom */

@@ -224,9 +224,10 @@
                                         <div>
                                             <div class="items-start justify-start">
                                                 <i class="fa fa-check text-green-500"></i>
-                                                <span class="ml-3">Elektronisk fakturering</span>
+                                                <span class="ml-3">Ingen pappersfakturering</span>
                                             </div>
                                         </div>
+
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder ett helt
                                                miljövänligt alternativ, till skillnad från många konkurrenter.</p>
@@ -267,7 +268,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000"
+                                 data-aos-offset="100"
                                  data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div
@@ -300,7 +302,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000"
+                                 data-aos-offset="100"
                                  data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div
@@ -369,8 +372,23 @@
     </section>
 
     <section class="relative overflow-hidden">
-        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
-             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>
+        <!--<div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
+             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>-->
+
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
+             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}');"></div>
+
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
+             style="background-image: url('{{ Vite::asset('resources/images/lagenheter.jpg') }}');"></div>
+
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
+             style="background-image: url('{{ Vite::asset('resources/images/kontor.jpg') }}');"></div>
+
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
+             style="background-image: url('{{ Vite::asset('resources/images/trapphus.jpg') }}');"></div>
+
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
+             style="background-image: url('{{ Vite::asset('resources/images/skyltfonster.jpg') }}');"></div>
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -382,83 +400,64 @@
         </div>
 
         <div class="w-full h-full flex justify-center items-center backdrop-brightness-50" style="z-index: 3;">
-            <div class="relative items-center w-full px-5 py-24 mx-auto md:px-0 lg:px-16 container lg:py-24">
-                <div class="py-4 mx-auto">
-                    <div>
+            <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
+                <div class="max-w-7xl mx-auto pb-4">
+                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center">Vad önskar du få putsat?</h2>
+                </div>
+                <div class="grid w-full grid-cols-2 mx-auto lg:grid-cols-5 flex">
+                    <div class="p-6 w-full items-center justify-center text-center">
                         <div
-                            class="grid grid-cols-2 gap-y-12 gap-x-6 lg:gap-x-12 md:grid-cols-4 lg:space-y-0 text-center text-white antialiased">
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
-                                 data-aos-easing="ease-in-out">
-                                <div>
-                                    <div
-                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-seedling text-2xl lg:text-4xl text-lime-500"></i>
-                                    </div>
-                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                        Grönare
-                                    </h3>
-                                </div>
-                                <p
-                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Jag erbjuder ett helt
-                                    miljövänligt alternativ, till skillnad från många konkurrenter
-                                </p>
-                            </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
-                                 data-aos-easing="ease-in-out">
-                                <div>
-                                    <div
-                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-code text-2xl lg:text-4xl text-lime-500"></i>
-                                    </div>
-                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                        Modernare
-                                    </h3>
-                                </div>
-                                <p
-                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Hos mig hittar du ett unikt och modernt bokningssystem som
-                                    ingen annan på marknaden erbjuder
-                                </p>
-                            </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
-                                 data-aos-easing="ease-in-out">
-                                <div>
-                                    <div
-                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-gauge-max text-2xl lg:text-4xl text-lime-500"></i>
-                                    </div>
-                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                        Effektivare
-                                    </h3>
-                                </div>
-                                <p
-                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
-                                    utan att slarva med resultatet
-                                </p>
-                            </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
-                                 data-aos-easing="ease-in-out">
-                                <div>
-                                    <div
-                                        class="flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24 text-black bg-gray-100 rounded-full mx-auto">
-                                        <i class="fa-duotone fa-tags text-2xl lg:text-4xl text-lime-500"></i>
-                                    </div>
-                                    <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                        Prisvärdare
-                                    </h3>
-                                </div>
-                                <p
-                                    class="mt-4 block font-sans font-sm lg:font-normal leading-relaxed text-inherit antialiased text-gray-600">
-                                    Jag erbjuder schyssta priser,
-                                    och personliga rabatter för mina återkommande kunder
-                                </p>
-                            </div>
+                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-house text-xl"></i>
                         </div>
+                        <p class="mt-5 text-lg font-medium leading-6 text-white ">
+                            Hus
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-building-user text-xl"></i>
+                        </div>
+                        <p class="mt-5 text-lg font-medium leading-6 text-white ">
+                            Lägenhet
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-chair-office text-xl"></i>
+                        </div>
+                        <p class="mt-5 text-lg font-medium leading-6 text-white ">
+                            Kontor
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-buildings text-xl"></i>
+                        </div>
+                        <p class="mt-5 text-lg font-medium leading-6 text-white ">
+                            Trapphus
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-square text-xl"></i>
+                        </div>
+                        <p class="mt-5 text-lg font-medium leading-6 text-white ">
+                            Skyltfönster
+                        </p>
                     </div>
                 </div>
+                <div class="max-w-7xl mx-auto pt-6">
+                    <h2 class="text-lg font-normal tracking-wide text-white dark:text-white lg:text-xl text-center">
+                        Du kan enbelt boka allt detta, och mer direkt via mitt bokningsformulär
+                    </h2>
+                </div>
             </div>
+
 
             <div class="custom-shape-divider-bottom-1679499722 -mb-[1px] z-10">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
