@@ -408,7 +408,7 @@
                     <div class="p-6 w-full items-center justify-center text-center">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa-duotone fa-house text-xl"></i>
+                            <i class="fa fa-house text-xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Hus
@@ -417,7 +417,7 @@
                     <div class="p-6 w-full items-center justify-center text-center">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa-duotone fa-building-user text-xl"></i>
+                            <i class="fa fa-building-user text-xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Lägenhet
@@ -426,7 +426,7 @@
                     <div class="p-6 w-full items-center justify-center text-center">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa-duotone fa-chair-office text-xl"></i>
+                            <i class="fa fa-chair-office text-xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Kontor
@@ -435,7 +435,7 @@
                     <div class="p-6 w-full items-center justify-center text-center">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa-duotone fa-buildings text-xl"></i>
+                            <i class="fa fa-buildings text-xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Trapphus
@@ -444,7 +444,7 @@
                     <div class="p-6 w-full items-center justify-center text-center">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa-duotone fa-square text-xl"></i>
+                            <i class="fa fa-square text-xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Skyltfönster
