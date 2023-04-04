@@ -24,7 +24,7 @@
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
-                       class="natural-shadowitems-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
+                       class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
                     </a>
                     <a href="{{ route('prices') }}"
@@ -132,7 +132,7 @@
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
                         <div class='revealRight'>
                             <img
-                                class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg natural-shadow"
+                                class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
                                 alt="jag" loading="lazy" width="600" height="600"
                                 src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                         </div>
@@ -405,7 +405,10 @@
                     <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center">Vad önskar du få putsat?</h2>
                 </div>
                 <div class="grid w-full grid-cols-2 mx-auto lg:grid-cols-5 flex">
-                    <div class="p-6 w-full items-center justify-center text-center">
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
                             <i class="fa fa-house text-xl"></i>
@@ -414,7 +417,10 @@
                             Hus
                         </p>
                     </div>
-                    <div class="p-6 w-full items-center justify-center text-center">
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
                             <i class="fa fa-building-user text-xl"></i>
@@ -423,7 +429,10 @@
                             Lägenhet
                         </p>
                     </div>
-                    <div class="p-6 w-full items-center justify-center text-center">
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
                             <i class="fa fa-chair-office text-xl"></i>
@@ -432,7 +441,10 @@
                             Kontor
                         </p>
                     </div>
-                    <div class="p-6 w-full items-center justify-center text-center">
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
                             <i class="fa fa-buildings text-xl"></i>
@@ -441,7 +453,10 @@
                             Trapphus
                         </p>
                     </div>
-                    <div class="p-6 w-full items-center justify-center text-center">
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
                         <div
                             class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
                             <i class="fa fa-square text-xl"></i>
@@ -452,7 +467,7 @@
                     </div>
                 </div>
                 <div class="max-w-7xl mx-auto pt-6">
-                    <h2 class="text-lg font-normal tracking-wide text-gray-100 dark:text-white lg:text-xl text-center">
+                    <h2 class="text-lg font-normal tracking-wide text-gray-100 dark:text-white lg:text-xl text-center revealUp">
                         Du kan enbelt boka allt detta, och mer direkt via mitt bokningsformulär
                     </h2>
                 </div>
