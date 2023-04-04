@@ -19,12 +19,12 @@
                     Välkommen till <span class="hidden">Puts i Karlstad!</span>
                 </h1>
 
-                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16" width="800" height="112"
+                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16 " width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
-                       class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
+                       class="natural-shadowitems-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
                     </a>
                     <a href="{{ route('prices') }}"
@@ -129,10 +129,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0 overflow-hidden">
+                    <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
                         <div class='revealRight'>
                             <img
-                                class="object-cover object-center w-full mx-auto bg-black lg:ml-auto rounded-[10px]"
+                                class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg natural-shadow"
                                 alt="jag" loading="lazy" width="600" height="600"
                                 src="{{ Vite::asset('resources/images/jag1.jpg') }}">
                         </div>
@@ -180,7 +180,7 @@
 
     </section>
 
-        <section class="bg-cyan-500 relative overflow-hidden">
+    <section class="bg-cyan-500 relative overflow-hidden">
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -201,146 +201,134 @@
                 <div class="py-4 mx-auto">
                     <div>
                         <div
-                            class="items-center justify-center grid grid-cols-1 gap-y-12 gap-x-6 md:gap-x-16 md:gap-y-10 md:grid-cols-2 md:space-y-0 text-center text-white antialiased">
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                            class="grid grid-cols-1 gap-y-12 gap-x-6 md:gap-x-16 md:gap-y-10 md:grid-cols-2 md:space-y-0 text-center text-white antialiased">
+                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000"
+                                 data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
-                                <div class="items-center justify-center flex">
-                                    <div class="flex flex-col">
-                                        <div
-                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
-                                            <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                                <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-lime-500"></i>
-                                                <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                                    Grönare
-                                                </h3>
-                                            </div>
+                                <div
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
+                                        <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-lime-500"></i>
+                                        <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
+                                            Grönare
+                                        </h3>
+                                    </div>
 
-                                            <div
-                                                class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-lg">
-                                                <div>
-                                                    <i class="fa fa-check text-green-500"></i>
-                                                    <span class="ml-3">Miljövänliga medel</span>
-                                                </div>
+                                    <div
+                                        class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-base">
+                                        <div>
+                                            <i class="fa fa-check text-green-500"></i>
+                                            <span class="ml-3">Miljövänliga medel</span>
+                                        </div>
 
-                                                <div>
-                                                    <div class="items-start justify-start">
-                                                        <i class="fa fa-check text-green-500"></i>
-                                                        <span class="ml-3">Elektronisk fakturering</span>
-                                                    </div>
-                                                </div>
-                                                <div class="text-left mt-2 text-gray-600 text-sm">
-                                                    <p>Jag erbjuder ett helt
-                                                       miljövänligt alternativ, till skillnad från många konkurrenter.</p>
-                                                </div>
+                                        <div>
+                                            <div class="items-start justify-start">
+                                                <i class="fa fa-check text-green-500"></i>
+                                                <span class="ml-3">Elektronisk fakturering</span>
                                             </div>
+                                        </div>
+                                        <div class="text-left mt-2 text-gray-600 text-sm">
+                                            <p>Jag erbjuder ett helt
+                                               miljövänligt alternativ, till skillnad från många konkurrenter.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000"
+                                 data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
-                                <div class="items-center justify-center flex">
-                                    <div class="flex flex-col">
-                                        <div
-                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
-                                            <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                                <i class="fa-duotone fa-code text-4xl lg:text-4xl text-lime-500"></i>
-                                                <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                                    Modernare
-                                                </h3>
+                                <div
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
+                                        <i class="fa-duotone fa-code text-4xl lg:text-4xl text-lime-500"></i>
+                                        <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
+                                            Modernare
+                                        </h3>
+                                    </div>
+
+                                    <div
+                                        class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-base">
+                                        <div>
+                                            <i class="fa fa-check text-green-500"></i>
+                                            <span class="ml-3">Onlinebokning</span>
+                                        </div>
+
+                                        <div>
+                                            <div class="items-start justify-start">
+                                                <i class="fa fa-check text-green-500"></i>
+                                                <span class="ml-3">Automatiserade händelsenotiser</span>
                                             </div>
+                                        </div>
 
-                                            <div
-                                                class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-lg">
-                                                <div>
-                                                    <i class="fa fa-check text-green-500"></i>
-                                                    <span class="ml-3">Revolutionerande bokningssystem</span>
-                                                </div>
-
-                                                <div>
-                                                    <div class="items-start justify-start">
-                                                        <i class="fa fa-check text-green-500"></i>
-                                                        <span class="ml-3">SMS & E-Post påminnelser</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="text-left mt-2 text-gray-600 text-sm">
-                                                    <p>Hos mig hittar du ett unikt och modernt bokningssystem som
-                                                       ingen annan på marknaden erbjuder.</p>
-                                                </div>
-                                            </div>
+                                        <div class="text-left mt-2 text-gray-600 text-sm">
+                                            <p>Hos mig hittar du ett unikt och modernt bokningssystem som
+                                               ingen annan på marknaden erbjuder.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                                 data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
-                                <div class="items-center justify-center flex">
-                                    <div class="flex flex-col">
-                                        <div
-                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
-                                            <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                                <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-lime-500"></i>
-                                                <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                                    Effektivare
-                                                </h3>
+                                <div
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
+                                        <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-lime-500"></i>
+                                        <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
+                                            Effektivare
+                                        </h3>
+                                    </div>
+
+                                    <div
+                                        class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-base">
+                                        <div>
+                                            <i class="fa fa-check text-green-500"></i>
+                                            <span class="ml-3">Proffsutrustning</span>
+                                        </div>
+
+                                        <div>
+                                            <div class="items-start justify-start">
+                                                <i class="fa fa-check text-green-500"></i>
+                                                <span class="ml-3">Snabb och effektiv putsning</span>
                                             </div>
+                                        </div>
 
-                                            <div
-                                                class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-lg">
-                                                <div>
-                                                    <i class="fa fa-check text-green-500"></i>
-                                                    <span class="ml-3">Proffsutrustning</span>
-                                                </div>
-
-                                                <div>
-                                                    <div class="items-start justify-start">
-                                                        <i class="fa fa-check text-green-500"></i>
-                                                        <span class="ml-3">Snabb och effektiv</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="text-left mt-2 text-gray-600 text-sm">
-                                                    <p>Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
-                                                       utan att slarva med resultatet.</p>
-                                                </div>
-                                            </div>
+                                        <div class="text-left mt-2 text-gray-600 text-sm">
+                                            <p>Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
+                                               utan att slarva med resultatet.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="100"
+                            <div class="flex flex-col col-span-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100"
+                                 data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
-                                <div class="items-center justify-center flex">
-                                    <div class="flex flex-col">
-                                        <div
-                                            class="grid grid-cols-1 lg:flex w-full md:h-64 lg:h-44 p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center natural-shadow">
-                                            <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                                <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-lime-500"></i>
-                                                <h3 class="mt-4 text-lg lg:text-xl font-medium leading-6 uppercase">
-                                                    Prisvärdare
-                                                </h3>
+                                <div
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
+                                        <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-lime-500"></i>
+                                        <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
+                                            Prisvärdare
+                                        </h3>
+                                    </div>
+
+                                    <div
+                                        class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-base">
+                                        <div>
+                                            <i class="fa fa-check text-green-500"></i>
+                                            <span class="ml-3">Schyssta priser</span>
+                                        </div>
+
+                                        <div>
+                                            <div class="items-start justify-start">
+                                                <i class="fa fa-check text-green-500"></i>
+                                                <span class="ml-3">Rabatter för återkommande kunder</span>
                                             </div>
+                                        </div>
 
-                                            <div
-                                                class="flex flex-col items-start text-left text-gray-900 pl-4 pt-2 dark:text-gray-200 text-base lg:text-lg">
-                                                <div>
-                                                    <i class="fa fa-check text-green-500"></i>
-                                                    <span class="ml-3">Mycket för pengarna</span>
-                                                </div>
-
-                                                <div>
-                                                    <div class="items-start justify-start">
-                                                        <i class="fa fa-check text-green-500"></i>
-                                                        <span class="ml-3">Rabatter för återkommande kunder</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="text-left mt-2 text-gray-600 text-sm">
-                                                    <p>Jag erbjuder schyssta priser,
-                                                       och personliga rabatter för mina återkommande kunder.</p>
-                                                </div>
-                                            </div>
+                                        <div class="text-left mt-2 text-gray-600 text-sm">
+                                            <p>Jag erbjuder schyssta priser,
+                                               och personliga rabatter för mina återkommande kunder.</p>
                                         </div>
                                     </div>
                                 </div>
