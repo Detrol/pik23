@@ -403,7 +403,7 @@
         <div class="w-full h-full flex justify-center items-center backdrop-opacity-50 bg-black/60" style="z-index: 3;">
             <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
                 <div class="max-w-7xl mx-auto pb-4">
-                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center">Vad önskar du få putsat?</h2>
+                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center mb-2">Vad önskar du få putsat?</h2>
                     <h3 class="text-base font-normal tracking-wide text-gray-300 dark:text-white lg:text-lg text-center">Klicka på etiketterna för mer information</h3>
                 </div>
                 <div class="grid grid-cols-2 mx-auto lg:grid-cols-3 flex">
@@ -582,8 +582,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-8 lg:w-1/2 lg:mx-6"
-                         data-aos="fade-in" data-aos-duration="500" data-aos-delay="100" data-aos-offset="100">
+                    <div class="mt-8 lg:w-1/2 lg:mx-6">
                         <div
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
                             <div class="revealUp">
