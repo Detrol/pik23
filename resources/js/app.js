@@ -207,73 +207,13 @@ gsap.to(".numberbox", {
     ease: "power1.inOut",
 }, 1)
 
-gsap.to(".pulse1", {
-    scrollTrigger: {
-        trigger: ".pulse1",
-        toggleActions: "play",
-        start: "top 80%",
-        end: "bottom 50%+=100px",
-        opacity: 1,
-    },
-    scale: 1.30,
-    duration: 0.5,
-    delay: 1,
-    repeat: 1,
-    yoyo: true
-});
-
-gsap.to(".pulse2", {
-    scrollTrigger: {
-        trigger: ".pulse2",
-        toggleActions: "play",
-        start: "top 80%",
-        end: "bottom 50%+=100px",
-        opacity: 1,
-    },
-    scale: 1.30,
-    duration: 0.5,
-    delay: 1,
-    repeat: 1,
-    yoyo: true
-});
-
-gsap.to(".pulse3", {
-    scrollTrigger: {
-        trigger: ".pulse3",
-        toggleActions: "play",
-        start: "top 80%",
-        end: "bottom 50%+=100px",
-        opacity: 1,
-    },
-    scale: 1.30,
-    duration: 0.5,
-    delay: 1,
-    repeat: 1,
-    yoyo: true
-});
-
-gsap.to(".pulse4", {
-    scrollTrigger: {
-        trigger: ".pulse4",
-        toggleActions: "play",
-        start: "top 80%",
-        end: "bottom 50%+=100px",
-        opacity: 1,
-    },
-    scale: 1.30,
-    duration: 0.5,
-    delay: 1,
-    repeat: 1,
-    yoyo: true
-});
-
 ScrollTrigger.batch(".pulse", {
     markers: false,
     trigger: '.pulse5',
     start: "top 100%",
     end: "bottom 10%",
     once: false,
-    toggleActions: "play",
+    toggleActions: "play none none reverse",
     onEnter: batch => {
         gsap.to(batch, {
             scale: 1.30,
@@ -322,32 +262,6 @@ ScrollTrigger.batch(".revealRight", {
             opacity: 1,
         });
     },
-    /*onLeave: batch => {
-        gsap.fromTo(batch, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        }, {
-            x: 200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        });
-    },
-    onEnterBack: batch => {
-        gsap.fromTo(batch, {
-            x: 200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        }, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        });
-    },*/
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             x: 0,
@@ -383,32 +297,6 @@ ScrollTrigger.batch(".revealLeft", {
             opacity: 1,
         });
     },
-    /*onLeave: batch => {
-        gsap.fromTo(batch, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        }, {
-            x: -200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        });
-    },
-    onEnterBack: batch => {
-        gsap.fromTo(batch, {
-            x: -200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        }, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        });
-    },*/
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             x: 0,
@@ -444,32 +332,6 @@ ScrollTrigger.batch(".revealUp", {
             opacity: 1,
         });
     },
-    /*onLeave: batch => {
-        gsap.fromTo(batch, {
-            y: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        }, {
-            y: 50,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        });
-    },
-    onEnterBack: batch => {
-        gsap.fromTo(batch, {
-            y: 50,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        }, {
-            y: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        });
-    },*/
     onLeaveBack: batch => {
         gsap.fromTo(batch, {
             y: 0,
