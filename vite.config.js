@@ -13,7 +13,6 @@ export default defineConfig({
         }),
         purge({
             paths: [
-                'resources/views/**/*.blade.php',
                 'resources/views/*.blade.php'
             ]
         }),
