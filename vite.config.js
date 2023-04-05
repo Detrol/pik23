@@ -11,8 +11,8 @@ export default defineConfig({
             ],
             refresh: true,
         }),
-        /*purge({
+        purge({
             templates: ['blade']
-        }),*/
+        }),
     ],
 })
