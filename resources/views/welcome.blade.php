@@ -62,7 +62,7 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
                     <div class="relative items-center md:inline-flex md:order-first">
                         <div class="max-w-xl min-w-full">
-                            <div class="textbox w-full text-left justify-start items-start min-h-[270px]">
+                            <div class="textbox w-full text-left justify-start items-start min-h-[280px]">
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
