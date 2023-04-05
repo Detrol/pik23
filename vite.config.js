@@ -11,10 +11,10 @@ export default defineConfig({
             ],
             refresh: true,
         }),
-        purge({
+        /*purge({
             paths: [
                 'resources/views/*.blade.php'
             ]
-        }),
+        }),*/
     ],
 })
