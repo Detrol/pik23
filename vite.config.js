@@ -12,7 +12,10 @@ export default defineConfig({
             refresh: true,
         }),
         purge({
-            templates: ['resources/views/**/*.blade.php']
+            paths: [
+                'resources/views/**/*.blade.php',
+                'resources/views/*.blade.php'
+            ]
         }),
     ],
 })
