@@ -171,6 +171,27 @@
 }
 
 /* GRÅ BAKGRUND */
+.custom-shape-divider-top-1680709279 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1680709279 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1680709279 .shape-fill {
+    fill: #F3F4F6;
+}
+
 .custom-shape-divider-bottom-1679525888 {
     position: absolute;
     bottom: 0;
