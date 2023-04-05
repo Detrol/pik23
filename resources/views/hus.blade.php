@@ -50,18 +50,18 @@
             <div>
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Hus kommer i många storlekar och former, likaså fönstren, och jag kan hjälpa till med det mesta som rör just dina behov.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Det spelar ingen roll hur stort eller litet ditt hus är, och det enda som begränsar mig är vilka höjder
                             jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Många hus kommer också med altan, som jag gärna hjälper till att putsa, så du kan få njuta till max under
                             sommarens fina dagar.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Har du några särskilda önskemål eller funderingar så är du mer än välkommen att höra av dig.
                         </p>
 

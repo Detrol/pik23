@@ -50,7 +50,7 @@
             <div>
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Är ni exempelvis en hyresgästförening så har ni säkert flera trapphus med fönster i, dessa
                             likt fönstren i bostäderna behöver tas hand om då och då. Detta ger er ett seriösare intryck för
                             era hyresgäster och dess besökare.
@@ -59,13 +59,13 @@
                             Det spelar ingen roll hur många fönster ni har, i hur många trappuppgångar. Hör av mig till mig
                             så kan vi göra upp en plan på hur vi kan ta område för område.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Det enda som begränsar mig är vilka höjder jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Är ni en mindre förening eller är du en enskild fastighetsägare? Det går jättebra det med, det finns inga jobb som är för små heller.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Har ni några särskilda önskemål eller funderingar så är ni mer än välkommen att höra av er.
                         </p>
 

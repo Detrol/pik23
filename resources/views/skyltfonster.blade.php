@@ -50,20 +50,20 @@
             <div>
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Era skyltfönster är en stor del av er verksamhet, då det speglar er image direkt från gatan där potentiella kunder
                             går förbi. Ett intryck av rena fönster gör stor skillnad, och kommer garanterat få förbigående
                             mer klistrade på vad ni visar bakom fönstren.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Skyltfönster kommer i många storlekar och former, och jag kan hjälpa er putsa fönster som når upp till 6 meter
                             från marknivå, och jag erbjuder i regel upp till 5 meter i bredd, och har ni bredare fönster än så, så kan ni
                             bara höra av er så löser vi det. Tyvärr så har jag inte licens för skylift ännu, men det är planerat framöver.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Har ni också inglasade sektioner, dörrar, speglar och liknande? Inga problem! Givetvis fixar jag det också.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Har ni några särskilda önskemål eller funderingar så är ni mer än välkommen att höra av er.
                         </p>
 
