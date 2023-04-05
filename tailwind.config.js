@@ -16,6 +16,7 @@ module.exports = {
             },
             colors: {
                 'primary': '#4fc3e0',
+                'secondary': '#98ca3c',
                 'footer': '#388987',
             },
             container: {
