@@ -50,18 +50,18 @@
             <div>
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Ert kontor är er image utåt för ert företag, vilket berör de anställa, likaväl som era kunder.
                             Därför är det viktigt att det ser snyggt och fräsch ut, och rena fönster gör väldigt stor skillnad.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Kontor kommer ofta med många fönster - ibland hundratals, och det är inga som helst problem för mig.
                             Det enda som begränsar mig är vilka höjder jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Har ni också inglasade sektioner, dörrar, speglar och liknande? Inga problem! Givetvis fixar jag det också.
                         </p>
-                        <p class="mb-3">
+                        <p class="mb-3 revealUp">
                             Har ni några särskilda önskemål eller funderingar så är ni mer än välkommen att höra av er.
                         </p>
 
