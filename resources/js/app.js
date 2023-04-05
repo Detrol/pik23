@@ -267,6 +267,31 @@ gsap.to(".pulse4", {
     yoyo: true
 });
 
+ScrollTrigger.batch(".pulse", {
+    markers: false,
+    trigger: '.pulse5',
+    start: "top 100%",
+    end: "bottom 10%",
+    once: false,
+    toggleActions: "play",
+    onEnter: batch => {
+        gsap.to(batch, {
+            scale: 1.30,
+            duration: 0.5,
+            delay: 1,
+            repeat: 1,
+            yoyo: true});
+    },
+    onLeaveBack: batch => {
+        gsap.to(batch, {
+            scale: 1.30,
+            duration: 0.5,
+            delay: 1,
+            repeat: 1,
+            yoyo: true});
+    },
+});
+
 gsap.set(".revealRight", {
     opacity: 0
 });

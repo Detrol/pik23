@@ -205,7 +205,7 @@
                                 <div
                                     class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-secondary pulse1"></i>
+                                        <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-secondary pulse"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Grönare
                                         </h3>
@@ -238,7 +238,7 @@
                                 <div
                                     class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-lightbulb-on text-4xl lg:text-4xl text-secondary pulse2"></i>
+                                        <i class="fa-duotone fa-lightbulb-on text-4xl lg:text-4xl text-secondary pulse"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Modernare
                                         </h3>
@@ -272,7 +272,7 @@
                                 <div
                                     class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-secondary pulse3"></i>
+                                        <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-secondary pulse"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Effektivare
                                         </h3>
@@ -306,7 +306,7 @@
                                 <div
                                     class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-secondary pulse4"></i>
+                                        <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-secondary pulse"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Prisvärdare
                                         </h3>
