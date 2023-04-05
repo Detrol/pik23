@@ -211,7 +211,7 @@ gsap.to(".pulse1", {
     scrollTrigger: {
         trigger: ".pulse1",
         toggleActions: "play",
-        start: "top 100%",
+        start: "top 80%",
         end: "bottom 50%+=100px",
         opacity: 1,
     },
@@ -226,7 +226,7 @@ gsap.to(".pulse2", {
     scrollTrigger: {
         trigger: ".pulse2",
         toggleActions: "play",
-        start: "top 100%",
+        start: "top 80%",
         end: "bottom 50%+=100px",
         opacity: 1,
     },
@@ -241,7 +241,7 @@ gsap.to(".pulse3", {
     scrollTrigger: {
         trigger: ".pulse3",
         toggleActions: "play",
-        start: "top 100%",
+        start: "top 80%",
         end: "bottom 50%+=100px",
         opacity: 1,
     },
@@ -256,7 +256,7 @@ gsap.to(".pulse4", {
     scrollTrigger: {
         trigger: ".pulse4",
         toggleActions: "play",
-        start: "top 100%",
+        start: "top 80%",
         end: "bottom 50%+=100px",
         opacity: 1,
     },

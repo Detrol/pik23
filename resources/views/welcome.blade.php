@@ -180,7 +180,7 @@
 
     </section>
 
-    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center z-50" style="background-image: url('{{ Vite::asset('resources/images/waves2.svg') }}');">
+    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center" style="background-image: url('{{ Vite::asset('resources/images/waves2.svg') }}');">
 
         <div class="custom-shape-divider-top-1680709279">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
