@@ -207,6 +207,66 @@ gsap.to(".numberbox", {
     ease: "power1.inOut",
 }, 1)
 
+gsap.to(".pulse1", {
+    scrollTrigger: {
+        trigger: ".pulse1",
+        toggleActions: "play",
+        start: "top 100%",
+        end: "bottom 50%+=100px",
+        opacity: 1,
+    },
+    scale: 1.30,
+    duration: 0.5,
+    delay: 1,
+    repeat: 1,
+    yoyo: true
+});
+
+gsap.to(".pulse2", {
+    scrollTrigger: {
+        trigger: ".pulse2",
+        toggleActions: "play",
+        start: "top 100%",
+        end: "bottom 50%+=100px",
+        opacity: 1,
+    },
+    scale: 1.30,
+    duration: 0.5,
+    delay: 1,
+    repeat: 1,
+    yoyo: true
+});
+
+gsap.to(".pulse3", {
+    scrollTrigger: {
+        trigger: ".pulse3",
+        toggleActions: "play",
+        start: "top 100%",
+        end: "bottom 50%+=100px",
+        opacity: 1,
+    },
+    scale: 1.30,
+    duration: 0.5,
+    delay: 1,
+    repeat: 1,
+    yoyo: true
+});
+
+gsap.to(".pulse4", {
+    scrollTrigger: {
+        trigger: ".pulse4",
+        toggleActions: "play",
+        start: "top 100%",
+        end: "bottom 50%+=100px",
+        opacity: 1,
+    },
+    scale: 1.30,
+    duration: 0.5,
+    delay: 1,
+    repeat: 1,
+    yoyo: true
+});
+
 gsap.set(".revealRight", {
     opacity: 0
 });

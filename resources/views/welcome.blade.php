@@ -180,7 +180,7 @@
 
     </section>
 
-    <section class="bg-cyan-700 relative overflow-hidden">
+    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center z-50" style="background-image: url('{{ Vite::asset('resources/images/waves2.svg') }}');">
 
         <div class="custom-shape-divider-top-1680709279">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -203,9 +203,9 @@
                                  data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div
-                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-secondary"></i>
+                                        <i class="fa-duotone fa-seedling text-4xl lg:text-4xl text-secondary pulse1"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Grönare
                                         </h3>
@@ -236,9 +236,9 @@
                                  data-aos-offset="100" data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div
-                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-lightbulb-on text-4xl lg:text-4xl text-secondary"></i>
+                                        <i class="fa-duotone fa-lightbulb-on text-4xl lg:text-4xl text-secondary pulse2"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Modernare
                                         </h3>
@@ -270,9 +270,9 @@
                                  data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div
-                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-secondary"></i>
+                                        <i class="fa-duotone fa-gauge-max text-4xl lg:text-4xl text-secondary pulse3"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Effektivare
                                         </h3>
@@ -304,9 +304,9 @@
                                  data-aos-delay="100"
                                  data-aos-easing="ease-in-out">
                                 <div
-                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
+                                    class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center drop-shadow">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-secondary"></i>
+                                        <i class="fa-duotone fa-tags text-4xl lg:text-4xl text-secondary pulse4"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Prisvärdare
                                         </h3>
