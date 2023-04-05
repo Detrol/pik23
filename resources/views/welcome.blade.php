@@ -130,7 +130,9 @@
                         </div>
                     </div>
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
-                        <div class='revealRight'>
+                        <div data-aos="fade-left"
+                             data-aos-offset="200"
+                             data-aos-duration="500">
                             <img
                                 class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
                                 alt="jag" loading="lazy" width="600" height="600"
