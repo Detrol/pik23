@@ -56,7 +56,7 @@
         </div>
     </section>
 
-    <section class="bg-gray-100 relative" id="about">
+    <section class="bg-gray-100 relative overflow-hidden" id="about">
         <div class="container pb-32 pt-20 md:pb-48 md:pt-28 max-w-3xl lg:max-w-7xl">
             <div class="flex-col items-start m-auto align-middle">
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
@@ -525,7 +525,7 @@
         </div>
     </section>
 
-    <section id="contact" class="relative">
+    <section id="contact overflow-hidden" class="relative">
         <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}'); z-index: 0;"></div>
 
