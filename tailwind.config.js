@@ -48,5 +48,5 @@ module.exports = {
         require('@tailwindcss/typography'),
         require('preline/plugin'),
     ],
-    mode: process.env.NODE_ENV ? 'jit' : undefined,
+    //mode: process.env.NODE_ENV ? 'jit' : undefined,
 }
