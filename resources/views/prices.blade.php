@@ -49,12 +49,17 @@
                         <h2 class="text-4xl text-black mb-4">
                             Hur räknas fönster?
                         </h2>
-                        <div class="mb-10">
-                            Vad många oftast tror är att fönster är glaset som man ser ut och in genom.
-                            <br/><br/>
-                            Fönsterputsföretag däremot, liksom jag, räknar antal fönster per handtag.
+                        <div class="mb-10 mb">
+                            <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 mb-4">
+                            Vad många oftast tror är att fönster är partiet som man ser ut och in genom.
+                            </p>
+
+                            <p class="mb-2">Fönsterputsföretag däremot, liksom jag, räknar antal fönster per handtag.
                             Om du till exempel har 1 fönster i sovrummet i 2 delar med 2 handtag,
-                            då räknar jag det som 2 fönster och inte som 1 fönster.
+                               då räknar jag det som 2 fönster och inte som 1 fönster.</p>
+
+                            <a class="text-blue-500 hover:text-blue-700" data-fslightbox="balkong_sma"
+                               href="{{ Vite::asset('resources/images/fonsterguide-min.jpg') }}">Se bildexempel</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +229,8 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Nedre</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">50 kr(80 kr)</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                        -
+                                        <a class="text-blue-500 hover:text-blue-700" data-fslightbox="balkong_nedre"
+                                           href="{{ Vite::asset('resources/images/balkong_undre.jpg') }}">Bild</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -373,6 +379,34 @@
                             </table>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="max-w-2xl" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <h1 class="text-4xl text-black mb-4">
+                    Reseersättning
+                </h1>
+                <div class="mb-10">
+                    <p class="mb-3">
+                        Jag tar ut
+                        <strong>5 kr/km</strong> (tur/retur), men endast om den totala summan uppnår 100 kr.<br/>
+                        Detta faktureras separat ifrån uppdragets faktura.
+                    </p>
+
+                    <h5 class="text-xl font-semibold">Prisexempel</h5>
+                    <p class="mb-3">
+                        Till och från <strong>Hammarö/Skoghall</strong> eller <strong>Skattkärr</strong> kostar ca
+                        <strong>100 kr</strong>.<br/>
+                        Till och från <strong>Grums/Vålberg</strong> kostar ca <strong>300 kr</strong>.<br/>
+                        Till och från <strong>Kil</strong> eller <strong>Forshaga</strong> kostar ca <strong>200 kr</strong>.
+                    </p>
+
+                    <p>
+                        <span class="text-sm">
+                            Reseersättning och distans räknas ut automatiskt när du fyllt i din adress i bokningsformuläret eller på medlemssidan,
+                            med hjälp av <strong>Google Maps API</strong>.
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>

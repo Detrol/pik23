@@ -38,13 +38,16 @@
                                         Hur räknas egentligen fönster?
                                     </p>
                                 </div>
-                                <div class="mt-2 text-base text-gray-500">
-                                    Vad många oftast tror är ett fönster är glaset som man ser ut och in genom.
+                                <div class="mt-2 text-base text-gray-500 mb-2">
+                                    Vad många oftast tror är att fönster är partiet som man ser ut och in genom.
                                     <br/><br/>
                                     Fönsterputsföretag däremot, liksom jag, räknar antal fönster per handtag.
                                     Om du till exempel har 1 fönster i sovrummet i 2 delar med 2 handtag,
                                     då räknar jag det som 2 fönster och inte som 1 fönster.
                                 </div>
+
+                                <a class="text-blue-500 hover:text-blue-700" data-fslightbox="balkong_sma"
+                                   href="{{ Vite::asset('resources/images/fonsterguide-min.jpg') }}">Se bildexempel</a>
                             </li>
                             <li class="revealRight">
                                 <div>
