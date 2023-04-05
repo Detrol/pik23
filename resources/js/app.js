@@ -209,7 +209,7 @@ gsap.to(".numberbox", {
 
 ScrollTrigger.batch(".pulse", {
     markers: false,
-    trigger: '.pulse5',
+    trigger: '.pulse',
     start: "top 100%",
     end: "bottom 10%",
     once: false,

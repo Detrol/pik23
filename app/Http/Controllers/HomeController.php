@@ -85,6 +85,56 @@ class HomeController extends Controller
         ]);
     }
 
+    function hus(Request $request)
+    {
+        return view('hus', [
+            'SEOData' => new SEOData(
+                title: 'Fönsterputs av hus',
+                description: 'Fönsterputsning av hus.',
+            ),
+        ]);
+    }
+
+    function lagenhet(Request $request)
+    {
+        return view('lagenhet', [
+            'SEOData' => new SEOData(
+                title: 'Fönsterputs av lägenhet',
+                description: 'Fönsterputsning av lägenhet.',
+            ),
+        ]);
+    }
+
+    function kontor(Request $request)
+    {
+        return view('kontor', [
+            'SEOData' => new SEOData(
+                title: 'Fönsterputs av kontor',
+                description: 'Fönsterputsning av kontor.',
+            ),
+        ]);
+    }
+
+    function trapphus(Request $request)
+    {
+        return view('trapphus', [
+            'SEOData' => new SEOData(
+                title: 'Fönsterputs av trapphus',
+                description: 'Fönsterputsning av trapphus.',
+            ),
+        ]);
+    }
+
+    function skyltfonster(Request $request)
+    {
+        return view('skyltfonster', [
+            'SEOData' => new SEOData(
+                title: 'Fönsterputs av skyltfönster',
+                description: 'Fönsterputsning av skyltfönster.',
+            ),
+        ]);
+    }
+
     function xml(Request $request)
     {
         SitemapGenerator::create(config('app.url'))
