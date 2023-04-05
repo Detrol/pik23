@@ -238,7 +238,7 @@
                                 <div
                                     class="grid grid-cols-1 lg:flex w-full h-full p-6 text-black bg-gradient-to-b from-white to-gray-100 rounded-xl mx-auto lg:divide-x gap-y-2 gap-x-6 items-center">
                                     <div class="w-12/12 lg:w-4/12 items-center justify-center text-center">
-                                        <i class="fa-duotone fa-code text-4xl lg:text-4xl text-secondary"></i>
+                                        <i class="fa-duotone fa-lightbulb-on text-4xl lg:text-4xl text-secondary"></i>
                                         <h3 class="mt-4 text-lg lg:text-lg font-medium leading-6 uppercase">
                                             Modernare
                                         </h3>
@@ -401,14 +401,14 @@
                 <div class="max-w-7xl mx-auto pb-4">
                     <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center">Vad önskar du få putsat?</h2>
                 </div>
-                <div class="grid w-full grid-cols-2 mx-auto lg:grid-cols-5 flex">
+                <div class="grid w-full grid-cols-2 mx-auto lg:grid-cols-3 flex">
                     <div class="p-6 w-full items-center justify-center text-center"
                          data-aos="zoom-out" data-aos-duration="1000"
                          data-aos-offset="100" data-aos-delay="100"
                          data-aos-easing="ease-in-out">
                         <div
-                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa fa-house text-xl"></i>
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-house text-2xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Hus
@@ -419,8 +419,8 @@
                          data-aos-offset="100" data-aos-delay="100"
                          data-aos-easing="ease-in-out">
                         <div
-                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa fa-building-user text-xl"></i>
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-building-user text-2xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Lägenhet
@@ -431,8 +431,8 @@
                          data-aos-offset="100" data-aos-delay="100"
                          data-aos-easing="ease-in-out">
                         <div
-                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa fa-chair-office text-xl"></i>
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-chair-office text-2xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Kontor
@@ -443,8 +443,8 @@
                          data-aos-offset="100" data-aos-delay="100"
                          data-aos-easing="ease-in-out">
                         <div
-                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa fa-buildings text-xl"></i>
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-buildings text-2xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Trapphus
@@ -455,11 +455,23 @@
                          data-aos-offset="100" data-aos-delay="100"
                          data-aos-easing="ease-in-out">
                         <div
-                            class="flex mx-auto items-center justify-center text-center w-12 h-12 text-gray-500 bg-gray-50 rounded-xl">
-                            <i class="fa fa-square text-xl"></i>
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-square text-2xl"></i>
                         </div>
                         <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
                             Skyltfönster
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-question-circle text-2xl"></i>
+                        </div>
+                        <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
+                            Hör av dig om annat
                         </p>
                     </div>
                 </div>
