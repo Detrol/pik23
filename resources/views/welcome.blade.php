@@ -404,7 +404,7 @@
             <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
                 <div class="max-w-7xl mx-auto pb-4">
                     <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center">Vad önskar du få putsat?</h2>
-                    <h3 class="text-3xl font-normal tracking-wide text-gray-300 dark:text-white lg:text-lg text-center">Klicka på etiketterna för mer information</h3>
+                    <h3 class="text-base font-normal tracking-wide text-gray-300 dark:text-white lg:text-lg text-center">Klicka på etiketterna för mer information</h3>
                 </div>
                 <div class="grid grid-cols-2 mx-auto lg:grid-cols-3 flex">
                     <a href="{{ route('hus') }}" class="hover:scale-125 duration-200">
