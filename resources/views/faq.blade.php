@@ -206,7 +206,43 @@
                                     Däremot så kan tidigare skador och repor dyka fram som varit där tidigare, men som du kanske inte sett då fönstren varit smutsiga.
                                 </div>
                             </li>
+                            <li class="revealLeft">
+                                <div>
+                                    <p class="mt-5 text-lg font-medium leading-6 text-black">
+                                        Vilken kvalité kan jag förvänta mig?
+                                    </p>
+                                </div>
+                                <div class="mt-2 text-base text-gray-500">
+                                    Kvalité är mitt motto och vad jag brinner för. Är inte du nöjd så är inte jag nöjd.<br />
+                                    Därför kan du vara säker på att jag gör mitt absolut yttersta för att leverera bästa möjliga resultat.
+                                </div>
+                            </li>
+                            <li class="revealRight">
+                                <div>
+                                    <p class="mt-5 text-lg font-medium leading-6 text-black">
+                                        Hur ofta ska man egentligen putsa sina fönster?
+                                    </p>
+                                </div>
+                                <div class="mt-2 text-base text-gray-500">
+                                    Till stor del är det upp till hur du själv vill ha det, men det rekommenderas 2 gånger per år för att fönstren ska upprätthålla sin glans.<br />
+                                    Smuts som sitter för länge kan också vara svårare att få bort, och det kan istället bli dyrare för dig i längden då det kan krävas grövre medel för att få fönstren spegelklara igen.<br /><br />
 
+                                    Nya fönster är dessutom ännu viktigare att putsa oftare, då dessa behöver "vänja in sig", lite som en högtalare.
+                                </div>
+                            </li>
+                            <li class="revealLeft">
+                                <div>
+                                    <p class="mt-5 text-lg font-medium leading-6 text-black">
+                                        Kan jag skapa en prenumeration/löpande bokningar?
+                                    </p>
+                                </div>
+                                <div class="mt-2 text-base text-gray-500">
+                                    För tillfället är detta inte möjligt, men det kommer att dyka upp!<br />
+                                    Då jag är en perfektionist så behöver jag vara säker på att alla uträkningar med tider och liknande stämmer, vilket endast tid kan avgöra.<br /><br />
+                                    Det nya bokningssystemet släpptes dessutom under hösten 2022, och det behöver också testas ordentligt innan jag öppnar möjligheten för automatiska bokningar.<br />
+                                    Jag räknar med att det kan släppas som tidigast hösten 2023, och annars våren 2024.
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
