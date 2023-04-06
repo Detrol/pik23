@@ -66,7 +66,9 @@
                             Är ni en mindre förening eller är du en enskild fastighetsägare? Det går jättebra det med, det finns inga jobb som är för små heller.
                         </p>
                         <p class="mb-3 revealUp">
-                            Har ni några särskilda önskemål eller funderingar så är ni mer än välkommen att höra av er.
+                            Har ni några särskilda önskemål eller funderingar så är ni mer än välkomna att
+                            <a href="{{ route('index') . '#contact' }}"
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av er</a>.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"

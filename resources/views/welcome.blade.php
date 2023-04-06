@@ -525,7 +525,7 @@
         </div>
     </section>
 
-    <section id="contact overflow-hidden" class="relative">
+    <section id="contact" class="relative overflow-hidden">
         <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
              style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}'); z-index: 0;"></div>
 

@@ -63,7 +63,9 @@
                             sommarens fina dagar.
                         </p>
                         <p class="mb-3 revealUp">
-                            Har du några särskilda önskemål eller funderingar så är du mer än välkommen att höra av dig.
+                            Har du några särskilda önskemål eller funderingar så är du mer än välkommen att
+                            <a href="{{ route('index') . '#contact' }}"
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av dig</a>.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"
