@@ -166,7 +166,7 @@ if (erfarenhetDecoy[0]) {
             value: erfarenhetDecoy[0].innerText
         },
         duration: erfarenhetDecoy[0].innerText.length * timePerCharacter,
-        delay: 5,
+        delay: 4,
         ease: "none",
     })
 }
