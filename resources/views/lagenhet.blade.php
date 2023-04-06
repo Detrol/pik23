@@ -51,14 +51,15 @@
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
                         <p class="mb-3 revealUp">
-                            Hus kommer i många storlekar och former, likaså fönstren, och jag kan hjälpa till med det mesta som rör just dina behov.
+                            Lägenheter kommer både stora som små, men inget jobb är för stort eller för litet.
                         </p>
                         <p class="mb-3 revealUp">
-                            Det spelar ingen roll hur stort eller litet ditt hus är, och det enda som begränsar mig är vilka höjder
-                            jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
+                            Puts av lägenheter brukar dessutom bli mycket billigare än ett hus, så varför inte passa på
+                            att få hjälp ett par gånger om året att få skinande rent hemma? En lång rad tilläggstjänster
+                            finns även för dig som vill ha det lite extra fint.
                         </p>
                         <p class="mb-3 revealUp">
-                            Många hus kommer också med altan, som jag gärna hjälper till att putsa, så du kan få njuta till max under
+                            Många lägenheter kommer också med balkong, som jag gärna hjälper till att putsa, så du kan få njuta till max under
                             sommarens fina dagar.
                         </p>
                         <p class="mb-3 revealUp">
@@ -67,7 +68,7 @@
 
                         <a href="https://karlstad.putsamer.se" target="_blank"
                            class="revealUp items-center justify-center mt-12 w-full px-6 py-2.5 text-xl text-white text-center rounded inline-flex md:w-auto bg-primary focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-cyan-500 active:bg-cyan-400 active:text-white focus-visible:outline-black">
-                            Boka fönsterputs av hus
+                            Boka fönsterputs av lägenhet
                         </a>
                     </div>
                 </div>
