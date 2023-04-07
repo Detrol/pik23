@@ -48,6 +48,64 @@
     height: 100%;
 }
 
+
+.textWrapper {
+    position: relative;
+    visibility: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 1.2em;
+    background-color: black;
+    opacity: 0;
+}
+
+.hcaptcha-container {
+    height: 78px;
+}
+
+/*
+.typewriter .typed-text:after {
+    content: "|";
+    margin-left: 0.1em;
+    opacity: 1;
+    animation: cursor 0.8s infinite;
+}
+
+.typewriter {
+    line-height: 10px;
+}
+
+.typewriter .typed-text.cursor-hidden:after {
+    content: "";
+    opacity: 0;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}*/
+
+
 .custom-shape-divider-bottom-1679524419 {
     position: absolute;
     bottom: 0;

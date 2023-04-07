@@ -38,31 +38,194 @@ jarallax(document.querySelectorAll('.jarallax'), {
     //disableParallax: /iPad|iPhone|iPod|Android/,
 });
 
-document.addEventListener("alpine:init", () => {
-    Alpine.store("toasts", {
-        counter: 0,
-        list: [],
-        createToast(message, type = "info") {
-            const index = this.list.length
-            let totalVisible =
-                this.list.filter((toast) => {
-                    return toast.visible
-                }).length + 1
-            this.list.push({
-                id: this.counter++,
-                message,
-                type,
-                visible: true,
-            })
-            setTimeout(() => {
-                this.destroyToast(index)
-            }, 2000 * totalVisible)
+/**************** INTRO TEXT ****************/
+
+const decoys = {
+    "hej": "hej-decoy",
+    "jag": "jag-decoy",
+    "erfarenhet": "erfarenhet-decoy",
+    "customers": "customers-decoy"
+};
+
+const timePerCharacter = 0.015;
+
+for (const [className, decoyClassName] of Object.entries(decoys)) {
+    const decoy = document.querySelector(`.${decoyClassName}`);
+    if (decoy) {
+        gsap.to(`.${className}`, {
+            scrollTrigger: {
+                trigger: ".hej",
+                toggleActions: "play",
+                start: "top 100%",
+                end: "bottom 50%+=100px",
+            },
+            text: {
+                value: decoy.innerText
+            },
+            duration: decoy.innerText.length * timePerCharacter,
+            delay: {
+                "hej": 0.5,
+                "jag": 1,
+                "erfarenhet": 4,
+                "customers": 10
+            }[className],
+            ease: "none",
+        });
+    }
+}
+
+/**************** NUMBER COUNTER ****************/
+
+gsap.from('.animCounter', {
+    textContent: '0',
+    duration: 2,
+    delay: 8,
+    ease: 'power1.inOut',
+    modifiers: {
+        textContent: value => formatNumber(value, 0)
+    },
+    scrollTrigger: {
+        trigger: '.hej',
+        start: 'top 90%',
+        end: 'bottom 50%+=100px'
+    }
+});
+
+gsap.set(".numberbox", {opacity: 0});
+
+gsap.to(".numberbox", {
+    scrollTrigger: {
+        trigger: ".hej",
+        toggleActions: "play",
+        start: "top 100%",
+        end: "bottom 50%+=100px"
+    },
+    delay: 7,
+    duration: 1,
+    opacity: 1,
+    ease: "power1.inOut"
+}, 1);
+
+/**************** PULSE ICONS ****************/
+
+const animationOptions = {
+    scale: 1.30,
+    duration: 0.5,
+    delay: 1,
+    repeat: 1,
+    yoyo: true
+};
+
+ScrollTrigger.batch(".pulse", {
+    markers: false,
+    trigger: '.pulse',
+    start: "top 100%",
+    end: "bottom 10%",
+    once: false,
+    toggleActions: "play none none reverse",
+    onEnter: batch => gsap.to(batch, animationOptions),
+    onLeaveBack: batch => gsap.to(batch, animationOptions),
+});
+
+/**************** REVEALS ****************/
+
+const revealEls = ['.revealRight', '.revealLeft', '.revealUp'];
+
+revealEls.forEach(el => {
+    gsap.set(el, { opacity: 0 });
+
+    ScrollTrigger.batch(el, {
+        markers: false,
+        trigger: el,
+        start: 'top 90%',
+        end: 'bottom 10%',
+        once: false,
+        toggleActions: 'play none none reverse',
+        onEnter: batch => {
+            gsap.fromTo(
+                batch,
+                { opacity: 0, x: el.includes('Right') ? 200 : el.includes('Left') ? -200 : 0, y: el.includes('Up') ? 50 : 0 },
+                { opacity: 1, x: 0, y: 0, duration: 0.5, ease: 'sine' }
+            );
         },
-        destroyToast(index) {
-            this.list[index].visible = false
-        },
-    })
-})
+        onLeaveBack: batch => {
+            gsap.to(batch, { opacity: 0, x: el.includes('Right') ? 200 : el.includes('Left') ? -200 : 0, y: el.includes('Up') ? 50 : 0, duration: 0.5, ease: 'sine' });
+        }
+    });
+});
+
+/**************** IMAGE SLIDESHOW ****************/
+
+const motivElements = gsap.utils.toArray(".motiv");
+const transitionTime = 5;
+const fadeDuration = 1.5;
+gsap.set(motivElements[0], { autoAlpha: 1 });
+const crossfade = () => {
+    if (motivElements.length >= 2) {
+        gsap.timeline()
+            .to(motivElements[0], { autoAlpha: 0, duration: fadeDuration })
+            .to(motivElements[1], { autoAlpha: 1, duration: fadeDuration }, 0);
+        motivElements.push(motivElements.shift());
+        gsap.delayedCall(transitionTime, crossfade);
+    } else console.error("There are not enough .motiv elements on the page.");
+};
+gsap.delayedCall(transitionTime, crossfade);
+
+
+/**************** LOGO FADE IN ****************/
+
+function animateText(selector, duration = 0.3, delay = 0.05) {
+    const text = document.querySelector(selector);
+    const chars = [...text.textContent].map(char => `<span>${char}</span>`);
+    text.innerHTML = chars.join("");
+    gsap.set(`${selector} span`, {opacity: 0});
+    gsap.timeline().to(`${selector} span`, {opacity: 1, duration, ease: "power1.in", stagger: delay});
+}
+
+// Example usage:
+animateText(".logofadein", 0.3, 0.05);
+
+
+/**************** TYPEWRITER ****************/
+
+/*const typewriters = document.querySelectorAll(".typewriter");
+
+const duration = 0.5;
+let delay = 0;
+
+typewriters.forEach(typewriter => {
+    const originalText = typewriter.querySelector(".original-text");
+    const typedText = typewriter.querySelector(".typed-text");
+    const text = originalText.textContent.trim(); // get the text content and remove whitespace
+
+    originalText.style.visibility = "hidden"; // hide the original text
+
+    const tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: typewriter,
+            start: "top 80%",
+            end: "bottom 80%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    tl2.from(typewriter, { opacity: 0, delay })
+        .to(typedText, {
+            text: {
+                value: text,
+                delimiter: ""
+            },
+            duration: text.length * duration,
+            ease: "none",
+            onComplete: () => {
+                typedText.classList.add("cursor-hidden");
+            }
+        });
+
+    delay += 0.5; // add a delay of 0.5 seconds between each typewriter
+});*/
+
+/**************** SCROLL TO ONPAGE HREF ****************/
 
 // Detect if a link's href goes to the current page
 function getSamePageAnchor(link) {
@@ -97,303 +260,30 @@ document.querySelectorAll('a[href]').forEach(a => {
 // Scroll to the element in the URL's hash on load
 scrollToHash(window.location.hash);
 
-const hejDecoy = document.getElementsByClassName("hej-decoy");
-const jagDecoy = document.getElementsByClassName("jag-decoy");
-const erfarenhetDecoy = document.getElementsByClassName("erfarenhet-decoy");
-const customersDecoy = document.getElementsByClassName("customers-decoy");
-const timePerCharacter = 0.015;
+/**************** TOAST ****************/
 
-gsap.utils.toArray(".animCounter").forEach(box => {
-    let tler = gsap.from(box, {
-        textContent: "0",
-        duration: 2,
-        delay: 8,
-        ease: "power1.inOut",
-        modifiers: {
-            textContent: value => formatNumber(value, 0)
+document.addEventListener("alpine:init", () => {
+    Alpine.store("toasts", {
+        counter: 0,
+        list: [],
+        createToast(message, type = "info") {
+            const index = this.list.length
+            let totalVisible =
+                this.list.filter((toast) => {
+                    return toast.visible
+                }).length + 1
+            this.list.push({
+                id: this.counter++,
+                message,
+                type,
+                visible: true,
+            })
+            setTimeout(() => {
+                this.destroyToast(index)
+            }, 2000 * totalVisible)
         },
-        scrollTrigger: {
-            /*trigger: textbox[0],*/
-            trigger: ".hej",
-            start: "top 90%",
-            end: "bottom 50%+=100px",
-        }
-    });
+        destroyToast(index) {
+            this.list[index].visible = false
+        },
+    })
 })
-if (hejDecoy[0]) {
-    gsap.to(".hej", {
-        scrollTrigger: {
-            trigger: ".hej",
-            toggleActions: "play",
-            start: "top 100%",
-            end: "bottom 50%+=100px",
-        },
-        text: {
-            value: hejDecoy[0].innerText
-        },
-        duration: 0.5,
-        //delay: 0.5,
-        ease: "none",
-    })
-}
-
-if (jagDecoy[0]) {
-    gsap.to(".jag", {
-        scrollTrigger: {
-            trigger: ".hej",
-            toggleActions: "play",
-            start: "top 100%",
-            end: "bottom 50%+=100px",
-        },
-        text: {
-            value: jagDecoy[0].innerText
-        },
-        duration: jagDecoy[0].innerText.length * timePerCharacter,
-        delay: 1,
-        ease: "none",
-    })
-}
-
-if (erfarenhetDecoy[0]) {
-    gsap.to(".erfarenhet", {
-        scrollTrigger: {
-            trigger: ".hej",
-            toggleActions: "play",
-            start: "top 100%",
-            end: "bottom 50%+=100px",
-        },
-        text: {
-            value: erfarenhetDecoy[0].innerText
-        },
-        duration: erfarenhetDecoy[0].innerText.length * timePerCharacter,
-        delay: 4,
-        ease: "none",
-    })
-}
-
-if (customersDecoy[0]) {
-    gsap.to(".customers", {
-        scrollTrigger: {
-            trigger: ".hej",
-            toggleActions: "play",
-            start: "top 100%",
-            end: "bottom 50%+=100px",
-        },
-        text: {
-            value: customersDecoy[0].innerText
-        },
-        duration: customersDecoy[0].innerText.length * timePerCharacter,
-        delay: 10,
-        ease: "none",
-    })
-}
-
-
-gsap.set(".numberbox", {
-    opacity: 0
-});
-
-gsap.to(".numberbox", {
-    scrollTrigger: {
-        trigger: ".hej",
-        toggleActions: "play",
-        start: "top 100%",
-        end: "bottom 50%+=100px",
-        opacity: 1,
-    },
-    delay: 7,
-    duration: 1,
-    opacity: 1,
-    ease: "power1.inOut",
-}, 1)
-
-ScrollTrigger.batch(".pulse", {
-    markers: false,
-    trigger: '.pulse',
-    start: "top 100%",
-    end: "bottom 10%",
-    once: false,
-    toggleActions: "play none none reverse",
-    onEnter: batch => {
-        gsap.to(batch, {
-            scale: 1.30,
-            duration: 0.5,
-            delay: 1,
-            repeat: 1,
-            yoyo: true});
-    },
-    onLeaveBack: batch => {
-        gsap.to(batch, {
-            scale: 1.30,
-            duration: 0.5,
-            delay: 1,
-            repeat: 1,
-            yoyo: true});
-    },
-});
-
-gsap.set(".revealRight", {
-    opacity: 0
-});
-gsap.set(".revealLeft", {
-    opacity: 0
-});
-gsap.set(".revealUp", {
-    opacity: 0
-});
-
-ScrollTrigger.batch(".revealRight", {
-    markers: false,
-    trigger: '.revealRight',
-    start: "top 90%",
-    end: "bottom 10%",
-    once: false,
-    toggleActions: "play none none reverse",
-    onEnter: batch => {
-        gsap.fromTo(batch, {
-            x: 200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        }, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        });
-    },
-    onLeaveBack: batch => {
-        gsap.fromTo(batch, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        }, {
-            x: 200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        });
-    },
-});
-
-ScrollTrigger.batch(".revealLeft", {
-    markers: false,
-    trigger: '.revealLeft',
-    start: "top 90%",
-    end: "bottom 10%",
-    once: false,
-    toggleActions: "play none none reverse",
-    onEnter: batch => {
-        gsap.fromTo(batch, {
-            x: -200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        }, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        });
-    },
-    onLeaveBack: batch => {
-        gsap.fromTo(batch, {
-            x: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        }, {
-            x: -200,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        });
-    },
-});
-
-ScrollTrigger.batch(".revealUp", {
-    markers: false,
-    trigger: '.revealUp',
-    start: "top 90%",
-    end: "bottom 10%",
-    once: false,
-    toggleActions: "play none none reverse",
-    onEnter: batch => {
-        gsap.fromTo(batch, {
-            y: 50,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        }, {
-            y: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        });
-    },
-    onLeaveBack: batch => {
-        gsap.fromTo(batch, {
-            y: 0,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 1,
-        }, {
-            y: 50,
-            duration: 0.5,
-            ease: "sine",
-            opacity: 0,
-        });
-    },
-});
-
-// Setup
-/*const scroller = document.querySelector('.scrollbar-container');
-
-const bodyScrollBar = Scrollbar.init(scroller, {
-    damping: 0.05,
-    delegateTo: document,
-    thumbMinSize: 15
-});
-
-ScrollTrigger.scrollerProxy(".scrollbar-container", {
-    scrollTop(value) {
-        if (arguments.length) {
-            bodyScrollBar.scrollTop = value;
-        }
-        return bodyScrollBar.scrollTop;
-    }
-});
-
-bodyScrollBar.addListener(ScrollTrigger.update);
-
-ScrollTrigger.defaults({
-    scroller: scroller
-});*/
-
-gsap.set('.motiv img',{xPercent:-50, yPercent:-50})
-
-const imgs = gsap.utils.toArray(".motiv");
-const next = 5; // time to change
-const fade = 1.5; // fade time
-
-
-
-//only for the first
-gsap.set(imgs[0], {autoAlpha:1})
-
-// ====================
-function crossfade(){
-
-    const action = gsap.timeline()
-        .to(imgs[0], {autoAlpha:0, duration:fade})
-        .to(imgs[1], {autoAlpha:1, duration:fade},0)
-
-
-    imgs.push( imgs.shift() );
-    // start endless run
-    gsap.delayedCall(next, crossfade);
-}
-
-// start the crossfade after next = 3 sec
-gsap.delayedCall(next, crossfade);

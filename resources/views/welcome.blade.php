@@ -610,7 +610,7 @@
                                 </p>
                             </div>
 
-                            <form class="mt-6" method="post" action="{{ route('form_mail') }}">
+                            <form class="mt-6 hcaptcha-section" method="post" action="{{ route('form_mail') }}">
                                 @csrf
                                 <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
                                 <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
@@ -636,11 +636,10 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    <div class="h-captcha" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
-                                    <script src="https://js.hcaptcha.com/1/api.js?hl=sv" async defer></script>
+                                    <div class="hcaptcha-container" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                 </div>
 
-                                <button
+                                <button id="verify-button" disabled
                                     class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50 revealUp">
                                     Skicka meddelande
                                 </button>
@@ -764,29 +763,24 @@
 
 @section('script')
     <script>
-        // Example 1:
-        const scrollView = document.getElementById('contact');
+        // Lazy load hcaptcha
+        function loadHcaptcha() {
+            var script = document.createElement('script');
+            script.src = 'https://hcaptcha.com/1/api.js?hl=sv';
+            script.async = true;
+            script.defer = true;
+            document.body.appendChild(script);
+            script.onload = function() {
+                document.getElementById('verify-button').disabled = false;
+            };
+        }
 
-        scrollView.addEventListener('scroll', () => {
-            if (scrollView.scrollTop + scrollView.clientHeight >= scrollView.scrollHeight) {
-                hcaptcha.execute();
-                console.log('hcaptcha loaded')
-            }
-        });
-
-        // Example 2:
-        const form = document.querySelector('form');
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const response = hcaptcha.getResponse();
-
-            if (response.length === 0) {
-                alert('Vänligen slutför hCaptcha-utmaningen.');
-            } else {
-                form.submit();
-            }
-        });
+        if (window.addEventListener) {
+            window.addEventListener('load', loadHcaptcha, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', loadHcaptcha);
+        } else {
+            window.onload = loadHcaptcha;
+        }
     </script>
 @endsection
