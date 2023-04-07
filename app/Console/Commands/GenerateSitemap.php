@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Vite;
+use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\SitemapGenerator;
 use Spatie\Sitemap\Tags\Url;
 
@@ -28,7 +29,7 @@ class GenerateSitemap extends Command
      */
     public function handle(): void
     {
-        SitemapGenerator::create(config('app.url'))
+        Sitemap::create()
             ->add(Url::create('/')->addImage(Vite::asset('resources/images/jag1.jpg')))
             ->add(Url::create('/priser'))
             ->add(Url::create('/vanliga-fragor'))
