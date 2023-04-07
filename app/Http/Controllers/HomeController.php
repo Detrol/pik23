@@ -139,12 +139,12 @@ class HomeController extends Controller
     {
         SitemapGenerator::create(config('app.url'))
             ->getSitemap()
-            /*->add(Url::create('/')->addImage(Vite::asset('resources/images/jag1.jpg')))
+            ->add(Url::create('/')->addImage(Vite::asset('resources/images/jag1.jpg')))
             ->add(Url::create('/priser'))
             ->add(Url::create('/vanliga-fragor'))
             ->add(Url::create('/miljovanligt'))
             ->add(Url::create('/tjanster'))
-            ->add(Url::create('/garanti'))*/
+            ->add(Url::create('/garanti'))
 
             ->writeToFile(public_path('sitemap.xml'));
     }
