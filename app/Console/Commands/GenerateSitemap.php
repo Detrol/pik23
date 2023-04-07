@@ -29,7 +29,6 @@ class GenerateSitemap extends Command
     public function handle(): void
     {
         SitemapGenerator::create(config('app.url'))
-            ->getSitemap()
             ->add(Url::create('/')->addImage(Vite::asset('resources/images/jag1.jpg')))
             ->add(Url::create('/priser'))
             ->add(Url::create('/vanliga-fragor'))
