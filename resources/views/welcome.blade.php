@@ -76,7 +76,7 @@
                                 <div id="textWrapper2" class="textWrapper">
                                     <p id="text2" class="text">How are you today?</p>
                                 </div>-->
-                                
+
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
@@ -782,7 +782,7 @@
             const response = hcaptcha.getResponse();
 
             if (response.length === 0) {
-                alert('Please complete the hCaptcha challenge.');
+                alert('Vänligen slutför hCaptcha-utmaningen.');
             } else {
                 form.submit();
             }
