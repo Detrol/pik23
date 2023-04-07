@@ -112,7 +112,7 @@
                                         <div class="text-center py-6 lg:py-4 antialiased">
                                             <div>
                                                 <p class="text-3xl font-medium leading-6 text-gray-700">
-                                                    <span class="animCounter">60000</span>+
+                                                    <span class="animCounter">60000</span> +
                                                 </p>
                                             </div>
                                             <div class="mt-3 text-base text-gray-500">
@@ -122,7 +122,7 @@
                                         <div class="text-center py-6 lg:py-4 antialiased">
                                             <div>
                                                 <p class="text-3xl font-medium leading-6 text-gray-700">
-                                                    <span class="animCounter">4000</span>+
+                                                    <span class="animCounter">4000</span> +
                                                 </p>
                                             </div>
                                             <div class="mt-3 text-base text-gray-500">
@@ -132,7 +132,7 @@
                                         <div class="text-center py-6 lg:py-4 antialiased">
                                             <div>
                                                 <p class="text-3xl font-medium leading-6 text-gray-700">
-                                                    <span class="animCounter">10</span> år+
+                                                    <span class="animCounter">10</span> år +
                                                 </p>
                                             </div>
                                             <div class="mt-3 text-base text-gray-500">
