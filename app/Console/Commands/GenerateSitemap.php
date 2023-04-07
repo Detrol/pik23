@@ -3,7 +3,9 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Vite;
 use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 class GenerateSitemap extends Command
 {
@@ -28,6 +30,12 @@ class GenerateSitemap extends Command
     {
         SitemapGenerator::create(config('app.url'))
             ->getSitemap()
+            ->add(Url::create('/')->addImage(Vite::asset('resources/images/jag1.jpg')))
+            ->add(Url::create('/priser'))
+            ->add(Url::create('/vanliga-fragor'))
+            ->add(Url::create('/miljovanligt'))
+            ->add(Url::create('/tjanster'))
+            ->add(Url::create('/garanti'))
             ->writeToFile(public_path('sitemap.xml'));
     }
 }
