@@ -770,6 +770,7 @@
         scrollView.addEventListener('scroll', () => {
             if (scrollView.scrollTop + scrollView.clientHeight >= scrollView.scrollHeight) {
                 hcaptcha.execute();
+                console.log('hcaptcha loaded')
             }
         });
 
