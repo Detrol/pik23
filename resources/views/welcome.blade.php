@@ -12,7 +12,7 @@
 
             <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
             <div
-                class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20"
+                class="absolute left-0 right-0 px-8 md:px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20"
                 style="z-index: 3">
 
                 <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white logofadein">
