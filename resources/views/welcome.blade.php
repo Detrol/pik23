@@ -15,9 +15,14 @@
                 class="absolute left-0 right-0 px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20"
                 style="z-index: 3">
 
-                <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white">
+                <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white logofadein">
                     Välkommen till <span class="hidden">Puts i Karlstad!</span>
                 </h1>
+
+                <!--<div id="typewriter" class="text-white">
+                    This is some text that will be animated.
+                </div>-->
+
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16 " width="800" height="112"
                      src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
@@ -63,6 +68,15 @@
                     <div class="relative items-center md:inline-flex md:order-first">
                         <div class="max-w-xl min-w-full">
                             <div class="textbox w-full text-left justify-start items-start min-h-[310px]">
+
+                                <!--<div id="textWrapper1" class="textWrapper">
+                                    <p id="text1" class="text">Hello, World!</p>
+                                </div>
+
+                                <div id="textWrapper2" class="textWrapper">
+                                    <p id="text2" class="text">How are you today?</p>
+                                </div>-->
+                                
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
                                 <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
@@ -70,6 +84,7 @@
                                 <h2 class="hej-decoy hidden">
                                     Hej!
                                 </h2>
+
                                 <p class="jag-decoy hidden">
                                     Andreas heter jag, och jag erbjuder prisvärd fönsterputs
                                     i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
@@ -185,7 +200,7 @@
     <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center"
              style="background-image: url('{{ Vite::asset('resources/images/waves.png') }}');">
 
-        <div class="custom-shape-divider-top-1680709279">
+        <div class="custom-shape-divider-top-1680709279 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                  preserveAspectRatio="none">
                 <path
@@ -195,7 +210,7 @@
         </div>
 
         <div
-            class="w-full h-full px-5 py-24 mx-auto items-center justify-center md:px-0 md:px-16 md:py-24"
+            class="w-full h-full px-5 py-24 mx-auto items-center justify-center md:px-0 md:px-16 md:py-24 backdrop-opacity-75 bg-black/10"
             style="z-index: 3;">
             <div class="max-w-7xl mx-auto pb-4">
                 <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja Puts i Karlstad?</h2>
@@ -748,5 +763,29 @@
 @endsection
 
 @section('script')
+    <script>
+        // Example 1:
+        const scrollView = document.getElementById('contact');
 
+        scrollView.addEventListener('scroll', () => {
+            if (scrollView.scrollTop + scrollView.clientHeight >= scrollView.scrollHeight) {
+                hcaptcha.execute();
+            }
+        });
+
+        // Example 2:
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const response = hcaptcha.getResponse();
+
+            if (response.length === 0) {
+                alert('Please complete the hCaptcha challenge.');
+            } else {
+                form.submit();
+            }
+        });
+    </script>
 @endsection
