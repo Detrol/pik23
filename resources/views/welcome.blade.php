@@ -763,24 +763,6 @@
 
 @section('script')
     <script>
-        // Lazy load hcaptcha
-        function loadHcaptcha() {
-            var script = document.createElement('script');
-            script.src = 'https://hcaptcha.com/1/api.js?hl=sv';
-            script.async = true;
-            script.defer = true;
-            document.body.appendChild(script);
-            script.onload = function() {
-                document.getElementById('verify-button').disabled = false;
-            };
-        }
 
-        if (window.addEventListener) {
-            window.addEventListener('load', loadHcaptcha, false);
-        } else if (window.attachEvent) {
-            window.attachEvent('onload', loadHcaptcha);
-        } else {
-            window.onload = loadHcaptcha;
-        }
     </script>
 @endsection
