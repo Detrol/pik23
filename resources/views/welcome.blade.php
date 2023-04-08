@@ -611,7 +611,7 @@
                         </div>
 
                         <div class="mb-10 mt-2">
-                            <div id="elfsight-app-2"></div>
+                            <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25" data-elfsight-app-lazy></div>
                         </div>
 
                         <div class="md:flex -mx-2 mb-4 revealUp">
