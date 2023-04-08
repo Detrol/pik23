@@ -217,46 +217,36 @@ typewriters.forEach(typewriter => {
 
 // Detect if a link's href goes to the current page
 // Debounce function
-function debounce(func, delay) {
-    let timeout;
-    return function (...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), delay);
-    };
+function getSamePageAnchor (link) {
+    if (
+        link.protocol !== window.location.protocol ||
+        link.host !== window.location.host ||
+        link.pathname !== window.location.pathname ||
+        link.search !== window.location.search
+    ) {
+        return false;
+    }
+
+    return link.hash;
 }
 
-// Find the anchor element with the same URL as the current page
-function getSamePageAnchor(link) {
-    return (
-        link.hash &&
-        link.origin === window.location.origin &&
-        link.pathname === window.location.pathname &&
-        link.search === window.location.search
-    ) ? link.hash : false;
-}
-
-// Scroll to a given hash, preventing the event given if there is one
-function scrollToHash(hash, e) {
-    const elem = hash && document.getElementById(hash.slice(1));
-    if (elem) {
-        e.preventDefault();
-        const elemId = elem.id;
-        // Remove the hash from the URL without reloading the page
-        history.replaceState(null, null, `#${elemId}`);
+function scrollToHash(hash) {
+    const elem = hash ? document.getElementById(hash.substring(1)) : false;
+    if(elem) {
         gsap.to(window, {scrollTo: elem});
     }
 }
 
-// Attach click event listener to document for event delegation
-document.addEventListener('click', debounce((e) => {
-    const hash = getSamePageAnchor(e.target);
-    if (hash) scrollToHash(hash, e);
-}), 100);
-
-// Scroll to the element in the URL's hash on load
-window.addEventListener('load', () => {
-    scrollToHash(window.location.hash);
+document.body.addEventListener('click', e => {
+    const link = e.target.closest('a[href]');
+    if (link && link.host === window.location.host && getSamePageAnchor(link)) {
+        e.preventDefault();
+        scrollToHash(link.hash);
+    }
 });
+
+scrollToHash(window.location.hash);
+
 
 /**************** TOAST ****************/
 
