@@ -247,7 +247,7 @@
     </section>
 
     <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/cvrretr67ybqvbc1cok0.webp">
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/cvrretr67ybqvbc1cok0.png">
 
         <div class="custom-shape-divider-top-1680709279 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
