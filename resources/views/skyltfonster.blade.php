@@ -51,22 +51,27 @@
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
                         <p class="mb-3 revealUp">
-                            Era skyltfönster är en stor del av er verksamhet, då det speglar er image direkt från gatan där potentiella kunder
-                            går förbi. Ett intryck av rena fönster gör stor skillnad, och kommer garanterat få förbigående
-                            mer klistrade på vad ni visar bakom fönstren.
+                            Era skyltfönster är en viktig del av er verksamhet då de representerar ert företag och ger
+                            det första intrycket av er till potentiella kunder som passerar förbi. Rena och skinande
+                            fönster kan verkligen göra skillnad och dra blickarna till vad ni har att erbjuda bakom
+                            glaset.
                         </p>
                         <p class="mb-3 revealUp">
-                            Skyltfönster kommer i många storlekar och former, och jag kan hjälpa er putsa fönster som når upp till 6 meter
-                            från marknivå, och jag erbjuder i regel upp till 5 meter i bredd, och har ni bredare fönster än så, så kan ni
-                            bara höra av er så löser vi det. Tyvärr så har jag inte licens för skylift ännu, men det är planerat framöver.
+                            Jag erbjuder professionell fönsterputsning av skyltfönster av olika storlekar och former.
+                            Med mina verktyg och tekniker kan jag hantera fönster som når upp till 6 meter från marken
+                            med hjälp av stege och stativ. Oavsett om era skyltfönster är smala eller breda, höga eller
+                            låga, ser jag till att de blir lika rena och glänsande som nya.
                         </p>
                         <p class="mb-3 revealUp">
-                            Har ni också inglasade sektioner, dörrar, speglar och liknande? Inga problem! Givetvis fixar jag det också.
+                            Jag förstår vikten av att ha fönster som alltid ser snygga ut och är stolta över att erbjuda
+                            en kvalitetsservice som lämnar er verksamhet med en skinande ren och fräsch look. Utöver
+                            skyltfönsterputsning kan jag även hjälpa er med rengöring av fönsterkarmar och lister.
                         </p>
                         <p class="mb-3 revealUp">
                             Har ni några särskilda önskemål eller funderingar så är ni mer än välkomna att
                             <a href="{{ route('index') . '#contact' }}"
-                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av er</a>.
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra
+                                av er</a>.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"

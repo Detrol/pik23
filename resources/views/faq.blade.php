@@ -47,11 +47,11 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500 mb-2">
-                                    Vad många oftast tror är att fönster är partiet som man ser ut och in genom.
-                                    <br/><br/>
-                                    Fönsterputsföretag däremot, liksom jag, räknar antal fönster per handtag.
-                                    Om du till exempel har 1 fönster i sovrummet i 2 delar med 2 handtag,
-                                    då räknar jag det som 2 fönster och inte som 1 fönster.
+                                    Det som många oftast tror är att fönster är den glasdel man ser ut och in
+                                    genom.<br/><br/>
+                                    Fönsterputsföretag, som jag, räknar däremot antal fönster utifrån antalet handtag.
+                                    Om du exempelvis har ett fönster i sovrummet med två glasdelar och två handtag,
+                                    räknar jag det som två fönster och inte som ett enda.
                                 </div>
 
                                 <a class="text-blue-500 hover:text-blue-700" data-fslightbox="balkong_sma"
@@ -59,7 +59,7 @@
                                 <br/>
 
                                 <div class="mt-2 text-base text-gray-500">
-                                    Fasta spröjs, och fönster med panel räknas per enskild glasskiva.
+                                    Fönster med fasta spröjs och panelrutor räknas per enskild glasskiva.
                                 </div>
                             </li>
                             <li class="revealRight">
@@ -69,11 +69,11 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Givetvis! Alla priser på hemsidan, och i bokningssystemet räknar alla
-                                    priser inkl. RUT-avdrag. Du behöver heller inte tänka på någonting,
-                                    Frilans Finans som jag fakturerar igenom sköter alltihop. Detta
-                                    gäller endast privatpersoner däremot, och att du inte redan har förbrukat
-                                    RUT/ROT-avdrag á 50,000 kr/år. Det gäller heller inte vid dödsbo.
+                                    Givetvis! Alla priser på hemsidan och i bokningssystemet inkluderar RUT-avdrag. Du
+                                    behöver inte heller tänka på någonting, eftersom Frilans Finans, som jag fakturerar
+                                    genom, sköter alltihop. Observera dock att detta endast gäller för privatpersoner
+                                    som inte redan har förbrukat RUT/ROT-avdrag på 50 000 kr per år och att det inte
+                                    gäller vid dödsbo.
                                 </div>
                             </li>
                             <li class="revealLeft">
@@ -83,13 +83,10 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Jag arbetar totalt på höjder upp till ca 6 meter.<br/>
-                                    Utan stege eller stativ så når jag ca 2 meter.<br/>
-                                    Med stege eller stativ så när jag ca 3 meter.<br/>
-                                    Med stege och stativ når jag ca 6 meter.<br/><br/>
-
-                                    Tyvärr så har jag ingen licens för skylift, och jag får inte
-                                    arbeta på högre stegar eftersom jag jobbar ensam.
+                                    Jag arbetar på höjder upp till ca 6 meter. Utan stege eller stativ når jag ca 2
+                                    meter, medan jag når ca 3 meter med stege eller stativ. Med både stege och stativ
+                                    når jag ca 6 meter. Observera att jag inte har någon licens för skylift och inte får
+                                    arbeta på högre höjder eftersom jag jobbar ensam.
                                 </div>
                             </li>
                             <li class="revealRight">
@@ -101,7 +98,7 @@
 
                                 <div class="mt-2 text-base text-gray-500">
                                     Det beror väldigt mycket på situation, och hur du bor.
-                                    Skulle något av nedanstående uppstå när du bokat så är det väldigt enkelt att byta tid.
+                                    Om du har bokat och något av följande uppstår, är det mycket enkelt att byta tid.
                                     <br/><br/>
 
                                     <div class="bg-white mx-auto border border-gray-200" x-data="{selected:null}">
@@ -123,9 +120,12 @@
                                                     x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                                                     <div class="px-3 pb-3">
                                                         <p>Vid minusgrader så putsar jag inte alls.</p>
-                                                        <p>Är det kallt väder ute på grund av vind och låga grader, och om du bor
-                                                           i en bostad som kräver utomhusarbete så flyttas normalt putset. Dessvärre
-                                                           är mina händer extremt känsliga för kyla.</p>
+                                                        <p>
+                                                            Vid minusgrader putsar jag inte alls. Om det är kallt ute på
+                                                            grund av vind och låga grader, och du bor i en bostad som
+                                                            kräver utomhusarbete, så flyttas normalt putsningen. Tyvärr
+                                                            är mina händer extremt känsliga för kyla.
+                                                        </p>
                                                     </div>
                                                 </div>
 
@@ -147,10 +147,11 @@
                                                     x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
                                                     <div class="px-3 pb-3">
                                                         <p>
-                                                            Bor du i en bostad där arbete kräver utomhusarbete så beror det helt
-                                                            på hur mycket regn det handlar om. Önskar du puts av delningsbara fönster
-                                                            som går utåt så putsar jag dom ej, även om det bara duggar, detta för
-                                                            att skydda fönstren.
+                                                            Om du bor i en bostad där arbete kräver utomhusarbete beror
+                                                            det helt på hur mycket regn det handlar om. Om du vill ha
+                                                            putsning av delningsbara fönster som öppnas utåt, putsar jag
+                                                            dem inte ens om det bara duggar, detta för att skydda
+                                                            fönstren.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -172,8 +173,11 @@
                                                     style="" x-ref="container3"
                                                     x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
                                                     <div class="px-3 pb-3">
-                                                        <p>Är det mycket vind vid putstillfället så putsar jag ej,
-                                                           då det riskerar skador på fönster och i vissa fall även mig själv.</p>
+                                                        <p>
+                                                            Om det är mycket vind vid putstillfället putsar jag inte,
+                                                            eftersom det kan orsaka skador på fönstren och i vissa fall
+                                                            även på mig själv.
+                                                        </p>
                                                     </div>
                                                 </div>
 
@@ -190,7 +194,7 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Jag står för allt material, och det tillkommer heller ingen extra kostnad för detta.
+                                    Jag står för allt material, och det tillkommer inga extra kostnader för detta.
                                 </div>
                             </li>
                             <li class="revealRight">
@@ -200,8 +204,8 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Absolut inte, jag är väldigt självgående, och skulle jag ha några frågor eller funderingar
-                                    så kan jag ringa eller skicka ett SMS till dig.
+                                    Absolut inte, jag är väldigt självgående. Skulle jag ha några frågor eller
+                                    funderingar så kan jag ringa eller skicka ett SMS till dig.
                                 </div>
                             </li>
                             <li class="revealLeft">
@@ -212,11 +216,14 @@
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
                                     Glas som går sönder eller spricker gäller ingen ersättning för, då det
-                                    är kundens ansvar att se till att fönstren som ska putsas är i tillräckligt gott skick.
+                                    är kundens ansvar att se till att fönstren som ska putsas är i tillräckligt gott
+                                    skick.
                                     Fönster som har synliga skador eller sprickor putsas inte alls.<br/><br/>
 
-                                    Skulle något gå sönder genom att jag mot all förmodan skulle råka välta någon prydnad eller liknande
-                                    så ersätter jag det genom att köpa nytt i första hand, om inte skulle gå så har jag också ansvarsförsäkring
+                                    Skulle något gå sönder genom att jag mot all förmodan skulle råka välta någon
+                                    prydnad eller liknande
+                                    så ersätter jag det genom att köpa nytt i första hand, om inte skulle gå så har jag
+                                    också ansvarsförsäkring
                                     via Frilans Finans.
                                 </div>
                             </li>
@@ -227,8 +234,10 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Utrustningen som jag använder åstadkommer inte repor i glas, då det är speciellt utformat för detta.<br/>
-                                    Däremot så kan tidigare skador och repor dyka fram som varit där tidigare, men som du kanske inte sett då fönstren varit smutsiga.
+                                    Utrustningen som jag använder åstadkommer inte repor i glas, då det är speciellt
+                                    utformat för detta.<br/>
+                                    Däremot så kan tidigare skador och repor dyka fram som varit där tidigare, men som
+                                    du kanske inte sett då fönstren varit smutsiga.
                                 </div>
                             </li>
                             <li class="revealLeft">
@@ -238,8 +247,10 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Kvalité är mitt motto och vad jag brinner för. Är inte du nöjd så är inte jag nöjd.<br/>
-                                    Därför kan du vara säker på att jag gör mitt absolut yttersta för att leverera bästa möjliga resultat.
+                                    Kvalitet är mitt motto och vad jag brinner för. Är inte du nöjd så är inte jag
+                                    nöjd.<br/>
+                                    Därför kan du vara säker på att jag gör mitt absolut yttersta för att leverera bästa
+                                    möjliga resultat.
                                 </div>
                             </li>
                             <li class="revealRight">
@@ -249,10 +260,14 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    Till stor del är det upp till hur du själv vill ha det, men det rekommenderas 2 gånger per år för att fönstren ska upprätthålla sin glans.<br/>
-                                    Smuts som sitter för länge kan också vara svårare att få bort, och det kan istället bli dyrare för dig i längden då det kan krävas grövre medel för att få fönstren spegelklara igen.<br/><br/>
+                                    Till stor del är det upp till hur du själv vill ha det, men det rekommenderas 2
+                                    gånger per år för att fönstren ska upprätthålla sin glans.<br/>
+                                    Smuts som sitter för länge kan också vara svårare att få bort, och det kan istället
+                                    bli dyrare för dig i längden då det kan krävas grövre medel för att få fönstren
+                                    spegelklara igen.<br/><br/>
 
-                                    Nya fönster är dessutom ännu viktigare att putsa oftare, då dessa behöver "vänja in sig", lite som en högtalare.
+                                    Nya fönster är dessutom ännu viktigare att putsa oftare, då dessa behöver "vänja in
+                                    sig", lite som en högtalare.
                                 </div>
                             </li>
                             <li class="revealLeft">
@@ -262,10 +277,12 @@
                                     </p>
                                 </div>
                                 <div class="mt-2 text-base text-gray-500">
-                                    För tillfället är detta inte möjligt, men det kommer att dyka upp!<br/>
-                                    Då jag är en perfektionist så behöver jag vara säker på att alla uträkningar med tider och liknande stämmer, vilket endast tid kan avgöra.<br/><br/>
-                                    Det nya bokningssystemet släpptes dessutom under hösten 2022, och det behöver också testas ordentligt innan jag öppnar möjligheten för automatiska bokningar.<br/>
-                                    Jag räknar med att det kan släppas som tidigast hösten 2023, och annars våren 2024.
+                                    För tillfället är detta inte möjligt, men det kommer att dyka upp! Då jag är en
+                                    perfektionist behöver jag vara säker på att alla uträkningar med tider och liknande
+                                    stämmer, vilket endast tid kan avgöra. Det nya bokningssystemet släpptes dessutom
+                                    under hösten 2022 och det behöver också testas ordentligt innan jag öppnar
+                                    möjligheten för automatiska bokningar. Jag räknar med att det kan släppas tidigast
+                                    hösten 2023, annars våren 2024.
                                 </div>
                             </li>
                         </ul>

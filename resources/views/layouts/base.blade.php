@@ -224,8 +224,7 @@
 
 @vite('resources/js/app.js')
 @livewireScripts
-
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script async src="https://apps.elfsight.com/p/platform.js"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 @yield('script')
@@ -249,7 +248,7 @@
 
     function loadHcaptcha() {
         var script = document.createElement('script');
-        script.src = 'https://hcaptcha.com/1/api.js';
+        script.src = 'https://hcaptcha.com/1/api.js?hl=sv';
         script.async = true;
         script.defer = true;
         document.body.appendChild(script);
@@ -273,6 +272,8 @@
     } else {
         window.onload = loadHcaptcha;
     }
+
+    // END OF CAPTCHA
 </script>
 
 </body>

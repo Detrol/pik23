@@ -51,21 +51,24 @@
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
                         <p class="mb-3 revealUp">
-                            Lägenheter kommer både stora som små, men inget jobb är för stort eller för litet.
+                            Jag erbjuder professionell fönsterputsning av lägenheter och tar hand om alla typer av
+                            fönster, inklusive balkongfönster. Oavsett om du bor högt upp eller på markplan så kan jag
+                            hjälpa till med att göra dina fönster skinande rena och ge din lägenhet ett fräscht intryck.
                         </p>
                         <p class="mb-3 revealUp">
-                            Puts av lägenheter brukar dessutom bli mycket billigare än ett hus, så varför inte passa på
-                            att få hjälp ett par gånger om året att få skinande rent hemma? En lång rad tilläggstjänster
-                            finns även för dig som vill ha det lite extra fint.
+                            Jag är kvalitetsmedveten och lämnar aldrig en lägenhet utan att vara nöjd med resultatet.
+                            Utöver fönsterputsning erbjuder jag även tilläggstjänster som exempelvis rengöring av
+                            fönsterkarmar och lister.
                         </p>
                         <p class="mb-3 revealUp">
-                            Många lägenheter kommer också med balkong, som jag gärna hjälper till att putsa, så du kan få njuta till max under
-                            sommarens fina dagar.
+                            När jag utför fönsterputsning av lägenheter ser jag till att jobbet blir klart på ett
+                            effektivt sätt så att du kan återgå till dina dagliga rutiner så snabbt som möjligt.
                         </p>
                         <p class="mb-3 revealUp">
                             Har du några särskilda önskemål eller funderingar så är du mer än välkommen att
                             <a href="{{ route('index') . '#contact' }}"
-                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av dig</a>.
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra
+                                av dig</a>.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"

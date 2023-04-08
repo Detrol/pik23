@@ -51,24 +51,35 @@
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
                         <p class="mb-3 revealUp">
-                            Är ni exempelvis en hyresgästförening så har ni säkert flera trapphus med fönster i, dessa
-                            likt fönstren i bostäderna behöver tas hand om då och då. Detta ger er ett seriösare intryck för
-                            era hyresgäster och dess besökare.
+                            Som professionell fönsterputsare har jag många års erfarenhet av att rengöra fönster av
+                            olika storlekar och former. Jag är stolt över att kunna erbjuda mina kunder en högkvalitativ
+                            service som alltid överträffar förväntningarna.
                         </p>
                         <p>
-                            Det spelar ingen roll hur många fönster ni har, i hur många trappuppgångar. Hör av mig till mig
-                            så kan vi göra upp en plan på hur vi kan ta område för område.
+                            Mitt mål är att lämna varje trapphus med fönster som är skinande rena och ser ut som nya.
+                            Jag är övertygad om att rena fönster kan göra en stor skillnad för trapphuset och skapa en
+                            välkomnande atmosfär för dess invånare och besökare.
                         </p>
                         <p class="mb-3 revealUp">
-                            Det enda som begränsar mig är vilka höjder jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
+                            Jag är flexibel och kan hantera alla typer av fönsterputsjobb, oavsett storlek eller form.
+                            Det är dock viktigt att notera att jag som mest kan arbeta med fönster som är upp till 6
+                            meters höjd med hjälp av trappstege och stativ.
                         </p>
                         <p class="mb-3 revealUp">
-                            Är ni en mindre förening eller är du en enskild fastighetsägare? Det går jättebra det med, det finns inga jobb som är för små heller.
+                            Förutom fönsterputsning erbjuder jag även tilläggstjänster som rengöring av fönsterkarmar
+                            och lister. Jag vill alltid se till att mina kunder är nöjda och lämnar aldrig ett trapphus
+                            innan jag är säker på att resultatet är perfekt.
+                        </p>
+                        <p class="mb-3 revealUp">
+                            Så om du letar efter en pålitlig och erfaren fönsterputsare för ditt trapphus, tveka inte
+                            att kontakta mig! Oavsett om du är en enskild fastighetsägare eller en mindre förening så
+                            hjälper jag dig gärna att få dina fönster att glänsa.
                         </p>
                         <p class="mb-3 revealUp">
                             Har ni några särskilda önskemål eller funderingar så är ni mer än välkomna att
                             <a href="{{ route('index') . '#contact' }}"
-                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av er</a>.
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra
+                                av er</a>.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"

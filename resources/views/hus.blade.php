@@ -51,20 +51,26 @@
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
                         <p class="mb-3 revealUp">
-                            Hus kommer i många storlekar och former, likaså fönstren, och jag kan hjälpa till med det mesta som rör just dina behov.
+                            Hus kommer i alla möjliga storlekar och former, och det samma gäller för fönster. Jag kan
+                            hjälpa till med alla typer av fönsterputsning för ditt hus, oavsett hur stora eller små
+                            fönstren är.
                         </p>
                         <p class="mb-3 revealUp">
-                            Det spelar ingen roll hur stort eller litet ditt hus är, och det enda som begränsar mig är vilka höjder
-                            jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
+                            Jag är flexibel och kan anpassa mig till alla typer av fönster, och det enda som begränsar mig är höjden på dina fönster. Just nu kan jag hantera fönster upp till 6 meter höjd med hjälp av trappstege och stativ, men jag gör allt för att kunna erbjuda mina tjänster för högre höjder i framtiden.
                         </p>
                         <p class="mb-3 revealUp">
-                            Många hus kommer också med altan, som jag gärna hjälper till att putsa, så du kan få njuta till max under
-                            sommarens fina dagar.
+                            Som en professionell fönsterputsare vet jag hur viktigt det är att få fönstren rena och
+                            skinande. Med min hjälp kommer ditt hus att lysa upp och ge ett inbjudande intryck både
+                            inifrån och utifrån.
+                        </p>
+                        <p class="mb-3 revealUp">
+                            Jag hjälper också gärna till med altanfönster så att du kan njuta av sommarens fina dagar utan att bekymra dig om smutsiga fönster. Utöver fönsterputsning erbjuder jag också tilläggstjänster såsom rengöring av fönsterkarmar och lister, för att ge ditt hus den extra finishen.
                         </p>
                         <p class="mb-3 revealUp">
                             Har du några särskilda önskemål eller funderingar så är du mer än välkommen att
                             <a href="{{ route('index') . '#contact' }}"
-                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av dig</a>.
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra
+                                av dig</a>.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"

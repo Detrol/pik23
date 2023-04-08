@@ -41,20 +41,22 @@ jarallax(document.querySelectorAll('.jarallax'), {
 /**************** INTRO TEXT ****************/
 
 const decoys = {
-    "hej": "hej-decoy",
-    "jag": "jag-decoy",
-    "erfarenhet": "erfarenhet-decoy",
-    "customers": "customers-decoy"
+    "text1": "text1-decoy",
+    "text2": "text2-decoy",
+    "text3": "text3-decoy",
+    "text4": "text4-decoy",
+    "text5": "text5-decoy",
+    "text6": "text6-decoy",
 };
 
-const timePerCharacter = 0.015;
+const timePerCharacter = 0.010;
 
 for (const [className, decoyClassName] of Object.entries(decoys)) {
     const decoy = document.querySelector(`.${decoyClassName}`);
     if (decoy) {
         gsap.to(`.${className}`, {
             scrollTrigger: {
-                trigger: ".hej",
+                trigger: ".textbox",
                 toggleActions: "play",
                 start: "top 100%",
                 end: "bottom 50%+=100px",
@@ -64,10 +66,12 @@ for (const [className, decoyClassName] of Object.entries(decoys)) {
             },
             duration: decoy.innerText.length * timePerCharacter,
             delay: {
-                "hej": 0.5,
-                "jag": 1,
-                "erfarenhet": 4,
-                "customers": 10
+                "text1": 0.5,
+                "text2": 1,
+                "text3": 4,
+                "text4": 5,
+                "text5": 8,
+                "text6": 14,
             }[className],
             ease: "none",
         });
@@ -79,13 +83,13 @@ for (const [className, decoyClassName] of Object.entries(decoys)) {
 gsap.from('.animCounter', {
     textContent: '0',
     duration: 2,
-    delay: 8,
+    delay: 1,
     ease: 'power1.inOut',
     modifiers: {
         textContent: value => formatNumber(value, 0)
     },
     scrollTrigger: {
-        trigger: '.hej',
+        trigger: '.numbers',
         start: 'top 90%',
         end: 'bottom 50%+=100px'
     }
@@ -100,7 +104,7 @@ gsap.to(".numberbox", {
         start: "top 100%",
         end: "bottom 50%+=100px"
     },
-    delay: 7,
+    delay: 9,
     duration: 1,
     opacity: 1,
     ease: "power1.inOut"

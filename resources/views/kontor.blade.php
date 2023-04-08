@@ -51,20 +51,37 @@
                 <div class="pt-12 mx-auto lg:max-w-7xl">
                     <div class="text-base text-gray-500">
                         <p class="mb-3 revealUp">
-                            Ert kontor är er image utåt för ert företag, vilket berör de anställa, likaväl som era kunder.
-                            Därför är det viktigt att det ser snyggt och fräsch ut, och rena fönster gör väldigt stor skillnad.
+                            Rena och klara fönster på kontoret är viktigt både för besökare och för de som arbetar där.
+                            Skitiga eller fläckiga fönster ger ett dåligt intryck av kontorsbyggnaden och kan också
+                            påverka arbetsmiljön negativt genom att minska mängden naturligt ljus som når in. Med min
+                            professionella fönsterputsningstjänst kommer era fönster att stråla som aldrig förr och ge
+                            både besökare och anställda en inbjudande känsla.
                         </p>
                         <p class="mb-3 revealUp">
-                            Kontor kommer ofta med många fönster - ibland hundratals, och det är inga som helst problem för mig.
-                            Det enda som begränsar mig är vilka höjder jag kan jobba på. Vilket i skrivande stund är upp till 6 meter med hjälp av trappstege och stativ.
+                            Jag har omfattande erfarenhet av att arbeta med alla typer av kontorsfönster, och min
+                            utrustning är av högsta kvalitet för att kunna hantera även de mest utmanande
+                            fönsterputsjobben. Jag anpassar mig efter era önskemål och behov, och förutom grundläggande
+                            fönsterputsning kan jag också erbjuda en rad tilläggstjänster som att rengöra fönsterkarmar,
+                            inglasade sektioner, speglar och liknande.
                         </p>
+
                         <p class="mb-3 revealUp">
-                            Har ni också inglasade sektioner, dörrar, speglar och liknande? Inga problem! Givetvis fixar jag det också.
+                            Hög höjd är inget problem för mig, och jag kan arbeta med fönster upp till 6 meter höjd med
+                            hjälp av mina säkra och effektiva verktyg och stativ. Med mitt noggranna öga för detaljer
+                            och min strävan efter perfektion lämnar jag aldrig ett kontor innan jag är nöjd med
+                            resultatet.
                         </p>
+
                         <p class="mb-3 revealUp">
-                            Har ni några särskilda önskemål eller funderingar så är ni mer än välkomna att
+                            Låt mig hjälpa er att ta hand om era kontorsfönster och förvandla era arbetsutrymmen till en
+                            inbjudande och professionell miljö som både anställda och besökare uppskattar.
+                        </p>
+
+                        <p class="mb-3 revealUp">
+                            Har du några särskilda önskemål eller funderingar så är du mer än välkommen att
                             <a href="{{ route('index') . '#contact' }}"
-                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra av er</a>.
+                               class="p-1 rounded border font-semibold duration-200 hover:text-gray-800 focus:outline-none focus-visible:outline-gray-600">höra
+                                av dig</a> så kan jag hjälpa dig på bästa sätt.
                         </p>
 
                         <a href="https://karlstad.putsamer.se" target="_blank"

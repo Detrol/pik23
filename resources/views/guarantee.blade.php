@@ -3,7 +3,8 @@
 @section('content')
 
     <section class="relative h-[13rem] md:h-[15rem]">
-        <div class="jarallax relative h-[13rem] md:h-[15rem]" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
+        <div class="jarallax relative h-[13rem] md:h-[15rem]" data-jarallax
+             data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
             <div class="absolute bg-gray-900 w-full opacity-60 h-[13rem] md:h-[15rem]" style="z-index: 2;"></div>
         </div>
 
@@ -36,18 +37,20 @@
                         </h2>
 
                         <div class="mt-3 text-base text-gray-500">
-                            <p class="mb-3">Givetvis så får du garanti när jag utför jobb hos dig, då även de bästa kan råka få ränder, eller
-                                            missa vissa fläckar. Fönster är väldigt knepiga så, då saker inte alltid syns i vissa ljus och
-                                            vinklar. Detta har du 7 dagars garanti på, och det är bara att du hör av dig om du upptäcker detta
-                                            efter utfört jobb. Tänkt dock på att vissa fläckar kan vara skador i glaset, som inte går bort.</p>
+                            <p class="mb-3">Givetvis får du garanti när jag utför jobbet hos dig, då även de bästa kan
+                                råka få ränder eller missa vissa fläckar. Fönster är väldigt knepiga eftersom vissa
+                                saker inte alltid syns i vissa ljus och vinklar. Du har 7 dagars garanti på arbetet och
+                                du kan höra av dig om du upptäcker detta efter utfört jobb. Tänk dock på att vissa
+                                fläckar kan vara skador i glaset som inte går bort.</p>
 
-                            <p class="mb-3">En annan sak som i vissa fall händer, är att fåglar, kanske av ren djävulskap, får för sig att skita
-                                            på dina fönster direkt efter de blivit putsade. Men oroa dig inte! Detta åtgärdar jag givetvis också,
-                                            och i detta fallet har du 14 dagar på dig efter utfört arbete.</p>
+                            <p class="mb-3">En annan sak som i vissa fall kan hända är att fåglar, kanske av ren
+                                djävulskap, får för sig att skita på dina fönster direkt efter att de blivit putsade.
+                                Men oroa dig inte! Detta åtgärdar jag givetvis också, och i detta fall har du 14 dagar
+                                på dig efter utfört arbete att utnyttja garantin.</p>
 
                             <p class="font-bold">
-                                Vill du nyttja garantin så bokar du ett kundbesök via bokningssystemet,
-                                där du uppger som kommentar att du vill göra detta. Reseersättning kan tillkomma.
+                                Om du vill utnyttja garantin kan du boka ett kundbesök via bokningssystemet och ange i
+                                kommentarerna att du vill göra detta. Reseersättning kan tillkomma.
                             </p>
                         </div>
                     </div>

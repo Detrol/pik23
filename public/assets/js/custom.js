@@ -10,4 +10,3 @@ window.addEventListener('load', () => {
     loaderContainer.style.opacity = '0';
     loaderContainer.style.visibility = 'hidden';
 });
-

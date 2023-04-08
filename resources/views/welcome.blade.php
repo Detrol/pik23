@@ -67,7 +67,39 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
                     <div class="relative items-center md:inline-flex md:order-first">
                         <div class="max-w-xl min-w-full">
-                            <div class="textbox w-full text-left justify-start items-start min-h-[310px]">
+                            <div class="textbox w-full text-left justify-start items-start min-h-[550px] md:min-h-[450px]">
+
+                                <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    Hej där!
+                                </p>
+                                <p class="mt-4 block font-sans lg:text-lg text-base leading-relaxed antialiased text-gray-600"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    Letar du efter en prisvärd och pålitlig fönsterputsare i Karlstad, Hammarö,
+                                    Vålberg, Grums, Molkom, Kil eller Väse med omnejd?
+                                </p>
+                                <p class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    Då har du kommit till rätt ställe!
+                                </p>
+                                <p class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    Jag heter Andreas och jag har över 10 års erfarenhet av fönsterputsning, både för
+                                    privatpersoner och företag.
+                                </p>
+                                <p class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    Jag erbjuder professionell hjälp med rätt utrustning och teknik för
+                                    att se till att dina fönster blir skinande rena. Oavsett om du har en stor byggnad
+                                    eller en liten lägenhet, så har jag kunskapen och verktygen för att klara av
+                                    uppdraget.
+                                </p>
+                                <p class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    Så varför inte låta mig ta hand om dina fönster? Boka tid hos mig och upplev
+                                    skillnaden av kristallklara fönster.
+                                </p>
+
 
                                 <!--<div id="textWrapper1" class="textWrapper">
                                     <p id="text1" class="text">Hello, World!</p>
@@ -77,26 +109,37 @@
                                     <p id="text2" class="text">How are you today?</p>
                                 </div>-->
 
-                                <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased hej">&nbsp;</p>
-                                <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 jag">&nbsp;</p>
-                                <p class="mt-4 block font-sans text-lg font-normal leading-relaxed antialiased text-gray-600 erfarenhet">&nbsp;</p>
-                                <p class="mt-4 block font-sans text-lg font-semibold leading-relaxed antialiased text-gray-600 customers">&nbsp;</p>
-                                <h2 class="hej-decoy hidden">
-                                    Hej!
+                                <!--<p class="block font-sans text-3xl font-semibold leading-relaxed antialiased text1"></p>
+                                <p class="mt-4 block font-sans lg:text-lg text-base font-normal leading-relaxed antialiased text-gray-600 text2"></p>
+                                <p class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600 text3"></p>
+                                <p class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600 text4"></p>
+                                <p class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600 text5"></p>
+                                <p class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600 text6"></p>
+                                <h2 class="text1-decoy hidden">
+                                    Hej där!
                                 </h2>
 
-                                <p class="jag-decoy hidden">
-                                    Andreas heter jag, och jag erbjuder prisvärd fönsterputs
-                                    i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med mera.
+                                <p class="text2-decoy hidden">
+                                    Letar du efter en prisvärd och pålitlig fönsterputsare i Karlstad, Hammarö,
+                                    Vålberg, Grums, Molkom, Kil eller Väse med omnejd?
                                 </p>
-                                <p class="erfarenhet-decoy hidden">
-                                    Med över 10 års erfarenhet av fönsterputs så kan jag erbjuda dig
-                                    professionell
-                                    hjälp med kunskap, teknik, och rätt utrustning.
+                                <p class="text3-decoy hidden">
+                                    Då har du kommit till rätt ställe!
                                 </p>
-                                <p class="customers-decoy hidden">
-                                    För både privatpersoner och företag.
+                                <p class="text4-decoy hidden">
+                                    Jag heter Andreas och jag har över 10 års erfarenhet av fönsterputsning, både för
+                                    privatpersoner och företag.
                                 </p>
+                                <p class="text5-decoy hidden">
+                                    Jag erbjuder professionell hjälp med rätt utrustning och teknik för
+                                    att se till att dina fönster blir skinande rena. Oavsett om du har en stor byggnad
+                                    eller en liten lägenhet, så har jag kunskapen och verktygen för att klara av
+                                    uppdraget.
+                                </p>
+                                <p class="text6-decoy hidden">
+                                    Så varför inte låta mig ta hand om dina fönster? Boka tid hos mig och upplev
+                                    skillnaden av kristallklara fönster.
+                                </p>-->
                             </div>
                             <!--<div
                                 class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
@@ -106,7 +149,8 @@
                                     <span aria-hidden="true"> → </span>
                                 </a>
                             </div>-->
-                            <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block numberbox">
+                            <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block numbers"
+                                 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
                                 <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-md">
                                     <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left divide-y sm:divide-y-0 sm:divide-x">
                                         <div class="text-center py-6 lg:py-4 antialiased">
@@ -213,7 +257,8 @@
             class="w-full h-full px-5 py-24 mx-auto items-center justify-center md:px-0 md:px-16 md:py-24 backdrop-opacity-75 bg-black/10"
             style="z-index: 3;">
             <div class="max-w-7xl mx-auto pb-4">
-                <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja Puts i Karlstad?</h2>
+                <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja
+                    Puts i Karlstad?</h2>
             </div>
             <div class="relative items-center justify-center w-full h-full max-w-7xl mx-auto">
                 <div class="py-4 mx-auto">
@@ -247,8 +292,8 @@
                                         </div>
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
-                                            <p>Jag erbjuder ett helt
-                                               miljövänligt alternativ, till skillnad från många konkurrenter.</p>
+                                            <p>Jag erbjuder en helt miljövänlig lösning för fönsterputs,
+                                                vilket skiljer mig från många konkurrenter.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -280,8 +325,8 @@
                                         </div>
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
-                                            <p>Hos mig hittar du ett unikt och modernt bokningssystem som
-                                               ingen annan på marknaden erbjuder.</p>
+                                            <p>Hos mig hittar du ett unikt och modernt bokningssystem
+                                                som inte erbjuds av någon annan på marknaden.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -314,8 +359,8 @@
                                         </div>
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
-                                            <p>Med över 10 år i branschen så jobbar jag väldigt snabbt och effektivt,
-                                               utan att slarva med resultatet.</p>
+                                            <p>Med över 10 års erfarenhet inom branschen arbetar jag
+                                                mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -348,8 +393,8 @@
                                         </div>
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
-                                            <p>Jag erbjuder schyssta priser,
-                                               och personliga rabatter för mina återkommande kunder.</p>
+                                            <p>Jag erbjuder schyssta priser samt personliga rabatter för mina
+                                                återkommande kunder.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -420,8 +465,10 @@
         <div class="w-full h-full flex justify-center items-center backdrop-opacity-50 bg-black/60" style="z-index: 3;">
             <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
                 <div class="max-w-7xl mx-auto pb-4">
-                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center mb-2">Vad önskar du få putsat?</h2>
-                    <h3 class="text-base font-normal tracking-wide text-gray-300 dark:text-white lg:text-lg text-center">Klicka på etiketterna för mer information</h3>
+                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center mb-2">
+                        Vad önskar du få putsat?</h2>
+                    <h3 class="text-base font-normal tracking-wide text-gray-300 dark:text-white lg:text-lg text-center">
+                        Klicka på etiketterna för mer information</h3>
                 </div>
                 <div class="grid grid-cols-2 mx-auto lg:grid-cols-3 flex">
                     <a href="{{ route('hus') }}" class="hover:scale-125 duration-200">
@@ -564,8 +611,7 @@
                         </div>
 
                         <div class="mb-10 mt-2">
-                            <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25"
-                                 data-elfsight-app-lazy></div>
+                            <div id="elfsight-app-2"></div>
                         </div>
 
                         <div class="md:flex -mx-2 mb-4 revealUp">
@@ -606,7 +652,8 @@
                                 <h2 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h2>
 
                                 <p class="mt-2 text-gray-500 dark:text-gray-400">
-                                    Ställ mig gärna frågor, men kom ihåg att bokningar sker via bokningsformuläret.
+                                    Tveka inte att ställa mig frågor, men vänligen observera att bokningar sker enbart
+                                    via bokningsformuläret.
                                 </p>
                             </div>
 
@@ -636,11 +683,12 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    <div class="hcaptcha-container" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
+                                    <div class="hcaptcha-container"
+                                         data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                 </div>
 
                                 <button id="verify-button" disabled
-                                    class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50 revealUp">
+                                        class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50 revealUp">
                                     Skicka meddelande
                                 </button>
                             </form>
@@ -666,32 +714,32 @@
 
                     <p class="font-weight-medium m-0">Men varför skulle mitt engagemang vara mer unikt?</p>
                     <p>När jag var runt 13 år så fick jag en diagnos inom det autistiska spektrat, och något som är
-                       vanligt
-                       hos
-                       folk inom det är att de har väldigt få, men starka intressen. Något som kan
-                       yttra sig i form av en naturbegåvning.</p>
+                        vanligt
+                        hos
+                        folk inom det är att de har väldigt få, men starka intressen. Något som kan
+                        yttra sig i form av en naturbegåvning.</p>
 
                     <p class="font-weight-medium m-0">Detta är väldigt sant när det gäller mig.</p>
                     <p>Fönsterputs är inget jobb eller arbete för mig. Det är en konst, en passion och terapi. Något som
-                       gör mig jordad och får mig att må bra, och leder mig in i ett meditativt tillstånd.</p>
+                        gör mig jordad och får mig att må bra, och leder mig in i ett meditativt tillstånd.</p>
 
                     <p>Därför kan du räkna med att jag lägger ner hela mitt hjärta när jag utför fönsterputs hos dig,
-                       och
-                       jag blir inte nöjd innan det är perfekt. Nästan perfekt.</p>
+                        och
+                        jag blir inte nöjd innan det är perfekt. Nästan perfekt.</p>
 
                     <p>Inga fönster går att få perfekta, något som jag behövt lära mig och acceptera med tid. Även om
-                       det
-                       är svårt än idag, efter många år av fönsterputsande.<br/>
-                       Det finns alltid små fläckar, repor och annat som sitter gjutet i glaset som inte går att göra
-                       något
-                       åt om man inte har starka kemikalier som är skadligt för naturen, något som jag vägrar att
-                       nyttja.</p>
+                        det
+                        är svårt än idag, efter många år av fönsterputsande.<br/>
+                        Det finns alltid små fläckar, repor och annat som sitter gjutet i glaset som inte går att göra
+                        något
+                        åt om man inte har starka kemikalier som är skadligt för naturen, något som jag vägrar att
+                        nyttja.</p>
 
                     <p>Men det är oftast saker bara jag ser, som mina kunder aldrig ens kommer lägga märke till.</p>
 
                     <p>Sedan så kommer ni kanske få ta del av den sociala skyggheten jag bär på vissa dagar,
-                       men detta bjuder jag på &#128522;. Detta är också varför ni ej ser ett telefonnummer på
-                       hemsidan.</p>
+                        men detta bjuder jag på &#128522;. Detta är också varför ni ej ser ett telefonnummer på
+                        hemsidan.</p>
 
                     Mvh Andreas
                 </div>
@@ -722,26 +770,26 @@
                     <h6>Hej och välkommen tillbaka!</h6>
 
                     <p>Som du ser så är det ständig förnyelse här, då verksamheten
-                       växer så det knakar, och jag är väldigt engagerad i att göra det så smidigt
-                       som möjligt för alla mina kunder att kunna boka, och återkomma.</p>
+                        växer så det knakar, och jag är väldigt engagerad i att göra det så smidigt
+                        som möjligt för alla mina kunder att kunna boka, och återkomma.</p>
 
                     <p>Från och med i år så går det inte längre att boka direkt via Puts i Karlstad,
-                       utan jag har flyttat bokningssystemet till en ny tjänst jag driver, som heter Putsa Mer.
-                       Där jag kommer hyra ut mitt bokningssystem till andra egenanställda fönsterputsare runtom i
-                       Sverige.</p>
+                        utan jag har flyttat bokningssystemet till en ny tjänst jag driver, som heter Putsa Mer.
+                        Där jag kommer hyra ut mitt bokningssystem till andra egenanställda fönsterputsare runtom i
+                        Sverige.</p>
 
                     <p>Bokningssystemet för dig som kund, är exakt detsamma(förutom en del förbättringar), som det du
-                       använde om du bokade i höstas.</p>
+                        använde om du bokade i höstas.</p>
 
                     <p>Var det däremot längre sedan ändå sedan du bokade, ja då har du en helt del nytt att se.
-                       Då bokningssystemet fick sig ett ordentligt lyft under hösten 2022.</p>
+                        Då bokningssystemet fick sig ett ordentligt lyft under hösten 2022.</p>
 
                     <p>Bokade du innan det nya systemet lanserades i höstas så behöver du tyvärr också
-                       skaffa dig ett nytt kundkonto. Men tro mig, det kommer vara värt det!</p>
+                        skaffa dig ett nytt kundkonto. Men tro mig, det kommer vara värt det!</p>
 
                     <p>Som en bonus för dig som återkommande kund från det gammla systemet, så kan du under
-                       medlemssidan importera dina gamla bokningar, som du sedan kan konvertera till en rabattkod
-                       där du får avdrag på <strong>5% per bokning</strong> som du tidigare gjort.</p>
+                        medlemssidan importera dina gamla bokningar, som du sedan kan konvertera till en rabattkod
+                        där du får avdrag på <strong>5% per bokning</strong> som du tidigare gjort.</p>
 
                     <h6>Hoppas vi ses igen!</h6>
                     Med vänlig hälsning<br/>
