@@ -75,32 +75,32 @@
                                 class="textbox w-full text-left justify-start items-start min-h-[550px] md:min-h-[450px]">
 
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Hej där!
                                 </p>
                                 <h1 class="mt-4 block font-sans lg:text-lg text-base leading-relaxed antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Letar du efter en prisvärd och pålitlig fönsterputsare i Karlstad, Hammarö,
                                     Vålberg, Grums, Molkom, Kil eller Väse med omnejd?
                                 </h1>
                                 <p class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Då har du kommit till rätt ställe!
                                 </p>
                                 <h2 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Jag heter Andreas och jag har över 10 års erfarenhet av fönsterputsning, både för
                                     privatpersoner och företag.
                                 </h2>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Jag erbjuder professionell hjälp med rätt teknik och utrustning för
                                     att se till att dina fönster blir skinande rena. Oavsett om du har en stor byggnad
                                     eller en liten lägenhet, så har jag kunskapen och verktygen för att klara av
                                     uppdraget.
                                 </h3>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Så varför inte låta mig ta hand om dina fönster? Boka tid hos mig och upplev
                                     skillnaden av kristallklara fönster.
                                 </h3>
