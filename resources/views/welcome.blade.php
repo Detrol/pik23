@@ -707,13 +707,7 @@
         const submitButton = document.getElementById('submit-button');
         const errorContainer = document.getElementById('error-container');
         const hcaptchaElement = document.querySelector('.h-captcha');
-
-        // Define the onHcaptchaSubmit function to be called when the user completes the hcaptcha
-        function onHcaptchaSubmit() {
-            // Enable the submit button when the user completes the hcaptcha
-            submitButton.disabled = false;
-        }
-
+        
         // Create an Intersection Observer to detect when the form is in view
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
