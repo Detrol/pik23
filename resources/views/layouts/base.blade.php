@@ -224,7 +224,6 @@
 @vite('resources/js/app.js')
 @livewireScripts
 <script async src="https://apps.elfsight.com/p/platform.js"></script>
-<script src="https://hcaptcha.com/1/api.js" async></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 @yield('script')

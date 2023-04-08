@@ -705,14 +705,51 @@
 @section('script')
     <script>
         const submitButton = document.getElementById('submit-button');
-        const hcaptchaElement = document.getElementById('hcaptcha-element');
         const errorContainer = document.getElementById('error-container');
+        const hcaptchaElement = document.querySelector('.h-captcha');
+
+        // Define the onHcaptchaSubmit function to be called when the user completes the hcaptcha
+        function onHcaptchaSubmit() {
+            // Enable the submit button when the user completes the hcaptcha
+            submitButton.disabled = false;
+        }
+
+        // Create an Intersection Observer to detect when the form is in view
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                // If the form is in view, load the hcaptcha script
+                if (entry.isIntersecting) {
+                    const script = document.createElement('script');
+                    script.src = 'https://hcaptcha.com/1/api.js';
+                    script.async = true;
+                    script.defer = true;
+                    hcaptchaElement.appendChild(script);
+
+                    // Unobserve the form so the script is not loaded multiple times
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Observe the form
+        observer.observe(document.getElementById('mail-form'));
 
         document.querySelector('form').addEventListener('submit', function(event) {
             if (!window.hcaptcha || !window.hcaptcha.getResponse()) {
                 event.preventDefault();
                 errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
             }
+        });
+
+        // Add an event listener to the submit button to disable it until the user completes the hcaptcha
+        submitButton.addEventListener('click', function(event) {
+            if (!window.hcaptcha || !window.hcaptcha.getResponse()) {
+                event.preventDefault();
+                errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
+                return;
+            }
+            // Disable the submit button until the user completes the hcaptcha
+            submitButton.disabled = true;
         });
     </script>
 @endsection
