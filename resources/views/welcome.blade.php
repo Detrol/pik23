@@ -683,9 +683,8 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    <div id="h-captcha-container" class="h-captcha"
-                                         data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
-                                    <span id="captcha-warning" class="text-red-500"></span>
+                                    <div class="h-captcha" id="hcaptcha-element" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
+                                    <div id="error-container"></div>
                                 </div>
 
 
@@ -705,22 +704,15 @@
 
 @section('script')
     <script>
-        const form = document.getElementById('mail-form');
-        const captcha = document.getElementById('h-captcha-container');
-        const submitBtn = document.querySelector('button[type="submit"]');
+        const submitButton = document.getElementById('submit-button');
+        const hcaptchaElement = document.getElementById('hcaptcha-element');
+        const errorContainer = document.getElementById('error-container');
 
-        form.addEventListener('submit', (event) => {
-            if (!captcha.value) {
+        document.querySelector('form').addEventListener('submit', function(event) {
+            if (!window.hcaptcha || !window.hcaptcha.getResponse()) {
                 event.preventDefault();
-                console.log('submitted')
-                document.getElementById('captcha-warning').textContent = 'Fyll i captcha innan du skickar in.';
-                submitBtn.disabled = true;
+                errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
             }
-        });
-
-        captcha.addEventListener('hCaptcha.callback', () => {
-            document.getElementById('captcha-warning').textContent = '';
-            submitBtn.disabled = false;
         });
     </script>
 @endsection

@@ -224,6 +224,7 @@
 @vite('resources/js/app.js')
 @livewireScripts
 <script async src="https://apps.elfsight.com/p/platform.js"></script>
+<script src="https://hcaptcha.com/1/api.js" async></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 @yield('script')
@@ -243,33 +244,6 @@
         (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
             topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
-    }
-
-    function loadHcaptcha() {
-        var script = document.createElement('script');
-        script.src = 'https://hcaptcha.com/1/api.js?hl=sv';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        script.onload = function() {
-            document.getElementById('verify-button').disabled = false;
-            var hcaptchaContainer = document.querySelector('.hcaptcha-container');
-            if (hcaptchaContainer) {
-                hcaptcha.render(hcaptchaContainer, {
-                    sitekey: '6fa67746-f883-4721-9f61-c8672088dfff'
-                });
-            } else {
-                console.error('[hCaptcha] render: invalid container');
-            }
-        };
-    }
-
-    if (window.addEventListener) {
-        window.addEventListener('load', loadHcaptcha, false);
-    } else if (window.attachEvent) {
-        window.attachEvent('onload', loadHcaptcha);
-    } else {
-        window.onload = loadHcaptcha;
     }
 
     // END OF CAPTCHA
