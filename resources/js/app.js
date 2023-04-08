@@ -40,43 +40,37 @@ jarallax(document.querySelectorAll('.jarallax'), {
 
 /**************** INTRO TEXT ****************/
 
-const decoys = {
-    "text1": "text1-decoy",
-    "text2": "text2-decoy",
-    "text3": "text3-decoy",
-    "text4": "text4-decoy",
-    "text5": "text5-decoy",
-    "text6": "text6-decoy",
-};
+/*const decoys = new Map([
+    ["text1", { delay: 0.5, content: "text1-decoy" }],
+    ["text2", { delay: 1, content: "text2-decoy" }],
+    ["text3", { delay: 4, content: "text3-decoy" }],
+    ["text4", { delay: 5, content: "text4-decoy" }],
+    ["text5", { delay: 8, content: "text5-decoy" }],
+    ["text6", { delay: 14, content: "text6-decoy" }],
+]);
 
 const timePerCharacter = 0.010;
+const textBox = document.querySelector(".textbox");
 
-for (const [className, decoyClassName] of Object.entries(decoys)) {
-    const decoy = document.querySelector(`.${decoyClassName}`);
+for (const [className, { delay, content }] of decoys) {
+    const decoy = document.querySelector(`.${content}`);
     if (decoy) {
+        const duration = decoy.innerText.length * timePerCharacter;
         gsap.to(`.${className}`, {
             scrollTrigger: {
-                trigger: ".textbox",
+                trigger: textBox,
                 toggleActions: "play",
                 start: "top 100%",
                 end: "bottom 50%+=100px",
             },
-            text: {
-                value: decoy.innerText
-            },
-            duration: decoy.innerText.length * timePerCharacter,
-            delay: {
-                "text1": 0.5,
-                "text2": 1,
-                "text3": 4,
-                "text4": 5,
-                "text5": 8,
-                "text6": 14,
-            }[className],
+            text: { value: decoy.innerText },
+            duration,
+            delay,
             ease: "none",
         });
     }
-}
+}*/
+
 
 /**************** NUMBER COUNTER ****************/
 
@@ -95,7 +89,7 @@ gsap.from('.animCounter', {
     }
 });
 
-gsap.set(".numberbox", {opacity: 0});
+/*gsap.set(".numberbox", {opacity: 0});
 
 gsap.to(".numberbox", {
     scrollTrigger: {
@@ -108,7 +102,7 @@ gsap.to(".numberbox", {
     duration: 1,
     opacity: 1,
     ease: "power1.inOut"
-}, 1);
+}, 1);*/
 
 /**************** PULSE ICONS ****************/
 
@@ -232,37 +226,44 @@ typewriters.forEach(typewriter => {
 /**************** SCROLL TO ONPAGE HREF ****************/
 
 // Detect if a link's href goes to the current page
-function getSamePageAnchor(link) {
-    if (
-        link.protocol !== window.location.protocol ||
-        link.host !== window.location.host ||
-        link.pathname !== window.location.pathname ||
-        link.search !== window.location.search
-    ) {
-        return false;
-    }
+// Debounce function
+function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+}
 
-    return link.hash;
+// Find the anchor element with the same URL as the current page
+function getSamePageAnchor(link) {
+    return (
+        link.hash &&
+        link.origin === window.location.origin &&
+        link.pathname === window.location.pathname &&
+        link.search === window.location.search
+    ) ? link.hash : false;
 }
 
 // Scroll to a given hash, preventing the event given if there is one
 function scrollToHash(hash, e) {
-    const elem = hash ? document.querySelector(hash) : false;
+    const elem = hash && document.getElementById(hash.slice(1));
     if (elem) {
-        if (e) e.preventDefault();
+        e.preventDefault();
         gsap.to(window, {scrollTo: elem});
     }
 }
 
-// If a link's href is within the current page, scroll to it instead
-document.querySelectorAll('a[href]').forEach(a => {
-    a.addEventListener('click', e => {
-        scrollToHash(getSamePageAnchor(a), e);
-    });
-});
+// Attach click event listener to document for event delegation
+document.addEventListener('click', debounce((e) => {
+    const hash = getSamePageAnchor(e.target);
+    if (hash) scrollToHash(hash, e);
+}), 100);
 
 // Scroll to the element in the URL's hash on load
-scrollToHash(window.location.hash);
+window.addEventListener('load', () => {
+    scrollToHash(window.location.hash);
+});
 
 /**************** TOAST ****************/
 
@@ -271,23 +272,14 @@ document.addEventListener("alpine:init", () => {
         counter: 0,
         list: [],
         createToast(message, type = "info") {
-            const index = this.list.length
-            let totalVisible =
-                this.list.filter((toast) => {
-                    return toast.visible
-                }).length + 1
-            this.list.push({
-                id: this.counter++,
-                message,
-                type,
-                visible: true,
-            })
-            setTimeout(() => {
-                this.destroyToast(index)
-            }, 2000 * totalVisible)
+            const index = this.list.length;
+            let totalVisible = this.list.filter(toast => toast.visible).length + 1;
+            this.list.push({ id: this.counter++, message, type, visible: true });
+            setTimeout(() => this.destroyToast(index), 5000);
         },
         destroyToast(index) {
-            this.list[index].visible = false
+            this.list[index].visible = false;
         },
     })
 })
+

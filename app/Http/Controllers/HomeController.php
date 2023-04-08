@@ -177,10 +177,10 @@ class HomeController extends Controller
         if ($request->action == 'contact_form_submit') {
             Mail::to('info@putsikarlstad.se')->send(new FormMail($mailData));
 
-            return redirect()->route('home')->with('status', 'Jag har nu mottagit ditt meddelande, och jag svarar oftast inom några timmar.');
+            return redirect()->route('index')->with('status', 'Jag har nu mottagit ditt meddelande, och jag svarar oftast inom några timmar.');
         }
 
-        return redirect()->route('home')->with('status', 'Något gick fel.');
+        return redirect()->route('index')->with('status', 'Något gick fel.');
 
     }
 }

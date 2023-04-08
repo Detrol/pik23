@@ -657,7 +657,7 @@
                                 </p>
                             </div>
 
-                            <form class="mt-6 hcaptcha-section" method="post" action="{{ route('form_mail') }}">
+                            <form id="mail-form" class="mt-6 hcaptcha-section" method="post" action="{{ route('form_mail') }}">
                                 @csrf
                                 <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
                                 <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
@@ -683,11 +683,13 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    <div class="hcaptcha-container"
+                                    <div id="h-captcha-container" class="h-captcha"
                                          data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
+                                    <span id="captcha-warning" class="text-red-500"></span>
                                 </div>
 
-                                <button id="verify-button" disabled
+
+                                <button type="submit" id="submit-button"
                                         class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50 revealUp">
                                     Skicka meddelande
                                 </button>
@@ -699,118 +701,26 @@
         </div>
     </section>
 
-    <div class="modal fade hidden" id="anlita" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLg"
-         aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabelLg">Varför anlita mig?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <p>När du anlitar mig så anlitar du någon som har ett unikt engagemang.</p>
-
-                    <p class="font-weight-medium m-0">Men varför skulle mitt engagemang vara mer unikt?</p>
-                    <p>När jag var runt 13 år så fick jag en diagnos inom det autistiska spektrat, och något som är
-                        vanligt
-                        hos
-                        folk inom det är att de har väldigt få, men starka intressen. Något som kan
-                        yttra sig i form av en naturbegåvning.</p>
-
-                    <p class="font-weight-medium m-0">Detta är väldigt sant när det gäller mig.</p>
-                    <p>Fönsterputs är inget jobb eller arbete för mig. Det är en konst, en passion och terapi. Något som
-                        gör mig jordad och får mig att må bra, och leder mig in i ett meditativt tillstånd.</p>
-
-                    <p>Därför kan du räkna med att jag lägger ner hela mitt hjärta när jag utför fönsterputs hos dig,
-                        och
-                        jag blir inte nöjd innan det är perfekt. Nästan perfekt.</p>
-
-                    <p>Inga fönster går att få perfekta, något som jag behövt lära mig och acceptera med tid. Även om
-                        det
-                        är svårt än idag, efter många år av fönsterputsande.<br/>
-                        Det finns alltid små fläckar, repor och annat som sitter gjutet i glaset som inte går att göra
-                        något
-                        åt om man inte har starka kemikalier som är skadligt för naturen, något som jag vägrar att
-                        nyttja.</p>
-
-                    <p>Men det är oftast saker bara jag ser, som mina kunder aldrig ens kommer lägga märke till.</p>
-
-                    <p>Sedan så kommer ni kanske få ta del av den sociala skyggheten jag bär på vissa dagar,
-                        men detta bjuder jag på &#128522;. Detta är också varför ni ej ser ett telefonnummer på
-                        hemsidan.</p>
-
-                    Mvh Andreas
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        <i class="fi fi-close"></i>
-                        Stäng
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade hidden" id="exampleModalMd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelMd"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabelMd">Information till dig som tidigare kund</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <h6>Hej och välkommen tillbaka!</h6>
-
-                    <p>Som du ser så är det ständig förnyelse här, då verksamheten
-                        växer så det knakar, och jag är väldigt engagerad i att göra det så smidigt
-                        som möjligt för alla mina kunder att kunna boka, och återkomma.</p>
-
-                    <p>Från och med i år så går det inte längre att boka direkt via Puts i Karlstad,
-                        utan jag har flyttat bokningssystemet till en ny tjänst jag driver, som heter Putsa Mer.
-                        Där jag kommer hyra ut mitt bokningssystem till andra egenanställda fönsterputsare runtom i
-                        Sverige.</p>
-
-                    <p>Bokningssystemet för dig som kund, är exakt detsamma(förutom en del förbättringar), som det du
-                        använde om du bokade i höstas.</p>
-
-                    <p>Var det däremot längre sedan ändå sedan du bokade, ja då har du en helt del nytt att se.
-                        Då bokningssystemet fick sig ett ordentligt lyft under hösten 2022.</p>
-
-                    <p>Bokade du innan det nya systemet lanserades i höstas så behöver du tyvärr också
-                        skaffa dig ett nytt kundkonto. Men tro mig, det kommer vara värt det!</p>
-
-                    <p>Som en bonus för dig som återkommande kund från det gammla systemet, så kan du under
-                        medlemssidan importera dina gamla bokningar, som du sedan kan konvertera till en rabattkod
-                        där du får avdrag på <strong>5% per bokning</strong> som du tidigare gjort.</p>
-
-                    <h6>Hoppas vi ses igen!</h6>
-                    Med vänlig hälsning<br/>
-                    Andreas
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        <i class="fi fi-close"></i>
-                        Stäng
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
 @endsection
 
 @section('script')
     <script>
+        const form = document.getElementById('mail-form');
+        const captcha = document.getElementById('h-captcha-container');
+        const submitBtn = document.querySelector('button[type="submit"]');
 
+        form.addEventListener('submit', (event) => {
+            if (!captcha.value) {
+                event.preventDefault();
+                console.log('submitted')
+                document.getElementById('captcha-warning').textContent = 'Fyll i captcha innan du skickar in.';
+                submitBtn.disabled = true;
+            }
+        });
+
+        captcha.addEventListener('hCaptcha.callback', () => {
+            document.getElementById('captcha-warning').textContent = '';
+            submitBtn.disabled = false;
+        });
     </script>
 @endsection
