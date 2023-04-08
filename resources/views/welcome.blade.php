@@ -720,7 +720,7 @@
                 // If the form is in view, load the hcaptcha script
                 if (entry.isIntersecting) {
                     const script = document.createElement('script');
-                    script.src = 'https://hcaptcha.com/1/api.js';
+                    script.src = 'https://hcaptcha.com/1/api.js?hl=sv';
                     script.async = true;
                     script.defer = true;
                     hcaptchaElement.appendChild(script);
