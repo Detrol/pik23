@@ -6,7 +6,7 @@
         <div class="relative h-screen">
             <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
                    style="z-index: 0">
-                <source src="{{ Vite::asset('resources/images/rain.mp4') }}" type="video/mp4"/>
+                <source src="https://res.cloudinary.com/dstcee6fc/video/upload/f_auto,q_auto/z4dncokblo8pwtbwatof.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
 
@@ -25,7 +25,7 @@
 
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16 " width="800" height="112"
-                     src="{{ Vite::asset('resources/images/text-nologo-trimmed.png') }}" alt="logo">
+                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.png" alt="logo">
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
@@ -195,7 +195,7 @@
                             <img
                                 class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
                                 alt="jag" loading="lazy" width="600" height="600"
-                                src="{{ Vite::asset('resources/images/jag1.jpg') }}">
+                                src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/t95ud7ighutrhga0jikl.jpg">
                         </div>
 
                     </div>
@@ -242,7 +242,7 @@
     </section>
 
     <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center"
-             style="background-image: url('{{ Vite::asset('resources/images/waves.png') }}');">
+             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/cvrretr67ybqvbc1cok0.png');">
 
         <div class="custom-shape-divider-top-1680709279 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -439,19 +439,19 @@
              style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>-->
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}');"></div>
+             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/acdt38uz8i1hepaf58bu.jpg');"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('{{ Vite::asset('resources/images/lagenheter.jpg') }}');"></div>
+             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/jhoiqzdrcrxq2grlokpz.jpg');"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('{{ Vite::asset('resources/images/kontor.jpg') }}');"></div>
+             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/vqkfuj1icn3knsx1ergu.jpg');"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('{{ Vite::asset('resources/images/trapphus.jpg') }}');"></div>
+             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bbciyqjlia3hq14wehh6.jpg');"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('{{ Vite::asset('resources/images/skyltfonster.jpg') }}');"></div>
+             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bmfkcpwjvnsog7w8nks0.jpg');"></div>
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"

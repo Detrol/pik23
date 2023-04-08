@@ -107,7 +107,7 @@
         <div class="flex items-center justify-between">
             <a href="/">
                 <img class="w-48 lg:w-72" width="400" height="61"
-                     src="{{ Vite::asset('resources/images/full-logo-noslogan-trimmed.png') }}" alt="logo-top">
+                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/xcrolnzvkyjcicewzf9i.png" alt="logo-top">
             </a>
             <div class="md:hidden">
                 <button type="button"
