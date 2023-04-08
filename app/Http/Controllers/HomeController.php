@@ -157,7 +157,7 @@ class HomeController extends Controller
             'message' => 'required',
             'email' => 'required|email',
             'name' => 'required',
-            //'h-captcha-response' => ['required', new ValidHCaptcha()]
+            'h-captcha-response' => ['required', new ValidHCaptcha()]
         ]);
 
         $subject = 'Kontaktformulär';
