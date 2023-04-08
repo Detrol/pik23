@@ -5,18 +5,14 @@ import.meta.glob([
 
 import './bootstrap';
 import Alpine from 'alpinejs'
-import {jarallax, jarallaxVideo} from "jarallax";
 import AOS from 'aos'
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import {TextPlugin} from "gsap/TextPlugin";
-import Scrollbar from 'smooth-scrollbar';
 import Ukiyo from "ukiyojs";
 
 import 'aos/dist/aos.css';
-
-//import "../assets/js/pagescroll.js"
 
 import('preline')
 import("fslightbox")
@@ -27,16 +23,10 @@ Alpine.plugin(scrollTo)
 Alpine.start()
 
 AOS.init();
-jarallaxVideo();
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
 
 const images = document.querySelectorAll(".ukiyo")
 new Ukiyo(images)
-
-jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.2,
-    //disableParallax: /iPad|iPhone|iPod|Android/,
-});
 
 /**************** INTRO TEXT ****************/
 
@@ -227,7 +217,7 @@ typewriters.forEach(typewriter => {
 
 // Detect if a link's href goes to the current page
 // Debounce function
-function debounce(func, delay) {
+/*function debounce(func, delay) {
     let timeout;
     return function (...args) {
         clearTimeout(timeout);
@@ -263,7 +253,7 @@ document.addEventListener('click', debounce((e) => {
 // Scroll to the element in the URL's hash on load
 window.addEventListener('load', () => {
     scrollToHash(window.location.hash);
-});
+});*/
 
 /**************** TOAST ****************/
 

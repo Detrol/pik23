@@ -4,7 +4,7 @@
 
     <section class="relative h-screen overflow-hidden">
         <div class="relative h-screen">
-            <div class="lazy-video h-screen w-screen flex items-center justify-center absolute" style="z-index: 0"
+            <div class="lazy-video h-screen w-screen flex items-center justify-center absolute ukiyo" style="z-index: 0"
                  data-src="https://res.cloudinary.com/dstcee6fc/video/upload/f_auto,q_auto/z4dncokblo8pwtbwatof.mp4">
                 <div class="relative w-full h-full">
                     <div class="absolute inset-0 overflow-hidden">
