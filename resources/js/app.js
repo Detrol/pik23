@@ -120,7 +120,7 @@ ScrollTrigger.batch(".pulse", {
 const revealEls = ['.revealRight', '.revealLeft', '.revealUp'];
 
 revealEls.forEach(el => {
-    gsap.set(el, { opacity: 0 });
+    gsap.set(el, {opacity: 0});
 
     ScrollTrigger.batch(el, {
         markers: false,
@@ -132,12 +132,22 @@ revealEls.forEach(el => {
         onEnter: batch => {
             gsap.fromTo(
                 batch,
-                { opacity: 0, x: el.includes('Right') ? 200 : el.includes('Left') ? -200 : 0, y: el.includes('Up') ? 50 : 0 },
-                { opacity: 1, x: 0, y: 0, duration: 0.5, ease: 'sine' }
+                {
+                    opacity: 0,
+                    x: el.includes('Right') ? 200 : el.includes('Left') ? -200 : 0,
+                    y: el.includes('Up') ? 50 : 0
+                },
+                {opacity: 1, x: 0, y: 0, duration: 0.5, ease: 'sine'}
             );
         },
         onLeaveBack: batch => {
-            gsap.to(batch, { opacity: 0, x: el.includes('Right') ? 200 : el.includes('Left') ? -200 : 0, y: el.includes('Up') ? 50 : 0, duration: 0.5, ease: 'sine' });
+            gsap.to(batch, {
+                opacity: 0,
+                x: el.includes('Right') ? 200 : el.includes('Left') ? -200 : 0,
+                y: el.includes('Up') ? 50 : 0,
+                duration: 0.5,
+                ease: 'sine'
+            });
         }
     });
 });
@@ -147,12 +157,12 @@ revealEls.forEach(el => {
 const motivElements = gsap.utils.toArray(".motiv");
 const transitionTime = 5;
 const fadeDuration = 1.5;
-gsap.set(motivElements[0], { autoAlpha: 1 });
+gsap.set(motivElements[0], {autoAlpha: 1});
 const crossfade = () => {
     if (motivElements.length >= 2) {
         gsap.timeline()
-            .to(motivElements[0], { autoAlpha: 0, duration: fadeDuration })
-            .to(motivElements[1], { autoAlpha: 1, duration: fadeDuration }, 0);
+            .to(motivElements[0], {autoAlpha: 0, duration: fadeDuration})
+            .to(motivElements[1], {autoAlpha: 1, duration: fadeDuration}, 0);
         motivElements.push(motivElements.shift());
         gsap.delayedCall(transitionTime, crossfade);
     } else console.error("There are not enough .motiv elements on the page.");
@@ -161,17 +171,18 @@ gsap.delayedCall(transitionTime, crossfade);
 
 
 /**************** LOGO FADE IN ****************/
-
-function animateText(selector, duration = 0.3, delay = 0.05) {
-    const text = document.querySelector(selector);
-    const chars = [...text.textContent].map(char => `<span>${char}</span>`);
-    text.innerHTML = chars.join("");
-    gsap.set(`${selector} span`, {opacity: 0});
-    gsap.timeline().to(`${selector} span`, {opacity: 1, duration, ease: "power1.in", stagger: delay});
-}
+if (window.location.pathname === "/") {
+    function animateText(selector, duration = 0.3, delay = 0.05) {
+        const text = document.querySelector(selector);
+        const chars = [...text.textContent].map(char => `<span>${char}</span>`);
+        text.innerHTML = chars.join("");
+        gsap.set(`${selector} span`, {opacity: 0});
+        gsap.timeline().to(`${selector} span`, {opacity: 1, duration, ease: "power1.in", stagger: delay});
+    }
 
 // Example usage:
-animateText(".logofadein", 0.3, 0.05);
+    animateText(".logofadein", 0.3, 0.05);
+}
 
 
 /**************** TYPEWRITER ****************/
@@ -217,7 +228,7 @@ typewriters.forEach(typewriter => {
 
 // Detect if a link's href goes to the current page
 // Debounce function
-function getSamePageAnchor (link) {
+function getSamePageAnchor(link) {
     if (
         link.protocol !== window.location.protocol ||
         link.host !== window.location.host ||
@@ -232,7 +243,7 @@ function getSamePageAnchor (link) {
 
 function scrollToHash(hash) {
     const elem = hash ? document.getElementById(hash.substring(1)) : false;
-    if(elem) {
+    if (elem) {
         gsap.to(window, {scrollTo: elem});
     }
 }
@@ -257,7 +268,7 @@ document.addEventListener("alpine:init", () => {
         createToast(message, type = "info") {
             const index = this.list.length;
             let totalVisible = this.list.filter(toast => toast.visible).length + 1;
-            this.list.push({ id: this.counter++, message, type, visible: true });
+            this.list.push({id: this.counter++, message, type, visible: true});
             setTimeout(() => this.destroyToast(index), 5000);
         },
         destroyToast(index) {
