@@ -5,7 +5,7 @@
     <section class="relative h-screen overflow-hidden">
         <div class="relative h-screen">
             <div class="lazy-video h-screen w-screen flex items-center justify-center absolute ukiyo" style="z-index: 0"
-                 data-src="https://res.cloudinary.com/dstcee6fc/video/upload/f_auto,q_auto/z4dncokblo8pwtbwatof.mp4">
+                 data-src="https://res.cloudinary.com/dstcee6fc/video/upload/f_auto,q_auto/z4dncokblo8pwtbwatof.webm">
                 <div class="relative w-full h-full">
                     <div class="absolute inset-0 overflow-hidden">
                         <div class="lazy-video-placeholder w-full h-full"></div>
@@ -28,7 +28,7 @@
 
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16 " width="800" height="112"
-                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.png"
+                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.webp"
                      alt="logo">
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
@@ -200,7 +200,7 @@
                             <img
                                 class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
                                 alt="jag" loading="lazy" width="600" height="600"
-                                src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/t95ud7ighutrhga0jikl.jpg">
+                                src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/t95ud7ighutrhga0jikl.webp">
                         </div>
 
                     </div>
@@ -247,7 +247,7 @@
     </section>
 
     <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/cvrretr67ybqvbc1cok0.png">
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/cvrretr67ybqvbc1cok0.webp">
 
         <div class="custom-shape-divider-top-1680709279 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -444,19 +444,19 @@
              style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>-->
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/acdt38uz8i1hepaf58bu.jpg"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/acdt38uz8i1hepaf58bu.webp"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/jhoiqzdrcrxq2grlokpz.jpg"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/jhoiqzdrcrxq2grlokpz.webp"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/vqkfuj1icn3knsx1ergu.jpg"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/vqkfuj1icn3knsx1ergu.webp"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bbciyqjlia3hq14wehh6.jpg"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bbciyqjlia3hq14wehh6.webp"></div>
 
         <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bmfkcpwjvnsog7w8nks0.jpg"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bmfkcpwjvnsog7w8nks0.webp"></div>
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -594,7 +594,7 @@
 
     <section id="contact" class="relative overflow-hidden">
         <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/r57dfky9kdhs5l1bgnor.jpg"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/r57dfky9kdhs5l1bgnor.webp"></div>
 
         <div class="custom-shape-divider-top-1680553802 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
