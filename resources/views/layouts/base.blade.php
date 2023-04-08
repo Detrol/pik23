@@ -250,6 +250,48 @@
     }
 
     // END OF CAPTCHA
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+        if ("IntersectionObserver" in window) {
+            let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyBackground = entry.target;
+                        lazyBackground.style.backgroundImage = 'url(' + lazyBackground.dataset.src + ')';
+                        lazyBackground.classList.remove("lazy-background");
+                        lazyBackgroundObserver.unobserve(lazyBackground);
+                    }
+                });
+            });
+
+            lazyBackgrounds.forEach(function(lazyBackground) {
+                lazyBackgroundObserver.observe(lazyBackground);
+            });
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyVideos = [].slice.call(document.querySelectorAll(".lazy-video"));
+
+        if ("IntersectionObserver" in window) {
+            let lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyVideo = entry.target;
+                        let videoSrc = lazyVideo.getAttribute("data-src");
+                        lazyVideo.innerHTML = '<video class="w-full h-full object-cover" autoplay loop muted><source src="' + videoSrc + '" type="video/mp4"></video>';
+                        lazyVideoObserver.unobserve(lazyVideo);
+                    }
+                });
+            });
+
+            lazyVideos.forEach(function(lazyVideo) {
+                lazyVideoObserver.observe(lazyVideo);
+            });
+        }
+    });
+
 </script>
 
 </body>

@@ -4,13 +4,16 @@
 
     <section class="relative h-screen overflow-hidden">
         <div class="relative h-screen">
-            <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none ukiyo"
-                   style="z-index: 0">
-                <source src="https://res.cloudinary.com/dstcee6fc/video/upload/f_auto,q_auto/z4dncokblo8pwtbwatof.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
-            </video>
+            <div class="lazy-video h-screen w-screen flex items-center justify-center absolute" style="z-index: 0"
+                 data-src="https://res.cloudinary.com/dstcee6fc/video/upload/f_auto,q_auto/z4dncokblo8pwtbwatof.mp4">
+                <div class="relative w-full h-full">
+                    <div class="absolute inset-0 overflow-hidden">
+                        <div class="lazy-video-placeholder w-full h-full"></div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="absolute bg-gray-900 w-full h-screen opacity-60" style="z-index: 2;"></div>
+            <div class="absolute bg-gray-900 w-full h-screen opacity-60 z-10" style="z-index: 2;"></div>
             <div
                 class="absolute left-0 right-0 px-8 md:px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20"
                 style="z-index: 3">
@@ -25,7 +28,8 @@
 
 
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16 " width="800" height="112"
-                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.png" alt="logo">
+                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.png"
+                     alt="logo">
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
@@ -67,14 +71,15 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
                     <div class="relative items-center md:inline-flex md:order-first">
                         <div class="max-w-xl min-w-full">
-                            <div class="textbox w-full text-left justify-start items-start min-h-[550px] md:min-h-[450px]">
+                            <div
+                                class="textbox w-full text-left justify-start items-start min-h-[550px] md:min-h-[450px]">
 
                                 <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased"
                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
                                     Hej där!
                                 </p>
                                 <h1 class="mt-4 block font-sans lg:text-lg text-base leading-relaxed antialiased text-gray-600"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
                                     Letar du efter en prisvärd och pålitlig fönsterputsare i Karlstad, Hammarö,
                                     Vålberg, Grums, Molkom, Kil eller Väse med omnejd?
                                 </h1>
@@ -83,19 +88,19 @@
                                     Då har du kommit till rätt ställe!
                                 </p>
                                 <h2 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
                                     Jag heter Andreas och jag har över 10 års erfarenhet av fönsterputsning, både för
                                     privatpersoner och företag.
                                 </h2>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
                                     Jag erbjuder professionell hjälp med rätt teknik och utrustning för
                                     att se till att dina fönster blir skinande rena. Oavsett om du har en stor byggnad
                                     eller en liten lägenhet, så har jag kunskapen och verktygen för att klara av
                                     uppdraget.
                                 </h3>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
                                     Så varför inte låta mig ta hand om dina fönster? Boka tid hos mig och upplev
                                     skillnaden av kristallklara fönster.
                                 </h3>
@@ -241,8 +246,8 @@
 
     </section>
 
-    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center"
-             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/cvrretr67ybqvbc1cok0.png');">
+    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background"
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/cvrretr67ybqvbc1cok0.png">
 
         <div class="custom-shape-divider-top-1680709279 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -438,20 +443,20 @@
         <!--<div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
              style="background-image: url('{{ Vite::asset('resources/images/house.jpg') }}'); z-index: 0;"></div>-->
 
-        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/acdt38uz8i1hepaf58bu.jpg');"></div>
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/acdt38uz8i1hepaf58bu.jpg"></div>
 
-        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/jhoiqzdrcrxq2grlokpz.jpg');"></div>
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/jhoiqzdrcrxq2grlokpz.jpg"></div>
 
-        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/vqkfuj1icn3knsx1ergu.jpg');"></div>
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/vqkfuj1icn3knsx1ergu.jpg"></div>
 
-        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bbciyqjlia3hq14wehh6.jpg');"></div>
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bbciyqjlia3hq14wehh6.jpg"></div>
 
-        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center"
-             style="background-image: url('https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bmfkcpwjvnsog7w8nks0.jpg');"></div>
+        <div class="motiv motiv01 w-auto min-w-full min-h-full max-w-none bg-cover bg-center lazy-background"
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/bmfkcpwjvnsog7w8nks0.jpg"></div>
 
         <div class="custom-shape-divider-top-1679499812 z-20 -mt-1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -588,8 +593,8 @@
     </section>
 
     <section id="contact" class="relative overflow-hidden">
-        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo"
-             style="background-image: url('{{ Vite::asset('resources/images/email.jpg') }}'); z-index: 0;"></div>
+        <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo lazy-background"
+             data-src="{{ Vite::asset('resources/images/email.jpg') }}"></div>
 
         <div class="custom-shape-divider-top-1680553802 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -657,7 +662,8 @@
                                 </p>
                             </div>
 
-                            <form id="mail-form" class="mt-6 hcaptcha-section" method="post" action="{{ route('form_mail') }}">
+                            <form id="mail-form" class="mt-6 hcaptcha-section" method="post"
+                                  action="{{ route('form_mail') }}">
                                 @csrf
                                 <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
                                 <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
@@ -683,7 +689,8 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    <div class="h-captcha" id="hcaptcha-element" data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
+                                    <div class="h-captcha" id="hcaptcha-element"
+                                         data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                     <div id="error-container" class="text-red-500 mt-2"></div>
                                 </div>
 
@@ -727,7 +734,7 @@
         // Observe the form
         observer.observe(document.getElementById('mail-form'));
 
-        document.querySelector('form').addEventListener('submit', function(event) {
+        document.querySelector('form').addEventListener('submit', function (event) {
             if (!window.hcaptcha || !window.hcaptcha.getResponse()) {
                 event.preventDefault();
                 errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
