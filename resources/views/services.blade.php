@@ -3,8 +3,12 @@
 @section('content')
 
     <section class="relative h-[13rem] md:h-[15rem]">
-        <div class="jarallax relative h-[13rem] md:h-[15rem]" data-jarallax data-video-src="mp4:{{ Vite::asset('resources/images/rain.mp4') }}" style="z-index: 1">
-            <div class="absolute bg-gray-900 w-full opacity-60 h-[13rem] md:h-[15rem]" style="z-index: 2;"></div>
+        <div class="relative" style="z-index: 0">
+            <video autoplay muted class="absolute w-full object-center object-cover h-[13rem] md:h-[15rem]" style="z-index: 1">
+                <source src="{{ Vite::asset('resources/images/rain.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute bg-gray-900 w-full opacity-70 h-[13rem] md:h-[15rem]" style="z-index: 2;"></div>
         </div>
 
         <div class="custom-shape-divider-bottom-16802652752 z-10 -mb-1">
