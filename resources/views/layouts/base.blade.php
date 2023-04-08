@@ -92,6 +92,7 @@
     <meta name="theme-color" content="#4fc3e0">
 
     @yield('script_head')
+        <link rel="preload" as="script" href="@livewireScriptPath">
 </head>
 
 <body class="">
@@ -222,7 +223,6 @@
 </div>
 
 @vite('resources/js/app.js')
-@livewireScripts
 <script async src="https://apps.elfsight.com/p/platform.js"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
