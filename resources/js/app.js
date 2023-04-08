@@ -240,6 +240,9 @@ function scrollToHash(hash, e) {
     const elem = hash && document.getElementById(hash.slice(1));
     if (elem) {
         e.preventDefault();
+        const elemId = elem.id;
+        // Remove the hash from the URL without reloading the page
+        history.replaceState(null, null, `#${elemId}`);
         gsap.to(window, {scrollTo: elem});
     }
 }
