@@ -46,20 +46,23 @@
   "logo": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
   "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
    "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd."}
+
     </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        {!! seo($SEOData) !!}
+    {!! seo($SEOData) !!}
 
     <link rel="preconnect" href="{{ url('https://fonts.googleapis.com/') }}">
-
-        <!-- speed up external res -->
     <link rel="dns-prefetch" href="{{ url('https://fonts.googleapis.com/') }}">
 
-        <!-- Fonts -->
+    <!-- Fonts -->
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
+          as="style">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
           rel="stylesheet">
+
 
     @vite('resources/sass/app.scss')
     @livewireStyles
@@ -92,7 +95,7 @@
     <meta name="theme-color" content="#4fc3e0">
 
     @yield('script_head')
-        <link rel="preload" as="script" href="@livewireScriptPath">
+    <link rel="preload" as="script" href="@livewireScriptPath">
 </head>
 
 <body class="">
@@ -200,7 +203,8 @@
     </div>
 </footer>
 
-<div x-data="{ toast: false, message: '{{ session('status') }}' }" x-init="() => { if (message) { toast = true; setTimeout(() => { toast = false }, 5000); } }"
+<div x-data="{ toast: false, message: '{{ session('status') }}' }"
+     x-init="() => { if (message) { toast = true; setTimeout(() => { toast = false }, 5000); } }"
      class="fixed top-0 right-0 mt-5 mr-5 z-50">
     <div x-show="toast" x-transition
          class="flex items-center justify-between max-w-xs p-4 bg-white border rounded-md shadow-sm">
@@ -241,7 +245,7 @@
     const topBtn = document.getElementById("topButton");
     window.onscroll = () => {
         (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ?
-            topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
+            topBtn.classList.remove("hidden") : topBtn.classList.add("hidden");
 
     }
 
