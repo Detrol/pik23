@@ -217,7 +217,7 @@ typewriters.forEach(typewriter => {
 
 // Detect if a link's href goes to the current page
 // Debounce function
-/*function debounce(func, delay) {
+function debounce(func, delay) {
     let timeout;
     return function (...args) {
         clearTimeout(timeout);
@@ -253,7 +253,7 @@ document.addEventListener('click', debounce((e) => {
 // Scroll to the element in the URL's hash on load
 window.addEventListener('load', () => {
     scrollToHash(window.location.hash);
-});*/
+});
 
 /**************** TOAST ****************/
 
