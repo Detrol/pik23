@@ -704,10 +704,9 @@
 
 @section('script')
     <script>
-        const submitButton = document.getElementById('submit-button');
         const errorContainer = document.getElementById('error-container');
         const hcaptchaElement = document.querySelector('.h-captcha');
-        
+
         // Create an Intersection Observer to detect when the form is in view
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
