@@ -740,16 +740,5 @@
                 errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
             }
         });
-
-        // Add an event listener to the submit button to disable it until the user completes the hcaptcha
-        submitButton.addEventListener('click', function(event) {
-            if (!window.hcaptcha || !window.hcaptcha.getResponse()) {
-                event.preventDefault();
-                errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
-                return;
-            }
-            // Disable the submit button until the user completes the hcaptcha
-            submitButton.disabled = true;
-        });
     </script>
 @endsection
