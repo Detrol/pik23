@@ -89,7 +89,7 @@
                                 </h2>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-                                    Jag erbjuder professionell hjälp med rätt utrustning och teknik för
+                                    Jag erbjuder professionell hjälp med rätt teknik och utrustning för
                                     att se till att dina fönster blir skinande rena. Oavsett om du har en stor byggnad
                                     eller en liten lägenhet, så har jag kunskapen och verktygen för att klara av
                                     uppdraget.
@@ -150,7 +150,7 @@
                                 </a>
                             </div>-->
                             <div class="pt-12 mx-auto lg:max-w-7xl md:hidden lg:block numbers"
-                                 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                                 data-aos="fade-up" data-aos-duration="1000">
                                 <div class="bg-white rounded-[24px] px-4 lg:py-4 shadow-md">
                                     <dl class="grid grid-cols-1 space-y-0 text-center lg:grid-cols-3 lg:text-left divide-y sm:divide-y-0 sm:divide-x">
                                         <div class="text-center py-6 lg:py-4 antialiased">
