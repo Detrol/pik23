@@ -594,7 +594,7 @@
 
     <section id="contact" class="relative overflow-hidden">
         <div class="absolute w-auto min-w-full min-h-full max-w-none bg-cover ukiyo lazy-background"
-             data-src="{{ Vite::asset('resources/images/email.jpg') }}"></div>
+             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/r57dfky9kdhs5l1bgnor.jpg"></div>
 
         <div class="custom-shape-divider-top-1680553802 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
