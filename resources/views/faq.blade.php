@@ -4,7 +4,8 @@
 
     <section class="relative h-[13rem] md:h-[15rem]">
         <div class="relative" style="z-index: 0">
-            <video autoplay muted class="absolute w-full object-center object-cover h-[13rem] md:h-[15rem]" style="z-index: 1">
+            <video autoplay muted class="absolute w-full object-center object-cover h-[13rem] md:h-[15rem]"
+                   style="z-index: 1">
                 <source src="{{ Vite::asset('resources/images/rain.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -186,6 +187,34 @@
 
                                             </li>
 
+
+                                            <li class="relative border-b border-gray-200">
+
+                                                <button type="button" class="w-full px-3 py-3 text-left"
+                                                        @click="selected !== 4 ? selected = 4 : selected = null">
+                                                    <div class="flex items-center justify-between font-bold">
+                                                        <span>Varma dagar</span>
+                                                        <span class="fa fa-plus-circle"></span>
+                                                    </div>
+                                                </button>
+
+                                                <div
+                                                    class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                                    style="" x-ref="container4"
+                                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                                    <div class="px-3 pb-3">
+                                                        <p>
+                                                            Blir det riktigt varmt, runt 35+ grader, kan ett vanligt
+                                                            arbetspass behöva flyttas på. Har du en balkong eller altan
+                                                            som behöver putsas och som ligger i direkt solljus redan vid
+                                                            25+ grader, kan jag neka det arbetet på plats eftersom det
+                                                            blir som att arbeta i en bastu. Tänk därför på vilken tid
+                                                            solen ligger på när du bokar tid.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>

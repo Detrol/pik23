@@ -19,7 +19,7 @@
                 style="z-index: 3">
 
                 <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white logofadein">
-                    Välkommen till <span class="hidden">Puts i Karlstad!</span>
+                    Välkommen till
                 </h1>
 
                 <!--<div id="typewriter" class="text-white">
