@@ -123,7 +123,6 @@
                                                     style="" x-ref="container1"
                                                     x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                                                     <div class="px-3 pb-3">
-                                                        <p>Vid minusgrader så putsar jag inte alls.</p>
                                                         <p>
                                                             Vid minusgrader putsar jag inte alls. Om det är kallt ute på
                                                             grund av vind och låga grader, och du bor i en bostad som
