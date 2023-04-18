@@ -420,7 +420,7 @@
         </div>
     </section>
 
-    <section class="relative overflow-hidden">
+    <section id="review" class="relative overflow-hidden">
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto min-h-[500px]">
                 <div class="justify-center w-full mx-auto revealRight">
