@@ -246,7 +246,7 @@
 
     </section>
 
-    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background ukiyo"
+    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background"
              data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/windows_ladtuz.webp">
 
         <div class="custom-shape-divider-top-1680709279 z-10">
@@ -259,7 +259,7 @@
         </div>
 
         <div
-            class="w-full h-full px-5 py-24 mx-auto items-center justify-center md:px-0 md:px-16 md:py-24 backdrop-opacity-75 bg-black/10"
+            class="w-full h-full px-5 py-24 mx-auto items-center justify-center md:px-0 md:px-16 md:py-24 backdrop-opacity-50 bg-black/60"
             style="z-index: 3;">
             <div class="max-w-7xl mx-auto pb-4">
                 <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja
