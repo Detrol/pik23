@@ -87,9 +87,9 @@
                                 av dig</a> så kan jag hjälpa dig på bästa sätt.
                         </p>
 
-                        <a href="https://karlstad.putsamer.se" target="_blank"
+                        <a href="https://putsikarlstad.se#contact"
                            class="revealUp items-center justify-center mt-12 w-full px-6 py-2.5 text-xl text-white text-center rounded inline-flex md:w-auto bg-primary focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-cyan-500 active:bg-cyan-400 active:text-white focus-visible:outline-black">
-                            Boka fönsterputs av kontor
+                            Kontakta mig för fönsterputs av kontorsfönster
                         </a>
                     </div>
                 </div>
