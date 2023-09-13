@@ -262,7 +262,7 @@
                     </a>
                 </div>
                 <div class="ml-auto flex h-32 w-full bg-gray-700 items-center justify-center sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
-                    <img class="h-full w-full object-cover" src="{{ asset('/assets/images/Image2.png') }}" loading="lazy"/>
+                    <img class="h-full w-full object-cover" src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/Image2_xerlci.webp" loading="lazy"/>
                 </div>
             </div>
         </div>
