@@ -244,10 +244,32 @@
             </div>
         </div>
 
+        <div class="container items-center pb-24 max-w-3xl lg:max-w-7xl lg:pb-24">
+            <div class="flex items-center flex-col overflow-hidden bg-white sm:flex-row md:h-80 overflow-hidden rounded-xl border shadow-lg p-4">
+                <div class="order-first flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+                    <h2 class="text-xl font-bold text-gray-900 md:text-2xl lg:text-4xl">Behöver du hjälp med hemmafix?</h2>
+                    <p class="mt-4 mb-8 text-gray-500">
+                        Besök då gärna min andra nystartade verksamhet! Fixihem.<br />
+                        Denna kommer jag köra parallelt med fönsterputsningen, särskilt under lågsäsonger.
+                    </p>
+                    <a href="https://fixihem.se" target="_blank" class="group mt-auto mt-4 flex cursor-pointer select-none items-center justify-center rounded-md bg-black px-6 py-2 text-white transition">
+                        <span class="group flex w-full items-center justify-center rounded py-1 text-center font-bold"> Besök här </span>
+                        <svg class="flex-0 group-hover:w-6 ml-4 h-6 w-0 transition-all" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="ml-auto flex h-32 w-full bg-gray-700 items-center justify-center sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+                    <img class="h-full w-full object-cover" src="{{ asset('/assets/images/Image2.png') }}" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <section class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background"
-             data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/windows_ladtuz.webp">
+    <section
+        class="relative overflow-hidden w-auto min-w-full min-h-full max-w-none bg-cover bg-bottom md:bg-center lazy-background"
+        data-src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/windows_ladtuz.webp">
 
         <div class="custom-shape-divider-top-1680709279 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -263,7 +285,7 @@
             style="z-index: 3;">
             <div class="max-w-7xl mx-auto pb-4">
                 <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja
-                    Puts i Karlstad?</h2>
+                                                                                                        Puts i Karlstad?</h2>
             </div>
             <div class="relative items-center justify-center w-full h-full max-w-7xl mx-auto">
                 <div class="py-4 mx-auto">
@@ -298,7 +320,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder en helt miljövänlig lösning för fönsterputs,
-                                                vilket skiljer mig från många konkurrenter.</p>
+                                               vilket skiljer mig från många konkurrenter.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -331,7 +353,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Hos mig hittar du ett unikt och modernt bokningssystem
-                                                som inte erbjuds av någon annan på marknaden.</p>
+                                               som inte erbjuds av någon annan på marknaden.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -365,7 +387,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Med över 10 års erfarenhet inom branschen arbetar jag
-                                                mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
+                                               mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -399,7 +421,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder schyssta priser samt personliga rabatter för mina
-                                                återkommande kunder.</p>
+                                               återkommande kunder.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -590,6 +612,10 @@
                 </div>
             </div>
         </div>
+
+
+
+
     </section>
 
     <section id="contact" class="relative overflow-hidden">
