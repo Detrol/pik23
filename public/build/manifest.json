@@ -1,13 +1,13 @@
 {
-  "_index-2cf57a58.js": {
-    "file": "assets/index-2cf57a58.js",
+  "_index-0b4a5f1c.js": {
+    "file": "assets/index-0b4a5f1c.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true
   },
-  "_preline-2cc11594.js": {
-    "file": "assets/preline-2cc11594.js",
+  "_preline-d93faa2d.js": {
+    "file": "assets/preline-d93faa2d.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -80,10 +80,6 @@
   "resources/images/bubbles2.jpg": {
     "file": "assets/bubbles2-b3c29ebe.jpg",
     "src": "resources/images/bubbles2.jpg"
-  },
-  "resources/images/bubbles_full.jpg": {
-    "file": "assets/bubbles_full-5e936eb5.jpg",
-    "src": "resources/images/bubbles_full.jpg"
   },
   "resources/images/email.jpg": {
     "file": "assets/email-e24a1876.jpg",
@@ -169,6 +165,18 @@
     "file": "assets/vanligt-a07ddd41.jpg",
     "src": "resources/images/vanligt.jpg"
   },
+  "resources/images/waves.jpg": {
+    "file": "assets/waves-c3c5d3bb.jpg",
+    "src": "resources/images/waves.jpg"
+  },
+  "resources/images/waves.png": {
+    "file": "assets/waves-89253018.png",
+    "src": "resources/images/waves.png"
+  },
+  "resources/images/waves2.jpg": {
+    "file": "assets/waves2-00c5cdb4.jpg",
+    "src": "resources/images/waves2.jpg"
+  },
   "resources/js/app.css": {
     "file": "assets/app-f85da3e0.css",
     "src": "resources/js/app.css"
@@ -178,15 +186,15 @@
       "assets/app-f85da3e0.css"
     ],
     "dynamicImports": [
-      "_preline-2cc11594.js",
-      "_index-2cf57a58.js"
+      "_preline-d93faa2d.js",
+      "_index-0b4a5f1c.js"
     ],
-    "file": "assets/app-6e0b9f92.js",
+    "file": "assets/app-6166fd5f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-5cbd02ad.css",
+    "file": "assets/app-8d0e20fe.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
   }
