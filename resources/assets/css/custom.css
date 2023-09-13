@@ -76,6 +76,16 @@
     height: 78px;
 }
 
+.custom-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 640px) { /* 640px kan justeras baserat på dina behov */
+    .custom-image {
+        width: 75%;
+    }
+}
 
 /*
 .typewriter .typed-text:after {
