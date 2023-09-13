@@ -247,7 +247,7 @@
         <div class="container items-center pb-24 max-w-3xl lg:max-w-7xl lg:pb-24" data-aos="fade-up"
              data-aos-offset="200"
              data-aos-duration="500">
-            <div class="flex items-center flex-col overflow-hidden bg-white sm:flex-row md:h-80 overflow-hidden rounded-xl border shadow-lg p-2">
+            <div class="flex items-center flex-col overflow-hidden bg-white sm:flex-row md:h-80 rounded-xl border shadow-lg">
                 <div class="order-first flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
                     <h2 class="text-xl font-bold text-gray-900 md:text-2xl lg:text-4xl">Behöver du hjälp med hemmafix?</h2>
                     <p class="mt-4 mb-8 text-gray-500">
