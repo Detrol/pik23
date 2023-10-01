@@ -184,6 +184,14 @@
                                                     projekt från grunden.
                                                 </p>
 
+                                                <p class="mt-2 text-gray-500">
+                                                    Jag drömmer om ett enkelt hus på landet, omringad av diverse djur
+                                                    som jag kan krama hela dagarna.
+                                                    Jag uppskattar lugnet före stadsbruset och tycker i allmänhet bättre
+                                                    om djur än om människor. Hos dem finns ingen girighet eller
+                                                    destruktiva tendenser. Förutom när det kommer till mat, men det kan jag leva med.
+                                                </p>
+
                                                 <div class="flex justify-end mt-6">
                                                     <button @click="toggleModal()"
                                                             class="px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary rounded-md hover:bg-cyan-500 active:bg-cyan-400">
