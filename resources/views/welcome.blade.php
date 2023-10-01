@@ -95,9 +95,7 @@
                                 <h3 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Jag erbjuder professionell hjälp med rätt teknik och utrustning för
-                                    att se till att dina fönster blir skinande rena. Oavsett om du har en stor byggnad
-                                    eller en liten lägenhet, så har jag kunskapen och verktygen för att klara av
-                                    uppdraget.
+                                    att se till att dina fönster blir skinande rena.
                                 </h3>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
