@@ -114,7 +114,7 @@
 
 
                                     <div x-show="modelOpen"
-                                         class="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto px-3"
+                                         class="fixed inset-0 flex items-center justify-center z-50 px-3"
                                          aria-labelledby="modal-title" role="dialog" aria-modal="true"
                                          style="backdrop-filter: blur(5px);">
                                         <div class="flex items-center justify-center min-h-screen text-center">
@@ -136,13 +136,14 @@
                                                  x-transition:leave="transition ease-in duration-200 transform"
                                                  x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                                                  x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                 class="modal-content inline-block w-full max-w-xl p-8 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
+                                                 class="modal-content overflow-hidden inline-block w-full max-w-xl p-6 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
                                             >
                                                 <!-- Här börjar modalinnehållet -->
                                                 <div class="flex items-center justify-between space-x-4">
-                                                    <h1 class="text-xl font-medium text-gray-800">Så vem är då jag?</h1>
+                                                    <h1 class="text-xl font-medium text-gray-800 pb-3">Så vem är då
+                                                        jag?</h1>
                                                     <button @click="toggleModal()"
-                                                            class="text-gray-600 focus:outline-none hover:text-gray-700">
+                                                            class="text-gray-600 focus:outline-none hover:text-gray-700 pb-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
                                                              fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -151,9 +152,9 @@
                                                     </button>
                                                 </div>
 
-                                                <div class="overflow-y-auto">
+                                                <div class="overflow-y-auto max-h-[50vh]">
 
-                                                    <p class="mt-2 mb-2 text-gray-500">
+                                                    <p class="mb-2 pe-2 text-gray-500">
                                                         Jag är en kille som har snurrat med på denna planet i lite mer
                                                         än 35
                                                         varv i skrivande stund. Jag har också autism och ADHD, något jag
@@ -164,7 +165,7 @@
                                                         drivet.
                                                     </p>
 
-                                                    <p class="mt-2 text-gray-500">
+                                                    <p class="mt-2 pe-2 text-gray-500">
                                                         Men fönsterputsning för mig är så mycket mer än bara ett jobb.
                                                         Det
                                                         är en passion och en konstform. Det är en chans att uttrycka min
@@ -173,7 +174,7 @@
                                                         glas.
                                                     </p>
 
-                                                    <p class="mt-2 text-gray-500">
+                                                    <p class="mt-2 pe-2 text-gray-500">
                                                         Min vision är att bli den största inom fönsterputs i Karlstad.
                                                         Jag
                                                         strävar efter att kunna erbjuda fler och mer avancerade metoder
@@ -184,17 +185,21 @@
                                                         dag.
                                                     </p>
 
-                                                    <blockquote
-                                                        class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
-                                                        <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
-                                                            "Sedan jag startade Puts i Karlstad för tre år sedan har jag
-                                                            blivit ett av de mest eftertraktade namnen inom fönsterputs
-                                                            i
-                                                            och runt Karlstad."
-                                                        </p>
-                                                    </blockquote>
+                                                    <div class="p-2">
+                                                        <blockquote
+                                                            class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
+                                                            <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
+                                                                "Sedan jag startade Puts i Karlstad för tre år sedan har
+                                                                jag
+                                                                blivit ett av de mest eftertraktade namnen inom
+                                                                fönsterputs
+                                                                i
+                                                                och runt Karlstad."
+                                                            </p>
+                                                        </blockquote>
+                                                    </div>
 
-                                                    <p class="mt-2 text-gray-500">
+                                                    <p class="mt-2 pe-2 text-gray-500">
                                                         På min fritid dyker nörden i mig upp. Jag spenderar stor del av
                                                         min
                                                         tid framför datorn, antingen uppslukad av spel, fängslad av
@@ -204,7 +209,7 @@
                                                         projekt från grunden.
                                                     </p>
 
-                                                    <p class="mt-2 text-gray-500">
+                                                    <p class="mt-2 pe-2 text-gray-500">
                                                         Jag drömmer om ett enkelt hus på landet, omringad av diverse
                                                         djur
                                                         som jag kan krama hela dagarna.
@@ -217,7 +222,7 @@
 
                                                 </div>
 
-                                                <div class="flex justify-end mt-6">
+                                                <div class="flex justify-end mt-3">
                                                     <button @click="toggleModal()"
                                                             class="px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary rounded-md hover:bg-cyan-500 active:bg-cyan-400">
                                                         Stäng
