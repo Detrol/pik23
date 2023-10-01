@@ -105,6 +105,98 @@
                                     skillnaden av kristallklara fönster.
                                 </h3>
 
+                                <div
+                                    x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
+                                    <button @click="toggleModal()"
+                                            class="animate-arrow flex items-center justify-center mt-4 px-3 py-2 space-x-2 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary"
+                                            data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                        <span>Mer om mig</span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </button>
+
+
+                                    <div x-show="modelOpen"
+                                         class="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto px-3"
+                                         aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                         style="backdrop-filter: blur(5px);">
+                                        <div class="flex items-center justify-center min-h-screen text-center">
+                                            <div x-cloak @click="toggleModal()" x-show="modelOpen"
+                                                 x-transition:enter="transition ease-out duration-300 transform"
+                                                 x-transition:enter-start="opacity-0"
+                                                 x-transition:enter-end="opacity-100"
+                                                 x-transition:leave="transition ease-in duration-200 transform"
+                                                 x-transition:leave-start="opacity-100"
+                                                 x-transition:leave-end="opacity-0"
+                                                 class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-40"
+                                                 aria-hidden="true"
+                                            ></div>
+
+                                            <div x-cloak x-show="modelOpen"
+                                                 x-transition:enter="transition ease-out duration-300 transform"
+                                                 x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                 x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                                                 x-transition:leave="transition ease-in duration-200 transform"
+                                                 x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                                                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                 class="modal-content inline-block w-full max-w-xl p-8 my-20 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
+                                            >
+                                                <!-- Här börjar modalinnehållet -->
+                                                <div class="flex items-center justify-between space-x-4">
+                                                    <h1 class="text-xl font-medium text-gray-800">Så vem är då jag?</h1>
+                                                    <button @click="toggleModal()"
+                                                            class="text-gray-600 focus:outline-none hover:text-gray-700">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+
+                                                <p class="mt-2 mb-2 text-gray-500">
+                                                    Jag är en kille som har snurrat med på denna planet i lite mer än 35
+                                                    varv i skrivande stund. Jag har också autism och ADHD, något jag är
+                                                    tacksam för då jag troligtvis inte hade varit där jag är idag
+                                                    annars. Jag skulle vilja påstå att min autism har skapat
+                                                    perfektionisten inom mig, och att min ADHD har hjälpt mig med
+                                                    drivet.
+                                                </p>
+
+                                                <blockquote
+                                                    class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
+                                                    <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
+                                                        "Sedan jag startade Puts i Karlstad för tre år sedan har jag
+                                                        blivit ett av de mest eftertraktade namnen inom fönsterputs i
+                                                        och runt Karlstad."
+                                                    </p>
+                                                </blockquote>
+
+                                                <p class="mt-2 text-gray-500">
+                                                    Men fönsterputsning för mig är så mycket mer än bara ett jobb. Det
+                                                    är en passion och en konstform. Det är en chans att uttrycka min
+                                                    noggrannhet och känna glädjen av ett väl utfört arbete – glas efter
+                                                    glas.
+                                                </p>
+
+                                                <p class="mt-2 text-gray-500">
+                                                    På min fritid dyker nörden i mig upp. Jag spenderar stor del av min
+                                                    tid framför datorn, antingen uppslukad av spel, fängslad av serier
+                                                    eller nedsjunken i webbutvecklingsprojekt, där jag kontinuerligt
+                                                    förbättrar och utvecklar mitt bokningssystem eller skapar nya
+                                                    projekt från grunden.
+                                                </p>
+
+                                                <div class="flex justify-end mt-6">
+                                                    <button @click="toggleModal()"
+                                                            class="px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary rounded-md hover:bg-cyan-500 active:bg-cyan-400">
+                                                        Stäng
+                                                    </button>
+                                                </div>
+                                                <!-- Här slutar modalinnehållet -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!--<div id="textWrapper1" class="textWrapper">
                                     <p id="text1" class="text">Hello, World!</p>
@@ -244,6 +336,7 @@
             </div>
         </div>
 
+        {{--
         <div class="container items-center pb-24 max-w-3xl lg:max-w-7xl lg:pb-24" data-aos="fade-up"
              data-aos-offset="200"
              data-aos-duration="500">
@@ -267,6 +360,7 @@
 
             </div>
         </div>
+        --}}
 
     </section>
 
@@ -288,7 +382,7 @@
             style="z-index: 3;">
             <div class="max-w-7xl mx-auto pb-4">
                 <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja
-                                                                                                        Puts i Karlstad?</h2>
+                    Puts i Karlstad?</h2>
             </div>
             <div class="relative items-center justify-center w-full h-full max-w-7xl mx-auto">
                 <div class="py-4 mx-auto">
@@ -323,7 +417,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder en helt miljövänlig lösning för fönsterputs,
-                                               vilket skiljer mig från många konkurrenter.</p>
+                                                vilket skiljer mig från många konkurrenter.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +450,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Hos mig hittar du ett unikt och modernt bokningssystem
-                                               som inte erbjuds av någon annan på marknaden.</p>
+                                                som inte erbjuds av någon annan på marknaden.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +484,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Med över 10 års erfarenhet inom branschen arbetar jag
-                                               mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
+                                                mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -424,7 +518,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder schyssta priser samt personliga rabatter för mina
-                                               återkommande kunder.</p>
+                                                återkommande kunder.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -615,8 +709,6 @@
                 </div>
             </div>
         </div>
-
-
 
 
     </section>

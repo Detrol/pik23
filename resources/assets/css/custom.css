@@ -81,6 +81,28 @@
     max-width: 400px;
 }
 
+.modal-content {
+    max-height: 80vh; /* Anpassa detta värde efter behov */
+    overflow-y: auto;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+@keyframes arrow-animation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.animate-arrow:hover .fa-angle-right {
+    animation: arrow-animation 1s infinite;
+}
+
 @media (max-width: 640px) { /* 640px kan justeras baserat på dina behov */
     .custom-image {
         width: 75%;
