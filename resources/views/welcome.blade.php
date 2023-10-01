@@ -136,7 +136,7 @@
                                                  x-transition:leave="transition ease-in duration-200 transform"
                                                  x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                                                  x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                 class="modal-content inline-block w-full max-w-xl p-8 my-20 overflow-y-auto text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
+                                                 class="modal-content inline-block w-full max-w-xl p-8 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
                                             >
                                                 <!-- Här börjar modalinnehållet -->
                                                 <div class="flex items-center justify-between space-x-4">
@@ -151,46 +151,71 @@
                                                     </button>
                                                 </div>
 
-                                                <p class="mt-2 mb-2 text-gray-500">
-                                                    Jag är en kille som har snurrat med på denna planet i lite mer än 35
-                                                    varv i skrivande stund. Jag har också autism och ADHD, något jag är
-                                                    tacksam för då jag troligtvis inte hade varit där jag är idag
-                                                    annars. Jag skulle vilja påstå att min autism har skapat
-                                                    perfektionisten inom mig, och att min ADHD har hjälpt mig med
-                                                    drivet.
-                                                </p>
+                                                <div class="overflow-y-auto">
 
-                                                <p class="mt-2 text-gray-500">
-                                                    Men fönsterputsning för mig är så mycket mer än bara ett jobb. Det
-                                                    är en passion och en konstform. Det är en chans att uttrycka min
-                                                    noggrannhet och känna glädjen av ett väl utfört arbete – glas efter
-                                                    glas.
-                                                </p>
-
-                                                <blockquote
-                                                    class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
-                                                    <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
-                                                        "Sedan jag startade Puts i Karlstad för tre år sedan har jag
-                                                        blivit ett av de mest eftertraktade namnen inom fönsterputs i
-                                                        och runt Karlstad."
+                                                    <p class="mt-2 mb-2 text-gray-500">
+                                                        Jag är en kille som har snurrat med på denna planet i lite mer
+                                                        än 35
+                                                        varv i skrivande stund. Jag har också autism och ADHD, något jag
+                                                        är
+                                                        tacksam för då jag troligtvis inte hade varit där jag är idag
+                                                        annars. Jag skulle vilja påstå att min autism har skapat
+                                                        perfektionisten inom mig, och att min ADHD har hjälpt mig med
+                                                        drivet.
                                                     </p>
-                                                </blockquote>
 
-                                                <p class="mt-2 text-gray-500">
-                                                    På min fritid dyker nörden i mig upp. Jag spenderar stor del av min
-                                                    tid framför datorn, antingen uppslukad av spel, fängslad av serier
-                                                    eller nedsjunken i webbutvecklingsprojekt, där jag kontinuerligt
-                                                    förbättrar och utvecklar mitt bokningssystem eller skapar nya
-                                                    projekt från grunden.
-                                                </p>
+                                                    <p class="mt-2 text-gray-500">
+                                                        Men fönsterputsning för mig är så mycket mer än bara ett jobb.
+                                                        Det
+                                                        är en passion och en konstform. Det är en chans att uttrycka min
+                                                        noggrannhet och känna glädjen av ett väl utfört arbete – glas
+                                                        efter
+                                                        glas.
+                                                    </p>
 
-                                                <p class="mt-2 text-gray-500">
-                                                    Jag drömmer om ett enkelt hus på landet, omringad av diverse djur
-                                                    som jag kan krama hela dagarna.
-                                                    Jag uppskattar lugnet före stadsbruset och tycker i allmänhet bättre
-                                                    om djur än om människor. Hos dem finns ingen girighet eller
-                                                    destruktiva tendenser. Förutom när det kommer till mat, men det kan jag leva med.
-                                                </p>
+                                                    <p class="mt-2 text-gray-500">
+                                                        Min vision är att bli den största inom fönsterputs i Karlstad.
+                                                        Jag
+                                                        strävar efter att kunna erbjuda fler och mer avancerade metoder
+                                                        för fönsterputsning,
+                                                        såsom användning av ultrarent vatten eller polering av glas.
+                                                        Även om dessa metoder
+                                                        innebär betydande kostnader, är jag fast besluten att nå dit en
+                                                        dag.
+                                                    </p>
+
+                                                    <blockquote
+                                                        class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
+                                                        <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
+                                                            "Sedan jag startade Puts i Karlstad för tre år sedan har jag
+                                                            blivit ett av de mest eftertraktade namnen inom fönsterputs
+                                                            i
+                                                            och runt Karlstad."
+                                                        </p>
+                                                    </blockquote>
+
+                                                    <p class="mt-2 text-gray-500">
+                                                        På min fritid dyker nörden i mig upp. Jag spenderar stor del av
+                                                        min
+                                                        tid framför datorn, antingen uppslukad av spel, fängslad av
+                                                        serier
+                                                        eller nedsjunken i webbutvecklingsprojekt, där jag kontinuerligt
+                                                        förbättrar och utvecklar mitt bokningssystem eller skapar nya
+                                                        projekt från grunden.
+                                                    </p>
+
+                                                    <p class="mt-2 text-gray-500">
+                                                        Jag drömmer om ett enkelt hus på landet, omringad av diverse
+                                                        djur
+                                                        som jag kan krama hela dagarna.
+                                                        Jag uppskattar lugnet före stadsbruset och tycker i allmänhet
+                                                        bättre
+                                                        om djur än om människor. Hos dem finns ingen girighet eller
+                                                        destruktiva tendenser. Förutom när det kommer till mat, men det
+                                                        kan jag leva med.
+                                                    </p>
+
+                                                </div>
 
                                                 <div class="flex justify-end mt-6">
                                                     <button @click="toggleModal()"
