@@ -160,6 +160,13 @@
                                                     drivet.
                                                 </p>
 
+                                                <p class="mt-2 text-gray-500">
+                                                    Men fönsterputsning för mig är så mycket mer än bara ett jobb. Det
+                                                    är en passion och en konstform. Det är en chans att uttrycka min
+                                                    noggrannhet och känna glädjen av ett väl utfört arbete – glas efter
+                                                    glas.
+                                                </p>
+
                                                 <blockquote
                                                     class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
                                                     <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
@@ -168,13 +175,6 @@
                                                         och runt Karlstad."
                                                     </p>
                                                 </blockquote>
-
-                                                <p class="mt-2 text-gray-500">
-                                                    Men fönsterputsning för mig är så mycket mer än bara ett jobb. Det
-                                                    är en passion och en konstform. Det är en chans att uttrycka min
-                                                    noggrannhet och känna glädjen av ett väl utfört arbete – glas efter
-                                                    glas.
-                                                </p>
 
                                                 <p class="mt-2 text-gray-500">
                                                     På min fritid dyker nörden i mig upp. Jag spenderar stor del av min
