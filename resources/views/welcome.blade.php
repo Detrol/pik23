@@ -36,10 +36,10 @@
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
                     </a>
-                    <a href="{{ route('prices') }}"
+                    <a href="#review"
                        class="inline-flex items-center justify-center text-xl text-white duration-200 hover:text-gray-300 focus:outline-none focus-visible:outline-gray-600">
-                        Se priser
-                        <span aria-hidden="true"> → </span>
+                        Visa omdömen
+                        <span class="ml-3" aria-hidden="true"> → </span>
                     </a>
                 </div>
 
