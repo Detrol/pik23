@@ -39,7 +39,7 @@
                     <a href="#review"
                        class="inline-flex items-center justify-center text-xl text-white duration-200 hover:text-gray-300 focus:outline-none focus-visible:outline-gray-600">
                         Visa omdömen
-                        <span class="ml-3" aria-hidden="true"> → </span>
+                        <span aria-hidden="true"> → </span>
                     </a>
                 </div>
 
