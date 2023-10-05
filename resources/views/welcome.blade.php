@@ -626,95 +626,81 @@
             <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
                 <div class="max-w-7xl mx-auto pb-4">
                     <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center mb-2">
-                        Vad önskar du få putsat?</h2>
-                    <h3 class="text-base font-normal tracking-wide text-gray-300 dark:text-white lg:text-lg text-center">
-                        Klicka på etiketterna för mer information</h3>
+                        Lite av vad jag kan hjälpa med</h2>
                 </div>
                 <div class="grid grid-cols-2 mx-auto lg:grid-cols-3 flex">
-                    <a href="{{ route('hus') }}" class="hover:scale-125 duration-200">
-                        <div class="p-6 items-center justify-center text-center"
-                             data-aos="zoom-out" data-aos-duration="1000"
-                             data-aos-offset="100" data-aos-delay="100"
-                             data-aos-easing="ease-in-out">
-                            <div
-                                class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
-                                <i class="fa fa-house text-2xl"></i>
-                            </div>
-                            <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
-                                Hus
-                            </p>
+                    <div class="p-6 items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-house text-2xl"></i>
                         </div>
-                    </a>
-                    <a href="{{ route('lagenhet') }}" class="hover:scale-125 duration-200">
-                        <div class="p-6 w-full items-center justify-center text-center"
-                             data-aos="zoom-out" data-aos-duration="1000"
-                             data-aos-offset="100" data-aos-delay="100"
-                             data-aos-easing="ease-in-out">
-                            <div
-                                class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
-                                <i class="fa fa-building-user text-2xl"></i>
-                            </div>
-                            <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
-                                Lägenhet
-                            </p>
+                        <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
+                            Hus
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-building-user text-2xl"></i>
                         </div>
-                    </a>
-                    <a href="{{ route('kontor') }}" class="hover:scale-125 duration-200">
-                        <div class="p-6 w-full items-center justify-center text-center"
-                             data-aos="zoom-out" data-aos-duration="1000"
-                             data-aos-offset="100" data-aos-delay="100"
-                             data-aos-easing="ease-in-out">
-                            <div
-                                class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
-                                <i class="fa fa-chair-office text-2xl"></i>
-                            </div>
-                            <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
-                                Kontor
-                            </p>
+                        <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
+                            Lägenhet
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-chair-office text-2xl"></i>
                         </div>
-                    </a>
-                    <a href="{{ route('trapphus') }}" class="hover:scale-125 duration-200">
-                        <div class="p-6 w-full items-center justify-center text-center"
-                             data-aos="zoom-out" data-aos-duration="1000"
-                             data-aos-offset="100" data-aos-delay="100"
-                             data-aos-easing="ease-in-out">
-                            <div
-                                class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
-                                <i class="fa fa-buildings text-2xl"></i>
-                            </div>
-                            <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
-                                Trapphus
-                            </p>
+                        <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
+                            Kontor
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-buildings text-2xl"></i>
                         </div>
-                    </a>
-                    <a href="{{ route('skyltfonster') }}" class="hover:scale-125 duration-200">
-                        <div class="p-6 w-full items-center justify-center text-center"
-                             data-aos="zoom-out" data-aos-duration="1000"
-                             data-aos-offset="100" data-aos-delay="100"
-                             data-aos-easing="ease-in-out">
-                            <div
-                                class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
-                                <i class="fa fa-square text-2xl"></i>
-                            </div>
-                            <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
-                                Skyltfönster
-                            </p>
+                        <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
+                            Trapphus
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-square text-2xl"></i>
                         </div>
-                    </a>
-                    <a href="#contact" class="hover:scale-125 duration-200">
-                        <div class="p-6 w-full items-center justify-center text-center"
-                             data-aos="zoom-out" data-aos-duration="1000"
-                             data-aos-offset="100" data-aos-delay="100"
-                             data-aos-easing="ease-in-out">
-                            <div
-                                class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
-                                <i class="fa fa-question-circle text-2xl"></i>
-                            </div>
-                            <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
-                                Hör av dig om annat
-                            </p>
+                        <p class="mt-4 text-lg font-medium leading-6 text-gray-100">
+                            Skyltfönster
+                        </p>
+                    </div>
+                    <div class="p-6 w-full items-center justify-center text-center"
+                         data-aos="zoom-out" data-aos-duration="1000"
+                         data-aos-offset="100" data-aos-delay="100"
+                         data-aos-easing="ease-in-out">
+                        <div
+                            class="flex mx-auto items-center justify-center text-center w-14 h-14 text-gray-500 bg-gray-50 rounded-xl">
+                            <i class="fa fa-question-circle text-2xl"></i>
                         </div>
-                    </a>
+                        <p class="mt-5 text-lg font-medium leading-6 text-gray-100">
+                            Hör av dig om annat
+                        </p>
+                    </div>
                 </div>
                 <div class="max-w-7xl mx-auto pt-6">
                     <h2 class="text-lg font-normal tracking-wide text-gray-100 dark:text-white lg:text-xl text-center revealUp">
