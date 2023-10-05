@@ -213,11 +213,6 @@
                                                         Jag drömmer om ett enkelt hus på landet, omringad av diverse
                                                         djur
                                                         som jag kan krama hela dagarna.
-                                                        Jag uppskattar lugnet före stadsbruset och tycker i allmänhet
-                                                        bättre
-                                                        om djur än om människor. Hos dem finns ingen girighet eller
-                                                        destruktiva tendenser. Förutom när det kommer till mat, men det
-                                                        kan jag leva med.
                                                     </p>
 
                                                 </div>
