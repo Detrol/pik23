@@ -138,10 +138,10 @@
                    href="{{ route('services') }}">
                     Tjänster
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
+                <!--<a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
                    href="{{ route('prices') }}">
                     Priser
-                </a>
+                </a>-->
                 <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
                    href="{{ route('faq') }}">
                     Vanliga frågor
