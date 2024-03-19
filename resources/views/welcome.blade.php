@@ -722,7 +722,7 @@
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
             <div class="justify-center w-full text-center lg:p-10 max-auto">
                 <div class="justify-center w-full mx-auto revealLeft min-h-[400px]">
-                    <div class="elfsight-app-764c0ace-e1e3-42c8-9caf-4a0012cfb2db" data-elfsight-app-lazy></div>
+                    <div class="elfsight-app-fb05e676-87b2-438f-8d6a-384b5cb19a50" data-elfsight-app-lazy></div>
                 </div>
             </div>
         </div>
