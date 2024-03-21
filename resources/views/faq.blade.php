@@ -128,7 +128,8 @@
                                                             Vid minusgrader putsar jag inte alls. Om det är kallt ute på
                                                             grund av vind och låga grader, och du bor i en bostad som
                                                             kräver utomhusarbete, så flyttas normalt putsningen. Tyvärr
-                                                            är mina händer extremt känsliga för kyla.
+                                                            är mina händer extremt känsliga för kyla, då jag har en kärlsjukdom
+                                                            som heter Raynauds syndrom.
                                                         </p>
                                                     </div>
                                                 </div>
