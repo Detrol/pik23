@@ -232,6 +232,8 @@
 
 @yield('script')
 
+{!! HCaptcha::script() !!}
+
 <script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('topBtn', () => ({

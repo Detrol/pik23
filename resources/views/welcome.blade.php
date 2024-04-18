@@ -827,9 +827,13 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
+                                    {{--
                                     <div class="h-captcha" id="hcaptcha-element"
                                          data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
                                     <div id="error-container" class="text-red-500 mt-2"></div>
+                                    --}}
+
+                                    {!! HCaptcha::display() !!}
                                 </div>
 
 
