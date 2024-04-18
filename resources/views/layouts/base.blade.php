@@ -204,7 +204,7 @@
 </footer>
 
 <div x-data="{ toast: false, message: '{{ session('status') }}' }"
-     x-init="() => { if (message) { this.toast = true; setTimeout(() => { this.toast = false }, 5000); } }"
+     x-init="() => { if (message) { toast = true; setTimeout(() => { toast = false }, 5000); } }"
      class="fixed top-0 right-0 mt-5 mr-5 z-50">
     <div x-show="toast" x-transition
          class="flex items-center justify-between max-w-xs p-4 bg-white border rounded-md shadow-sm">
