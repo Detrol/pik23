@@ -323,7 +323,7 @@
                             <img
                                 class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
                                 alt="jag" loading="lazy" width="600" height="600"
-                                src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/putsjag_x4ooky.webp">
+                                src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/putsjag_x4ooky">
                         </div>
 
                     </div>
