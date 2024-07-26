@@ -179,19 +179,19 @@
                                                                 <h3 class="text-xl font-semibold text-gray-800 mb-3">Exklusiva fördelar för registrerade kunder:</h3>
 
                                                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                                                    <div class="bg-blue-50 p-3 rounded-lg">
+                                                                    <div class="p-3 rounded-lg">
                                                                         <h4 class="font-bold text-primary">Lojalitetsrabatt</h4>
                                                                         <p class="text-gray-600">Varje uppdrag ger tillbaka poäng motsvarande 10% av summan, som kan användas vid framtida bokningar i form av en rabattkod.</p>
                                                                     </div>
-                                                                    <div class="bg-green-50 p-3 rounded-lg">
+                                                                    <div class="p-3 rounded-lg">
                                                                         <h4 class="font-bold text-primary">Enkel ombokning</h4>
                                                                         <p class="text-gray-600">Spara tid genom att enkelt kopiera tidigare bokningar.</p>
                                                                     </div>
-                                                                    <div class="bg-yellow-50 p-3 rounded-lg">
+                                                                    <div class="p-3 rounded-lg">
                                                                         <h4 class="font-bold text-primary">Förtur vid säsongsöppning</h4>
                                                                         <p class="text-gray-600">Få chansen att boka tider innan alla andra när säsongen startar.</p>
                                                                     </div>
-                                                                    <div class="bg-purple-50 p-3 rounded-lg">
+                                                                    <div class="p-3 rounded-lg">
                                                                         <h4 class="font-bold text-primary">Löpande bokningar</h4>
                                                                         <p class="text-gray-600">Snart kan du skapa återkommande bokningar för regelbundet underhåll.</p>
                                                                     </div>
