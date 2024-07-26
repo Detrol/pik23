@@ -152,52 +152,63 @@
                                                         </div>
 
                                                         <div class="overflow-y-auto max-h-[50vh]">
-                                                            <h2 class="text-lg font-semibold text-gray-800 mb-3">Varför välja Puts i Karlstad framför andra fönsterputsfirmor?</h2>
+                                                            <p class="mb-4 text-gray-700">
+                                                                Fönsterputsning är min passion, och jag har ägnat över ett decennium åt att förfina mitt hantverk.
+                                                            </p>
 
-                                                            <p class="mb-2 text-gray-600">- Över ett decennium av dedikerad erfarenhet inom fönsterputsning</p>
-                                                            <p class="mb-2 text-gray-600">- Noggrann och personlig service med fokus på detaljer</p>
-                                                            <p class="mb-2 text-gray-600">- Användning av miljövänliga och effektiva rengöringsmedel</p>
-                                                            <p class="mb-2 text-gray-600">- Flexibelt och användarvänligt bokningssystem</p>
-                                                            <p class="mb-2 text-gray-600">- Konkurrenskraftiga priser med garanti på kvalitet</p>
+                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja mig framför andra fönsterputsfirmor?</h2>
 
-                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja Puts i Karlstad framför generella städfirmor?</h2>
+                                                            <p class="mb-2 text-gray-600">- Jag ser varje fönster som unikt och ger det min fulla uppmärksamhet</p>
+                                                            <p class="mb-2 text-gray-600">- Miljön är viktig för mig, så jag använder bara miljövänliga rengöringsmedel</p>
+                                                            <p class="mb-2 text-gray-600">- Mitt bokningssystem är enkelt - för att göra det smidigt för dig</p>
+                                                            <p class="mb-2 text-gray-600">- Jag erbjuder rättvisa priser utan att kompromissa med kvaliteten</p>
+                                                            <p class="mb-2 text-gray-600">- Som enmansföretag ger jag dig alltid personlig service</p>
 
-                                                            <p class="mb-2 text-gray-600">- Specialiserad expertis helt inriktad på fönsterputsning</p>
-                                                            <p class="mb-2 text-gray-600">- Ingående kunskap om olika fönstertyper och deras specifika behov</p>
-                                                            <p class="mb-2 text-gray-600">- Effektiva metoder som ger professionellt resultat</p>
-                                                            <p class="mb-2 text-gray-600">- Rätt utrustning för säker och effektiv rengöring</p>
-                                                            <p class="mb-2 text-gray-600">- Fullt fokus på fönster, utan kompromisser med andra städtjänster</p>
-                                                            <p class="mb-2 text-gray-600">- Expertis i att identifiera och förebygga vanliga fönsterproblem</p>
-                                                            <p class="mb-2 text-gray-600">- Kostnadseffektiv lösning för regelbundet fönsterunderhåll</p>
+                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja mig framför en vanlig städfirma?</h2>
+
+                                                            <p class="mb-4 text-gray-700">
+                                                                Till skillnad från många städfirmor som erbjuder fönsterputsning som en sidotjänst, är det här mitt enda fokus. Det betyder att:
+                                                            </p>
+
+                                                            <p class="mb-2 text-gray-600">- Jag har djupgående kunskap om olika fönstertyper och deras behov</p>
+                                                            <p class="mb-2 text-gray-600">- Mina metoder är finslipade för att ge bästa möjliga resultat</p>
+                                                            <p class="mb-2 text-gray-600">- Jag har specialiserad utrustning just för fönsterputsning</p>
+                                                            <p class="mb-2 text-gray-600">- Min hela uppmärksamhet är på dina fönster - inget annat distraherar</p>
+                                                            <p class="mb-2 text-gray-600">- Jag kan snabbt upptäcka och förebygga vanliga fönsterproblem</p>
+                                                            <p class="mb-2 text-gray-600">- Mitt fokus gör att jag kan erbjuda konkurrenskraftiga priser</p>
 
                                                             <div class="mt-6 text-gray-700">
                                                                 <p class="mb-4 text-gray-700">
-                                                                    När du väljer Puts i Karlstad får du inte bara rena fönster – du får en hängiven partner i att förbättra din boendemiljö. Min passion för fönsterputsning, kombinerad med års av erfarenhet, garanterar ett resultat som överträffar dina förväntningar.
+                                                                    För mig handlar fönsterputsning om mer än bara rena glas. Det handlar om att förbättra din miljö, att låta mer ljus flöda in och skapa en trevligare atmosfär. Min erfarenhet och passion gör att jag alltid strävar efter att överträffa dina förväntningar.
                                                                 </p>
 
-                                                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Exklusiva fördelar för registrerade kunder:</h3>
+                                                                <h3 class="text-xl font-semibold text-gray-800 mb-3">För registrerade kunder erbjuder jag:</h3>
 
                                                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">Lojalitetsrabatt</h4>
-                                                                        <p class="text-gray-600">Varje uppdrag ger tillbaka poäng motsvarande 10% av summan, som kan användas vid framtida bokningar i form av en rabattkod.</p>
+                                                                        <h4 class="font-bold text-primary">En liten bonus</h4>
+                                                                        <p class="text-gray-600">10% av varje bokning sparas som poäng för framtida rabatter.</p>
                                                                     </div>
                                                                     <div class="p-3 rounded-lg">
                                                                         <h4 class="font-bold text-primary">Enkel ombokning</h4>
-                                                                        <p class="text-gray-600">Spara tid genom att enkelt kopiera tidigare bokningar.</p>
+                                                                        <p class="text-gray-600">Kopiera enkelt din senaste bokning med ett klick.</p>
                                                                     </div>
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">Förtur vid säsongsöppning</h4>
-                                                                        <p class="text-gray-600">Få chansen att boka tider innan alla andra när säsongen startar.</p>
+                                                                        <h4 class="font-bold text-primary">Förtur vid säsongsstart</h4>
+                                                                        <p class="text-gray-600">Boka före alla andra när säsongen drar igång.</p>
                                                                     </div>
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">Löpande bokningar</h4>
-                                                                        <p class="text-gray-600">Snart kan du skapa återkommande bokningar för regelbundet underhåll.</p>
+                                                                        <h4 class="font-bold text-primary">Återkommande bokningar</h4>
+                                                                        <p class="text-gray-600">Snart kan du ställa in regelbundna bokningar.</p>
                                                                     </div>
                                                                 </div>
 
                                                                 <p class="mb-4 text-gray-700">
-                                                                    Jag förstår att varje hem och lokal är unik, och därför anpassar jag min service för att möta dina specifika behov. Vare sig det gäller fönster i en lägenhet, villa eller kontorslokal, så har jag kunskapen och erfarenheten för att leverera ett glänsande resultat.
+                                                                    Jag vet att varje hem och arbetsplats är unik, så jag anpassar alltid min service efter dina behov. Oavsett om det är en liten lägenhet eller ett stort kontor, så ger jag alltid mitt bästa för att dina fönster ska skina.
+                                                                </p>
+
+                                                                <p class="text-gray-700 font-semibold">
+                                                                    Låt mig ta hand om dina fönster så att du kan njuta av utsikten och det vackra ljuset. Hoppas vi ses snart!
                                                                 </p>
                                                             </div>
                                                         </div>
