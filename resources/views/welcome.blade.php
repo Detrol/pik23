@@ -103,7 +103,7 @@
                                     skillnaden av kristallklara fönster.
                                 </h3>
 
-                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6" style="gap: 1.5rem;">
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
                                     <div class="w-full sm:w-auto">
                                         <div
                                             x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
