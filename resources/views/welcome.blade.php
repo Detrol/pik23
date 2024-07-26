@@ -103,127 +103,229 @@
                                     skillnaden av kristallklara fönster.
                                 </h3>
 
-                                <div
-                                    x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
-                                    <button @click="toggleModal()"
-                                            class="animate-arrow flex items-center justify-center mt-4 px-3 py-2 space-x-2 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary"
-                                            data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                        <span>Mer om mig</span>
-                                        <i class="fa fa-angle-right"></i>
-                                    </button>
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 mt-6" style="gap: 1.5rem;">
+                                    <div class="w-full sm:w-auto">
+                                        <div
+                                            x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
+                                            <button @click="toggleModal()"
+                                                    class="animate-arrow flex items-center justify-center px-4 py-2 space-x-3 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary w-full"
+                                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                                <span>Varför välja mig?</span>
+                                                <i class="fa fa-angle-right pl-4"></i>
+                                            </button>
 
+                                            <div x-show="modelOpen"
+                                                 class="fixed inset-0 flex items-center justify-center z-50 px-3"
+                                                 aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                                 style="backdrop-filter: blur(5px);">
+                                                <div class="flex items-center justify-center min-h-screen text-center">
+                                                    <div x-cloak @click="toggleModal()" x-show="modelOpen"
+                                                         x-transition:enter="transition ease-out duration-300 transform"
+                                                         x-transition:enter-start="opacity-0"
+                                                         x-transition:enter-end="opacity-100"
+                                                         x-transition:leave="transition ease-in duration-200 transform"
+                                                         x-transition:leave-start="opacity-100"
+                                                         x-transition:leave-end="opacity-0"
+                                                         class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-40"
+                                                         aria-hidden="true"
+                                                    ></div>
 
-                                    <div x-show="modelOpen"
-                                         class="fixed inset-0 flex items-center justify-center z-50 px-3"
-                                         aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                         style="backdrop-filter: blur(5px);">
-                                        <div class="flex items-center justify-center min-h-screen text-center">
-                                            <div x-cloak @click="toggleModal()" x-show="modelOpen"
-                                                 x-transition:enter="transition ease-out duration-300 transform"
-                                                 x-transition:enter-start="opacity-0"
-                                                 x-transition:enter-end="opacity-100"
-                                                 x-transition:leave="transition ease-in duration-200 transform"
-                                                 x-transition:leave-start="opacity-100"
-                                                 x-transition:leave-end="opacity-0"
-                                                 class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-40"
-                                                 aria-hidden="true"
-                                            ></div>
+                                                    <div x-cloak x-show="modelOpen"
+                                                         x-transition:enter="transition ease-out duration-300 transform"
+                                                         x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                         x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                                                         x-transition:leave="transition ease-in duration-200 transform"
+                                                         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                                                         x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                         class="modal-content overflow-hidden inline-block w-full max-w-xl p-6 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
+                                                    >
+                                                        <div class="flex items-center justify-between space-x-4">
+                                                            <h1 class="text-xl font-medium text-gray-800 pb-3">Varför välja Puts i Karlstad?</h1>
+                                                            <button @click="toggleModal()"
+                                                                    class="text-gray-600 focus:outline-none hover:text-gray-700 pb-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                          stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
 
-                                            <div x-cloak x-show="modelOpen"
-                                                 x-transition:enter="transition ease-out duration-300 transform"
-                                                 x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                 x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-                                                 x-transition:leave="transition ease-in duration-200 transform"
-                                                 x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-                                                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                 class="modal-content overflow-hidden inline-block w-full max-w-xl p-6 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
-                                            >
-                                                <!-- Här börjar modalinnehållet -->
-                                                <div class="flex items-center justify-between space-x-4">
-                                                    <h1 class="text-xl font-medium text-gray-800 pb-3">Så vem är då
-                                                        jag?</h1>
-                                                    <button @click="toggleModal()"
-                                                            class="text-gray-600 focus:outline-none hover:text-gray-700 pb-3">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
-                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                  stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                                                        </svg>
-                                                    </button>
-                                                </div>
+                                                        <div class="overflow-y-auto max-h-[50vh]">
+                                                            <h2 class="text-lg font-semibold text-gray-800 mb-3">Varför välja Puts i Karlstad framför andra fönsterputsfirmor?</h2>
 
-                                                <div class="overflow-y-auto max-h-[50vh]">
+                                                            <p class="mb-2 text-gray-600">- Över ett decennium av dedikerad erfarenhet inom fönsterputsning</p>
+                                                            <p class="mb-2 text-gray-600">- Noggrann och personlig service med fokus på detaljer</p>
+                                                            <p class="mb-2 text-gray-600">- Användning av miljövänliga och effektiva rengöringsmedel</p>
+                                                            <p class="mb-2 text-gray-600">- Flexibelt och användarvänligt bokningssystem</p>
+                                                            <p class="mb-2 text-gray-600">- Konkurrenskraftiga priser med garanti på kvalitet</p>
+                                                            <p class="mb-2 text-gray-600">- Djup lokal kännedom om Karlstad och omnejd</p>
 
-                                                    <p class="mb-2 pe-2 text-gray-500">
-                                                        Jag är en kille som har snurrat med på denna planet i lite mer
-                                                        än 35
-                                                        varv i skrivande stund. Jag har också autism och ADHD, något jag
-                                                        är
-                                                        tacksam för då jag troligtvis inte hade varit där jag är idag
-                                                        annars. Jag skulle vilja påstå att min autism har skapat
-                                                        perfektionisten inom mig, och att min ADHD har hjälpt mig med
-                                                        drivet.
-                                                    </p>
+                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja Puts i Karlstad framför generella städfirmor?</h2>
 
-                                                    <p class="mt-2 pe-2 text-gray-500">
-                                                        Men fönsterputsning för mig är så mycket mer än bara ett jobb.
-                                                        Det
-                                                        är en passion och en konstform. Det är en chans att uttrycka min
-                                                        noggrannhet och känna glädjen av ett väl utfört arbete – glas
-                                                        efter
-                                                        glas.
-                                                    </p>
+                                                            <p class="mb-2 text-gray-600">- Specialiserad expertis helt inriktad på fönsterputsning</p>
+                                                            <p class="mb-2 text-gray-600">- Ingående kunskap om olika fönstertyper och deras specifika behov</p>
+                                                            <p class="mb-2 text-gray-600">- Effektiva metoder som ger professionellt resultat</p>
+                                                            <p class="mb-2 text-gray-600">- Rätt utrustning för säker och effektiv rengöring, oavsett höjd</p>
+                                                            <p class="mb-2 text-gray-600">- Fullt fokus på fönster, utan kompromisser med andra städtjänster</p>
+                                                            <p class="mb-2 text-gray-600">- Expertis i att identifiera och förebygga vanliga fönsterproblem</p>
+                                                            <p class="mb-2 text-gray-600">- Kostnadseffektiv lösning för regelbundet fönsterunderhåll</p>
 
-                                                    <p class="mt-2 pe-2 text-gray-500">
-                                                        Min vision är att bli den största inom fönsterputs i Karlstad.
-                                                        Jag
-                                                        strävar efter att kunna erbjuda fler och mer avancerade metoder
-                                                        för fönsterputsning,
-                                                        såsom användning av ultrarent vatten eller polering av glas.
-                                                        Även om dessa metoder
-                                                        innebär betydande kostnader, är jag fast besluten att nå dit en
-                                                        dag.
-                                                    </p>
+                                                            <div class="mt-6 text-gray-700">
+                                                                <p class="mb-4 text-gray-700">
+                                                                    När du väljer Puts i Karlstad får du inte bara rena fönster – du får en hängiven partner i att förbättra din boendemiljö. Min passion för fönsterputsning, kombinerad med års av erfarenhet, garanterar ett resultat som överträffar dina förväntningar.
+                                                                </p>
 
-                                                    <div class="p-2">
-                                                        <blockquote
-                                                            class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
-                                                            <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
-                                                                "Sedan jag startade Puts i Karlstad för tre år sedan har
-                                                                jag
-                                                                blivit ett av de mest eftertraktade namnen inom
-                                                                fönsterputs
-                                                                i
-                                                                och runt Karlstad."
-                                                            </p>
-                                                        </blockquote>
+                                                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Exklusiva fördelar för registrerade kunder:</h3>
+
+                                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                                                    <div class="bg-blue-50 p-3 rounded-lg">
+                                                                        <h4 class="font-bold text-primary">Lojalitetsrabatt</h4>
+                                                                        <p class="text-gray-600">Varje uppdrag ger tillbaka poäng motsvarande 10% av summan, som kan användas vid framtida bokningar i form av en rabattkod.</p>
+                                                                    </div>
+                                                                    <div class="bg-green-50 p-3 rounded-lg">
+                                                                        <h4 class="font-bold text-primary">Enkel ombokning</h4>
+                                                                        <p class="text-gray-600">Spara tid genom att enkelt kopiera tidigare bokningar.</p>
+                                                                    </div>
+                                                                    <div class="bg-yellow-50 p-3 rounded-lg">
+                                                                        <h4 class="font-bold text-primary">Förtur vid säsongsöppning</h4>
+                                                                        <p class="text-gray-600">Få chansen att boka tider innan alla andra när säsongen startar.</p>
+                                                                    </div>
+                                                                    <div class="bg-purple-50 p-3 rounded-lg">
+                                                                        <h4 class="font-bold text-primary">Löpande bokningar</h4>
+                                                                        <p class="text-gray-600">Snart kan du skapa återkommande bokningar för regelbundet underhåll.</p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <p class="mb-4 text-gray-700">
+                                                                    Jag förstår att varje hem och lokal är unik, och därför anpassar jag min service för att möta dina specifika behov. Vare sig det gäller fönster i en lägenhet, villa eller kontorslokal, så har jag kunskapen och erfarenheten för att leverera ett glänsande resultat.
+                                                                </p>
+
+                                                                <p class="text-gray-700 font-semibold">
+                                                                    Låt mig ta hand om dina fönster så att du kan njuta av en klarare utsikt och ett ljusare hem. Boka en tid idag och upplev skillnaden!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="flex justify-end mt-3">
+                                                            <button @click="toggleModal()"
+                                                                    class="px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary rounded-md hover:bg-cyan-500 active:bg-cyan-400">
+                                                                Stäng
+                                                            </button>
+                                                        </div>
                                                     </div>
-
-                                                    <p class="mt-2 pe-2 text-gray-500">
-                                                        På min fritid dyker nörden i mig upp. Jag spenderar stor del av
-                                                        min
-                                                        tid framför datorn, antingen uppslukad av spel, fängslad av
-                                                        serier
-                                                        eller nedsjunken i webbutvecklingsprojekt, där jag kontinuerligt
-                                                        förbättrar och utvecklar mitt bokningssystem eller skapar nya
-                                                        projekt från grunden.
-                                                    </p>
-
-                                                    <p class="mt-2 pe-2 text-gray-500">
-                                                        Jag drömmer om ett enkelt hus på landet, omringad av diverse
-                                                        djur
-                                                        som jag kan krama hela dagarna.
-                                                    </p>
-
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                                <div class="flex justify-end mt-3">
-                                                    <button @click="toggleModal()"
-                                                            class="px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary rounded-md hover:bg-cyan-500 active:bg-cyan-400">
-                                                        Stäng
-                                                    </button>
+                                    <div class="w-full sm:w-auto">
+                                        <div
+                                            x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
+                                            <button @click="toggleModal()"
+                                                    class="animate-arrow flex items-center justify-center px-4 py-2 space-x-3 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary w-full"
+                                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                                <span>Mer om mig</span>
+                                                <i class="fa fa-angle-right pl-4"></i>
+                                            </button>
+
+                                            <div x-show="modelOpen"
+                                                 class="fixed inset-0 flex items-center justify-center z-50 px-3"
+                                                 aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                                 style="backdrop-filter: blur(5px);">
+                                                <div class="flex items-center justify-center min-h-screen text-center">
+                                                    <div x-cloak @click="toggleModal()" x-show="modelOpen"
+                                                         x-transition:enter="transition ease-out duration-300 transform"
+                                                         x-transition:enter-start="opacity-0"
+                                                         x-transition:enter-end="opacity-100"
+                                                         x-transition:leave="transition ease-in duration-200 transform"
+                                                         x-transition:leave-start="opacity-100"
+                                                         x-transition:leave-end="opacity-0"
+                                                         class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-40"
+                                                         aria-hidden="true"
+                                                    ></div>
+
+                                                    <div x-cloak x-show="modelOpen"
+                                                         x-transition:enter="transition ease-out duration-300 transform"
+                                                         x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                         x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                                                         x-transition:leave="transition ease-in duration-200 transform"
+                                                         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                                                         x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                         class="modal-content overflow-hidden inline-block w-full max-w-xl p-6 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
+                                                    >
+                                                        <!-- Här börjar modalinnehållet -->
+                                                        <div class="flex items-center justify-between space-x-4">
+                                                            <h1 class="text-xl font-medium text-gray-800 pb-3">Så vem är då jag?</h1>
+                                                            <button @click="toggleModal()"
+                                                                    class="text-gray-600 focus:outline-none hover:text-gray-700 pb-3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                          stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="overflow-y-auto max-h-[50vh]">
+                                                            <p class="mb-2 pe-2 text-gray-500">
+                                                                Jag är en kille som har snurrat med på denna planet i lite mer
+                                                                än 35 varv i skrivande stund. Jag har också autism och ADHD, något jag
+                                                                är tacksam för då jag troligtvis inte hade varit där jag är idag
+                                                                annars. Jag skulle vilja påstå att min autism har skapat
+                                                                perfektionisten inom mig, och att min ADHD har hjälpt mig med
+                                                                drivet.
+                                                            </p>
+
+                                                            <p class="mt-2 pe-2 text-gray-500">
+                                                                Men fönsterputsning för mig är så mycket mer än bara ett jobb.
+                                                                Det är en passion och en konstform. Det är en chans att uttrycka min
+                                                                noggrannhet och känna glädjen av ett väl utfört arbete – glas
+                                                                efter glas.
+                                                            </p>
+
+                                                            <p class="mt-2 pe-2 text-gray-500">
+                                                                Min vision är att bli den största inom fönsterputs i Karlstad.
+                                                                Jag strävar efter att kunna erbjuda fler och mer avancerade metoder
+                                                                för fönsterputsning, såsom användning av ultrarent vatten eller polering av glas.
+                                                                Även om dessa metoder innebär betydande kostnader, är jag fast besluten att nå dit en
+                                                                dag.
+                                                            </p>
+
+                                                            <div class="p-2">
+                                                                <blockquote
+                                                                    class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
+                                                                    <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
+                                                                        "Sedan jag startade Puts i Karlstad för tre år sedan har
+                                                                        jag blivit ett av de mest eftertraktade namnen inom
+                                                                        fönsterputs i och runt Karlstad."
+                                                                    </p>
+                                                                </blockquote>
+                                                            </div>
+
+                                                            <p class="mt-2 pe-2 text-gray-500">
+                                                                På min fritid dyker nörden i mig upp. Jag spenderar stor del av
+                                                                min tid framför datorn, antingen uppslukad av spel, fängslad av
+                                                                serier eller nedsjunken i webbutvecklingsprojekt, där jag kontinuerligt
+                                                                förbättrar och utvecklar mitt bokningssystem eller skapar nya
+                                                                projekt från grunden.
+                                                            </p>
+
+                                                            <p class="mt-2 pe-2 text-gray-500">
+                                                                Jag drömmer om ett enkelt hus på landet, omringad av diverse
+                                                                djur som jag kan krama hela dagarna.
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="flex justify-end mt-3">
+                                                            <button @click="toggleModal()"
+                                                                    class="px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary rounded-md hover:bg-cyan-500 active:bg-cyan-400">
+                                                                Stäng
+                                                            </button>
+                                                        </div>
+                                                        <!-- Här slutar modalinnehållet -->
+                                                    </div>
                                                 </div>
-                                                <!-- Här slutar modalinnehållet -->
                                             </div>
                                         </div>
                                     </div>
@@ -413,7 +515,8 @@
             style="z-index: 3;">
             <div class="max-w-7xl mx-auto pb-4">
                 <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl">Varför välja
-                    Puts i Karlstad?</h2>
+                                                                                                        Puts i
+                                                                                                        Karlstad?</h2>
             </div>
             <div class="relative items-center justify-center w-full h-full max-w-7xl mx-auto">
                 <div class="py-4 mx-auto">
@@ -448,7 +551,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder en helt miljövänlig lösning för fönsterputs,
-                                                vilket skiljer mig från många konkurrenter.</p>
+                                               vilket skiljer mig från många konkurrenter.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -481,7 +584,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Hos mig hittar du ett unikt och modernt bokningssystem
-                                                som inte erbjuds av någon annan på marknaden.</p>
+                                               som inte erbjuds av någon annan på marknaden.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -515,7 +618,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Med över 10 års erfarenhet inom branschen arbetar jag
-                                                mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
+                                               mycket snabbt och effektivt utan att kompromissa med resultatet.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -549,7 +652,7 @@
 
                                         <div class="text-left mt-2 text-gray-600 text-sm">
                                             <p>Jag erbjuder schyssta priser samt personliga rabatter för mina
-                                                återkommande kunder.</p>
+                                               återkommande kunder.</p>
                                         </div>
                                     </div>
                                 </div>
