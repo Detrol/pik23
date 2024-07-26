@@ -159,14 +159,13 @@
                                                             <p class="mb-2 text-gray-600">- Användning av miljövänliga och effektiva rengöringsmedel</p>
                                                             <p class="mb-2 text-gray-600">- Flexibelt och användarvänligt bokningssystem</p>
                                                             <p class="mb-2 text-gray-600">- Konkurrenskraftiga priser med garanti på kvalitet</p>
-                                                            <p class="mb-2 text-gray-600">- Djup lokal kännedom om Karlstad och omnejd</p>
 
                                                             <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja Puts i Karlstad framför generella städfirmor?</h2>
 
                                                             <p class="mb-2 text-gray-600">- Specialiserad expertis helt inriktad på fönsterputsning</p>
                                                             <p class="mb-2 text-gray-600">- Ingående kunskap om olika fönstertyper och deras specifika behov</p>
                                                             <p class="mb-2 text-gray-600">- Effektiva metoder som ger professionellt resultat</p>
-                                                            <p class="mb-2 text-gray-600">- Rätt utrustning för säker och effektiv rengöring, oavsett höjd</p>
+                                                            <p class="mb-2 text-gray-600">- Rätt utrustning för säker och effektiv rengöring</p>
                                                             <p class="mb-2 text-gray-600">- Fullt fokus på fönster, utan kompromisser med andra städtjänster</p>
                                                             <p class="mb-2 text-gray-600">- Expertis i att identifiera och förebygga vanliga fönsterproblem</p>
                                                             <p class="mb-2 text-gray-600">- Kostnadseffektiv lösning för regelbundet fönsterunderhåll</p>
@@ -199,10 +198,6 @@
 
                                                                 <p class="mb-4 text-gray-700">
                                                                     Jag förstår att varje hem och lokal är unik, och därför anpassar jag min service för att möta dina specifika behov. Vare sig det gäller fönster i en lägenhet, villa eller kontorslokal, så har jag kunskapen och erfarenheten för att leverera ett glänsande resultat.
-                                                                </p>
-
-                                                                <p class="text-gray-700 font-semibold">
-                                                                    Låt mig ta hand om dina fönster så att du kan njuta av en klarare utsikt och ett ljusare hem. Boka en tid idag och upplev skillnaden!
                                                                 </p>
                                                             </div>
                                                         </div>
