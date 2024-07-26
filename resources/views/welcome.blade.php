@@ -108,7 +108,7 @@
                                         <div
                                             x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
                                             <button @click="toggleModal()"
-                                                    class="animate-arrow flex items-center justify-center px-2 py-2 space-x-3 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary w-full"
+                                                    class="animate-arrow flex items-center justify-center px-4 py-2 space-x-1 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary w-full"
                                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                                 <span>Varför välja mig?</span>
                                                 <i class="fa fa-angle-right pl-4"></i>
@@ -223,7 +223,7 @@
                                         <div
                                             x-data="{ modelOpen: false, toggleModal() { this.modelOpen = !this.modelOpen; document.body.classList.toggle('no-scroll', this.modelOpen); } }">
                                             <button @click="toggleModal()"
-                                                    class="animate-arrow flex items-center justify-center px-2 py-2 space-x-3 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary w-full"
+                                                    class="animate-arrow flex items-center justify-center px-4 py-2 space-x-1 tracking-wide text-white transition-colors duration-200 transform rounded-md focus:outline-none hover:bg-cyan-500 active:bg-cyan-400 bg-primary w-full"
                                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                                 <span>Mer om mig</span>
                                                 <i class="fa fa-angle-right pl-4"></i>
