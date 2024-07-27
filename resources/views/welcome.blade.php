@@ -94,11 +94,6 @@
                                     Min filosofi är enkel: <span class="font-semibold">professionell hjälp med kunskap, teknik och rätt utrustning</span>.
                                     Det är så jag ser till att varje fönster får den omsorg det förtjänar.
                                 </h2>
-                                <h3 class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Låt mig ta hand om dina fönster så att du kan njuta av en klarare utsikt och ett ljusare hem.
-                                    Hoppas vi ses!
-                                </h3>
 
                                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
                                     <div class="w-full sm:w-auto">
