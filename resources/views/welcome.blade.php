@@ -85,22 +85,19 @@
                                 </h1>
                                 <p class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Då har du kommit till rätt ställe!
+                                    Då har du hittat rätt! Jag heter Andreas och fönsterputsning är min passion.
+                                    I över 10 år har jag finslipat min teknik för att få fönster att glänsa,
+                                    både för hemtrevliga villor och livliga kontor.
                                 </p>
                                 <h2 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Jag heter Andreas och jag har över 10 års erfarenhet av fönsterputsning, både för
-                                    privatpersoner och företag.
+                                    Min filosofi är enkel: <span class="font-semibold">professionell hjälp med kunskap, teknik och rätt utrustning</span>.
+                                    Det är så jag ser till att varje fönster får den omsorg det förtjänar.
                                 </h2>
-                                <h3 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
-                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Jag erbjuder professionell hjälp med rätt teknik och utrustning för
-                                    att se till att dina fönster blir skinande rena.
-                                </h3>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Så varför inte låta mig ta hand om dina fönster? Boka tid hos mig och upplev
-                                    skillnaden av kristallklara fönster.
+                                    Låt mig ta hand om dina fönster så att du kan njuta av en klarare utsikt och ett ljusare hem.
+                                    Hoppas vi ses!
                                 </h3>
 
                                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
