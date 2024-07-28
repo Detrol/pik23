@@ -27,9 +27,13 @@
                 </div>-->
 
 
-                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 md:py-16 " width="800" height="112"
+                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 pb-4 md:py-16 " width="800" height="112"
                      src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.webp"
                      alt="logo">
+
+                <div class="mb-8 mt-8 md:mt-0">
+                    <div class="elfsight-app-f2b7b6bd-06ee-4d46-a21c-ef7ea2a19ec7" data-elfsight-app-lazy></div>
+                </div>
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank"
@@ -91,12 +95,14 @@
                                 </p>
                                 <h2 class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Min filosofi är enkel: <span class="font-semibold">professionell hjälp med kunskap, teknik och rätt utrustning</span>.
+                                    Min filosofi är enkel: <span class="font-semibold">professionell hjälp med kunskap,
+                                                                                       teknik och rätt utrustning</span>.
                                     Det är så jag ser till att varje fönster får den omsorg det förtjänar.
                                 </h2>
                                 <h3 class="mt-4 block font-sans lg:text-lg font-normal leading-relaxed antialiased text-gray-600"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Låt mig ta hand om dina fönster så att du kan njuta av en klarare utsikt och ett ljusare hem.
+                                    Låt mig ta hand om dina fönster så att du kan njuta av en klarare utsikt och ett
+                                    ljusare hem.
                                 </h3>
 
                                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
@@ -136,11 +142,15 @@
                                                          class="modal-content overflow-hidden inline-block w-full max-w-xl p-6 my-20 text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl"
                                                     >
                                                         <div class="flex items-center justify-between space-x-4">
-                                                            <h1 class="text-xl font-medium text-gray-800 pb-3">Varför välja Puts i Karlstad?</h1>
+                                                            <h1 class="text-xl font-medium text-gray-800 pb-3">Varför
+                                                                                                               välja
+                                                                                                               Puts i
+                                                                                                               Karlstad?</h1>
                                                             <button @click="toggleModal()"
                                                                     class="text-gray-600 focus:outline-none hover:text-gray-700 pb-3">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
-                                                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                     fill="none" viewBox="0 0 24 24"
+                                                                     stroke="currentColor">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                           stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                                                                 </svg>
@@ -149,62 +159,115 @@
 
                                                         <div class="overflow-y-auto max-h-[50vh]">
                                                             <p class="mb-4 text-gray-700">
-                                                                Fönsterputsning är min passion, och jag har ägnat över ett decennium åt att förfina mitt hantverk.
+                                                                Fönsterputsning är min passion, och jag har ägnat över
+                                                                ett decennium åt att förfina mitt hantverk.
                                                             </p>
 
-                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja mig framför andra fönsterputsfirmor?</h2>
+                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">
+                                                                Varför välja mig framför andra fönsterputsfirmor?</h2>
 
-                                                            <p class="mb-2 text-gray-600">- Jag ser varje fönster som unikt och ger det min fulla uppmärksamhet</p>
-                                                            <p class="mb-2 text-gray-600">- Miljön är viktig för mig, så jag använder bara miljövänliga rengöringsmedel</p>
-                                                            <p class="mb-2 text-gray-600">- Mitt bokningssystem är enkelt - för att göra det smidigt för dig</p>
-                                                            <p class="mb-2 text-gray-600">- Jag erbjuder rättvisa priser utan att kompromissa med kvaliteten</p>
-                                                            <p class="mb-2 text-gray-600">- Som enmansföretag ger jag dig alltid personlig service</p>
+                                                            <p class="mb-2 text-gray-600">- Jag ser varje fönster som
+                                                                                          unikt och ger det min fulla
+                                                                                          uppmärksamhet</p>
+                                                            <p class="mb-2 text-gray-600">- Miljön är viktig för mig, så
+                                                                                          jag använder bara miljövänliga
+                                                                                          rengöringsmedel</p>
+                                                            <p class="mb-2 text-gray-600">- Mitt bokningssystem är
+                                                                                          enkelt - för att göra det
+                                                                                          smidigt för dig</p>
+                                                            <p class="mb-2 text-gray-600">- Jag erbjuder rättvisa priser
+                                                                                          utan att kompromissa med
+                                                                                          kvaliteten</p>
+                                                            <p class="mb-2 text-gray-600">- Som enmansföretag ger jag
+                                                                                          dig alltid personlig
+                                                                                          service</p>
 
-                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">Varför välja mig framför en vanlig städfirma?</h2>
+                                                            <h2 class="text-lg font-semibold text-gray-800 mt-6 mb-3">
+                                                                Varför välja mig framför en vanlig städfirma?</h2>
 
                                                             <p class="mb-4 text-gray-700">
-                                                                Till skillnad från många städfirmor som erbjuder fönsterputsning som en sidotjänst, är det här mitt enda fokus. Det betyder att:
+                                                                Till skillnad från många städfirmor som erbjuder
+                                                                fönsterputsning som en sidotjänst, är det här mitt enda
+                                                                fokus. Det betyder att:
                                                             </p>
 
-                                                            <p class="mb-2 text-gray-600">- Jag har djupgående kunskap om olika fönstertyper och deras behov</p>
-                                                            <p class="mb-2 text-gray-600">- Mina metoder är finslipade för att ge bästa möjliga resultat</p>
-                                                            <p class="mb-2 text-gray-600">- Jag har specialiserad utrustning just för fönsterputsning</p>
-                                                            <p class="mb-2 text-gray-600">- Min hela uppmärksamhet är på dina fönster - inget annat distraherar</p>
-                                                            <p class="mb-2 text-gray-600">- Jag kan snabbt upptäcka och förebygga vanliga fönsterproblem</p>
-                                                            <p class="mb-2 text-gray-600">- Mitt fokus gör att jag kan erbjuda konkurrenskraftiga priser</p>
+                                                            <p class="mb-2 text-gray-600">- Jag har djupgående kunskap
+                                                                                          om olika fönstertyper och
+                                                                                          deras behov</p>
+                                                            <p class="mb-2 text-gray-600">- Mina metoder är finslipade
+                                                                                          för att ge bästa möjliga
+                                                                                          resultat</p>
+                                                            <p class="mb-2 text-gray-600">- Jag har specialiserad
+                                                                                          utrustning just för
+                                                                                          fönsterputsning</p>
+                                                            <p class="mb-2 text-gray-600">- Min hela uppmärksamhet är på
+                                                                                          dina fönster - inget annat
+                                                                                          distraherar</p>
+                                                            <p class="mb-2 text-gray-600">- Jag kan snabbt upptäcka och
+                                                                                          förebygga vanliga
+                                                                                          fönsterproblem</p>
+                                                            <p class="mb-2 text-gray-600">- Mitt fokus gör att jag kan
+                                                                                          erbjuda konkurrenskraftiga
+                                                                                          priser</p>
 
                                                             <div class="mt-6 text-gray-700">
                                                                 <p class="mb-4 text-gray-700">
-                                                                    För mig handlar fönsterputsning om mer än bara rena glas. Det handlar om att förbättra din miljö, att låta mer ljus flöda in och skapa en trevligare atmosfär. Min erfarenhet och passion gör att jag alltid strävar efter att överträffa dina förväntningar.
+                                                                    För mig handlar fönsterputsning om mer än bara rena
+                                                                    glas. Det handlar om att förbättra din miljö, att
+                                                                    låta mer ljus flöda in och skapa en trevligare
+                                                                    atmosfär. Min erfarenhet och passion gör att jag
+                                                                    alltid strävar efter att överträffa dina
+                                                                    förväntningar.
                                                                 </p>
 
-                                                                <h3 class="text-xl font-semibold text-gray-800 mb-3">För registrerade kunder erbjuder jag:</h3>
+                                                                <h3 class="text-xl font-semibold text-gray-800 mb-3">För
+                                                                                                                     registrerade
+                                                                                                                     kunder
+                                                                                                                     erbjuder
+                                                                                                                     jag:</h3>
 
                                                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">En liten bonus</h4>
-                                                                        <p class="text-gray-600">10% av varje bokning sparas som poäng för framtida rabatter.</p>
+                                                                        <h4 class="font-bold text-primary">En liten
+                                                                                                           bonus</h4>
+                                                                        <p class="text-gray-600">10% av varje bokning
+                                                                                                 sparas som poäng för
+                                                                                                 framtida rabatter.</p>
                                                                     </div>
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">Enkel ombokning</h4>
-                                                                        <p class="text-gray-600">Kopiera enkelt din senaste bokning med ett klick.</p>
+                                                                        <h4 class="font-bold text-primary">Enkel
+                                                                                                           ombokning</h4>
+                                                                        <p class="text-gray-600">Kopiera enkelt din
+                                                                                                 senaste bokning med ett
+                                                                                                 klick.</p>
                                                                     </div>
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">Förtur vid säsongsstart</h4>
-                                                                        <p class="text-gray-600">Boka före alla andra när säsongen drar igång.</p>
+                                                                        <h4 class="font-bold text-primary">Förtur vid
+                                                                                                           säsongsstart</h4>
+                                                                        <p class="text-gray-600">Boka före alla andra
+                                                                                                 när säsongen drar
+                                                                                                 igång.</p>
                                                                     </div>
                                                                     <div class="p-3 rounded-lg">
-                                                                        <h4 class="font-bold text-primary">Återkommande bokningar</h4>
-                                                                        <p class="text-gray-600">Snart kan du ställa in regelbundna bokningar.</p>
+                                                                        <h4 class="font-bold text-primary">Återkommande
+                                                                                                           bokningar</h4>
+                                                                        <p class="text-gray-600">Snart kan du ställa in
+                                                                                                 regelbundna
+                                                                                                 bokningar.</p>
                                                                     </div>
                                                                 </div>
 
                                                                 <p class="mb-4 text-gray-700">
-                                                                    Jag vet att varje hem och arbetsplats är unik, så jag anpassar alltid min service efter dina behov. Oavsett om det är en liten lägenhet eller ett stort kontor, så ger jag alltid mitt bästa för att dina fönster ska skina.
+                                                                    Jag vet att varje hem och arbetsplats är unik, så
+                                                                    jag anpassar alltid min service efter dina behov.
+                                                                    Oavsett om det är en liten lägenhet eller ett stort
+                                                                    kontor, så ger jag alltid mitt bästa för att dina
+                                                                    fönster ska skina.
                                                                 </p>
 
                                                                 <p class="text-gray-700 font-semibold">
-                                                                    Låt mig ta hand om dina fönster så att du kan njuta av utsikten och det vackra ljuset.
+                                                                    Låt mig ta hand om dina fönster så att du kan njuta
+                                                                    av utsikten och det vackra ljuset.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -258,11 +321,14 @@
                                                     >
                                                         <!-- Här börjar modalinnehållet -->
                                                         <div class="flex items-center justify-between space-x-4">
-                                                            <h1 class="text-xl font-medium text-gray-800 pb-3">Så vem är då jag?</h1>
+                                                            <h1 class="text-xl font-medium text-gray-800 pb-3">Så vem är
+                                                                                                               då
+                                                                                                               jag?</h1>
                                                             <button @click="toggleModal()"
                                                                     class="text-gray-600 focus:outline-none hover:text-gray-700 pb-3">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
-                                                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                     fill="none" viewBox="0 0 24 24"
+                                                                     stroke="currentColor">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                           stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                                                                 </svg>
@@ -271,26 +337,37 @@
 
                                                         <div class="overflow-y-auto max-h-[50vh]">
                                                             <p class="mb-2 pe-2 text-gray-500">
-                                                                Jag är en kille som har snurrat med på denna planet i lite mer
-                                                                än 35 varv i skrivande stund. Jag har också autism och ADHD, något jag
-                                                                är tacksam för då jag troligtvis inte hade varit där jag är idag
+                                                                Jag är en kille som har snurrat med på denna planet i
+                                                                lite mer
+                                                                än 35 varv i skrivande stund. Jag har också autism och
+                                                                ADHD, något jag
+                                                                är tacksam för då jag troligtvis inte hade varit där jag
+                                                                är idag
                                                                 annars. Jag skulle vilja påstå att min autism har skapat
-                                                                perfektionisten inom mig, och att min ADHD har hjälpt mig med
+                                                                perfektionisten inom mig, och att min ADHD har hjälpt
+                                                                mig med
                                                                 drivet.
                                                             </p>
 
                                                             <p class="mt-2 pe-2 text-gray-500">
-                                                                Men fönsterputsning för mig är så mycket mer än bara ett jobb.
-                                                                Det är en passion och en konstform. Det är en chans att uttrycka min
-                                                                noggrannhet och känna glädjen av ett väl utfört arbete – glas
+                                                                Men fönsterputsning för mig är så mycket mer än bara ett
+                                                                jobb.
+                                                                Det är en passion och en konstform. Det är en chans att
+                                                                uttrycka min
+                                                                noggrannhet och känna glädjen av ett väl utfört arbete –
+                                                                glas
                                                                 efter glas.
                                                             </p>
 
                                                             <p class="mt-2 pe-2 text-gray-500">
-                                                                Min vision är att bli den största inom fönsterputs i Karlstad.
-                                                                Jag strävar efter att kunna erbjuda fler och mer avancerade metoder
-                                                                för fönsterputsning, såsom användning av ultrarent vatten eller polering av glas.
-                                                                Även om dessa metoder innebär betydande kostnader, är jag fast besluten att nå dit en
+                                                                Min vision är att bli den största inom fönsterputs i
+                                                                Karlstad.
+                                                                Jag strävar efter att kunna erbjuda fler och mer
+                                                                avancerade metoder
+                                                                för fönsterputsning, såsom användning av ultrarent
+                                                                vatten eller polering av glas.
+                                                                Även om dessa metoder innebär betydande kostnader, är
+                                                                jag fast besluten att nå dit en
                                                                 dag.
                                                             </p>
 
@@ -298,23 +375,30 @@
                                                                 <blockquote
                                                                     class="p-4 my-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800">
                                                                     <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
-                                                                        "Sedan jag startade Puts i Karlstad för tre år sedan har
-                                                                        jag blivit ett av de mest eftertraktade namnen inom
+                                                                        "Sedan jag startade Puts i Karlstad för tre år
+                                                                        sedan har
+                                                                        jag blivit ett av de mest eftertraktade namnen
+                                                                        inom
                                                                         fönsterputs i och runt Karlstad."
                                                                     </p>
                                                                 </blockquote>
                                                             </div>
 
                                                             <p class="mt-2 pe-2 text-gray-500">
-                                                                På min fritid dyker nörden i mig upp. Jag spenderar stor del av
-                                                                min tid framför datorn, antingen uppslukad av spel, fängslad av
-                                                                serier eller nedsjunken i webbutvecklingsprojekt, där jag kontinuerligt
-                                                                förbättrar och utvecklar mitt bokningssystem eller skapar nya
+                                                                På min fritid dyker nörden i mig upp. Jag spenderar stor
+                                                                del av
+                                                                min tid framför datorn, antingen uppslukad av spel,
+                                                                fängslad av
+                                                                serier eller nedsjunken i webbutvecklingsprojekt, där
+                                                                jag kontinuerligt
+                                                                förbättrar och utvecklar mitt bokningssystem eller
+                                                                skapar nya
                                                                 projekt från grunden.
                                                             </p>
 
                                                             <p class="mt-2 pe-2 text-gray-500">
-                                                                Jag drömmer om ett enkelt hus på landet, omringad av diverse
+                                                                Jag drömmer om ett enkelt hus på landet, omringad av
+                                                                diverse
                                                                 djur som jag kan krama hela dagarna.
                                                             </p>
                                                         </div>
