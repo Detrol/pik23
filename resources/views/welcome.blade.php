@@ -27,11 +27,11 @@
                 </div>-->
 
 
-                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto py-8 pb-4 md:py-16 " width="800" height="112"
+                <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto mt-8 mb-4 md:pt-16 md:pb-8" width="800" height="112"
                      src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.webp"
                      alt="logo">
 
-                <div class="mb-8 mt-8 md:mt-0">
+                <div class="mb-8 mt-8 md:mt-4">
                     <div class="elfsight-app-f2b7b6bd-06ee-4d46-a21c-ef7ea2a19ec7" data-elfsight-app-lazy></div>
                 </div>
 
