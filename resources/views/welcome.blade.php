@@ -204,7 +204,7 @@
                                                                 </p>
 
                                                                 <p class="text-gray-700 font-semibold">
-                                                                    Låt mig ta hand om dina fönster så att du kan njuta av utsikten och det vackra ljuset. Hoppas vi ses snart!
+                                                                    Låt mig ta hand om dina fönster så att du kan njuta av utsikten och det vackra ljuset.
                                                                 </p>
                                                             </div>
                                                         </div>
