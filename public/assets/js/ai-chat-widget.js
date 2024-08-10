@@ -614,11 +614,6 @@ class AIChatWidget {
         return tempDiv.textContent || tempDiv.innerText || '';
     }
 
-    showWelcomeMessage() {
-        const welcomeMessage = "Hej och välkommen! Jag är PutsAssistenten, din AI-assistent för fönsterputsning. Jag kan hjälpa dig med information om våra tjänster, ge prisuppskattningar och svara på allmänna frågor om verksamheten och fönsterputsning. Vad skulle du vilja ha hjälp med?";
-        this.appendMessage(welcomeMessage, 'ai');
-    }
-
     showTypingIndicator() {
         const typingIndicator = document.createElement('div');
         typingIndicator.className = 'typing-indicator';
@@ -654,7 +649,7 @@ class AIChatWidget {
         try {
             if (!this.sessionId) {
                 console.log('No session ID found, initializing new chat');
-                this.appendMessage("Hej och välkommen! Jag är PutsAssistenten. Hur kan jag hjälpa dig idag?", 'ai');
+                this.showWelcomeMessage();
                 return;
             }
 
@@ -667,7 +662,10 @@ class AIChatWidget {
 
             this.messagesContainer.innerHTML = '';
 
-            if (Array.isArray(history)) {
+            // Visa alltid välkomstmeddelandet först
+            this.showWelcomeMessage();
+
+            if (Array.isArray(history) && history.length > 0) {
                 history.forEach(item => {
                     if (item.question) {
                         this.appendMessage(item.question, 'user');
@@ -676,14 +674,17 @@ class AIChatWidget {
                         this.appendMessage(item.answer, 'ai');
                     }
                 });
-            } else {
-                console.error('Unexpected history format:', history);
             }
 
             this.scrollToBottom();
         } catch (error) {
             console.error('Error loading chat history:', error);
-            this.appendMessage("Hej och välkommen! Jag är PutsAssistenten. Hur kan jag hjälpa dig idag?", 'ai');
+            this.showWelcomeMessage();
         }
+    }
+
+    showWelcomeMessage() {
+        const welcomeMessage = "Hej och välkommen! Jag är PutsAssistenten, din AI-assistent för fönsterputsning. Jag kan hjälpa dig med information om våra tjänster, ge prisuppskattningar och svara på allmänna frågor om verksamheten och fönsterputsning. Vad skulle du vilja ha hjälp med?";
+        this.appendMessage(welcomeMessage, 'ai');
     }
 }
