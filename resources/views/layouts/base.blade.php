@@ -230,6 +230,18 @@
 <script async src="https://apps.elfsight.com/p/platform.js"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
+<div id="ai-chat-container"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="{{ asset('assets/js/ai-chat-widget.js') }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOMContentLoaded event fired');
+        const widget = new AIChatWidget('https://karlstad.putsamer.se/api', '#ai-chat-container');
+        console.log('Widget initialized:', widget);
+    });
+</script>
+
 @yield('script')
 
 {!! HCaptcha::script() !!}
