@@ -364,7 +364,7 @@ class AIChatWidget {
                 <div id="chat-prompt" class="chat-prompt">
                     <div class="chat-prompt-content">
                         <img src="/assets/images/chatbot.png" alt="AI Avatar" class="chat-prompt-avatar">
-                        <span class="chat-prompt-text">Vill du ha hjälp med något?</span>
+                        <span class="chat-prompt-text">Vill du ha prisuppgifter?</span>
                     </div>
                 </div>
                 <div id="chat-bubble" class="chat-bubble">
