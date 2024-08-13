@@ -7,22 +7,6 @@
                 src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js" async></script>
         <!-- End cookieyes banner -->
 
-        <!-- Google Tag Manager
-        <script>(function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start':
-                        new Date().getTime(), event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TRRFHRQ');</script>-->
-        <!-- End Google Tag Manager -->
-
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EBSJD78RB"></script>
         <script>
@@ -39,14 +23,38 @@
     @endif
 
     <script type="application/ld+json">
-{"@context" : "http://schema.org",
- "@type" : "Organization",
-  "name" : "Puts i Karlstad",
-  "url" : "https://putsikarlstad.se",
-  "logo": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
-  "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
-   "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd."}
-
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Puts i Karlstad",
+          "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
+          "url": "https://putsikarlstad.se",
+          "telephone": "Ej tillgängligt",
+          "email": "info@putsikarlstad.se",
+          "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd. Med över 10 års erfarenhet erbjuder vi professionell hjälp med kunskap, teknik, och rätt utrustning.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Karlstad",
+            "addressRegion": "Värmland",
+            "addressCountry": "SE"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 59.3793,
+            "longitude": 13.5036
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/putsikarlstad",
+            "https://www.instagram.com/putsikarlstad"
+          ],
+          "priceRange": "$$"
+        }
     </script>
 
     <meta charset="utf-8">
@@ -56,13 +64,14 @@
     <link rel="preconnect" href="{{ url('https://fonts.googleapis.com/') }}">
     <link rel="dns-prefetch" href="{{ url('https://fonts.googleapis.com/') }}">
 
-    <!-- Fonts -->
+        <!-- Fonts -->
     <link rel="preload"
           href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
-          as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
-          rel="stylesheet">
-
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;1,200&display=swap"
+              rel="stylesheet">
+    </noscript>
 
     @vite('resources/sass/app.scss')
     @livewireStyles
@@ -99,6 +108,7 @@
 </head>
 
 <body class="">
+<a href="#main-content" class="sr-only focus:not-sr-only">Hoppa till huvudinnehåll</a>
 
 <header class="sticky top-4 flex flex-wrap md:justify-center md:flex-nowrap z-50 w-full -mt-24 w-12/12 lg:w-8/10">
     <nav
@@ -107,7 +117,7 @@
         <div class="flex items-center justify-between">
             <a href="/">
                 <img class="w-48 lg:w-72" width="400" height="61"
-                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/xcrolnzvkyjcicewzf9i.webp" alt="logo-top">
+                     src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/xcrolnzvkyjcicewzf9i.webp" alt="Puts i Karlstad logo">
             </a>
             <div class="md:hidden">
                 <button type="button"
@@ -130,28 +140,24 @@
         <div id="navbar-collapse-with-animation"
              class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
             <div class="flex flex-col mt-5 md:flex-row md:items-center md:mt-0">
-                <a class="px-2 md:py-6 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary md:ml-auto"
-                   href="/">
+                <a class="px-2 md:py-6 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary md:ml-auto {{ request()->is('/') ? 'text-primary' : '' }}"
+                   href="/" aria-current="{{ request()->is('/') ? 'page' : 'false' }}">
                     Hem
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
-                   href="{{ route('services') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary {{ request()->routeIs('services') ? 'text-primary' : '' }}"
+                   href="{{ route('services') }}" aria-current="{{ request()->routeIs('services') ? 'page' : 'false' }}">
                     Tjänster
                 </a>
-                <!--<a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
-                   href="{{ route('prices') }}">
-                    Priser
-                </a>-->
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
-                   href="{{ route('faq') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary {{ request()->routeIs('faq') ? 'text-primary' : '' }}"
+                   href="{{ route('faq') }}" aria-current="{{ request()->routeIs('faq') ? 'page' : 'false' }}">
                     Vanliga frågor
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
-                   href="{{ route('miljovanligt') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary {{ request()->routeIs('miljovanligt') ? 'text-primary' : '' }}"
+                   href="{{ route('miljovanligt') }}" aria-current="{{ request()->routeIs('miljovanligt') ? 'page' : 'false' }}">
                     Miljövänligt
                 </a>
-                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary"
-                   href="{{ route('guarantee') }}">
+                <a class="px-2 py-2 text-gray-800 dark:text-gray-100 lg:px-6 md:px-3 hover:text-primary {{ request()->routeIs('guarantee') ? 'text-primary' : '' }}"
+                   href="{{ route('guarantee') }}" aria-current="{{ request()->routeIs('guarantee') ? 'page' : 'false' }}">
                     Garanti
                 </a>
                 <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500"
@@ -175,9 +181,9 @@
     </div>
 </div>
 
-<div class="">
+<main id="main-content">
     @yield('body')
-</div>
+</main>
 
 <button x-data="topBtn" @click="scrolltoTop" id="topButton"
         class="fixed z-10 hidden p-3 bg-gray-100 rounded-full shadow-md bottom-3 right-3 md:bottom-10 md:right-10 animate-bounce">
@@ -190,14 +196,15 @@
 
 <footer class="bg-gradient-to-b bg-gray-100 border-t border-gray-200">
     <div class="max-w-7xl px-6 py-8 mx-auto">
-
         <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-            <p class="text-gray-800">&copy; Puts i Karlstad - {{ \Carbon\Carbon::now()->format('Y') }}</p>
-
+            <div>
+                <p class="text-gray-800">&copy; Puts i Karlstad - {{ \Carbon\Carbon::now()->format('Y') }}</p>
+                <p class="text-sm text-gray-600 mt-2">Professionell fönsterputsning i Karlstad och omnejd</p>
+            </div>
             <div class="flex mt-3 -mx-2 sm:mt-0">
-                <a href="#"
-                   class="mx-2 text-gray-800 transition-colors duration-300 hover:text-gray-300 dark:hover:text-gray-300"
-                   aria-label="Cookies"> Cookies </a>
+                <a href="{{ route('miljovanligt') }}" class="mx-2 text-gray-800 transition-colors duration-300 hover:text-primary">Miljövänligt</a>
+                <a href="{{ route('guarantee') }}" class="mx-2 text-gray-800 transition-colors duration-300 hover:text-primary">Garanti</a>
+                <a href="#" class="mx-2 text-gray-800 transition-colors duration-300 hover:text-primary">Cookies</a>
             </div>
         </div>
     </div>
@@ -228,7 +235,7 @@
 
 @vite('resources/js/app.js')
 <script async src="https://apps.elfsight.com/p/platform.js"></script>
-<script src="{{ asset('assets/js/custom.js') }}"></script>
+<script src="{{ asset('assets/js/custom.js') }}" defer></script>
 
 <div id="ai-chat-container"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.min.js"></script>

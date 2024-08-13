@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Professionell & Prisvärd fönsterputs i Karlstad och omnejd | Puts i Karlstad')
+
+@section('meta_description', 'Puts i Karlstad erbjuder professionell och prisvärd fönsterputsning i Karlstad, Hammarö, Grums, och omnejd. Med över 10 års erfarenhet garanterar vi kristallklara resultat.')
+
 @section('content')
 
     <section class="relative h-screen overflow-hidden">
@@ -13,30 +17,22 @@
                 </div>
             </div>
 
-            <div class="absolute bg-gray-900 w-full h-screen opacity-60 z-10" style="z-index: 2;"></div>
-            <div
-                class="absolute left-0 right-0 px-8 md:px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20"
-                style="z-index: 3">
-
+            <div class="absolute bg-gray-900 w-full h-screen opacity-60 z-10"></div>
+            <div class="absolute left-0 right-0 px-8 md:px-3 items-center justify-center text-center py-52 mt-10 md:mt-40 lg:mt-20 z-20">
                 <h1 class="text-4xl md:text-6xl lg:text-6xl font-medium text-white logofadein">
                     Välkommen till
                 </h1>
 
-                <!--<div id="typewriter" class="text-white">
-                    This is some text that will be animated.
-                </div>-->
-
-
                 <img class="w-12/12 md:w-10/12 lg:w-6/12 mx-auto mt-8 mb-4 md:pt-16 md:pb-8" width="800" height="112"
                      src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.webp"
-                     alt="logo">
+                     alt="Puts i Karlstad logo">
 
                 <div class="mb-8 mt-8 md:mt-4">
                     <div class="elfsight-app-f2b7b6bd-06ee-4d46-a21c-ef7ea2a19ec7" data-elfsight-app-lazy></div>
                 </div>
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
-                    <a href="https://karlstad.putsamer.se" target="_blank"
+                    <a href="https://karlstad.putsamer.se" target="_blank" rel="noopener"
                        class="items-center justify-center w-full px-6 py-2.5 text-xl text-white text-center rounded-full inline-flex md:w-auto bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700">
                         Boka tid
                     </a>
@@ -47,7 +43,7 @@
                     </a>
                 </div>
 
-                <a href="#about">
+                <a href="#about" aria-label="Scrolla ner till Om oss">
                     <i class="fa-thin fa-arrow-circle-down text-white text-4xl animate-bounce"></i>
                 </a>
             </div>
@@ -75,18 +71,16 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:gap-24">
                     <div class="relative items-center md:inline-flex md:order-first">
                         <div class="max-w-xl min-w-full">
-                            <div
-                                class="textbox w-full text-left justify-start items-start min-h-[550px] md:min-h-[450px]">
-
-                                <p class="block font-sans text-3xl font-semibold leading-relaxed antialiased"
-                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                                    Hej där!
-                                </p>
-                                <h1 class="mt-4 block font-sans lg:text-lg text-base leading-relaxed antialiased text-gray-600"
+                            <div class="textbox w-full text-left justify-start items-start min-h-[550px] md:min-h-[450px]">
+                                <h2 class="block font-sans text-3xl font-semibold leading-relaxed antialiased"
                                     data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                    Hej där!
+                                </h2>
+                                <p class="mt-4 block font-sans lg:text-lg text-base leading-relaxed antialiased text-gray-600"
+                                   data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Letar du efter en prisvärd och pålitlig fönsterputsare i Karlstad, Hammarö,
                                     Vålberg, Grums, Molkom, Kil eller Väse med omnejd?
-                                </h1>
+                                </p>
                                 <p class="mt-4 block font-sans lg:text-lg font-base leading-relaxed antialiased text-gray-600"
                                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                                     Då har du hittat rätt! Jag heter Andreas och fönsterputsning är min passion.
@@ -505,15 +499,11 @@
                         </div>
                     </div>
                     <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
-                        <div data-aos="fade-left"
-                             data-aos-offset="200"
-                             data-aos-duration="500">
-                            <img
-                                class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
-                                alt="jag" loading="lazy" width="600" height="600"
-                                src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/putsjag_x4ooky">
+                        <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="500">
+                            <img class="object-cover object-center w-full mx-auto lg:ml-auto rounded-lg shadow-md"
+                                 alt="Andreas från Puts i Karlstad" loading="lazy" width="600" height="600"
+                                 src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/putsjag_x4ooky">
                         </div>
-
                     </div>
                 </div>
                 <div class="pt-12 mx-auto md:max-w-7xl w-12/12 hidden md:block lg:hidden numberbox">
@@ -761,6 +751,7 @@
 
     <section id="review" class="relative overflow-hidden">
         <div class="container items-center py-24 max-w-3xl lg:max-w-7xl lg:py-16">
+            <h2 class="text-3xl font-semibold mb-8 text-center">Vad mina kunder säger</h2>
             <div class="justify-center w-full text-center lg:p-10 max-auto min-h-[500px]">
                 <div class="justify-center w-full mx-auto revealRight">
                     <div class="elfsight-app-f3b9f6e1-f786-4b53-9df8-f861679578f1" data-elfsight-app-lazy></div>
@@ -808,10 +799,9 @@
 
         <div class="w-full h-full flex justify-center items-center backdrop-opacity-50 bg-black/60" style="z-index: 3;">
             <div class="relative items-center w-full px-5 py-20 mx-auto md:px-12 lg:px-20 max-w-7xl">
-                <div class="max-w-7xl mx-auto pb-4">
-                    <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center mb-2">
-                        Lite av vad jag kan hjälpa med</h2>
-                </div>
+                <h2 class="text-3xl font-semibold tracking-wide text-white dark:text-white lg:text-4xl text-center mb-8">
+                    Lite av vad jag kan hjälpa med
+                </h2>
                 <div class="grid grid-cols-2 mx-auto lg:grid-cols-3 flex">
                     <div class="p-6 items-center justify-center text-center"
                          data-aos="zoom-out" data-aos-duration="1000"
@@ -887,11 +877,11 @@
                     </div>
                 </div>
                 <div class="max-w-7xl mx-auto pt-6">
-                    <h2 class="text-lg font-normal tracking-wide text-gray-100 dark:text-white lg:text-xl text-center revealUp">
+                    <p class="text-lg font-normal tracking-wide text-gray-100 dark:text-white lg:text-xl text-center revealUp">
                         Du kan enkelt boka allt detta, och mycket mer direkt via
-                        <a href="https://karlstad.putsamer.se" target="_blank"
+                        <a href="https://karlstad.putsamer.se" target="_blank" rel="noopener"
                            class="p-1 rounded border font-semibold duration-200 hover:text-gray-300 focus:outline-none focus-visible:outline-gray-600">bokningssidan</a>
-                    </h2>
+                    </p>
                 </div>
             </div>
 
@@ -936,19 +926,10 @@
             <div class="max-w-7xl flex flex-col flex-1 px-3 py-28 mx-auto">
                 <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div class="text-white lg:w-1/2 lg:mx-6 text-center md:text-start">
-
-                        <div>
-                            <h2 class="text-2xl font-semibold lg:text-3xl mb-2">Chatta med mig</h2>
-                            <p class="mb-4">Klicka på knappen för att skicka mig ett direktmeddelande.</p>
-                        </div>
-
-                        <div class="mb-10 mt-2">
-                            <div class="elfsight-app-49c08c19-0997-4735-bdeb-c3b38a442f25" data-elfsight-app-lazy></div>
-                        </div>
+                        <h2 class="text-2xl font-semibold lg:text-3xl mb-6">Kontaktinformation</h2>
 
                         <div class="md:flex -mx-2 mb-4 revealUp">
                             <i class="fa fa-clock text-xl mr-3 hidden md:block"></i>
-
                             <div>
                                 <h3 class="text-2xl font-semibold">Öppettider</h3>
                                 <p class="text-xl">Måndag - Fredag: 9 - 17</p>
@@ -958,7 +939,6 @@
                         <div class="md:grid gap-y-8 gap-x-8 grid-cols-1 md:grid-cols-2">
                             <div class="md:flex -mx-2 mb-4 md:mb-0 revealUp">
                                 <i class="fa fa-envelope text-xl mr-3 hidden md:block"></i>
-
                                 <div>
                                     <h3 class="text-2xl font-semibold">E-Post</h3>
                                     <a class="text-xl mb-4 duration-200 hover:text-primary focus:outline-none focus-visible:outline-gray-600"
@@ -968,7 +948,6 @@
 
                             <div class="md:flex -mx-2 pb-8 md:mb-0 revealUp">
                                 <i class="fa fa-phone text-xl mr-3 hidden md:block"></i>
-
                                 <div>
                                     <h3 class="text-2xl font-semibold">Telefon</h3>
                                     <p class="text-xl">Ej tillgängligt</p>
@@ -982,10 +961,8 @@
                             class="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
                             <div class="revealUp">
                                 <h2 class="text-xl font-medium text-gray-700 dark:text-gray-200">Kontaktformulär</h2>
-
                                 <p class="mt-2 text-gray-500 dark:text-gray-400">
-                                    Tveka inte att ställa mig frågor, men vänligen observera att bokningar sker enbart
-                                    via bokningsformuläret.
+                                    Har du frågor? Kontakta mig gärna, men observera att bokningar sker via det separata bokningsformuläret.
                                 </p>
                             </div>
 
@@ -996,35 +973,28 @@
                                 <input type="text" name="norobot" value="" class="hidden" tabindex="-1">
 
                                 <div class="flex-1 revealUp">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
-                                    <input type="text" placeholder="Svea Svensson" name="name" required
+                                    <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Namn</label>
+                                    <input type="text" id="name" placeholder="Svea Svensson" name="name" required
                                            class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
-                                    <input type="email" placeholder="svensson@exempel.se" name="email" required
+                                    <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">E-Post</label>
+                                    <input type="email" id="email" placeholder="svensson@exempel.se" name="email" required
                                            class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"/>
                                 </div>
 
                                 <div class="w-full mt-6 revealUp">
-                                    <label
-                                        class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
-                                    <textarea name="message" required
+                                    <label for="message"
+                                           class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Meddelande</label>
+                                    <textarea id="message" name="message" required
                                               class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-32 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                                              placeholder="Meddelande"></textarea>
+                                              placeholder="Skriv ditt meddelande här"></textarea>
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    {{--
-                                    <div class="h-captcha" id="hcaptcha-element"
-                                         data-sitekey="6fa67746-f883-4721-9f61-c8672088dfff"></div>
-                                    <div id="error-container" class="text-red-500 mt-2"></div>
-                                    --}}
-
                                     {!! HCaptcha::display() !!}
                                 </div>
-
 
                                 <button type="submit" id="submit-button"
                                         class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-primary rounded-md hover:bg-cyan-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50 revealUp">

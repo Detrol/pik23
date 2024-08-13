@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Fönsterputstjänster i Karlstad | Puts i Karlstad')
+
+@section('meta_description', 'Professionell fönsterputsning i Karlstad och omnejd. Jag erbjuder putsning av vanliga fönster, spröjsade fönster, balkongfönster och altanfönster. Miljövänligt och effektivt.')
+
 @section('content')
 
     <section class="relative h-[13rem] md:h-[15rem]">
@@ -30,14 +34,13 @@
 
     <section class="bg-gray-100 relative bg-gradient-to-b from-gray-100 to-white">
         <div class="items-center w-full px-5 py-24 pb-0 mx-auto md:px-12 lg:px-16 max-w-7xl">
-
             <div>
                 <div class="max-w-2xl">
-                    <h1 class="text-4xl text-black">
-                        Mina tjänster
+                    <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
+                        Mina fönsterputstjänster
                     </h1>
                     <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
-                        Här kan du se olika varianter av fönster som jag putsar
+                        Här kan du se olika typer av fönster som jag putsar i Karlstad och omnejd
                     </p>
                 </div>
             </div>
@@ -58,7 +61,7 @@
                     <div
                         class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                         <h2 class="text-xl font-semibold text-gray-800 text-center dark:text-white">Spröjsade
-                            fönster</h2>
+                                                                                                    fönster</h2>
                     </div>
                 </div>
 
@@ -90,120 +93,126 @@
         <div class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
             <div class="max-w-xl">
                 <div>
-                    <h1 class="text-2xl font-medium tracking-tight text-black sm:text-4xl antialiased">
-                        Tilläggstjänster
-                    </h1>
-                    <h2 class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 antialiased">
-                        Ibland kan det vara skönt att få hjälp med andra saker som hör till fönstren när jag är hos dig.
+                    <h2 class="text-2xl font-bold text-gray-900 sm:text-4xl">
+                        Tilläggstjänster för fönsterputs
                     </h2>
+                    <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600">
+                        Ibland kan det vara skönt att få hjälp med andra saker som hör till fönstren när jag är hos dig.
+                    </p>
                 </div>
             </div>
             <div class="mx-auto mt-12 text-left">
                 <div>
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-2 text-sm gap-x-2 gap-y-14 lg:grid-cols-2 md:gap-14 lg:gap-20">
-                        <article class="revealLeft">
+                    <div class="grid grid-cols-1 md:grid-cols-2 text-sm gap-x-2 gap-y-14 lg:grid-cols-2 md:gap-14 lg:gap-20">
+                        <article class="revealLeft" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Putsning av speglar
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Rena speglar ger också ett starkt helhetsintryck i ditt hem, så passa på att få dem
                                     skinande rena när jag är i farten.
                                 </p>
                             </div>
                         </article>
-                        <article class="revealRight">
+
+                        <article class="revealRight" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Skrapning av fönster
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Färgfläckar och liknande som inte går att putsa bort kan ofta skrapas bort. Så om du
                                     vill bli av med dem och få dina fönster ännu glansigare, kan du välja till detta.
                                 </p>
                             </div>
                         </article>
-                        <article class="revealLeft">
+
+                        <article class="revealLeft" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Rengöring av fönsterkarm
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Snickeriet runt glaset samlar också gärna smuts med tiden, särskilt mellan fönstren.
                                     Jag har även tillgång till en mini-dammsugare för att ta bort lös smuts som samlas
                                     där.
                                 </p>
                             </div>
                         </article>
-                        <article class="revealRight">
+
+                        <article class="revealRight" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Rengöring av fönsterbleck
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Fönsterblecket är den metallskena som sitter utanpå de flesta fönster och här samlas
                                     ofta mycket smuts. Att rengöra detta ökar också helhetsintrycket av hela ditt
                                     fönster sett utifrån.
                                 </p>
                             </div>
                         </article>
-                        <article class="revealLeft">
+
+                        <article class="revealLeft" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Rengöring av persienner
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Persienner är oftast något man inte tänker på att rengöra, men de behöver inte
                                     rengöras så ofta. Så om du inte har rengjort dem på länge kanske det är dags att
                                     göra det nu?
                                 </p>
                             </div>
                         </article>
-                        <article class="revealRight">
+
+                        <article class="revealRight" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Demontering/montering samt rengöring av löstagbara spröjs
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Detta kan kännas lite bökigt att pyssla med själv, så givetvis
                                     så kan jag hjälpa till med detta också när jag är i farten.
                                 </p>
                             </div>
                         </article>
-                        <article class="revealLeft">
+
+                        <article class="revealLeft" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Undanplock i fönster
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     För att du ska behöva krångla med så lite som möjligt,
                                     så kan du också boka till detta.
                                 </p>
                             </div>
                         </article>
-                        <article class="revealRight">
+
+                        <article class="revealRight" itemscope itemtype="http://schema.org/Service">
                             <div class="space-y-3">
                                 <div class="gap-2 lg:inline-flex lg:items-center">
-                                    <p class="mt-2 text-lg font-medium leading-6 text-black">
+                                    <p class="mt-2 text-lg font-medium leading-6 text-black" itemprop="name">
                                         Smörjning av gångjärn
                                     </p>
                                 </div>
-                                <p class="mt-2 text-base text-gray-500">
+                                <p class="mt-2 text-base text-gray-500" itemprop="description">
                                     Gångjärn på fönster, dörrar och även handtag blir utslitna efter ett tag och behöver
                                     underhållas. Det märks om det är trögt att öppna eller stänga. Därför kan jag
                                     erbjuda att smörja dessa åt dig.
@@ -215,6 +224,8 @@
             </div>
         </div>
     </section>
+
+    @include('partials.cta')
 
 @endsection
 
