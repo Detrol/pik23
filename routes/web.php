@@ -30,3 +30,4 @@ Route::get('/fonsterputs-skyltfonster', [HomeController::class, 'skyltfonster'])
 Route::post('/form_mail', [HomeController::class, 'form_mail'])->name('form_mail');
 
 Route::get('/generate_xml', [HomeController::class, 'xml'])->name('xml');
+Route::get('/generateSitemap', [HomeController::class, 'generateSitemap'])->name('generateSitemap');

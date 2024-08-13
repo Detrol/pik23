@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Mail\FormMail;
 use App\Rules\ValidHCaptcha;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Vite;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
+use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\SitemapGenerator;
 use Spatie\Sitemap\Tags\Url;
 
@@ -135,7 +137,7 @@ class HomeController extends Controller
         ]);
     }
 
-    function xml(Request $request)
+    /*function xml(Request $request)
     {
         SitemapGenerator::create(config('app.url'))
             ->getSitemap()
@@ -147,6 +149,35 @@ class HomeController extends Controller
             ->add(Url::create('/garanti'))
 
             ->writeToFile(public_path('sitemap.xml'));
+    }*/
+
+    public function generateSitemap()
+    {
+        $sitemap = Sitemap::create()
+            ->add(Url::create('/')
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
+                ->setPriority(1.0))
+            ->add(Url::create('/tjanster')
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8))
+            ->add(Url::create('/vanliga-fragor')
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.7))
+            ->add(Url::create('/miljovanligt')
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.6))
+            ->add(Url::create('/garanti')
+                ->setLastModificationDate(Carbon::yesterday())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.6));
+
+        $sitemap->writeToFile(public_path('sitemap.xml'));
+
+        //return response()->view('sitemap.index')->header('Content-Type', 'text/xml');
     }
 
     public function form_mail(Request $request)
