@@ -27,9 +27,9 @@
                      src="https://res.cloudinary.com/dstcee6fc/image/upload/f_auto,q_auto/ehtdxncokqmytkleclgu.webp"
                      alt="Puts i Karlstad logo">
 
-                <div class="mb-8 mt-8 md:mt-4">
+                {{--<div class="mb-8 mt-8 md:mt-4">
                     <div class="elfsight-app-f2b7b6bd-06ee-4d46-a21c-ef7ea2a19ec7" data-elfsight-app-lazy></div>
-                </div>
+                </div>--}}
 
                 <div class="flex flex-col items-center justify-center gap-3 md:flex-row pb-24 md:pb-64 xl:pb-36">
                     <a href="https://karlstad.putsamer.se" target="_blank" rel="noopener"
