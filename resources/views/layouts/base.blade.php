@@ -3,8 +3,8 @@
 <head>
     @if ((request()->getHost() != 'localhost'))
         <!-- Start cookieyes banner-->
-        <script id="cookieyes" type="text/javascript"
-                src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js" async></script>
+        <!--<script id="cookieyes" type="text/javascript"
+                src="https://cdn-cookieyes.com/client_data/c6d6f38be996256f95bf589d/script.js" async></script>-->
         <!-- End cookieyes banner -->
 
         <!-- Google tag (gtag.js) -->
