@@ -993,7 +993,7 @@
                                 </div>
 
                                 <div class="flex-1 mt-6 revealUp">
-                                    {!! HCaptcha::display() !!}
+                                    <div class="cf-turnstile" data-sitekey="0x4AAAAAABVa6-9JVXK0dTUC" data-theme="light" data-language="sv"></div>
                                 </div>
 
                                 <button type="submit" id="submit-button"
@@ -1012,34 +1012,50 @@
 
 @section('script')
     <script>
-        const errorContainer = document.getElementById('error-container');
-        const hcaptchaElement = document.querySelector('.h-captcha');
+        document.addEventListener("DOMContentLoaded", function() {
+            const contactForm = document.getElementById('mail-form');
 
-        // Create an Intersection Observer to detect when the form is in view
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                // If the form is in view, load the hcaptcha script
-                if (entry.isIntersecting) {
-                    const script = document.createElement('script');
-                    script.src = 'https://hcaptcha.com/1/api.js?hl=sv';
-                    script.async = true;
-                    script.defer = true;
-                    hcaptchaElement.appendChild(script);
+            // Create an Intersection Observer to detect when the form is in view
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    // If the form is in view, load the Turnstile script
+                    if (entry.isIntersecting) {
+                        const script = document.createElement('script');
+                        script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback';
+                        script.async = true;
+                        script.defer = true;
+                        document.head.appendChild(script);
 
-                    // Unobserve the form so the script is not loaded multiple times
-                    observer.unobserve(entry.target);
-                }
+                        // Unobserve the form so the script is not loaded multiple times
+                        observer.unobserve(entry.target);
+                    }
+                });
             });
-        });
 
-        // Observe the form
-        observer.observe(document.getElementById('mail-form'));
+            // Start observing the form
+            if (contactForm) {
+                observer.observe(contactForm);
+            }
 
-        document.querySelector('form').addEventListener('submit', function (event) {
-            if (!window.hcaptcha || !window.hcaptcha.getResponse()) {
-                event.preventDefault();
-                errorContainer.innerHTML = 'Fyll i hcaptcha innan du skickar in formuläret.';
+            // Form submission handler
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    // Get the turnstile response token
+                    const token = document.querySelector('[name="cf-turnstile-response"]');
+
+                    // If no token is found, prevent form submission
+                    if (!token || !token.value) {
+                        event.preventDefault();
+                        alert('Vänligen bekräfta att du inte är en robot genom att slutföra Turnstile-verifieringen.');
+                    }
+                });
             }
         });
+
+        // This function is called when the Turnstile script is loaded
+        function onloadTurnstileCallback() {
+            // Turnstile is loaded and ready to go!
+            console.log('Turnstile loaded successfully');
+        }
     </script>
 @endsection

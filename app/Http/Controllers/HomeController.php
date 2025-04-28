@@ -6,6 +6,7 @@ use App\Mail\FormMail;
 use App\Rules\ValidHCaptcha;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Vite;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
@@ -188,8 +189,17 @@ class HomeController extends Controller
             'message' => 'required',
             'email' => 'required|email',
             'name' => 'required',
-            //'h-captcha-response' => ['required', new ValidHCaptcha()]
-            'h-captcha-response' => ['hcaptcha'],
+            'cf-turnstile-response' => ['required', function ($attribute, $value, $fail) {
+                $response = Http::asForm()->post('https://challenges.cloudflare.com/turnstile/v0/siteverify', [
+                    'secret' => env('TURNSTILE_SECRET_KEY'),
+                    'response' => $value,
+                    'remoteip' => request()->ip(),
+                ]);
+
+                if (!$response->json('success')) {
+                    $fail('Turnstile validation failed. Please try again.');
+                }
+            }],
         ]);
 
         $subject = 'Kontaktformulär';
@@ -213,6 +223,5 @@ class HomeController extends Controller
         }
 
         return redirect()->route('index')->with('status', 'Något gick fel.');
-
     }
 }
