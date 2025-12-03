@@ -29,7 +29,7 @@
           "name": "Puts i Karlstad",
           "image": "https://putsikarlstad.se/assets/images/logo-blank_smaller.png",
           "url": "https://putsikarlstad.se",
-          "telephone": "Ej tillgängligt",
+          "telephone": "+46 73-034 95 21",
           "email": "info@putsikarlstad.se",
           "description": "Fönsterputs i Karlstad, Hammarö, Vålberg, Grums, Molkom, Kil & Väse med omnejd. Med över 10 års erfarenhet erbjuder vi professionell hjälp med kunskap, teknik, och rätt utrustning.",
           "address": {
@@ -200,6 +200,9 @@
             <div>
                 <p class="text-gray-800">&copy; Puts i Karlstad - {{ \Carbon\Carbon::now()->format('Y') }}</p>
                 <p class="text-sm text-gray-600 mt-2">Professionell fönsterputsning i Karlstad och omnejd</p>
+                <p class="text-sm text-gray-600 mt-1">
+                    <a href="tel:+46730349521" class="hover:text-primary">073-034 95 21</a>
+                </p>
             </div>
             <div class="flex mt-3 -mx-2 sm:mt-0">
                 <a href="{{ route('miljovanligt') }}" class="mx-2 text-gray-800 transition-colors duration-300 hover:text-primary">Miljövänligt</a>
